@@ -1,0 +1,11 @@
+<div id="text">badger</div>
+<div id="file">badger</div>
+<script>
+let elem1 = document.getElementById("text");
+elem1.innerHTML = "fish"
+let elem2 = document.getElementById("file");
+const fs = require("fs");
+let contents = fs.readFileSync("code.txt").toString().split(/\r?\n/);
+console.log(contents);
+elem2.innerHTML = contents
+</script>
