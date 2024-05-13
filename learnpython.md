@@ -17,8 +17,8 @@ for word in words:
 
 Click this [link](http://www.google.com) to go to Google.
 
-+ | add
-- | subtract
-* | multiply
-/ | divide
+add | add
+subtract | subtract
+multiply | multiply
+divide | divide
 
