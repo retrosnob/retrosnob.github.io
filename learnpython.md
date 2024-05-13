@@ -2,7 +2,10 @@
 ## This is heading 2
 ### This is heading 3
 
-This is normal text
+This is normal text. 
+This is *bold*.
+This is **bold**.
+This is ~strikethrough~.
 
 ```python
 for word in words:
