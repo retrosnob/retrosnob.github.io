@@ -3,8 +3,11 @@
 ### This is heading 3
 
 This is normal text. 
-This is *bold*.
+
+This is *italic*.
+
 This is **bold**.
+
 This is ~strikethrough~.
 
 ```python
