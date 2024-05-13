@@ -19,8 +19,8 @@ Click this [link](http://www.google.com) to go to Google.
 
 Operation | Operator
 --- | ---
-add | add
-subtract | subtract
-multiply | multiply
-divide | divide
+add | +
+subtract | -
+multiply | *
+divide | /
 
