@@ -9,4 +9,6 @@ for word in words:
     print(len(word))
 ```
 
+Click this [link](http://www.google.com) to go to Google.
+
 
