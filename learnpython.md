@@ -4,7 +4,7 @@
 
 We can store items of data for use in computer programs. These stored items are called variables. We refer to variables using names.
 
-```python
+```Python
 # Store the value 5 in a variable called x
 x = 5
 ``` 
