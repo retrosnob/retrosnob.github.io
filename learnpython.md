@@ -1,12 +1,22 @@
-Variables and data types
-Operators and expressions
-Getting input
-Printing output
-Lists
-Selecting lines to execute with If statements
-Looping through every item in a collection with For
-Looping While
-Files
+# Variables and data types
+
+# More about strings
+
+# Operators and expressions
+
+# Getting input from the user
+
+# Printing output to the screen
+
+# Grouping lots a variables together with lists
+
+# Selecting which lines of code to execute with If statements
+
+# Looping: repeating a block of code once for every item in a collection (for loops)
+
+# Looping: repeating a block of code as long as a condition is true (while loops)
+
+# Working with files
 
 
 # This is heading 1
