@@ -5,19 +5,21 @@
 We can store items of data for use in computer programs. These stored items are called variables. We refer to variables using names.
 
 ``` Python
-# Store the value 5 in a variable called x
+# Store the value 5 in a variable named x
 x = 5
 ``` 
 
 ## Data types
 
-Whole numbers (integers)
+Variables stored data and data can be of different types. The GCSE focuses on the following data types:
 
-Numbers with decimal points (floats)
+* Whole numbers (integers)
 
-Sequences of text characters (strings)
+* Numbers with decimal points (floats)
 
-True/False variables (booleans)
+* Sequences of text characters (strings)
+
+* True/False variables (booleans)
 
 
 
