@@ -1,5 +1,22 @@
 # Variables and data types
 
+## Variables
+
+## Data types
+
+Whole numbers (integers)
+
+Numbers with decimal points (floats)
+
+Sequences of text characters (strings)
+
+True/False variables (booleans)
+
+
+
+
+
+
 # More about strings
 
 # Operators and expressions
