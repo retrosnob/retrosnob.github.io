@@ -5,8 +5,13 @@
 We can store items of data for use in computer programs. These stored items are called variables. We refer to variables using names.
 
 ``` Python
-# Store the value 5 in a variable named x
+# Store the value 5 in a variable called x
 x = 5
+
+# Store the value "Fred" in a variable called name
+name = "Fred"
+
+
 ``` 
 
 ## Data types
@@ -42,6 +47,8 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 
 # Looping: repeating a block of code as long as a condition is true (while loops)
 
+# Functions: named blocks of code that do a job and return a result
+
 # Working with files
 
 
@@ -56,6 +63,8 @@ This is *italic*.
 This is **bold**.
 
 This is ~strikethrough~.
+
+Thie is <span style="color: red">red</span>.
 
 ```python
 for word in words:
