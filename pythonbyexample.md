@@ -73,3 +73,6 @@ else:
 **Task:**
 
 1. Write a program that asks the user to enter two words and then prints the longer of the two words. If the words are of the same length it should display an appropriate message along with both words.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQxODcxMTUzNV19
+-->
