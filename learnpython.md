@@ -10,6 +10,7 @@ x = 5
 
 # Store the value "Fred" in a variable called name
 name = "Fred"
+```
 
 ### Variable names
 
