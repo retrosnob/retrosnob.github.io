@@ -22,7 +22,7 @@ You should try to choose variable names that make it easy to tell meaning of the
 
 Some names in Python already mean something and you should therefore not use them as variable names. 
 
-Some examples of names you should not use for variables are:
+Some examples of names you should **not** use for variables are:
 
 sum, max, min, int, float, bool, str, string, random, list, type, dir
 
