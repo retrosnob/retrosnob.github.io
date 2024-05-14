@@ -13,7 +13,7 @@ This program does the same as Program 1.
 
 ```Python
 name = input("Enter your name: ")
-print("Hello {}. Your name has {} letters in it.".format(name, len(name))
+print("Hello {}. Your name has {} letters in it.".format(name, len(name)))
 ```
 
 ### Program 3
