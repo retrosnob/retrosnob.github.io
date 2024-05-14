@@ -1,4 +1,4 @@
-### Program 1a
+### Program 1
 
 This program asks the user for a distance in miles and converts it to kilometres.
 
@@ -74,5 +74,5 @@ else:
 
 1. Write a program that asks the user to enter two words and then prints the longer of the two words. If the words are of the same length it should display an appropriate message along with both words.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNDg2OTAyMCwxNDE4NzExNTM1XX0=
+eyJoaXN0b3J5IjpbMTQxODcxMTUzNSwxNDE4NzExNTM1XX0=
 -->
