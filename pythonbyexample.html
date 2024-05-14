@@ -16,8 +16,8 @@
 </code></pre>
 <h3 id="program-2">Program 2</h3>
 <p>This program does the same as Program 1.</p>
-<pre class=" language-python"><code class="prism  language-python">miles <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter distance in miles: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"That's {} kilometres."</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>miles <span class="token operator">*</span> <span class="token number">1.60934</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="prism  language-python">miles <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter distance in miles: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"That's {} kilometres."</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span><span class="token builtin">float</span><span class="token punctuation">(</span>miles<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1.60934</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
 <h3 id="program-3">Program 3</h3>
 <p>This program asks the user to enter a character and tells them if it was a vowel or not. Note that it is case insensitive and it prints an appropriate message if the user didn’t enter a letter or entered more than a single character.</p>
@@ -60,6 +60,41 @@ n2 <span class="token operator">=</span> <span class="token builtin">int</span><
 <p><strong>Task:</strong></p>
 <ol>
 <li>Write a program that asks the user to enter two words and then prints the longer of the two words. If the words are of the same length it should display an appropriate message along with both words.</li>
+</ol>
+<h3 id="program-1-2">Program 1</h3>
+<p>This program defines a list of integers and prints them out on separate lines.</p>
+<pre class=" language-python"><code class="prism  language-python">nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+nums<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+nums<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+nums<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+nums<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> num <span class="token keyword">in</span> nums<span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="program-2-2">Program 2</h3>
+<p>This program does the same as Program 1.</p>
+<pre class=" language-python"><code class="prism  language-python">mylist <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+mylist<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+mylist<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+mylist<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+mylist<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> thing <span class="token keyword">in</span> mylist<span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span>thing<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="program-3-2">Program 3</h3>
+<p>This program asks the user for a password. If the correct password “sesame” is entered, the program displays an appropriate message. If not, the program displays an appropriate message and prompts for a new password attempt.</p>
+<pre class=" language-python"><code class="prism  language-python">password <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter a password: "</span><span class="token punctuation">)</span>
+<span class="token keyword">while</span> password <span class="token operator">!=</span> <span class="token string">"sesame"</span><span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Incorrect password"</span><span class="token punctuation">)</span>
+	password <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter a password: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Access granted"</span><span class="token punctuation">)</span>
+	
+</code></pre>
+<p><strong>Task:</strong></p>
+<ol>
+<li>Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as “” and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.</li>
 </ol>
 </div>
 </body>
