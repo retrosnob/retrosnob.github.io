@@ -2,7 +2,7 @@ This program asks the user for their name and then says hello to them and tells 
 
 ```Python
 name = input("Enter your name: ")
-print("Hello " + name + ". Your name has " + len(name) + " letters in it.")
+print("Hello " + name + ". Your name has " + str(len(name)) + " letters in it.")
 ```
 
 This program asks the user for two numbers and then tells the user which of the numbers was the larger.
