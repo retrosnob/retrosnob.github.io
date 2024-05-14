@@ -30,7 +30,6 @@ Single-letter names are generally not a good idea but sometimes they're ok. For 
 
 * i, j, k are often used as simple counter integers
 * x, y, z are often used for coordinates
-``` 
 
 ## Data types
 
