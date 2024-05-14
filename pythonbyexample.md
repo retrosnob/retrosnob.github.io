@@ -18,4 +18,6 @@ elif n2 > n1:
 else:
     print("The numbers are the same.")
 ```
-
+Tasks:
+Write a program that asks the user to enter two words and then tells them how long the longest word that they entered was. If the words are the same length, then it should display an appropriate message along with the length of the words.
+Write a program that asks the user to enter two words and then prints the longer of the two words. If the words are of the same length it should display an appropriate message along with both words.
