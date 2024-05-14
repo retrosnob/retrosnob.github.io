@@ -1,9 +1,22 @@
+### Program 1
+
 This program asks the user for their name and then says hello to them and tells them how many letters are in their name.
 
 ```Python
 name = input("Enter your name: ")
 print("Hello " + name + ". Your name has " + str(len(name)) + " letters in it.")
 ```
+
+### Program 2
+
+This program does the same as Program 1.
+
+```Python
+name = input("Enter your name: ")
+print("Hello {}. Your name has {} letters in it.".format(name, len(name))
+```
+
+### Program 3
 
 This program asks the user for two numbers and then tells the user which of the numbers was the larger.
 
