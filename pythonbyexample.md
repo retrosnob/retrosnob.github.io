@@ -9,7 +9,7 @@ This program asks the height in metres of two people. It then adds them together
 ```Python
 n1 = input("Enter the first height (m): ")
 n2 = input("Enter the second height(m): ")
-print("The sum is " + n1 + n2)
+print("The cis " + n1 + n2)
 ```
 **Tasks:**
 1. Run Program 1 and describe how it behaves. Fix Program 1 using the float function. Write a short paragraph explaining why the program didn't work.
@@ -107,7 +107,8 @@ print("Access granted")
 **Task:**
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NT
-A1NDM5NzIsLTE0NTIzNzE1ODksLTIwOTczNDE2MTksLTQ4OTI1
-MzE1OSwxNDE4NzExNTM1LDE0MTg3MTE1MzVdfQ==
+eyJoaXN0b3J5IjpbMTEyOTQ2NTMxMCw3MDc3MjY1MzIsLTk2NT
+k2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1MjM3MTU4OSwtMjA5NzM0
+MTYxOSwtNDg5MjUzMTU5LDE0MTg3MTE1MzUsMTQxODcxMTUzNV
+19
 -->
