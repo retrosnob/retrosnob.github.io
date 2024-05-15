@@ -12,7 +12,7 @@ print("That's " + str(miles * 1.60934) + " kilometres.")
 This program does the same as Program 1.
 
 ```Python
-miles = float(input("Enter distance in miles: "))
+miles = input("Enter distance in miles: ")
 print("That's {} kilometres.".format(float(miles) * 1.60934))
 ```
 
@@ -121,6 +121,6 @@ print("Access granted")
 
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4OTI1MzE1OSwxNDE4NzExNTM1LDE0MT
-g3MTE1MzVdfQ==
+eyJoaXN0b3J5IjpbOTg2ODU3NTgyLC00ODkyNTMxNTksMTQxOD
+cxMTUzNSwxNDE4NzExNTM1XX0=
 -->
