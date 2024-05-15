@@ -12,8 +12,8 @@ n2 = input("Enter the second height(m): ")
 print("The combined height is " + n1 + n2 + " metres.")
 ```
 **Tasks:**
-1. Run Program 1 and test it with various heights, including 1.7 metres. Describe how it behaves. Fix Program 1 using the float function. Write a short paragraph explaining why the program didn't work. Your paragraph should use the terms *int, float, function, truncate, decimal point*.
-2. Run Program 2 and describe how it behaves. Fix Program 2 using the float function and the str function. Write a short paragraph explaining why the program didn't work. Your paragraph should use the terms *float, integer, string, function, plus operator, add, concatenate*.
+1. Run Program 1 and test it with various heights, including 1.7 metres. Describe how it behaves. Fix Program 1 using the ```float``` function. Write a short paragraph explaining why the program didn't work. Your paragraph should use the terms *int, float, function, truncate, decimal point*.
+2. Run Program 2 and describe how it behaves. Fix Program 2 using the ```float``` function and the ```str``` function. Write a short paragraph explaining why the program didn't work. Your paragraph should use the terms *float, str, string, function, plus operator, add, concatenate*.
 
 ### Program 1
 This program asks the user for a distance in miles and converts it to kilometres.
@@ -107,7 +107,7 @@ print("Access granted")
 **Task:**
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwNjc2NTg4LC0xNTE3NTY5Njg0LDcwNz
+eyJoaXN0b3J5IjpbNjE0Mjg5MzIzLC0xNTE3NTY5Njg0LDcwNz
 cyNjUzMiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC0xNDUyMzcx
 NTg5LC0yMDk3MzQxNjE5LC00ODkyNTMxNTksMTQxODcxMTUzNS
 wxNDE4NzExNTM1XX0=
