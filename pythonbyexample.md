@@ -9,7 +9,10 @@ print(n1 + n2)
 This program asks the user for their height in metres and prints a message accordingly.
 ```Python
 height = float(input("Enter your height (m): "))
-if height > 
+if height > 2.72:
+	print("You are the tallest person who has ever lived.")
+else:
+	print("You are not the tallest person who has ever lived.")
 ```
 ### Program 3
 
@@ -108,7 +111,7 @@ print("Access granted")
 **Task:**
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzM4MTA5NjAsLTE0NTIzNzE1ODksLT
-IwOTczNDE2MTksLTQ4OTI1MzE1OSwxNDE4NzExNTM1LDE0MTg3
-MTE1MzVdfQ==
+eyJoaXN0b3J5IjpbLTcyMDk1NzkzLC0xNDUyMzcxNTg5LC0yMD
+k3MzQxNjE5LC00ODkyNTMxNTksMTQxODcxMTUzNSwxNDE4NzEx
+NTM1XX0=
 -->
