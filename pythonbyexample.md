@@ -3,21 +3,17 @@ This program asks the user for two numbers. It then adds them together and print
 ```Python
 n1 = input("Enter the first number: ")
 n2 = input("Enter the second number: ")
-print(n1 + n2)
+print("The sum is " + n1 + n2)
 ```
 ### Program 2
 This program asks the user for their height in metres and prints a message accordingly.
 ```Python
 height = float(input("Enter your height (m): "))
-if height > 2.72:
-	print("You are the tallest person who has ever lived.")
-else:
-	print("You are not the tallest person who has ever lived.")
 ```
 ### Program 3
 
 **Task:**
-
+1. 
 
 ### Program 1
 This program asks the user for a distance in miles and converts it to kilometres.
@@ -111,7 +107,7 @@ print("Access granted")
 **Task:**
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDk1NzkzLC0xNDUyMzcxNTg5LC0yMD
-k3MzQxNjE5LC00ODkyNTMxNTksMTQxODcxMTUzNSwxNDE4NzEx
-NTM1XX0=
+eyJoaXN0b3J5IjpbLTI1ODU5NzkzNCwtMTQ1MjM3MTU4OSwtMj
+A5NzM0MTYxOSwtNDg5MjUzMTU5LDE0MTg3MTE1MzUsMTQxODcx
+MTUzNV19
 -->
