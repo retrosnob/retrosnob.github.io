@@ -1,7 +1,6 @@
 # Download Python
 
-[Hello](PythonBook_ThonnyUI.png)
-![enter image description here](retrosnob.github.io/PythonBook_ThonnyUI.png)
+![Thonny user interface](http://retrosnob.github.io/PythonBook_ThonnyUI.png)
 
 # Variables and data types
 
@@ -105,5 +104,5 @@ multiply | *
 divide | /
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzIwMzEwMzQsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
 -->
