@@ -12,7 +12,7 @@ n2 = input("Enter the second height(m): ")
 print("The combined height is " + n1 + n2 + " metres.")
 ```
 **Tasks:**
-1. Run Program 1 and describe how it behaves. Fix Program 1 using the float function. Write a short paragraph explaining why the program didn't work.
+1. Run Program 1 and test it with various heights, including 1.7 metres. Describe how it behaves. Fix Program 1 using the float function. Write a short paragraph explaining why the program didn't work.
 2. Run Program 2 and describe how it behaves. Fix Program 2 using the float function and the str function. Write a short paragraph explaining why the program didn't work.
 
 ### Program 1
@@ -107,8 +107,8 @@ print("Access granted")
 **Task:**
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTc1Njk2ODQsNzA3NzI2NTMyLC05Nj
-U5NjI3NTgsLTE3NTA1NDM5NzIsLTE0NTIzNzE1ODksLTIwOTcz
-NDE2MTksLTQ4OTI1MzE1OSwxNDE4NzExNTM1LDE0MTg3MTE1Mz
-VdfQ==
+eyJoaXN0b3J5IjpbLTExNjE5MDY0NjksLTE1MTc1Njk2ODQsNz
+A3NzI2NTMyLC05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLTE0NTIz
+NzE1ODksLTIwOTczNDE2MTksLTQ4OTI1MzE1OSwxNDE4NzExNT
+M1LDE0MTg3MTE1MzVdfQ==
 -->
