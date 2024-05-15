@@ -12,8 +12,8 @@ n2 = input("Enter the second height(m): ")
 print("The sum is " + n1 + n2)
 ```
 **Tasks:**
-1. Fix Program 1 using the float function. Write a short paragraph explaining why the program didn't work.
-2. Fix Program 2 using the float function and the str function. Write a short paragraph explaining why the program didn't work.
+1. Run Program 1 and describe how it behaves. Fix Program 1 using the float function. Write a short paragraph explaining why the program didn't work.
+2. Run Program 2 and describe how it behaves. Fix Program 2 using the float function and the str function. Write a short paragraph explaining why the program didn't work.
 
 ### Program 1
 This program asks the user for a distance in miles and converts it to kilometres.
@@ -107,7 +107,7 @@ print("Access granted")
 **Task:**
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMjkxNzE2NywtOTY1OTYyNzU4LC0xNz
-UwNTQzOTcyLC0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LC00ODky
-NTMxNTksMTQxODcxMTUzNSwxNDE4NzExNTM1XX0=
+eyJoaXN0b3J5IjpbNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NT
+A1NDM5NzIsLTE0NTIzNzE1ODksLTIwOTczNDE2MTksLTQ4OTI1
+MzE1OSwxNDE4NzExNTM1LDE0MTg3MTE1MzVdfQ==
 -->
