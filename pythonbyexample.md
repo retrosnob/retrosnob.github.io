@@ -76,7 +76,7 @@ else:
 
 ### Program 1
 
-This program defines a list of integers and prints them out on separate lines.
+This program creates a list of integers and prints them out on separate lines.
 
 ```Python
 nums = []
@@ -121,6 +121,6 @@ print("Access granted")
 
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2ODU3NTgyLC00ODkyNTMxNTksMTQxOD
+eyJoaXN0b3J5IjpbNTc5NjIyMTI3LC00ODkyNTMxNTksMTQxOD
 cxMTUzNSwxNDE4NzExNTM1XX0=
 -->
