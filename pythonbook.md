@@ -1,3 +1,7 @@
+# Download Python
+
+[Hello](PythonBook_ThonnyUI.png)
+
 # Variables and data types
 
 ## Variables
@@ -28,8 +32,10 @@ sum, max, min, int, float, bool, str, string, random, list, type, dir
 
 Single-letter names are generally not a good idea but sometimes they're ok. For instance:
 
-* i, j, k are often used as simple counter integers
+* i, j, k are often used as simple counter integers (integer means whole number)
 * x, y, z are often used for coordinates
+
+
 
 ## Data types
 
