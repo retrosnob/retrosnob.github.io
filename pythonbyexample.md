@@ -6,7 +6,7 @@ n2 = input("Enter the second number: ")
 print("The sum is " + n1 + n2)
 ```
 ### Program 2
-This program asks the user for their height in metres and prints a message accordingly.
+This program asks the user for their height in metres and prints it.
 ```Python
 height = float(input("Enter your height (m): "))
 ```
@@ -107,7 +107,7 @@ print("Access granted")
 **Task:**
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODU5NzkzNCwtMTQ1MjM3MTU4OSwtMj
+eyJoaXN0b3J5IjpbLTQzODg1OTc3MCwtMTQ1MjM3MTU4OSwtMj
 A5NzM0MTYxOSwtNDg5MjUzMTU5LDE0MTg3MTE1MzUsMTQxODcx
 MTUzNV19
 -->
