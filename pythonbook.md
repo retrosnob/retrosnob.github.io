@@ -1,5 +1,8 @@
-# Download Python
-I recommend that you use Thonny as your Python editor, It can be downloaded from http://thonny.org. 
+# Getting started with Python
+## Downloading Thonny
+I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from https://thonny.org and it perfectly good for GCSE and A-Level. 
+## The Thonny interface
+When you open Thonny you will see two panes. The upper pane is a text editor that allows you to edit Python files. Write whole programs in here and press the green	 
 
 ![Thonny user interface](http://retrosnob.github.io/PythonBook_ThonnyUI.png)
 
@@ -105,6 +108,6 @@ multiply | *
 divide | /
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjQ3MzUxMDYsNjU0NzQ2MDg1LC01MT
-AzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTczNTUyOTMyMCw2NTQ3NDYwODUsLTUxMD
+M0NDEzMF19
 -->
