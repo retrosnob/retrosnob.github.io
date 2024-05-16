@@ -111,7 +111,9 @@ subtract | -
 multiply | *
 divide | /
 
+# Ideas
+Videos
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDk4ODI1MTcsNjU0NzQ2MDg1LC01MT
-AzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTY1MzQwMDU5MCw2NTQ3NDYwODUsLTUxMD
+M0NDEzMF19
 -->
