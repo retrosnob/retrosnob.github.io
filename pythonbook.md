@@ -2,7 +2,11 @@
 ## Downloading Thonny
 I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from https://thonny.org and it perfectly good for GCSE and A-Level. 
 ## The Thonny interface
-When you open Thonny you will see two panes. The upper pane is a text editor that allows you to edit Python files. Write whole programs in here and press the green	 
+When you open Thonny you will see two panes. 
+
+The upper pane is a text editor that allows you to edit Python files. Write whole programs in here and press the green play button to execute. (You will need to have saved the file somewhere first.)
+
+The bottom pane is the shell. Here you can execute single lines of Python in an interactive REPL mode. 
 
 ![Thonny user interface](http://retrosnob.github.io/PythonBook_ThonnyUI.png)
 
@@ -108,6 +112,6 @@ multiply | *
 divide | /
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNTUyOTMyMCw2NTQ3NDYwODUsLTUxMD
-M0NDEzMF19
+eyJoaXN0b3J5IjpbLTEzNDk4ODI1MTcsNjU0NzQ2MDg1LC01MT
+AzNDQxMzBdfQ==
 -->
