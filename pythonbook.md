@@ -1,4 +1,5 @@
 # Download Python
+I recommend that you use Thonny as your Python editor, It can be downloaded from http://thonny.org. 
 
 ![Thonny user interface](http://retrosnob.github.io/PythonBook_ThonnyUI.png)
 
@@ -104,5 +105,6 @@ multiply | *
 divide | /
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTEyNjQ3MzUxMDYsNjU0NzQ2MDg1LC01MT
+AzNDQxMzBdfQ==
 -->
