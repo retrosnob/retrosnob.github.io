@@ -112,8 +112,9 @@ multiply | *
 divide | /
 
 # Ideas
-Videos
+A selection of Youtube videos to accompany the text.
+Downloadable Python source files and data files. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MzQwMDU5MCw2NTQ3NDYwODUsLTUxMD
-M0NDEzMF19
+eyJoaXN0b3J5IjpbLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MT
+AzNDQxMzBdfQ==
 -->
