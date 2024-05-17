@@ -123,7 +123,9 @@ divide | /
 # Ideas
 A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
+Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLT
-E4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTIwMzQ4ODczMjQsLTIxMzkwMDU5MzUsLT
+EzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAz
+NDQxMzBdfQ==
 -->
