@@ -36,7 +36,7 @@ name = "Fred"
 
 ### Variable names
 
-Variable names can include letters, numbers and the underscore (_) character, but they cannot begin with numbers.
+Variable names can include letters, numbers and the underscore (_) and hyphen (-) characters, but they cannot begin with numbers.
 
 You should try to choose variable names that make it easy to tell meaning of the data held in the variable. 
 
@@ -68,7 +68,7 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 * True/False variables (booleans)
 
 ## Exercises
-1. Which of the following are valid variable names in Python?<br>FISH<
+1. Which of the following are valid variable names in Python?<br>FISHFACE<br>fishface<br>fish-face<br>
 
 
 
@@ -127,7 +127,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjU5NzI3Niw0NTE5ODc5MTIsLTU4OT
+eyJoaXN0b3J5IjpbLTI5NzY3OTg5Niw0NTE5ODc5MTIsLTU4OT
 QxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3
 NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
