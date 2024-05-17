@@ -36,8 +36,10 @@ x <span class="token operator">=</span> <span class="token number">5</span>
 <span class="token comment"># Store the value "Fred" in a variable called name</span>
 name <span class="token operator">=</span> <span class="token string">"Fred"</span>
 </code></pre>
+<p>You give a variable a value by using the <code>=</code>, which is known as the <em>assignment operator</em>. So when we assign the value 5 to the variable x like this <code>x = 5</code>, we are really saying <em>let x take the value of 5</em>. Some languages actually use the word <code>let</code> when they do assignment, e.g. <code>let x = 5</code>, but Python doesn’t.</p>
+<p>In the statement <code>x = 5</code>, the x is an <em>integer variable</em> and the 5 is an <em>integer literal</em>. Assignment always happens right to left. You cannot write 5 = x.</p>
 <h3 id="variable-names">Variable names</h3>
-<p>Variable names can include letters, numbers and the underscore (_) character, but they cannot begin with numbers.</p>
+<p>Variable names can include letters, numbers and the underscore (_) character, but they cannot <em>begin</em> with numbers.</p>
 <p>You should try to choose variable names that make it easy to tell meaning of the data held in the variable.</p>
 <h4 id="naming-conflicts">Naming conflicts</h4>
 <p>Some names in Python already mean something and you should therefore not use them as variable names.</p>
@@ -51,22 +53,93 @@ name <span class="token operator">=</span> <span class="token string">"Fred"</sp
 <h2 id="data-types">Data types</h2>
 <p>Variables stored data and data can be of different types. The GCSE focuses on the following data types:</p>
 <ul>
-<li>
-<p>Whole numbers (integers)</p>
+<li>Whole numbers (integers)</li>
+<li>Numbers with decimal points (floats)</li>
+<li>Sequences of text characters (strings)</li>
+<li>True/False variables (booleans)</li>
+</ul>
+<h2 id="vocabulary">Vocabulary</h2>
+<p><strong>Intialisation</strong><br>
+Creating and giving a variable it’s first value, e.g. <code>x = 5</code><br>
+<strong>Assignment</strong><br>
+Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the <em>first</em> assignment.</p>
+<h2 id="exercises">Exercises</h2>
+<ol>
+<li>Which of the following are valid variable names in Python?
+<ul>
+<li>EMAILADDRESS</li>
+<li>emailaddress</li>
+<li>email-address</li>
+<li>email_address</li>
+<li>emailaddress1</li>
+<li>1emailaddress</li>
+</ul>
 </li>
-<li>
-<p>Numbers with decimal points (floats)</p>
+<li>Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
+<ul>
+<li><code>name = "Fred"</code></li>
+<li><code>isPrefect = True</code></li>
+<li><code>age = 15</code></li>
+<li><code>height = 1.73</code></li>
+</ul>
 </li>
-<li>
-<p>Sequences of text characters (strings)</p>
-</li>
-<li>
-<p>True/False variables (booleans)</p>
-</li>
+<li>Explain why <code>x</code> is not a good variable name for storing the height of a rectangle. What would be a better variable name?</li>
+</ol>
+<h1 id="getting-input-from-the-user">Getting input from the user</h1>
+<p>I include this section early because it quickly allows us to write interactive programs that do something useful. You can get input from the user by using the <code>input</code> function.</p>
+<p>This program asks the user their name and then prints a "Hello " followed by whatever name they entered.</p>
+<pre class=" language-python"><code class="prism  language-python">name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter your name: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello "</span> <span class="token operator">+</span> name<span class="token punctuation">)</span>
+</code></pre>
+<p>Note the the <code>input</code> function <strong>always</strong> returns a string. <em>Returns</em> is a special term used in relation to functions. It means <em>gives back</em> and I will use it a lot in the section on functions later.</p>
+<p>It makes sense in the example above that <code>name</code> is a string, since it is a word, a sequence of characters, but try running this program:</p>
+<pre class=" language-python"><code class="prism  language-python">n1 <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the first number: "</span><span class="token punctuation">)</span>
+n2 <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the second number: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The sum is "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>n1 <span class="token operator">+</span> n2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>Enter the first number: 4<br>
+Enter the second number: 5<br>
+The sum is 45</p>
+</blockquote>
+<p>This program has gone wrong because the <em>return type</em> of the <code>input</code> function is string, and when you use the plus operator (+) between two strings the strings are <em>concatenated</em>, i.e. chained together.</p>
+<p>We can fix this problem by <em>converting</em> the strings into integers, because when you use the plus operator (+) between two integers the integers are added.</p>
+<pre class=" language-python"><code class="prism  language-python">n1 <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the first number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+n2 <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the second number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The sum is "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>n1 <span class="token operator">+</span> n2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>Enter the first number: 4<br>
+Enter the second number: 5<br>
+The sum is 9</p>
+</blockquote>
+<p>Look carefully at the line:</p>
+<pre class=" language-python"><code class="prism  language-python">n1 <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the first number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>This is the order of events:</p>
+<ol>
+<li>Make a string literal "Enter the first number: " and <em>pass it</em> to the <code>input</code> function.</li>
+<li>The input function then prints "Enter the first number: " and waits for the user to type something.</li>
+<li>Take the thing that the user typed and pass it to the <code>int</code> function, which turns it from a string to an integer.</li>
+<li>Assign that integer to the variable n1.</li>
+</ol>
+<p>Now look carefully at the line:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The sum is "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>n1 <span class="token operator">+</span> n2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>This is the order of events:</p>
+<ol>
+<li>Add the values of the two integer variables n1 and n2.</li>
+<li>The str function then turns the result from an integer to a string.</li>
+<li>The string is then concatenated on the end of the string literal "The sum is " to form a longer string.</li>
+<li>That longer string is then passed to the print function, which prints it out on the screen.</li>
+</ol>
+<p>In summary:</p>
+<ul>
+<li>The <code>int</code> function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. &lt;, &gt;, etc) with the thing the user entered.</li>
+<li>The <code>str</code> function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.</li>
 </ul>
 <h1 id="more-about-strings">More about strings</h1>
 <h1 id="operators-and-expressions">Operators and expressions</h1>
-<h1 id="getting-input-from-the-user">Getting input from the user</h1>
 <h1 id="printing-output-to-the-screen">Printing output to the screen</h1>
 <h1 id="grouping-lots-a-variables-together-with-lists">Grouping lots a variables together with lists</h1>
 <h1 id="selecting-which-lines-of-code-to-execute-with-if-statements">Selecting which lines of code to execute with If statements</h1>
