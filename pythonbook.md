@@ -14,7 +14,9 @@ Examples of using the interactive shell.
 ![Thonny user interface](http://retrosnob.github.io/Thonny_shell.png)
 
 Thonny tips:
-If your program hangs, use the red Stop button 
+If your program hangs, use the red Stop button to halt it.
+You can clear the shell by right-clicking on it and choosing Clear.
+Thonny has an "assistant" that warns you of 
 
 # Variables and data types
 
@@ -121,6 +123,6 @@ divide | /
 A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDkyOTQ0OCwtMTM3NTk4MjQxNCwtMT
-gwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbLTEwMzQwMzczODMsLTEzNzU5ODI0MTQsLT
+E4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
 -->
