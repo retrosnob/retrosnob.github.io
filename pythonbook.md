@@ -78,7 +78,7 @@ Giving a variable its first or a new value. In Python, initialisation and assign
    - email_address
    - emailaddress1
    - 1emailaddress
-2. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
+. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
     - `name = "Fred"`
     - `isPrefect = True`
     - `age = 15`
@@ -142,9 +142,9 @@ In summary:
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 # More about strings
 
-# Operators and expressions
+ perators and expressions
 
-# Printing output to the screen
+ Printing output to the screen
 
 # Grouping lots a variables together with lists
 
@@ -192,8 +192,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MD
-YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
-LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
-Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbMjkzNzcxMjk1LDQ4MzU3NzcxNCw0NjA0OT
+A2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIs
+LTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMT
+gwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
