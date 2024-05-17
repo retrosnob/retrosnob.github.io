@@ -12,7 +12,7 @@ The bottom pane is the shell. Here you can execute single lines of Python in an 
 ![Thonny user interface](http://retrosnob.github.io/PythonBook_ThonnyUI.png)
 
 _Examples of using the interactive shell. _
-![Thonny user interface](http://retrosnob.github.io/Thonny_shell.png)
+![Thonny interactive shell](http://retrosnob.github.io/Thonny_shell.png)
 
 **Thonny tips:**
 * If your program hangs, use the red Stop button to halt it.
@@ -126,7 +126,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5ODE3NTUzMiwtNTg5NDE5NzU0LC0yMT
-M5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLDY1NDc0
-NjA4NSwtNTEwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMz
+kwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2
+MDg1LC01MTAzNDQxMzBdfQ==
 -->
