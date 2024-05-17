@@ -101,7 +101,7 @@ It makes sense in the example above that `name` is a string, since it is a word,
 ```Python
 n1 = input("Enter the first number: ")
 n2 = input("Enter the second number: ")
-print("The sum is " n1 + n2)
+print("The sum is " + str(n1 + n2))
 ```
 > Enter the first number: 4
 > Enter the second number: 5
@@ -113,7 +113,7 @@ We can fix this problem by *converting* the strings into integers, because when 
 ```Python
 n1 = int(input("Enter the first number: "))
 n2 = int(input("Enter the second number: "))
-print("The sum is " n1 + n2)
+print("The sum is " + str(n1 + n2))
 ```
 > Enter the first number: 4
 > Enter the second number: 5
@@ -125,9 +125,19 @@ n1 = int(input("Enter the first number: "))
 ```
 This is the order of events:
 1. Make a string literal "Enter the first number: " and *pass it* to the `input` function.
-1. The input function then prints "Enter the first number: " and waits for the user to type something.
-1. Take the thing that the user typed and pass it to the `int` function, which turns it from a string to an integer.
-1. Assign that integer to the variable n1.
+2. The input function then prints "Enter the first number: " and waits for the user to type something.
+3. Take the thing that the user typed and pass it to the `int` function, which turns it from a string to an integer.
+4. Assign that integer to the variable n1.
+
+Now look carefully at the line:
+```Python
+print("The sum is " + str(n1 + n2))
+```
+This is the order of events:
+1. Add the two integers n.
+2. The input function then prints "Enter the first number: " and waits for the user to type something.
+3. Take the thing that the user typed and pass it to the `int` function, which turns it from a string to an integer.
+4. Assign that integer to the variable n1.
 
 # More about strings
 
@@ -181,8 +191,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4Mjg3ODYxNyw0NjA0OTA2ODUsLTE1ND
-A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
-NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
-w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbLTE2MjA1NTM1MDksNDYwNDkwNjg1LC0xNT
+QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
+NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNj
+MsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
 -->
