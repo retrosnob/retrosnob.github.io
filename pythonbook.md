@@ -107,6 +107,8 @@ print("The sum is " n1 + n2)
 > Enter the second number: 5
 > The sum is 45
 
+This program has gone wrong because the *return type* of the `input` function is string, and when you use the plus operator (+) between two strings
+
 # More about strings
 
 # Operators and expressions
@@ -159,8 +161,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwOTQzMjczMSw0NjA0OTA2ODUsLTE1ND
-A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
-NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
-w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbNzI3MDIzMzIzLDQ2MDQ5MDY4NSwtMTU0MD
+YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
+LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
+Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
 -->
