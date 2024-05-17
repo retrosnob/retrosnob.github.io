@@ -69,12 +69,13 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 
 ## Exercises
 1. Which of the following are valid variable names in Python?
-2. EMAILADDRESS
-3. emailaddress
-4. email-address
-5. email_addressr>emailaddress1<br>1emailaddress
-   - asdfasd
- 1. 
+   - EMAILADDRESS
+   - emailaddress
+   - email-address
+   - email_address
+   - emailaddress1
+   - 1emailaddress
+1. hello
 
 
 
@@ -133,7 +134,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzgzMjU3OCw0NTE5ODc5MTIsLTU4OT
+eyJoaXN0b3J5IjpbMTUxODM1NTU3NSw0NTE5ODc5MTIsLTU4OT
 QxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3
 NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
