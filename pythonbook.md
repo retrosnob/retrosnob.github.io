@@ -87,6 +87,12 @@ Creating and giving a variable it's first value, e.g. `x = 5`
 # Getting input from the user
 I include this section early because it quickly allows us to write interactive programs that do something useful. You can get input from the user by using the `input` function.
 
+Try running this program:
+```Python
+name = input("Enter your name: ")
+print("Hello " + name)
+```
+
 # More about strings
 
 # Operators and expressions
@@ -139,8 +145,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3ODI2NTA4LDE1MzQyMzE0MDUsNDUxOT
-g3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0
-MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ
-==
+eyJoaXN0b3J5IjpbLTY5MDUxNDE5MywxNTM0MjMxNDA1LDQ1MT
+k4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgy
+NDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX
+0=
 -->
