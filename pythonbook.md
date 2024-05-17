@@ -64,6 +64,11 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 * Sequences of text characters (strings)
 * True/False variables (booleans)
 
+## Vocabulary
+**Intialisation**
+Creating and giving a variable it's fir
+
+
 ## Exercises
 1. Which of the following are valid variable names in Python?
    - EMAILADDRESS
@@ -72,7 +77,8 @@ Variables stored data and data can be of different types. The GCSE focuses on th
    - email_address
    - emailaddress1
    - 1emailaddress
-1. hello
+2. Name the data types of each of these variables:
+    - 
 
 
 
@@ -131,7 +137,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OT
-QxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3
-NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbMTEzMjM1ODcwMiwxNTM0MjMxNDA1LDQ1MT
+k4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgy
+NDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX
+0=
 -->
