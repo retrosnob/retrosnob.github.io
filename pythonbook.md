@@ -124,7 +124,10 @@ Look carefully at the line:
 n1 = int(input("Enter the first number: "))
 ```
 This is the order of events:
-Make a s
+1. Make a string literal "Enter the first number: " and *pass it* to the `input` function.
+1. The input function then waits for the user to type something.
+1. Take that thing and pass it to the `int` function, which turns it from a string to an integer.
+1. Assign that integer to the variable n1.
 
 # More about strings
 
@@ -178,7 +181,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NjQyMDkzMCw0NjA0OTA2ODUsLTE1ND
+eyJoaXN0b3J5IjpbLTM0NTU0MDcxMyw0NjA0OTA2ODUsLTE1ND
 A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
 NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
 w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
