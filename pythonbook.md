@@ -67,7 +67,8 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 
 * True/False variables (booleans)
 
-
+## Exercises
+1. Which of the following are valid variable names in Python?<br>fid
 
 
 
@@ -126,7 +127,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMz
-kwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2
-MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbMTkzMTM5NjEyNyw0NTE5ODc5MTIsLTU4OT
+QxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3
+NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
