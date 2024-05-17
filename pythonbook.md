@@ -6,9 +6,12 @@ When you open Thonny you will see two panes.
 
 The upper pane is a text editor that allows you to edit Python files. Write whole programs in here and press the green play button to execute. (You will need to have saved the file somewhere first.)
 
-The bottom pane is the shell. Here you can execute single lines of Python in an interactive REPL mode. 
+The bottom pane is the shell. Here you can execute single lines of Python in an interactive REPL mode. When you write a line of code and execute it, Python will evaluate it and print the result. If the line of code doesn't evaluate to anything, nothing will be printed.
 
 ![Thonny user interface](http://retrosnob.github.io/PythonBook_ThonnyUI.png)
+
+Examples of using the interactive shell. 
+![Thonny user interface](http://retrosnob.github.io/Thonny_shell.png)
 
 # Variables and data types
 
@@ -115,6 +118,6 @@ divide | /
 A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MT
-AzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNj
+U0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
 -->
