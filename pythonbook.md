@@ -59,12 +59,10 @@ Single-letter names are generally not a good idea but sometimes they're ok. For 
 
 Variables stored data and data can be of different types. The GCSE focuses on the following data types:
 
-* Whole numbers (integers)
-* Numbers with decimal points (floats)
-* Sequences of text characters (strings)
+* Whole numbers (**integers**)
+* Numbers with decimal points (**floats**)
+* Sequences of text characters (**strings**)
 * True/False variables (booleans)
-
-
 
 ## Vocabulary
 **Intialisation**
@@ -194,7 +192,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyMjczOTQyLDQ2MDQ5MDY4NSwtMTU0MD
+eyJoaXN0b3J5IjpbNDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MD
 YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
 LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
 Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
