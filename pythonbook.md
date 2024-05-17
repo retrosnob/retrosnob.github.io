@@ -53,8 +53,6 @@ Single-letter names are generally not a good idea but sometimes they're ok. For 
 * i, j, k are often used as simple counter integers (integer means whole number)
 * x, y, z are often used for coordinates
 
-
-
 ## Data types
 
 Variables stored data and data can be of different types. The GCSE focuses on the following data types:
@@ -87,7 +85,7 @@ Creating and giving a variable it's first value, e.g. `x = 5`
 # Getting input from the user
 I include this section early because it quickly allows us to write interactive programs that do something useful. You can get input from the user by using the `input` function.
 
-Try running this program:
+This program asks the user their name and then prints a "Hello " followed by whatever name they entered.
 ```Python
 name = input("Enter your name: ")
 print("Hello " + name)
@@ -145,8 +143,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MDUxNDE5MywxNTM0MjMxNDA1LDQ1MT
-k4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgy
-NDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX
-0=
+eyJoaXN0b3J5IjpbOTYxMzE3ODAwLDE1MzQyMzE0MDUsNDUxOT
+g3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0
+MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ
+==
 -->
