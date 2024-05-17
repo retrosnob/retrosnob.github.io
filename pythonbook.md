@@ -82,9 +82,7 @@ Creating and giving a variable it's first value, e.g. `x = 5`
     - `isPrefect = True`
     - `age = 15`
     - `height = 1.73`
-3. Explain why `x` is not a good variable name for storing the width of a square. What would be a better variable name?
-
-
+3. Explain why `x` is not a good variable name for storing the height of a rectangle. What would be a better variable name?
 
 # More about strings
 
@@ -140,8 +138,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTI4NzI1MywxNTM0MjMxNDA1LDQ1MT
-k4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgy
-NDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX
-0=
+eyJoaXN0b3J5IjpbLTE1NTU0ODA3MDAsMTUzNDIzMTQwNSw0NT
+E5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4
+MjQxNCwtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF
+19
 -->
