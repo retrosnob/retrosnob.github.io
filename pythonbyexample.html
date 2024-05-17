@@ -10,11 +10,27 @@
 
 <body class="stackedit">
   <div class="stackedit__html"><h3 id="program-1">Program 1</h3>
+<p>This program asks the user for their height in metres and prints it. It doesn’t work properly.</p>
+<pre class=" language-python"><code class="prism  language-python">height <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter your height (m): "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Your height is "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>height<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="program-2">Program 2</h3>
+<p>This program asks the height in metres of two people. It then adds them together and prints the result. It doesn’t work properly.</p>
+<pre class=" language-python"><code class="prism  language-python">n1 <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the first height (m): "</span><span class="token punctuation">)</span>
+n2 <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the second height(m): "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The combined height is "</span> <span class="token operator">+</span> n1 <span class="token operator">+</span> n2 <span class="token operator">+</span> <span class="token string">" metres."</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Tasks:</strong></p>
+<ol>
+<li>Run Program 1 and test it with various heights, including 1.7 metres. Describe how it behaves. Fix Program 1 using the <code>float</code> function. Write a short paragraph explaining why the program didn’t work. Your paragraph should use the terms <em>int, float, function, truncate, decimal point</em>.</li>
+<li>Run Program 2 and describe how it behaves. Fix Program 2 using the <code>float</code> function and the <code>str</code> function. Write a short paragraph explaining why the program didn’t work. Your paragraph should use the terms <em>float, str, string, function, plus operator, add, concatenate</em>.</li>
+</ol>
+<h3 id="program-1-1">Program 1</h3>
 <p>This program asks the user for a distance in miles and converts it to kilometres.</p>
 <pre class=" language-python"><code class="prism  language-python">miles <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter distance in miles: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"That's "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>miles <span class="token operator">*</span> <span class="token number">1.60934</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" kilometres."</span><span class="token punctuation">)</span>
 </code></pre>
-<h3 id="program-2">Program 2</h3>
+<h3 id="program-2-1">Program 2</h3>
 <p>This program does the same as Program 1.</p>
 <pre class=" language-python"><code class="prism  language-python">miles <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter distance in miles: "</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"That's {} kilometres."</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span><span class="token builtin">float</span><span class="token punctuation">(</span>miles<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1.60934</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -35,12 +51,12 @@
 <ol>
 <li>Write a program that asks the user to enter a number and then asks them to enter C or F. If they enter C it should convert the number from Fahrenheit to Celsius and print the result. If they enter an F it should convert the number from Celsius to Fahrenheit and print the result. It should be case insensitive and if they enter neither C nor F it should print an appropriate message.</li>
 </ol>
-<h3 id="program-1-1">Program 1</h3>
+<h3 id="program-1-2">Program 1</h3>
 <p>This program asks the user for their name and then says hello to them and tells them how many letters are in their name.</p>
 <pre class=" language-python"><code class="prism  language-python">name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter your name: "</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello "</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">". Your name has "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" letters in it."</span><span class="token punctuation">)</span>
 </code></pre>
-<h3 id="program-2-1">Program 2</h3>
+<h3 id="program-2-2">Program 2</h3>
 <p>This program does the same as Program 1.</p>
 <pre class=" language-python"><code class="prism  language-python">name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter your name: "</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello {}. Your name has {} letters in it."</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -61,8 +77,8 @@ n2 <span class="token operator">=</span> <span class="token builtin">int</span><
 <ol>
 <li>Write a program that asks the user to enter two words and then prints the longer of the two words. If the words are of the same length it should display an appropriate message along with both words.</li>
 </ol>
-<h3 id="program-1-2">Program 1</h3>
-<p>This program defines a list of integers and prints them out on separate lines.</p>
+<h3 id="program-1-3">Program 1</h3>
+<p>This program creates a list of integers and prints them out on separate lines.</p>
 <pre class=" language-python"><code class="prism  language-python">nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 nums<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
 nums<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
@@ -72,7 +88,7 @@ nums<span class="token punctuation">.</span>append<span class="token punctuation
 <span class="token keyword">for</span> num <span class="token keyword">in</span> nums<span class="token punctuation">:</span>
 	<span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
 </code></pre>
-<h3 id="program-2-2">Program 2</h3>
+<h3 id="program-2-3">Program 2</h3>
 <p>This program does the same as Program 1.</p>
 <pre class=" language-python"><code class="prism  language-python">mylist <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 mylist<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
@@ -90,7 +106,6 @@ mylist<span class="token punctuation">.</span>append<span class="token punctuati
 	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Incorrect password"</span><span class="token punctuation">)</span>
 	password <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter a password: "</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Access granted"</span><span class="token punctuation">)</span>
-	
 </code></pre>
 <p><strong>Task:</strong></p>
 <ol>
