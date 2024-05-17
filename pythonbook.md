@@ -140,7 +140,8 @@ This is the order of events:
 4. That longer string is then passed to the print function, which prints it out on the screen.
 
 In summary:
-* The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, <=, >
+* The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, etc) with the thing the user entered.
+* The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 # More about strings
 
 # Operators and expressions
@@ -193,8 +194,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MTk5MjMyOCw0NjA0OTA2ODUsLTE1ND
-A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
-NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
-w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbMzIyMjczOTQyLDQ2MDQ5MDY4NSwtMTU0MD
+YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
+LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
+Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
 -->
