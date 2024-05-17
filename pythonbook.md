@@ -33,7 +33,7 @@ x = 5
 # Store the value "Fred" in a variable called name
 name = "Fred"
 ```
-
+You give a variable a value by using the `=`, which is known as the *assignment operator*. 
 ### Variable names
 
 Variable names can include letters, numbers and the underscore (_) character, but they cannot *begin* with numbers.
@@ -61,6 +61,8 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 * Numbers with decimal points (floats)
 * Sequences of text characters (strings)
 * True/False variables (booleans)
+
+
 
 ## Vocabulary
 **Intialisation**
@@ -143,7 +145,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxMzE3ODAwLDE1MzQyMzE0MDUsNDUxOT
+eyJoaXN0b3J5IjpbNzA1NTc1NzI2LDE1MzQyMzE0MDUsNDUxOT
 g3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0
 MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ
 ==
