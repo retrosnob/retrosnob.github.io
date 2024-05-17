@@ -139,6 +139,8 @@ This is the order of events:
 3. The string is then concatenated on the end of the string literal "The sum is " to form a longer string.
 4. That longer string is then passed to the print function, which prints it out on the screen.
 
+In summary:
+* The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, <=, >
 # More about strings
 
 # Operators and expressions
@@ -191,7 +193,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzY1MTc5NSw0NjA0OTA2ODUsLTE1ND
+eyJoaXN0b3J5IjpbLTQ0MTk5MjMyOCw0NjA0OTA2ODUsLTE1ND
 A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
 NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
 w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
