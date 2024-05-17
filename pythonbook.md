@@ -77,11 +77,11 @@ Creating and giving a variable it's first value, e.g. `x = 5`
    - email_address
    - emailaddress1
    - 1emailaddress
-2. Name the data types of each of these variables after they have been initialised:
-    - name = "Fred"
-    - isPrefect = True
-    - age = 15
-    - height = 1.7
+2. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
+    - `name = "Fred"`
+    - `isPrefect = True`
+    - `age = 15`
+    - `height = 1.73`
 
 
 
@@ -140,7 +140,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTgxODgzMywxNTM0MjMxNDA1LDQ1MT
+eyJoaXN0b3J5IjpbMTAyODg1MjQ2MSwxNTM0MjMxNDA1LDQ1MT
 k4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgy
 NDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX
 0=
