@@ -33,7 +33,7 @@ x = 5
 # Store the value "Fred" in a variable called name
 name = "Fred"
 ```
-You give a variable a value by using the `=`, which is known as the *assignment operator*. 
+You give a variable a value by using the `=`, which is known as the *assignment operator*. So when we assign the value 5 to the variable x like this `x = 5`, we are really saying *let x take the value of 5*. Some languages actually use the word `let` when they do assignment, e., but Python doesn't. 
 ### Variable names
 
 Variable names can include letters, numbers and the underscore (_) character, but they cannot *begin* with numbers.
@@ -145,8 +145,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1NTc1NzI2LDE1MzQyMzE0MDUsNDUxOT
-g3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0
-MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ
-==
+eyJoaXN0b3J5IjpbMTAwMDgxMjAyMiwxNTM0MjMxNDA1LDQ1MT
+k4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgy
+NDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX
+0=
 -->
