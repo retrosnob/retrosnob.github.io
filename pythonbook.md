@@ -99,8 +99,13 @@ Note the the `input` function **always** returns a string. *Returns* is a specia
 
 It makes sense in the example above that `name` is a string, since it is a word, a sequence of characters, but try running this program:
 ```Python
-
-``
+n1 = input("Enter the first number: ")
+n2 = input("Enter the second number: ")
+print("The sum is " n1 + n2)
+```
+> Enter the first number: 4
+> Enter the second number: 5
+> The sum is 45
 
 # More about strings
 
@@ -154,8 +159,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ3ODAwODA0LDQ2MDQ5MDY4NSwtMTU0MD
-YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
-LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
-Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbMjEwOTQzMjczMSw0NjA0OTA2ODUsLTE1ND
+A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
+NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
+w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
