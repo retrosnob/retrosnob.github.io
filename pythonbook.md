@@ -35,7 +35,7 @@ name = "Fred"
 ```
 You give a variable a value by using the `=`, which is known as the *assignment operator*. So when we assign the value 5 to the variable x like this `x = 5`, we are really saying *let x take the value of 5*. Some languages actually use the word `let` when they do assignment, e.g. `let x = 5`, but Python doesn't.
 
-In the statement `x = 5`, the x is an *integer variable* and the 5 is an *integer literal*. Assign  
+In the statement `x = 5`, the x is an *integer variable* and the 5 is an *integer literal*. Assignment always happens right to left. You cannot write 5 = x.  
 ### Variable names
 
 Variable names can include letters, numbers and the underscore (_) character, but they cannot *begin* with numbers.
@@ -147,7 +147,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDIzMTQ2ODEsMTUzNDIzMTQwNSw0NT
+eyJoaXN0b3J5IjpbLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NT
 E5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4
 MjQxNCwtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF
 19
