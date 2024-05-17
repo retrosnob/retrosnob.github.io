@@ -109,7 +109,7 @@ print("The sum is " n1 + n2)
 
 This program has gone wrong because the *return type* of the `input` function is string, and when you use the plus operator (+) between two strings the strings are *concatenated*, i.e. chained together. 
 
-We can fix this problem by *converting* the strings into integers, because when you use the plus operator between two integers the integers are added.
+We can fix this problem by *converting* the strings into integers, because when you use the plus operator (+) between two integers the integers are added.
 ```Python
 n1 = int(input("Enter the first number: "))
 n2 = int(input("Enter the second number: "))
@@ -125,8 +125,8 @@ n1 = int(input("Enter the first number: "))
 ```
 This is the order of events:
 1. Make a string literal "Enter the first number: " and *pass it* to the `input` function.
-1. The input function then waits for the user to type something.
-1. Take that thing and pass it to the `int` function, which turns it from a string to an integer.
+1. The input function then prints "Enter the first number: " and waits for the user to type something.
+1. Take the thing that the user typed and pass it to the `int` function, which turns it from a string to an integer.
 1. Assign that integer to the variable n1.
 
 # More about strings
@@ -181,7 +181,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTU0MDcxMyw0NjA0OTA2ODUsLTE1ND
+eyJoaXN0b3J5IjpbMTc4Mjg3ODYxNyw0NjA0OTA2ODUsLTE1ND
 A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
 NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
 w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
