@@ -8,9 +8,10 @@ The upper pane is a text editor that allows you to edit Python files. Write whol
 
 The bottom pane is the shell. Here you can execute single lines of Python in an interactive REPL mode. When you write a line of code and execute it, Python will evaluate it and print the result. If the line of code doesn't evaluate to anything, nothing will be printed.
 
+**The Thonny interface**
 ![Thonny user interface](http://retrosnob.github.io/PythonBook_ThonnyUI.png)
 
-Examples of using the interactive shell. 
+*Examples of using the interactive shell. *
 ![Thonny user interface](http://retrosnob.github.io/Thonny_shell.png)
 
 **Thonny tips:**
@@ -125,7 +126,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzQ4ODczMjQsLTIxMzkwMDU5MzUsLT
-EzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAz
-NDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMT
+M3NTk4MjQxNCwtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0
+NDEzMF19
 -->
