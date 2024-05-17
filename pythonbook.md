@@ -13,11 +13,11 @@ The bottom pane is the shell. Here you can execute single lines of Python in an 
 Examples of using the interactive shell. 
 ![Thonny user interface](http://retrosnob.github.io/Thonny_shell.png)
 
-Thonny tips:
-If your program hangs, use the red Stop button to halt it.
-You can clear the shell by right-clicking on it and choosing Clear.
-Thonny has an "assistant" that warns you of various things. I find it annoying. You can disable it in Tools, Options, Assistant....
-Python has a debugger built in. In my opinion, the default settin
+**Thonny tips:**
+* If your program hangs, use the red Stop button to halt it.
+* You can clear the shell by right-clicking on it and choosing Clear.
+* Thonny has an "assistant" that warns you of various things. I find it annoying. You can disable it in Tools, Options, Assistant....
+* Python has a debugger built in. In my opinion, the default setting of *Nicer* is too verbose. You can change it to Faster in Tools, Options, Run & Debug....
 
 # Variables and data types
 
@@ -124,6 +124,6 @@ divide | /
 A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNDIwODk1MiwtMTM3NTk4MjQxNCwtMT
+eyJoaXN0b3J5IjpbMTk5MDE0MTA4NywtMTM3NTk4MjQxNCwtMT
 gwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
