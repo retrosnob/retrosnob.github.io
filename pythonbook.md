@@ -84,11 +84,12 @@ Creating and giving a variable it's first value, e.g. `x = 5`
     - `height = 1.73`
 3. Explain why `x` is not a good variable name for storing the height of a rectangle. What would be a better variable name?
 
+# Getting input from the user
+I include this section early because it quickly allows us to write interactive programs that do something useful. You can get input from the user by using the `input` function.
+
 # More about strings
 
 # Operators and expressions
-
-# Getting input from the user
 
 # Printing output to the screen
 
@@ -138,8 +139,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTU0ODA3MDAsMTUzNDIzMTQwNSw0NT
-E5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4
-MjQxNCwtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF
-19
+eyJoaXN0b3J5IjpbMTU3ODI2NTA4LDE1MzQyMzE0MDUsNDUxOT
+g3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0
+MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ
+==
 -->
