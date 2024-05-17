@@ -13,6 +13,9 @@ The bottom pane is the shell. Here you can execute single lines of Python in an 
 Examples of using the interactive shell. 
 ![Thonny user interface](http://retrosnob.github.io/Thonny_shell.png)
 
+Thonny tips:
+If your program hangs, use the red Stop button 
+
 # Variables and data types
 
 ## Variables
@@ -118,6 +121,6 @@ divide | /
 A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNj
-U0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTE1NDkyOTQ0OCwtMTM3NTk4MjQxNCwtMT
+gwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
