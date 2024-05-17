@@ -95,7 +95,7 @@ This program asks the user their name and then prints a "Hello " followed by wha
 name = input("Enter your name: ")
 print("Hello " + name)
 ```
-
+Note the the `input` function always returns a string. 
 # More about strings
 
 # Operators and expressions
@@ -148,8 +148,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1Mz
-QyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5
-MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC
-01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTI1NjkwMjI4Nyw0NjA0OTA2ODUsLTE1ND
+A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
+NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
+w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
