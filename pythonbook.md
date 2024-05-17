@@ -134,10 +134,10 @@ Now look carefully at the line:
 print("The sum is " + str(n1 + n2))
 ```
 This is the order of events:
-1. Add the two integers n.
-2. The input function then prints "Enter the first number: " and waits for the user to type something.
-3. Take the thing that the user typed and pass it to the `int` function, which turns it from a string to an integer.
-4. Assign that integer to the variable n1.
+1. Add the values of the two integer variables n1 and n2.
+2. The str function then turns the result from an integer to a string.
+3. The string is then concatenated on the end of the string literal "The sum is " to form a longer string.
+4. That longer string is then passed to the print function, which prints it out on the screen.
 
 # More about strings
 
@@ -191,8 +191,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjA1NTM1MDksNDYwNDkwNjg1LC0xNT
-QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
-NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNj
-MsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTgwNzY1MTc5NSw0NjA0OTA2ODUsLTE1ND
+A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
+NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
+w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
