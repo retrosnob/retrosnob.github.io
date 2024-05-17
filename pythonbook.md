@@ -69,7 +69,8 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 ## Vocabulary
 **Intialisation**
 Creating and giving a variable it's first value, e.g. `x = 5`
-
+**Assignment**
+Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the *first* assignment.
 
 ## Exercises
 1. Which of the following are valid variable names in Python?
@@ -147,8 +148,8 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NT
-E5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4
-MjQxNCwtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF
-19
+eyJoaXN0b3J5IjpbNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1Mz
+QyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5
+MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC
+01MTAzNDQxMzBdfQ==
 -->
