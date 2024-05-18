@@ -119,7 +119,7 @@ print("The sum is " + str(n1 + n2))
 > Enter the second number: 5
 > The sum is 45
 
-This program has gone wrong because the *return type* of the `input` function is string, and when you use the plus operator (+) between two strings the strings are *concatenated*, i.e. chained together. 
+This program has gone wrong because the *return type* of the `input` function is *string*, and when you use the *plus operator* (+) between two strings the strings are *concatenated*, i.e. chained together. 
 
 We can fix this problem by *converting* the strings into integers, because when you use the plus operator (+) between two integers the integers are added.
 ```Python
@@ -156,9 +156,9 @@ In summary:
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 # More about strings
 
- perators and expressions
+# Operators and expressions
 
- Printing output to the screen
+# Printing output to the screen
 
 # Grouping lots a variables together with lists
 
@@ -206,9 +206,10 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mj
-g3NjUxMSwyOTM3NzEyOTUsNDgzNTc3NzE0LDQ2MDQ5MDY4NSwt
-MTU0MDYwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5ND
-E5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3
-MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2OD
+QzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0ODM1Nzc3MTQs
+NDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOT
+g3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0
+MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ
+==
 -->
