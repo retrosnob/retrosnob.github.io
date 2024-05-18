@@ -171,7 +171,8 @@ You can call (execute, run) string functions by using dot notation: adding a dot
 > ```Python
 > name = input("Enter your name: ")
 > print(name.upper) # left out the brackets!
-> # prints 
+> 
+> # prints <built-in method upper of str object at 0x000002B1FE6E5E30>
 > ```
 
 The GCSE expects you to be familiar with the following string functions  (\<str\> just means any string variable):
@@ -262,10 +263,10 @@ Exercises that require students to correct errors, e.g. not using brackets after
 Must provide answers to exercises
 Common things like counting and keeping a running total
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NTYwMzMxLC02ODgxMDIzOTQsMTgwNT
-k1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0Mjgs
-LTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MD
-YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
-LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
-Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbLTExNjEzMzcxOTIsLTY4ODEwMjM5NCwxOD
+A1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQy
+OCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNT
+QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
+NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNj
+MsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
 -->
