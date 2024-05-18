@@ -74,14 +74,13 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 * Whole numbers (**integers**)
 * Numbers with decimal points (**floats**)
 * Sequences of text characters (**strings**)
-* True/False variables (booleans)
+* True/False variables (**booleans**)
 
 ## Vocabulary
-**Intialisation**
-Creating and giving a variable it's first value, e.g. `x = 5`
 **Assignment**
 Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the *first* assignment.
-
+**Intialisation**
+Creating and giving a variable it's first value, e.g. `x = 5`
 ## Exercises
 1. Which of the following are valid variable names in Python?
    - EMAILADDRESS
@@ -92,12 +91,12 @@ Giving a variable its first or a new value. In Python, initialisation and assign
    - 1emailaddress
    - emailAddress
 1. Which of the variable names for email address given above would you expect to see in an Edexcel GCSE paper?
-1. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
+. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
     - `name = "Fred"`
     - `isPrefect = True`
     - `age = 15`
     - `height = 1.73`
-1. Explain why `x` is not a good variable name for storing the height of a rectangle. What would be a better variable name?
+. Explain why `x` is not a good variable name for storing the height of a rectangle. What would be a better variable name?
 
 # Getting input from the user
 I include this section early because it quickly allows us to write interactive programs that do something useful. You can get input from the user by using the `input` function.
@@ -229,10 +228,10 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1ND
-gyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUx
-MSwyOTM3NzEyOTUsNDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MD
-YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
-LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
-Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbLTIzODIwNzYxOCwtNjg4MTAyMzk0LDE4MD
+U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
+LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
+A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
+NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
+w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
