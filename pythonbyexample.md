@@ -111,7 +111,7 @@ print("Access granted")
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 
 ### Program 1
-
+This program asks the user to enter a single character and then tells the user if the character is an uppercase letter, a lower case letter, a number or is non-alphanumeric (neither a letter nor a number).
 ```Python
 
 ```
@@ -126,7 +126,7 @@ print("Access granted")
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIxNjExNzQ4LC00MTk4NDQzNjIsNjkwMT
+eyJoaXN0b3J5IjpbNTA0OTg4MTg3LC00MTk4NDQzNjIsNjkwMT
 QzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NCw3MDc3MjY1MzIs
 LTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1MjM3MTU4OSwtMj
 A5NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MTE1MzVdfQ==
