@@ -174,7 +174,9 @@ The GCSE expects you to be familiar with the following string functions  (\<str\
 | \<str\>.upper | Returns \<str\> as all upper case |
 ## Strings as sequences
 There are two sequence types that you need to be familiar with for the GCSE: strings and lists. Sequence types allow you to:
-* Get individual 
+* Get individual items of the sequence using an index.
+* Iterate through every item in the sequence using a for loop.
+
 # Operators and expressions
 
 # Printing output to the screen
@@ -227,10 +229,10 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4ODkxMDE5LDE4MDU5NTY2MDUsMTU0OD
-I0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMTYyODc2NTEx
-LDI5Mzc3MTI5NSw0ODM1Nzc3MTQsNDYwNDkwNjg1LC0xNTQwNj
-AyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQs
-LTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNj
-U0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTM3MTEzNTc3MywxODA1OTU2NjA1LDE1ND
+gyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUx
+MSwyOTM3NzEyOTUsNDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MD
+YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
+LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
+Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
 -->
