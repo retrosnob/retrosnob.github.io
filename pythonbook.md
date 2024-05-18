@@ -1,3 +1,5 @@
+# Motivation for writing this book
+I often get students asking me 
 # Getting started with Python
 ## Downloading Thonny
 I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from https://thonny.org and it perfectly good for GCSE and A-Level. 
@@ -275,7 +277,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDExNTIxODUsLTEyMTc4MTE0NTMsLT
+eyJoaXN0b3J5IjpbLTE0ODU5NDcwMDIsLTEyMTc4MTE0NTMsLT
 Y4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2
 ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsND
 YwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3
