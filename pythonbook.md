@@ -144,6 +144,8 @@ Now look carefully at the line:
 ```Python
 print("The sum is " + str(n1 + n2))
 ```
+Now that `n1` and `n2` are integers, we need to turn them back to strings before we can concatenate them with the string "The sum is ". We do this with the `str` function.
+
 This is the order of events:
 1. Add the values of the two integer variables n1 and n2.
 2. The str function then turns the result from an integer to a string.
@@ -228,10 +230,10 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzODIwNzYxOCwtNjg4MTAyMzk0LDE4MD
-U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
-LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
-A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
-NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
-w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbMzIzOTkwNzY3LC02ODgxMDIzOTQsMTgwNT
+k1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0Mjgs
+LTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MD
+YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
+LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
+Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
 -->
