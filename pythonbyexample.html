@@ -27,12 +27,12 @@ n2 <span class="token operator">=</span> <span class="token builtin">input</span
 </ol>
 <h3 id="program-1-1">Program 1</h3>
 <p>This program asks the user for a distance in miles and converts it to kilometres.</p>
-<pre class=" language-python"><code class="prism  language-python">miles <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter distance in miles: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="prism  language-python">miles <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter distance in miles: "</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"That's "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>miles <span class="token operator">*</span> <span class="token number">1.60934</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" kilometres."</span><span class="token punctuation">)</span>
 </code></pre>
 <h3 id="program-2-1">Program 2</h3>
 <p>This program does the same as Program 1.</p>
-<pre class=" language-python"><code class="prism  language-python">miles <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter distance in miles: "</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="prism  language-python">miles <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter distance in miles: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"That's {} kilometres."</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span><span class="token builtin">float</span><span class="token punctuation">(</span>miles<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1.60934</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
 <h3 id="program-3">Program 3</h3>
@@ -57,7 +57,7 @@ n2 <span class="token operator">=</span> <span class="token builtin">input</span
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello "</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">". Your name has "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" letters in it."</span><span class="token punctuation">)</span>
 </code></pre>
 <h3 id="program-2-2">Program 2</h3>
-<p>This program does the same as Program 1.</p>
+<p>This program ees the same as Program 1.</p>
 <pre class=" language-python"><code class="prism  language-python">name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter your name: "</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello {}. Your name has {} letters in it."</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
@@ -111,6 +111,57 @@ mylist<span class="token punctuation">.</span>append<span class="token punctuati
 <ol>
 <li>Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as “” and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.</li>
 </ol>
+<h3 id="program-1-4">Program 1</h3>
+<p>This program asks the user to enter a single character and then tells the user if the character is an uppercase letter, a lower case letter, a number or is non-alphanumeric (neither a letter nor a number). If the user has not entered a single character, the program displays an appropriate message.</p>
+<pre class=" language-python"><code class="prism  language-python">character <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter character: "</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>character<span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">1</span><span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Single character not entered"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+	<span class="token keyword">if</span> character<span class="token punctuation">.</span>isalpha<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		<span class="token keyword">if</span> character<span class="token punctuation">.</span>isupper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+			<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Upper case"</span><span class="token punctuation">)</span>
+		<span class="token keyword">else</span><span class="token punctuation">:</span>
+			<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Lower case"</span><span class="token punctuation">)</span>
+	<span class="token keyword">elif</span> character<span class="token punctuation">.</span>isdigit<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Number"</span><span class="token punctuation">)</span>
+	<span class="token keyword">else</span><span class="token punctuation">:</span>
+		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Non-alphanumeric"</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="program-2-4">Program 2</h3>
+<p>This program asks the user for string input and tells the user if the string is of mixed case (contains both upper and lower case letters) or not.</p>
+<pre class=" language-python"><code class="prism  language-python">text <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter text: "</span><span class="token punctuation">)</span>
+containsUpper <span class="token operator">=</span> <span class="token boolean">False</span>
+containsLower <span class="token operator">=</span> <span class="token boolean">False</span>
+<span class="token keyword">for</span> character <span class="token keyword">in</span> text<span class="token punctuation">:</span>
+	<span class="token keyword">if</span> character<span class="token punctuation">.</span>isupper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		containsUpper <span class="token operator">=</span> <span class="token boolean">True</span>
+	<span class="token keyword">elif</span> character<span class="token punctuation">.</span>islower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		containsLower <span class="token operator">=</span> <span class="token boolean">True</span>
+<span class="token keyword">if</span> containsUpper <span class="token operator">and</span> containsLower<span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Mixed case"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Not mixed case"</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="program-3-3">Program 3</h3>
+<p>This program does the same as Program 2, but it defines a function <code>mixedCase</code> to help.</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">mixedCase</span><span class="token punctuation">(</span>pString<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	containsUpper <span class="token operator">=</span> <span class="token boolean">False</span>
+	containsLower <span class="token operator">=</span> <span class="token boolean">False</span>
+	<span class="token keyword">for</span> character <span class="token keyword">in</span> pString<span class="token punctuation">:</span>
+		<span class="token keyword">if</span> character<span class="token punctuation">.</span>isupper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+			containsUpper <span class="token operator">=</span> <span class="token boolean">True</span>
+		<span class="token keyword">elif</span> character<span class="token punctuation">.</span>islower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+			containsLower <span class="token operator">=</span> <span class="token boolean">True</span>
+	<span class="token keyword">return</span> containsUpper <span class="token operator">and</span> containsLower
+	
+text <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter text: "</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> mixedCase<span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Mixed case"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Not mixed case"</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Task:</strong><br>
+Write a program that asks the user for a new password and then tells them if the password is valid. In order to be valid, a password have at least 6 characters and must contain at least one upper case letter, at least one lower case, at least one digit and at least one non-alphanumeric character. The program should define a function passwordValid that takes the password as a parameter and returns True if the password is valid and False if it is not valid.</p>
 </div>
 </body>
 
