@@ -212,11 +212,11 @@ print("There are " + str(count) + " a's in " + s)
 * We have to use the `str` function to convert the integer `count` to a string before we can concatenate it with the rest of the message string, but we don't need to do that with `s` because `s` is already a string.
 * This example prints 2, because Python is case-sensitive; "a" is different from "A".
 ### Example of using `in` to check if a character is in a string
-Consider this program, which counts the number of "a"s in the string "Aardvark", but iterating through the string.
+Consider this program, which says whether there is a "z" in the user's input.
 ```Python
-s = "Aardvark"
+s = input("Enter some text: ")
 if "z" in s:
-	print("There is a z in " + s)
+	print("There is a z in what you types)
 else:
 	print("There is no z in " + s)
 ```
@@ -273,10 +273,10 @@ Exercises that require students to correct errors, e.g. not using brackets after
 Must provide answers to exercises
 Common things like counting and keeping a running total
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODMzNzAwNzcsLTY4ODEwMjM5NCwxOD
-A1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQy
-OCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNT
-QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
-NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNj
-MsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTM1MTk5ODQ1LC02ODgxMDIzOTQsMTgwNT
+k1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0Mjgs
+LTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MD
+YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
+LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
+Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
 -->
