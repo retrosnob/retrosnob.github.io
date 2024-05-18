@@ -165,9 +165,9 @@ else:
 	print("Not mixed case")
 ```
 **Task:**
-Write a program that asks the user for a new password
+Write a program that asks the user for a new password and then tells them if the password is valid. In order to be valid, a password have at least 6 characters and must contain at least one upper case letter, at least one lower case, at least one digit and at least one non-alphanumeric character. The program should define a function passwordValid that takes the passw
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTA1MDUzNCwtMTkyMDAxMTYwMiwtND
+eyJoaXN0b3J5IjpbLTEzNjk4Njg5OCwtMTkyMDAxMTYwMiwtND
 E5ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2
 ODQsNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLT
 E0NTIzNzE1ODksLTIwOTczNDE2MTksMTQxODcxMTUzNSwxNDE4
