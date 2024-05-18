@@ -4,8 +4,7 @@ This program asks the user for their height in metres and prints it. It doesn't 
 height = int(input("Enter your height (m): "))
 print("Your height is " + str(height))
 ```
-### Program 2
-This program asks the height in metres of two people. It then adds them together and prints the result. It doesn't work properly.
+### Program 2This program asks the height in metres of two people. It then adds them together and prints the result. It doesn't work properly.
 ```Python
 n1 = input("Enter the first height (m): ")
 n2 = input("Enter the second height(m): ")
@@ -18,13 +17,13 @@ print("The combined height is " + n1 + n2 + " metres.")
 ### Program 1
 This program asks the user for a distance in miles and converts it to kilometres.
 ```Python
-miles = float(input("Enter distance in miles: "))
+miles = float(input("Enter distance in miles: ")
 print("That's " + str(miles * 1.60934) + " kilometres.")
 ```
 ### Program 2
 This program does the same as Program 1.
 ```Python
-miles = input("Enter distance in miles: ")
+miles = input("Enter distance in miles: "))
 print("That's {} kilometres.".format(float(miles) * 1.60934))
 ```
 ### Program 3
@@ -50,7 +49,7 @@ name = input("Enter your name: ")
 print("Hello " + name + ". Your name has " + str(len(name)) + " letters in it.")
 ```
 ### Program 2
-This program does the same as Program 1.
+This program ees the same as Program 1.
 ```Python
 name = input("Enter your name: ")
 print("Hello {}. Your name has {} letters in it.".format(name, len(name)))
@@ -72,6 +71,7 @@ else:
 1. Write a program that asks the user to enter two words and then prints the longer of the two words. If the words are of the same length it should display an appropriate message along with both words.
 
 ### Program 1
+
 This program creates a list of integers and prints them out on separate lines.
 ```Python
 nums = []
@@ -85,6 +85,7 @@ for num in nums:
 ```
 ### Program 2
 This program does the same as Program 1.
+
 ```Python
 mylist = []
 mylist.append(2)
@@ -103,12 +104,13 @@ while password != "sesame":
 	print("Incorrect password")
 	password = input("Enter a password: ")
 print("Access granted")
-```
+``
 **Task:**
+
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE0Mjg5MzIzLC0xNTE3NTY5Njg0LDcwNz
-cyNjUzMiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC0xNDUyMzcx
-NTg5LC0yMDk3MzQxNjE5LC00ODkyNTMxNTksMTQxODcxMTUzNS
-wxNDE4NzExNTM1XX0=
+eyJoaXN0b3J5IjpbNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNz
+U2OTY4NCw3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3
+MiwtMTQ1MjM3MTU4OSwtMjA5NzM0MTYxOSwxNDE4NzExNTM1LD
+E0MTg3MTE1MzVdfQ==
 -->
