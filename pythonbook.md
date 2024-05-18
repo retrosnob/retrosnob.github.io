@@ -158,13 +158,15 @@ In summary:
 ## String functions
 You have seen some functions that are built-in to Python, e.g. len, int, input, print. There are also functions just for strings. We refer to these as string functions. 
 
-This program asks the user for their name and then prints it in capita:
+This program asks the user for their name and then prints it in capital (upper case) letters:
 
 ```Python
 name = input("Enter your name: ")
 print(name.upper())
 ```
+You can call (execute, run) string functions by using dot notation: adding a dot after the string, followed by the name of the function, followed by ().
 
+The 
 ## Strings as sequences
 
 # Operators and expressions
@@ -217,7 +219,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDI1MzIyOTAsMTU0ODI0NTM2MiwxMz
+eyJoaXN0b3J5IjpbLTE4NDczNjEwNDEsMTU0ODI0NTM2MiwxMz
 QyODY4OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5
 NSw0ODM1Nzc3MTQsNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1Mz
 QyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5
