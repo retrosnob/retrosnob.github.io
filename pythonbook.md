@@ -216,9 +216,9 @@ Consider this program, which says whether there is a "z" in the user's input.
 ```Python
 s = input("Enter some text: ")
 if "z" in s:
-	print("There is a z in what you types)
+	print("There is a z in what you typed")
 else:
-	print("There is no z in " + s)
+	print("There is no z in what you typed")
 ```
 # Operators and expressions
 
@@ -273,10 +273,10 @@ Exercises that require students to correct errors, e.g. not using brackets after
 Must provide answers to exercises
 Common things like counting and keeping a running total
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MTk5ODQ1LC02ODgxMDIzOTQsMTgwNT
-k1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0Mjgs
-LTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MD
-YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
-LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
-Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxOD
+A1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQy
+OCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNT
+QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
+NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNj
+MsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
 -->
