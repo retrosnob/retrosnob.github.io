@@ -211,6 +211,16 @@ print("There are " + str(count) + " a's in " + s)
 * It's ok to use a single-letter variable name like `s` in this example, because my variable is just a throw-away value.
 * We have to use the `str` function to convert the integer `count` to a string before we can concatenate it with the rest of the message string, but we don't need to do that with `s` because `s` is already a string.
 * This example prints 2, because Python is case-sensitive; "a" is different from "A".
+### Example of using `in` to check if a character is in a string
+Consider this program, which counts the number of "a"s in the string "Aardvark", but iterating through the string.
+```Python
+s = "Aardvark"
+if "z" in s:
+	print("There is a z in " + s)
+
+
+```
+
 
 # Operators and expressions
 
@@ -265,7 +275,7 @@ Exercises that require students to correct errors, e.g. not using brackets after
 Must provide answers to exercises
 Common things like counting and keeping a running total
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MjExNzkxNiwtNjg4MTAyMzk0LDE4MD
+eyJoaXN0b3J5IjpbLTM3NTgwNzIxOCwtNjg4MTAyMzk0LDE4MD
 U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
 LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
 A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
