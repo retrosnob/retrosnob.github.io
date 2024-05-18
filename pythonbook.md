@@ -156,7 +156,7 @@ In summary:
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 # More about strings
 ## String functions
-
+You have seen some functions that are built-in to Python, e.g. len, int, input, print. There are also functions
 ## Strings as sequences
 
 # Operators and expressions
@@ -209,7 +209,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNjE5NjA2LDE1NDgyNDUzNjIsMTM0Mj
+eyJoaXN0b3J5IjpbNzI1OTI5NDUwLDE1NDgyNDUzNjIsMTM0Mj
 g2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUs
 NDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0MiwxNTM0Mj
 MxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1
