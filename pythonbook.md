@@ -177,6 +177,7 @@ The GCSE expects you to be familiar with the following string functions  (\<str\
 There are two **sequence types** that you need to be familiar with for the GCSE: **strings** and **lists**. Sequence types allow you to:
 * Get individual items of the sequence using an **index**.
 * **Iterate** through every item in the sequence using a **for loop**.
+* Use the keyword **in** to check if an item is in the sequence (although the GCSE doesn't seem to use this much).
 
 Consider this program, which asks the user for their name and tells them the 4th character:
 ```Python
@@ -185,7 +186,7 @@ print("The 4th character of your name is " + name[3])
 ```
 **Notes:**
 * We put `name[3]` because counting starts at zero.
-* If the name is less then 4 characters we will get an `IndexE
+* If the name is less then 4 characters we will get an `IndexError`, meaning we've tried to access an item of a sequence that isn't there.
 
 
 # Operators and expressions
@@ -240,10 +241,10 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDQ2MTI3NywtNjg4MTAyMzk0LDE4MD
-U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
-LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
-A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
-NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
-w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbLTE1NjcxNzk1NDMsLTY4ODEwMjM5NCwxOD
+A1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQy
+OCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNT
+QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
+NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNj
+MsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
 -->
