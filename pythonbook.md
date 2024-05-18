@@ -2,7 +2,10 @@
 I often get students asking me if there is a book or a course they can do to learn more about Python and I often say no, because:
 * Most books will cover lots of stuff you don't need to know for the GCSE
 * The GCSE exam board (Edexcel) has weird ways of doing things that you won't find in books.
-* 
+
+So I have decided to write my own book that
+* covers only what is covered by the GCSE
+* does the weird things that the exam board want you to do
 # Getting started with Python
 ## Downloading Thonny
 I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from https://thonny.org and it perfectly good for GCSE and A-Level. 
@@ -280,7 +283,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5Mzg2NTY0OCwtMTIxNzgxMTQ1MywtNj
+eyJoaXN0b3J5IjpbLTMzMjY5NTI4MywtMTIxNzgxMTQ1MywtNj
 g4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4
 OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0Nj
 A0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5
