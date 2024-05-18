@@ -185,7 +185,7 @@ There are two **sequence types** that you need to be familiar with for the GCSE:
 
 # Selecting which lines of code to execute with If statements
 
-# Looping: repeating a block of code once for every item in a collection (for loops)
+# Looping: repeating a block of code once for every item in a sequence (for loops)
 
 # Looping: repeating a block of code as long as a condition is true (while loops)
 
@@ -229,7 +229,7 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MTk5OTQ1OSwxODA1OTU2NjA1LDE1ND
+eyJoaXN0b3J5IjpbLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1ND
 gyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUx
 MSwyOTM3NzEyOTUsNDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MD
 YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
