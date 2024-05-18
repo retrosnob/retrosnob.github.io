@@ -117,7 +117,15 @@ character = input("Enter character: ")
 if len(character) != 1:
 	print("Single character not entered")
 else:
-	if 
+	if character.isalpha():
+		if character.isupper():
+			print("Upper case")
+		else:
+			print("Lower case")
+	elif character.isdigit():
+		print("Number")
+	else:
+		print("Non
 ```
 
 ### Program 2
@@ -130,7 +138,7 @@ else:
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExMjczODc1LC00MTk4NDQzNjIsNjkwMT
+eyJoaXN0b3J5IjpbMjE4NTk1MTExLC00MTk4NDQzNjIsNjkwMT
 QzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NCw3MDc3MjY1MzIs
 LTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1MjM3MTU4OSwtMj
 A5NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MTE1MzVdfQ==
