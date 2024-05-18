@@ -146,13 +146,30 @@ else:
 ```
 
 ### Program 3
+This program does the same as Program 2, but it defines a function `mixedCase` to help.
+### Program 2
+This program asks the user for string input and tells the user if the string is of mixed case (contains both upper and lower case letters) or not. 
 ```Python
+def mixedCase(pString):
+	containsUpper = False
+	containsLower = False
+	for character in text:
+		if character.isupper():
+			containsUpper = True
+		elif character.islower():
+			containsLower = True
 
+text = input("Enter text: ")
+if containsUpper and containsLower:
+	print("Mixed case")
+else:
+	print("Not mixed case")
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI3NTExNTMsLTE5MjAwMTE2MDIsLT
-QxOTg0NDM2Miw2OTAxNDMyMDksNjE0Mjg5MzIzLC0xNTE3NTY5
-Njg0LDcwNzcyNjUzMiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC
-0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LDE0MTg3MTE1MzUsMTQx
-ODcxMTUzNV19
+eyJoaXN0b3J5IjpbLTMwNTIxMTUyMywtMTkyMDAxMTYwMiwtND
+E5ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2
+ODQsNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLT
+E0NTIzNzE1ODksLTIwOTczNDE2MTksMTQxODcxMTUzNSwxNDE4
+NzExNTM1XX0=
 -->
