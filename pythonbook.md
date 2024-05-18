@@ -42,6 +42,9 @@ Variable names can include letters, numbers and the underscore (_) character, bu
 
 You should try to choose variable names that make it easy to tell meaning of the data held in the variable. 
 
+> **GCSE tip**
+> This is going to be a quoted section. We'll see what this looks like and whether it can be used for a GCSE tip.
+
 #### Naming conflicts
 
 Some names in Python already mean something and you should therefore not use them as variable names. 
@@ -192,8 +195,9 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkzNzcxMjk1LDQ4MzU3NzcxNCw0NjA0OT
-A2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIs
-LTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMT
-gwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbLTI0OTEyODAxOSwyOTM3NzEyOTUsNDgzNT
+c3NzE0LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0MiwxNTM0MjMxNDA1
+LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMz
+c1OTgyNDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEwMzQ0
+MTMwXX0=
 -->
