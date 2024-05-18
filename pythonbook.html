@@ -71,13 +71,13 @@ There are different conventions about whether to include capital letters in vari
 <li>Whole numbers (<strong>integers</strong>)</li>
 <li>Numbers with decimal points (<strong>floats</strong>)</li>
 <li>Sequences of text characters (<strong>strings</strong>)</li>
-<li>True/False variables (booleans)</li>
+<li>True/False variables (<strong>booleans</strong>)</li>
 </ul>
 <h2 id="vocabulary">Vocabulary</h2>
-<p><strong>Intialisation</strong><br>
-Creating and giving a variable it’s first value, e.g. <code>x = 5</code><br>
-<strong>Assignment</strong><br>
-Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the <em>first</em> assignment.</p>
+<p><strong>Assignment</strong><br>
+Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the <em>first</em> assignment.<br>
+<strong>Intialisation</strong><br>
+Creating and giving a variable it’s first value, e.g. <code>x = 5</code></p>
 <h2 id="exercises">Exercises</h2>
 <ol>
 <li>Which of the following are valid variable names in Python?
@@ -87,15 +87,20 @@ Giving a variable its first or a new value. In Python, initialisation and assign
 <li>email-address</li>
 <li>email_address</li>
 <li>emailaddress1</li>
-<li>1emailaddress<br>
-. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:</li>
+<li>1emailaddress</li>
+<li>emailAddress</li>
+</ul>
+</li>
+<li>Which of the variable names for email address given above would you expect to see in an Edexcel GCSE paper?<br>
+. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
+<ul>
 <li><code>name = "Fred"</code></li>
 <li><code>isPrefect = True</code></li>
 <li><code>age = 15</code></li>
-<li><code>height = 1.73</code></li>
+<li><code>height = 1.73</code><br>
+. Explain why <code>x</code> is not a good variable name for storing the height of a rectangle. What would be a better variable name?</li>
 </ul>
 </li>
-<li>Explain why <code>x</code> is not a good variable name for storing the height of a rectangle. What would be a better variable name?</li>
 </ol>
 <h1 id="getting-input-from-the-user">Getting input from the user</h1>
 <p>I include this section early because it quickly allows us to write interactive programs that do something useful. You can get input from the user by using the <code>input</code> function.</p>
@@ -114,7 +119,7 @@ n2 <span class="token operator">=</span> <span class="token builtin">input</span
 Enter the second number: 5<br>
 The sum is 45</p>
 </blockquote>
-<p>This program has gone wrong because the <em>return type</em> of the <code>input</code> function is string, and when you use the plus operator (+) between two strings the strings are <em>concatenated</em>, i.e. chained together.</p>
+<p>This program has gone wrong because the <em>return type</em> of the <code>input</code> function is <em>string</em>, and when you use the <em>plus operator</em> (+) between two strings the strings are <em>concatenated</em>, i.e. chained together.</p>
 <p>We can fix this problem by <em>converting</em> the strings into integers, because when you use the plus operator (+) between two integers the integers are added.</p>
 <pre class=" language-python"><code class="prism  language-python">n1 <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the first number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 n2 <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the second number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -138,6 +143,7 @@ The sum is 9</p>
 <p>Now look carefully at the line:</p>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The sum is "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>n1 <span class="token operator">+</span> n2<span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
+<p>Now that <code>n1</code> and <code>n2</code> are integers, we need to turn them back to strings before we can concatenate them with the string "The sum is ". We do this with the <code>str</code> function.</p>
 <p>This is the order of events:</p>
 <ol>
 <li>Add the values of the two integer variables n1 and n2.</li>
@@ -151,11 +157,87 @@ The sum is 9</p>
 <li>The <code>str</code> function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.</li>
 </ul>
 <h1 id="more-about-strings">More about strings</h1>
-<p>perators and expressions</p>
-<p>Printing output to the screen</p>
+<h2 id="string-functions">String functions</h2>
+<p>You have seen some functions that are built-in to Python, e.g. len, int, input, print. We refer to these as <strong>built-in functions</strong>. There are also functions just for strings. We refer to these as <strong>string functions</strong>.</p>
+<p>This program asks the user for their name and then prints it in capital (upper case) letters:</p>
+<pre class=" language-python"><code class="prism  language-python">name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter your name: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>You can call (execute, run) string functions by using dot notation: adding a dot after the string, followed by the name of the function, followed by ().</p>
+<blockquote>
+<p><strong>Watch out:</strong><br>
+With any function, you must put () after its name if you want to <strong>call</strong> it. Try just printing name.upper and you will get an odd result because Python will try to print the function itself and not the result of calling it.</p>
+<pre class=" language-python"><code class="prism  language-python">name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter your name: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span>upper<span class="token punctuation">)</span> <span class="token comment"># left out the brackets!</span>
+
+<span class="token comment"># prints &lt;built-in method upper of str object at 0x000002B1FE6E5E30&gt;</span>
+</code></pre>
+</blockquote>
+<h3 id="string-functions-in-the-gcse">String functions in the GCSE</h3>
+<p>The GCSE expects you to be familiar with the following string functions  (&lt;str&gt; just means any string variable):</p>
+
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;str&gt;.lower</td>
+<td>Returns &lt;str&gt; as all lower case</td>
+</tr>
+<tr>
+<td>&lt;str&gt;.upper</td>
+<td>Returns &lt;str&gt; as all upper case</td>
+</tr>
+</tbody>
+</table><h2 id="strings-as-sequences">Strings as sequences</h2>
+<p>There are two <strong>sequence types</strong> that you need to be familiar with for the GCSE: <strong>strings</strong> and <strong>lists</strong>. Sequence types allow you to:</p>
+<ul>
+<li>Get individual items of the sequence using an <strong>index</strong>.</li>
+<li><strong>Iterate</strong> through every item in the sequence using a <strong>for loop</strong>.</li>
+<li>Use the keyword <strong>in</strong> to check if an item is in the sequence (although the GCSE doesn’t seem to use this much).</li>
+</ul>
+<h3 id="example-of-string-indexing">Example of string indexing</h3>
+<p>Consider this program, which asks the user for their name and tells them the 4th character:</p>
+<pre class=" language-python"><code class="prism  language-python">name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter your name: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The 4th character of your name is "</span> <span class="token operator">+</span> name<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>We put <code>name[3]</code> because counting starts at zero.</li>
+<li>If the name is less then 4 characters we will get an <code>IndexError</code>, meaning we’ve tried to access an item of a sequence that isn’t there.</li>
+</ul>
+<h3 id="example-of-iterating-through-a-string-using-a-for-loop">Example of iterating through a string using a for loop</h3>
+<p>Consider this program, which counts the number of "a"s in the string “Aardvark”, but iterating through the string.</p>
+<pre class=" language-python"><code class="prism  language-python">count <span class="token operator">=</span> <span class="token number">0</span>
+s <span class="token operator">=</span> <span class="token string">"Aardvark"</span>
+<span class="token keyword">for</span> ch <span class="token keyword">in</span> s<span class="token punctuation">:</span>
+	<span class="token keyword">if</span> ch <span class="token operator">==</span> <span class="token string">"a"</span><span class="token punctuation">:</span>
+		count <span class="token operator">=</span> count <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"There are "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" a's in "</span> <span class="token operator">+</span> s<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>It’s ok to use a single-letter variable name like <code>s</code> in this example, because my variable is just a throw-away value.</li>
+<li>We have to use the <code>str</code> function to convert the integer <code>count</code> to a string before we can concatenate it with the rest of the message string, but we don’t need to do that with <code>s</code> because <code>s</code> is already a string.</li>
+<li>This example prints 2, because Python is case-sensitive; “a” is different from “A”.</li>
+</ul>
+<h3 id="example-of-using-in-to-check-if-a-character-is-in-a-string">Example of using <code>in</code> to check if a character is in a string</h3>
+<p>Consider this program, which says whether there is a “z” in the user’s input.</p>
+<pre class=" language-python"><code class="prism  language-python">s <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter some text: "</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> <span class="token string">"z"</span> <span class="token keyword">in</span> s<span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"There is a z in what you typed"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"There is no z in what you typed"</span><span class="token punctuation">)</span>
+</code></pre>
+<h1 id="operators-and-expressions">Operators and expressions</h1>
+<h1 id="printing-output-to-the-screen">Printing output to the screen</h1>
 <h1 id="grouping-lots-a-variables-together-with-lists">Grouping lots a variables together with lists</h1>
 <h1 id="selecting-which-lines-of-code-to-execute-with-if-statements">Selecting which lines of code to execute with If statements</h1>
-<h1 id="looping-repeating-a-block-of-code-once-for-every-item-in-a-collection-for-loops">Looping: repeating a block of code once for every item in a collection (for loops)</h1>
+<h1 id="looping-repeating-a-block-of-code-once-for-every-item-in-a-sequence-for-loops">Looping: repeating a block of code once for every item in a sequence (for loops)</h1>
 <h1 id="looping-repeating-a-block-of-code-as-long-as-a-condition-is-true-while-loops">Looping: repeating a block of code as long as a condition is true (while loops)</h1>
 <h1 id="functions-named-blocks-of-code-that-do-a-job-and-return-a-result">Functions: named blocks of code that do a job and return a result</h1>
 <h1 id="working-with-files">Working with files</h1>
@@ -200,7 +282,10 @@ The sum is 9</p>
 </table><h1 id="ideas">Ideas</h1>
 <p>A selection of Youtube videos to accompany the text.<br>
 Downloadable Python source files and data files.<br>
-Error types and what they mean.</p>
+Error types and what they mean.<br>
+Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc<br>
+Must provide answers to exercises<br>
+Common things like counting and keeping a running total</p>
 </div>
 </body>
 
