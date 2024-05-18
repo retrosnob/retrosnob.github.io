@@ -90,12 +90,14 @@ Giving a variable its first or a new value. In Python, initialisation and assign
    - email_address
    - emailaddress1
    - 1emailaddress
-. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
+   - emailAddress
+1. Which variable name for email address would you expect to see in an Edexcel GCSE paper
+1. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
     - `name = "Fred"`
     - `isPrefect = True`
     - `age = 15`
     - `height = 1.73`
-3. Explain why `x` is not a good variable name for storing the height of a rectangle. What would be a better variable name?
+1. Explain why `x` is not a good variable name for storing the height of a rectangle. What would be a better variable name?
 
 # Getting input from the user
 I include this section early because it quickly allows us to write interactive programs that do something useful. You can get input from the user by using the `input` function.
@@ -204,9 +206,9 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mz
-c3MTI5NSw0ODM1Nzc3MTQsNDYwNDkwNjg1LC0xNTQwNjAyOTQy
-LDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMz
-kwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2
-MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTU0MTQ3MjMyMSw1MjY4NDM0MjgsLTExNj
+I4NzY1MTEsMjkzNzcxMjk1LDQ4MzU3NzcxNCw0NjA0OTA2ODUs
+LTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OT
+QxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3
+NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
