@@ -43,7 +43,10 @@ Variable names can include letters, numbers and the underscore (_) character, bu
 You should try to choose variable names that make it easy to tell meaning of the data held in the variable. 
 
 > **GCSE tip**
-> There are different conventions about whether to include capital letters in variable names or not. Edexcel likes to use *camel case", in which the 
+> There are different conventions about whether to include capital letters in variable names or not. Edexcel likes to use *camel case", in which the:
+> * If the variable name is just one word, then it is all lower case.
+> * If the variable is two or more words together, the first is lower case and the rest are title case (with the first letter capitalised).
+> For example a variable con
 
 #### Naming conflicts
 
@@ -195,9 +198,9 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ4Mz
-U3NzcxNCw0NjA0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQw
-NSw0NTE5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMT
-M3NTk4MjQxNCwtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0
-NDEzMF19
+eyJoaXN0b3J5IjpbNzI2MzY2OTgwLC0xMTYyODc2NTExLDI5Mz
+c3MTI5NSw0ODM1Nzc3MTQsNDYwNDkwNjg1LC0xNTQwNjAyOTQy
+LDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMz
+kwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2
+MDg1LC01MTAzNDQxMzBdfQ==
 -->
