@@ -111,6 +111,7 @@ print("Access granted")
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
 
 ### Program 1
+
 ```Python
 
 ```
@@ -125,8 +126,8 @@ print("Access granted")
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxOTg0NDM2Miw2OTAxNDMyMDksNjE0Mj
-g5MzIzLC0xNTE3NTY5Njg0LDcwNzcyNjUzMiwtOTY1OTYyNzU4
-LC0xNzUwNTQzOTcyLC0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LD
-E0MTg3MTE1MzUsMTQxODcxMTUzNV19
+eyJoaXN0b3J5IjpbODIxNjExNzQ4LC00MTk4NDQzNjIsNjkwMT
+QzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NCw3MDc3MjY1MzIs
+LTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1MjM3MTU4OSwtMj
+A5NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MTE1MzVdfQ==
 -->
