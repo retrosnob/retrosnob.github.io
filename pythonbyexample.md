@@ -105,7 +105,7 @@ while password != "sesame":
 	print("Incorrect password")
 	password = input("Enter a password: ")
 print("Access granted")
-``
+```
 **Task:**
 
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
@@ -167,9 +167,9 @@ else:
 **Task:**
 Write a program that asks the user for a new password and then tells them if the password is valid. In order to be valid, a password have at least 6 characters and must contain at least one upper case letter, at least one lower case, at least one digit and at least one non-alphanumeric character. The program should define a function passwordValid that takes the password as a parameter and returns True if the password is valid and False if it is not valid.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjEwMTE3NTksLTE5MjAwMTE2MDIsLT
-QxOTg0NDM2Miw2OTAxNDMyMDksNjE0Mjg5MzIzLC0xNTE3NTY5
-Njg0LDcwNzcyNjUzMiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC
-0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LDE0MTg3MTE1MzUsMTQx
-ODcxMTUzNV19
+eyJoaXN0b3J5IjpbLTYwNDg3ODg4OSwtMTg2MTAxMTc1OSwtMT
+kyMDAxMTYwMiwtNDE5ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkz
+MjMsLTE1MTc1Njk2ODQsNzA3NzI2NTMyLC05NjU5NjI3NTgsLT
+E3NTA1NDM5NzIsLTE0NTIzNzE1ODksLTIwOTczNDE2MTksMTQx
+ODcxMTUzNSwxNDE4NzExNTM1XX0=
 -->
