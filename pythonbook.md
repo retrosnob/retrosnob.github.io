@@ -167,7 +167,8 @@ print(name.upper())
 ```
 You can call (execute, run) string functions by using dot notation: adding a dot after the string, followed by the name of the function, followed by ().
 > **Watch out:**
-> You must put () after a function if
+> You must put () after a function if you want to **call** it. Try just printing name.upper and you will get an odd result because Python will try to print the function itself and not the result of calling it. 
+> ```Py
 
 The GCSE expects you to be familiar with the following string functions  (\<str\> just means any string variable):
 
@@ -257,10 +258,10 @@ Exercises that require students to correct errors, e.g. not using brackets after
 Must provide answers to exercises
 Common things like counting and keeping a running total
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MDgwNzEzLC02ODgxMDIzOTQsMTgwNT
-k1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0Mjgs
-LTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MD
-YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
-LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
-Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbLTQ3ODc2NDI4MiwtNjg4MTAyMzk0LDE4MD
+U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
+LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
+A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
+NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
+w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
