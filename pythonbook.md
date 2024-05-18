@@ -156,7 +156,7 @@ In summary:
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 # More about strings
 ## String functions
-You have seen some functions that are built-in to Python, e.g. len, int, input, print. There are also functions just for strings. We refer to these as string functions. 
+You have seen some functions that are built-in to Python, e.g. len, int, input, print. We refer to these as **built-in functions**. There are also functions just for strings. We refer to these as string functions. 
 
 This program asks the user for their name and then prints it in capital (upper case) letters:
 
@@ -226,10 +226,10 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzND
-I4Njg5Myw1MjY4NDM0MjgsLTExNjI4NzY1MTEsMjkzNzcxMjk1
-LDQ4MzU3NzcxNCw0NjA0OTA2ODUsLTE1NDA2MDI5NDIsMTUzND
-IzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkz
-NSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLT
-UxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbMTEwMjY3ODUyOCwxODA1OTU2NjA1LDE1ND
+gyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUx
+MSwyOTM3NzEyOTUsNDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MD
+YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
+LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLD
+Y1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
 -->
