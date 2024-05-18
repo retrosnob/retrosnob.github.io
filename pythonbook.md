@@ -173,9 +173,9 @@ The GCSE expects you to be familiar with the following string functions  (\<str\
 | \<str\>.lower | Returns \<str\> as all lower case |
 | \<str\>.upper | Returns \<str\> as all upper case |
 ## Strings as sequences
-There are two sequence types that you need to be familiar with for the GCSE: strings and lists. Sequence types allow you to:
-* Get individual items of the sequence using an index.
-* Iterate through every item in the sequence using a for loop.
+There are two **sequence types** that you need to be familiar with for the GCSE: **strings** and **lists**. Sequence types allow you to:
+* Get individual items of the sequence using an **index**.
+* **Iterate** through every item in the sequence using a **for loop**.
 
 # Operators and expressions
 
@@ -229,7 +229,7 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MTEzNTc3MywxODA1OTU2NjA1LDE1ND
+eyJoaXN0b3J5IjpbMTI5MTk5OTQ1OSwxODA1OTU2NjA1LDE1ND
 gyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUx
 MSwyOTM3NzEyOTUsNDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MD
 YwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0
