@@ -181,8 +181,12 @@ There are two **sequence types** that you need to be familiar with for the GCSE:
 Consider this program, which asks the user for their name and tells them the 4th character:
 ```Python
 name = input("Enter your name: ")
-print("The 4th character of 
+print("The 4th character of your name is " + name[3])
 ```
+**Notes:**
+* We put `name[3]` because counting starts at zero.
+* If the name is less then 4 characters we will get an `IndexE
+
 
 # Operators and expressions
 
@@ -236,7 +240,7 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTQyNDIyNywtNjg4MTAyMzk0LDE4MD
+eyJoaXN0b3J5IjpbMTM0NDQ2MTI3NywtNjg4MTAyMzk0LDE4MD
 U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
 LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
 A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
