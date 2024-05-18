@@ -129,6 +129,7 @@ else:
 ```
 
 ### Program 2
+This program asks the user for string input and tells the user if
 ```Python
 
 ```
@@ -138,8 +139,9 @@ else:
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjAwMTE2MDIsLTQxOTg0NDM2Miw2OT
-AxNDMyMDksNjE0Mjg5MzIzLC0xNTE3NTY5Njg0LDcwNzcyNjUz
-MiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC0xNDUyMzcxNTg5LC
-0yMDk3MzQxNjE5LDE0MTg3MTE1MzUsMTQxODcxMTUzNV19
+eyJoaXN0b3J5IjpbLTkxMzY4NTE2NCwtMTkyMDAxMTYwMiwtND
+E5ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2
+ODQsNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLT
+E0NTIzNzE1ODksLTIwOTczNDE2MTksMTQxODcxMTUzNSwxNDE4
+NzExNTM1XX0=
 -->
