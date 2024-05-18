@@ -188,6 +188,10 @@ print("The 4th character of your name is " + name[3])
 * We put `name[3]` because counting starts at zero.
 * If the name is less then 4 characters we will get an `IndexError`, meaning we've tried to access an item of a sequence that isn't there.
 
+Consider this program, which counts the number of "a"s in the string "Aardvark", but iterating through the string.
+```Python
+
+`
 
 # Operators and expressions
 
@@ -241,7 +245,7 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjcxNzk1NDMsLTY4ODEwMjM5NCwxOD
+eyJoaXN0b3J5IjpbLTE1OTMxODI2MTIsLTY4ODEwMjM5NCwxOD
 A1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQy
 OCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNT
 QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
