@@ -155,6 +155,9 @@ In summary:
 * The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, etc) with the thing the user entered.
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 # More about strings
+## String functions
+
+## Strings as sequences
 
 # Operators and expressions
 
@@ -206,10 +209,10 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2OD
-QzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0ODM1Nzc3MTQs
-NDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOT
-g3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0
-MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ
-==
+eyJoaXN0b3J5IjpbMTAyNjE5NjA2LDE1NDgyNDUzNjIsMTM0Mj
+g2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUs
+NDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0MiwxNTM0Mj
+MxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1
+LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNT
+EwMzQ0MTMwXX0=
 -->
