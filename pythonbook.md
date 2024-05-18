@@ -195,9 +195,12 @@ s = "Aardvark"
 for ch in s:
 	if ch == "a":
 		count = count + 1
-print("There are " + str(count) + "
-		
+print("There are " + str(count) + " a's in " + s)
 ```
+**Notes:**
+It's ok to use a single-letter variable name like `s` in this example, because my variable is just a throw-away value.
+
+		
 
 # Operators and expressions
 
@@ -252,7 +255,7 @@ Exercises that require students to correct errors, e.g. not using brackets after
 Must provide answers to exercises
 Common things like counting and keeping a running total
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyOTkyNzY3MiwtNjg4MTAyMzk0LDE4MD
+eyJoaXN0b3J5IjpbLTM0ODkzNzc3MCwtNjg4MTAyMzk0LDE4MD
 U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
 LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
 A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
