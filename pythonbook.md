@@ -166,12 +166,12 @@ print(name.upper())
 ```
 You can call (execute, run) string functions by using dot notation: adding a dot after the string, followed by the name of the function, followed by ().
 
-The GCSE expects you to be familiar with the following string functions :
+The GCSE expects you to be familiar with the following string functions  (\<str\> just means any string variable):
 
 | Function | Description |
 | --- | --- |
-| \<str\>.lower | Converts to all lower case |
-| \<str\>.upper | Converts to all upper case |
+| \<str\>.lower | Returns \<str\> as all lower case |
+| \<str\>.upper | Returne \<str\> as all upper case |
 ## Strings as sequences
 
 # Operators and expressions
@@ -224,7 +224,7 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MjY5NzQ3NSwxNTQ4MjQ1MzYyLDEzND
+eyJoaXN0b3J5IjpbMTY1OTYxNDYzMiwxNTQ4MjQ1MzYyLDEzND
 I4Njg5Myw1MjY4NDM0MjgsLTExNjI4NzY1MTEsMjkzNzcxMjk1
 LDQ4MzU3NzcxNCw0NjA0OTA2ODUsLTE1NDA2MDI5NDIsMTUzND
 IzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkz
