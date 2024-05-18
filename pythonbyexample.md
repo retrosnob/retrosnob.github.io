@@ -147,27 +147,27 @@ else:
 
 ### Program 3
 This program does the same as Program 2, but it defines a function `mixedCase` to help.
-### Program 2
-This program asks the user for string input and tells the user if the string is of mixed case (contains both upper and lower case letters) or not. 
 ```Python
 def mixedCase(pString):
 	containsUpper = False
 	containsLower = False
-	for character in text:
+	for character in pString:
 		if character.isupper():
 			containsUpper = True
 		elif character.islower():
 			containsLower = True
-
+	return containsUpper and containsLower
+	
 text = input("Enter text: ")
-if containsUpper and containsLower:
+if mixedCase(text):
 	print("Mixed case")
 else:
 	print("Not mixed case")
 ```
-
+**Task:**
+Write a program that asks the user for a new password
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTIxMTUyMywtMTkyMDAxMTYwMiwtND
+eyJoaXN0b3J5IjpbLTcxNTA1MDUzNCwtMTkyMDAxMTYwMiwtND
 E5ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2
 ODQsNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLT
 E0NTIzNzE1ODksLTIwOTczNDE2MTksMTQxODcxMTUzNSwxNDE4
