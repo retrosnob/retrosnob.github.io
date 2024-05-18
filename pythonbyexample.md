@@ -4,7 +4,8 @@ This program asks the user for their height in metres and prints it. It doesn't 
 height = int(input("Enter your height (m): "))
 print("Your height is " + str(height))
 ```
-### Program 2This program asks the height in metres of two people. It then adds them together and prints the result. It doesn't work properly.
+### Program 2
+This program asks the height in metres of two people. It then adds them together and prints the result. It doesn't work properly.
 ```Python
 n1 = input("Enter the first height (m): ")
 n2 = input("Enter the second height(m): ")
@@ -108,9 +109,10 @@ print("Access granted")
 **Task:**
 
 1. Write a program that asks the user to enter single words. It should keep asking the user to enter a word until the user enters an empty string. (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) After the user has finished entering words, the program should print all the words that the user entered, one per line.
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNz
-U2OTY4NCw3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3
-MiwtMTQ1MjM3MTU4OSwtMjA5NzM0MTYxOSwxNDE4NzExNTM1LD
-E0MTg3MTE1MzVdfQ==
+eyJoaXN0b3J5IjpbMTIyNzI5NDQxMSw2OTAxNDMyMDksNjE0Mj
+g5MzIzLC0xNTE3NTY5Njg0LDcwNzcyNjUzMiwtOTY1OTYyNzU4
+LC0xNzUwNTQzOTcyLC0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LD
+E0MTg3MTE1MzUsMTQxODcxMTUzNV19
 -->
