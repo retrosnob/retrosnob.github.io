@@ -190,8 +190,14 @@ print("The 4th character of your name is " + name[3])
 
 Consider this program, which counts the number of "a"s in the string "Aardvark", but iterating through the string.
 ```Python
-
-`
+count = 0
+s = "Aardvark"
+for ch in s:
+	if ch == "a":
+		count = count + 1
+print("There are " + str(count) + "
+		
+```
 
 # Operators and expressions
 
@@ -244,11 +250,12 @@ Downloadable Python source files and data files.
 Error types and what they mean. 
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
+Common things like counting and keeping a running total
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTMxODI2MTIsLTY4ODEwMjM5NCwxOD
-A1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQy
-OCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNT
-QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
-NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNj
-MsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbMTEyOTkyNzY3MiwtNjg4MTAyMzk0LDE4MD
+U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
+LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
+A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
+NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2My
+w2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
