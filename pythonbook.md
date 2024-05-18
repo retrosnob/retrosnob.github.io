@@ -178,6 +178,10 @@ There are two **sequence types** that you need to be familiar with for the GCSE:
 * Get individual items of the sequence using an **index**.
 * **Iterate** through every item in the sequence using a **for loop**.
 
+Consider this program, which asks the user for their name and tells them the 4th character:
+```Python
+name = input("Enter your name: ")
+```
 
 # Operators and expressions
 
@@ -231,7 +235,7 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQyMjk3NTksLTY4ODEwMjM5NCwxOD
+eyJoaXN0b3J5IjpbLTE5NDI4NDE5MjksLTY4ODEwMjM5NCwxOD
 A1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQy
 OCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNT
 QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
