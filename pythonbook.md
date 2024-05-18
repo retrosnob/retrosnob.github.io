@@ -91,7 +91,7 @@ Giving a variable its first or a new value. In Python, initialisation and assign
    - emailaddress1
    - 1emailaddress
    - emailAddress
-1. Which variable name for email address would you expect to see in an Edexcel GCSE paper
+1. Which of the variable names for email address given above would you expect to see in an Edexcel GCSE paper?
 1. Name the data type (integer, float, string, boolean) of each of these variables after they have been initialised:
     - `name = "Fred"`
     - `isPrefect = True`
@@ -206,9 +206,9 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTQ3MjMyMSw1MjY4NDM0MjgsLTExNj
-I4NzY1MTEsMjkzNzcxMjk1LDQ4MzU3NzcxNCw0NjA0OTA2ODUs
-LTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OT
-QxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3
-NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mj
+g3NjUxMSwyOTM3NzEyOTUsNDgzNTc3NzE0LDQ2MDQ5MDY4NSwt
+MTU0MDYwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5ND
+E5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3
+MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
 -->
