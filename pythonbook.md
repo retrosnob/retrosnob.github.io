@@ -156,7 +156,15 @@ In summary:
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 # More about strings
 ## String functions
-You have seen some functions that are built-in to Python, e.g. len, int, input, print. There are also functions
+You have seen some functions that are built-in to Python, e.g. len, int, input, print. There are also functions just for strings. We refer to these as string functions. 
+
+This program asks the user for their name and then prints it in capita:
+
+```Python
+name = input("Enter your name: ")
+print(name.upper())
+```
+
 ## Strings as sequences
 
 # Operators and expressions
@@ -209,10 +217,10 @@ A selection of Youtube videos to accompany the text.
 Downloadable Python source files and data files. 
 Error types and what they mean. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI1OTI5NDUwLDE1NDgyNDUzNjIsMTM0Mj
-g2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUs
-NDgzNTc3NzE0LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0MiwxNTM0Mj
-MxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1
-LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNT
-EwMzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbLTE3NDI1MzIyOTAsMTU0ODI0NTM2MiwxMz
+QyODY4OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5
+NSw0ODM1Nzc3MTQsNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1Mz
+QyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5
+MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC
+01MTAzNDQxMzBdfQ==
 -->
