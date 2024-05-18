@@ -272,11 +272,14 @@ Error types and what they mean.
 Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 Must provide answers to exercises
 Common things like counting and keeping a running total
+Where to get more practice: e.g. project Euler, adventofcode
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxOD
-A1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQy
-OCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNT
-QwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3
-NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNj
-MsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+eyJoaXN0b3J5IjpbLTEyMDExNTIxODUsLTEyMTc4MTE0NTMsLT
+Y4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2
+ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsND
+YwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3
+OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MT
+QsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
+
 -->
