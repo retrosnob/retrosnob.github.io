@@ -129,7 +129,7 @@ else:
 ```
 
 ### Program 2
-This program asks the user for string input and tells the user if the string is of mixed case
+This program asks the user for string input and tells the user if the string is of mixed case (contains both upper and lower case letters) or not. 
 ```Python
 
 ```
@@ -139,7 +139,7 @@ This program asks the user for string input and tells the user if the string is 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjIyNzY1MTYsLTE5MjAwMTE2MDIsLT
+eyJoaXN0b3J5IjpbLTExODA0Njc3MDgsLTE5MjAwMTE2MDIsLT
 QxOTg0NDM2Miw2OTAxNDMyMDksNjE0Mjg5MzIzLC0xNTE3NTY5
 Njg0LDcwNzcyNjUzMiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC
 0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LDE0MTg3MTE1MzUsMTQx
