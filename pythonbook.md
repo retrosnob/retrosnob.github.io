@@ -175,6 +175,7 @@ You can call (execute, run) string functions by using dot notation: adding a dot
 > # prints <built-in method upper of str object at 0x000002B1FE6E5E30>
 > ```
 
+### String functions in the GCSE
 The GCSE expects you to be familiar with the following string functions  (\<str\> just means any string variable):
 
 | Function | Description |
@@ -187,6 +188,7 @@ There are two **sequence types** that you need to be familiar with for the GCSE:
 * **Iterate** through every item in the sequence using a **for loop**.
 * Use the keyword **in** to check if an item is in the sequence (although the GCSE doesn't seem to use this much).
 
+### Example of string indexing
 Consider this program, which asks the user for their name and tells them the 4th character:
 ```Python
 name = input("Enter your name: ")
@@ -195,7 +197,7 @@ print("The 4th character of your name is " + name[3])
 **Notes:**
 * We put `name[3]` because counting starts at zero.
 * If the name is less then 4 characters we will get an `IndexError`, meaning we've tried to access an item of a sequence that isn't there.
-
+### Example of iterating through a string using a for loop
 Consider this program, which counts the number of "a"s in the string "Aardvark", but iterating through the string.
 ```Python
 count = 0
@@ -263,7 +265,7 @@ Exercises that require students to correct errors, e.g. not using brackets after
 Must provide answers to exercises
 Common things like counting and keeping a running total
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4Mzg4ODYzMCwtNjg4MTAyMzk0LDE4MD
+eyJoaXN0b3J5IjpbMjA4MjExNzkxNiwtNjg4MTAyMzk0LDE4MD
 U5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4
 LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1ND
 A2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1
