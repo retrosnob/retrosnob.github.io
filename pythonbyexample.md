@@ -138,7 +138,11 @@ for character in text:
 	if character.isupper():
 		containsUpper = True
 	elif character.islower():
-		containsLower = 
+		containsLower = True
+if containsUpper and containsLower:
+	print("Mixed case")
+else:
+	print("Not mixed case")
 ```
 
 ### Program 3
@@ -146,9 +150,9 @@ for character in text:
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NTA3NjA0MCwtMTkyMDAxMTYwMiwtND
-E5ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2
-ODQsNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLT
-E0NTIzNzE1ODksLTIwOTczNDE2MTksMTQxODcxMTUzNSwxNDE4
-NzExNTM1XX0=
+eyJoaXN0b3J5IjpbLTE1OTI3NTExNTMsLTE5MjAwMTE2MDIsLT
+QxOTg0NDM2Miw2OTAxNDMyMDksNjE0Mjg5MzIzLC0xNTE3NTY5
+Njg0LDcwNzcyNjUzMiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC
+0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LDE0MTg3MTE1MzUsMTQx
+ODcxMTUzNV19
 -->
