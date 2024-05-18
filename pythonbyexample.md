@@ -125,7 +125,7 @@ else:
 	elif character.isdigit():
 		print("Number")
 	else:
-		print("Non
+		print("Non-alphanumeric")
 ```
 
 ### Program 2
@@ -138,8 +138,8 @@ else:
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE4NTk1MTExLC00MTk4NDQzNjIsNjkwMT
-QzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NCw3MDc3MjY1MzIs
-LTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1MjM3MTU4OSwtMj
-A5NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MTE1MzVdfQ==
+eyJoaXN0b3J5IjpbLTE5MjAwMTE2MDIsLTQxOTg0NDM2Miw2OT
+AxNDMyMDksNjE0Mjg5MzIzLC0xNTE3NTY5Njg0LDcwNzcyNjUz
+MiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC0xNDUyMzcxNTg5LC
+0yMDk3MzQxNjE5LDE0MTg3MTE1MzUsMTQxODcxMTUzNV19
 -->
