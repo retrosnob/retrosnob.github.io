@@ -1,5 +1,8 @@
-# Motivation for writing this book
-I often get students asking me 
+# About this book
+I often get students asking me if there is a book or a course they can do to learn more about Python and I often say no, because:
+* Most books will cover lots of stuff you don't need to know for the GCSE
+* The GCSE exam board (Edexcel) has weird ways of doing things that you won't find in books.
+* 
 # Getting started with Python
 ## Downloading Thonny
 I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from https://thonny.org and it perfectly good for GCSE and A-Level. 
@@ -277,11 +280,10 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODU5NDcwMDIsLTEyMTc4MTE0NTMsLT
-Y4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2
-ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsND
-YwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3
-OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLTEzNzU5ODI0MT
-QsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAzNDQxMzBdfQ==
-
+eyJoaXN0b3J5IjpbLTc5Mzg2NTY0OCwtMTIxNzgxMTQ1MywtNj
+g4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4
+OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0Nj
+A0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5
+MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNC
+wtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
 -->
