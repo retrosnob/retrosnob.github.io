@@ -250,14 +250,16 @@ Consider the following two statements:
 1. Paris is the capital of France
 2. Beijing is the capital of Germany
 
-It is clear that statement 1 is True and statement 2 is False.
+It is clear that **statement 1 is True** and **statement 2 is False**.
 
 Now consider the statements:
-1. Paris is the capital of France and Beijing is the capital of Germany
-2. Paris is the capital of France or Beijing is the capital of Germany
+1. Paris is the capital of France **and** Beijing is the capital of Germany
+2. Paris is the capital of France **or** Beijing is the capital of Germany
 
-Statement 1 is False, because both statements either side of AND need to be True for the whole statement to be True.
-Statement 2 is True, because only one of the statements either side of OR need to be True for the whole state
+**Statement 1 is False**, because both statements either side of AND need to be True for the whole statement to be True.
+**Statement 2 is True**, because only one of the statements either side of OR need to be True for the whole statement to be True.
+
+
 The GCSE also requires you to know the following logical operators.
 | Operator | Example | Result
 |---|---|---|
@@ -320,7 +322,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NDI0MTIwMywtODM2Njc2MTczLDgwNj
+eyJoaXN0b3J5IjpbMTc1NTgyMzQyMSwtODM2Njc2MTczLDgwNj
 AxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2
 MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMT
 YyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5
