@@ -244,7 +244,13 @@ The GCSE requires you to know the following arithmetic operators:
 |//|Integer division|19//5|3|
 |%|Modulo (remainder after division)|19%5|4|
 |**|To the power|19**5|2476099|
-|||||
+
+The GCSE also requires you to know the following logical operators.
+| Operator | Example | Result
+|and|True and True|True|
+|and|True and False|False|
+|and|False and True|False|
+|and|False and False|F|
 
 # Printing output to the screen
 
@@ -299,11 +305,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjM5NDkwNiwtODM2Njc2MTczLDgwNj
-AxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2
-MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMT
-YyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5
-NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1NCwtMj
-EzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2Myw2NTQ3
-NDYwODVdfQ==
+eyJoaXN0b3J5IjpbLTE4OTY5Mzc4MDQsLTgzNjY3NjE3Myw4MD
+YwMTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2
+NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMT
+E2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNTQwNjAy
+OTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLT
+IxMzkwMDU5MzUsLTEzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0
+NzQ2MDg1XX0=
 -->
