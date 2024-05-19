@@ -307,7 +307,8 @@ This program does the same.
 number = int(input("Enter a valid number (1-10): ")):
 print("Number valid: " + str(number >= 1 and number <= 0))  
 ```
-
+## Notes
+1. A statement that evaluates to True or False is kn
 ## Exercises
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. 
@@ -364,7 +365,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzMjI1NjA1LDI4ODg3NjQ3NCwtMTEzND
+eyJoaXN0b3J5IjpbODAwODIzNjAwLDI4ODg3NjQ3NCwtMTEzND
 UxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYx
 NzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMT
 gwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0
