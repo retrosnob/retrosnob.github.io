@@ -298,7 +298,8 @@ False or False|False|
 
 ## Example program using operators
 This program 
-
+## Exercises
+1. Write two statements involving countries and capitals 
 # Printing output to the screen
 
 # Grouping lots a variables together with lists
@@ -352,11 +353,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjkxMTI3NjksLTk1MDEwNjQyMCwtOD
-M2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAy
-Mzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNT
-I2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2
-ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLT
-U4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgw
-NDc3NzE2M119
+eyJoaXN0b3J5IjpbLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLT
+k1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgx
+MTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2Mi
+wxMzQyODY4OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3
+MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNS
+w0NTE5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3
+NTk4MjQxNF19
 -->
