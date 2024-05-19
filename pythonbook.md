@@ -299,8 +299,21 @@ False or False|False|
 ## Example program using operators
 This program asks the user to enter a number between 1 and 10 (inclusive) and prints an appropriate message.
 ```Python
-number = input("Enter a number (1-10): "
+number = input("Enter a number (1-10): "):
+if number > 0 and number < 11:
+	print("Thank you")
+else:
+	print("Number out of range")
 ```
+This program does the same.
+```Python
+number = input("Enter a number (1-10): "):
+if number >= 1 and number <= 10:
+	print("Thank you")
+else:
+	print("Number out of range")
+```
+
 ## Exercises
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. 
@@ -357,7 +370,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MDQ5MjM0LC0xMTM0NTE5MTI4LC0xOD
+eyJoaXN0b3J5IjpbMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC0xOD
 I5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYwMTU3
 OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2NjA1LD
 E1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3
