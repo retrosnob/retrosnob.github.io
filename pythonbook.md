@@ -1,11 +1,11 @@
 # About this book
 I often get students asking me if there is a book or a course they can do to learn more about Python and I often say no, because:
 * Most books will cover lots of stuff you don't need to know for the GCSE
-* The GCSE exam board (Edexcel) has weird ways of doing things that you won't find in books.
+* The GCSE exam board (Edexcel) has weird ways of doing things that you won't find in books
 
 So I have decided to write my own book that
 * covers only what is covered by the GCSE
-* does the weird things that the exam board want you to do
+* tells you all the weird things that the exam board want you to do
 # Getting started with Python
 ## Downloading Thonny
 I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from https://thonny.org and it perfectly good for GCSE and A-Level. 
@@ -163,6 +163,8 @@ This is the order of events:
 In summary:
 * The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, etc) with the thing the user entered.
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
+** Exercises:**
+1. Write a program that asks the user to enter
 # More about strings
 ## String functions
 You have seen some functions that are built-in to Python, e.g. len, int, input, print. We refer to these as **built-in functions**. There are also functions just for strings. We refer to these as **string functions**. 
@@ -283,10 +285,10 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMjY5NTI4MywtMTIxNzgxMTQ1MywtNj
-g4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4
-OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0Nj
-A0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5
-MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNC
-wtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0NDEzMF19
+eyJoaXN0b3J5IjpbODA2MDE1NzkwLC0xMjE3ODExNDUzLC02OD
+gxMDIzOTQsMTgwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5
+Myw1MjY4NDM0MjgsLTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MD
+Q5MDY4NSwtMTU0MDYwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4Nzkx
+MiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC
+0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEwMzQ0MTMwXX0=
 -->
