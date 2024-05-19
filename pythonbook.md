@@ -309,7 +309,7 @@ print("Number valid: " + str(number >= 1 and number <= 0))
 ```
 ## Notes
 1. A statement that evaluates to True or False is known as a *condition*.
-2. Note that when using logical operators, each side of the operator has to be an expression which **on its own** evaluates to True or False. So if you want to check that a and b are both greate
+2. Note that when using logical operators, each side of the operator has to be an expression which **on its own** evaluates to True or False. So if you want to check that a and b are both greater than 10, for instance, you have to write `a > 10 and b > 10`. You **cannot** write `a and b > 10`; in fact this will lead
 ## Exercises
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. 
@@ -366,11 +366,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0NTIyODU0LDE2MTQ0Nzk4MTksMjg4OD
-c2NDc0LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0
-MjAsLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLT
-Y4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2
-ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsND
-YwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3
-OTEyXX0=
+eyJoaXN0b3J5IjpbLTE5MDU3Nzg5MTEsMTYxNDQ3OTgxOSwyOD
+g4NzY0NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEw
+NjQyMCwtODM2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1My
+wtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQy
+ODY4OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NS
+w0NjA0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5
+ODc5MTJdfQ==
 -->
