@@ -308,7 +308,8 @@ number = int(input("Enter a valid number (1-10): ")):
 print("Number valid: " + str(number >= 1 and number <= 0))  
 ```
 ## Notes
-1. A statement that evaluates to True or False is kn
+1. A statement that evaluates to True or False is known as a *condition*.
+2. Note that when using comparison operators 
 ## Exercises
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. 
@@ -365,11 +366,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwODIzNjAwLDI4ODg3NjQ3NCwtMTEzND
-UxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYx
-NzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMT
-gwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0
-MjgsLTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMT
-U0MDYwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5
-NzU0XX0=
+eyJoaXN0b3J5IjpbMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMz
+Q1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2
+MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LD
+E4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQz
+NDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLT
+E1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQx
+OTc1NF19
 -->
