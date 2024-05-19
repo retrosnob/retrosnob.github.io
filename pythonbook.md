@@ -297,7 +297,10 @@ False or True|True|
 False or False|False|
 
 ## Example program using operators
-This program 
+This program asks the user to enter a number between 1 and 10 (inclusive) and prints an appropriate message.
+```Python
+number = input("Enter a number (1-10): "
+```
 ## Exercises
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. 
@@ -354,11 +357,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDY2OTM0NSwtMTEzNDUxOTEyOCwtMT
-gyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsODA2MDE1
-NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1NjYwNS
-wxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0MjgsLTExNjI4
-NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0Mi
-wxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMTM5
-MDA1OTM1XX0=
+eyJoaXN0b3J5IjpbMTU3MDQ5MjM0LC0xMTM0NTE5MTI4LC0xOD
+I5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYwMTU3
+OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2NjA1LD
+E1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3
+NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC0xNTQwNjAyOTQyLD
+E1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMzkw
+MDU5MzVdfQ==
 -->
