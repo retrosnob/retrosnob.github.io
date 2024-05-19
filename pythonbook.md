@@ -239,11 +239,11 @@ The GCSE requires you to know the following arithmetic operators:
 |---|---|---|---|
 |+|Add|19+5|24|
 |-|Subtract|19-5|14|
-|*|Multiply|19*5|120|
-|/|Divide|24/5|4.8|
-|//|Integer division|24//5|4|
-|%|Modulo (remainder after division)|24%5|4|
-|**|To the power|||
+|*|Multiply|19*5|95|
+|/|Divide|19/5|3.8|
+|//|Integer division|19//5|3|
+|%|Modulo (remainder after division)|19%5|4|
+|**|To the power|19**5||
 |||||
 
 # Printing output to the screen
@@ -299,7 +299,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDM2NzM4OCw4MDYwMTU3OTAsLTEyMT
+eyJoaXN0b3J5IjpbLTkwMTUwMTYzOCw4MDYwMTU3OTAsLTEyMT
 c4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUz
 NjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOT
 M3NzEyOTUsNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0
