@@ -299,7 +299,8 @@ False or False|False|
 ## Example program using operators
 This program 
 ## Exercises
-1. Write two statements involving countries and capitals 
+1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
+2. 
 # Printing output to the screen
 
 # Grouping lots a variables together with lists
@@ -353,11 +354,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLT
-k1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgx
-MTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2Mi
-wxMzQyODY4OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3
-MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNS
-w0NTE5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3
-NTk4MjQxNF19
+eyJoaXN0b3J5IjpbLTk4NDY2OTM0NSwtMTEzNDUxOTEyOCwtMT
+gyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsODA2MDE1
+NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1NjYwNS
+wxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0MjgsLTExNjI4
+NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0Mi
+wxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMTM5
+MDA1OTM1XX0=
 -->
