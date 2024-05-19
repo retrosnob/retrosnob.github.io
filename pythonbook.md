@@ -264,13 +264,25 @@ In general then:
 something True **and** something False is **False**
 something True **or** something False is **True**
 
-We can summarise how the **and operator** works with the following **truth table**:
+We can summarise how the logical operators work using **truth tables**.
+
+This is the truth table for AND:
+
 | Statement | Result
 |---|---|
 True and True|True|
 True and False|False|
 False and True|False|
 False and False|False|
+
+This is the truth table for OR:
+
+| Statement | Result
+|---|---|
+True or True|True|
+True or False|True|
+False or True|True|
+False or False|False|
  
 
 The GCSE also requires you to know the following logical operators.
@@ -329,7 +341,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTk3NjM3OSwtODM2Njc2MTczLDgwNj
+eyJoaXN0b3J5IjpbMjAwMTExNTY3MSwtODM2Njc2MTczLDgwNj
 AxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2
 MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMT
 YyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5
