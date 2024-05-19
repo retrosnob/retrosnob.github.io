@@ -247,7 +247,10 @@ The GCSE requires you to know the following arithmetic operators:
 
 ## Logical operators
 Consider the following two statements:
-* 
+1. Paris is the capital of France
+2. Beijing is the capital of Germany
+
+It is clear that statement 
 The GCSE also requires you to know the following logical operators.
 | Operator | Example | Result
 |---|---|---|
@@ -310,7 +313,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTc4NTI1MSwtODM2Njc2MTczLDgwNj
+eyJoaXN0b3J5IjpbMTQwMjk0NzM2NywtODM2Njc2MTczLDgwNj
 AxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2
 MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMT
 YyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5
