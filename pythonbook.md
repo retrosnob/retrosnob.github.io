@@ -256,7 +256,8 @@ Now consider the statements:
 1. Paris is the capital of France and Beijing is the capital of Germany
 2. Paris is the capital of France or Beijing is the capital of Germany
 
-Statement 1 is False, because 
+Statement 1 is False, because both statements either side of AND need to be True for the whole statement to be True.
+Statement 2 is True, because only one of the statements either side of OR need to be True for the whole state
 The GCSE also requires you to know the following logical operators.
 | Operator | Example | Result
 |---|---|---|
@@ -319,11 +320,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3MTI4NDI5LC04MzY2NzYxNzMsODA2MD
-E1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1NjYw
-NSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0MjgsLTExNj
-I4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0
-MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMT
-M5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLDY1NDc0
-NjA4NV19
+eyJoaXN0b3J5IjpbMTI1NDI0MTIwMywtODM2Njc2MTczLDgwNj
+AxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2
+MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMT
+YyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5
+NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQxOTc1NCwtMj
+EzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgwNDc3NzE2Myw2NTQ3
+NDYwODVdfQ==
 -->
