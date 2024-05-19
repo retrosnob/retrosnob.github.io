@@ -239,11 +239,11 @@ The GCSE requires you to know the following arithmetic operators:
 |---|---|---|---|
 |+|Add|24+8|32|
 |-|Subtract|24-8|16|
-|*|Multiply|||
-|/||||
-|//||||
-|%||||
-|**||||
+|*|Multiply|24*8|192|
+|/|Divide|24/8|3.0|
+|//|Integer division|24//8|3|
+|%|Modulo (remainder after division)|||
+|**|To the power|||
 |||||
 
 # Printing output to the screen
@@ -299,11 +299,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk1MDg4OTkyLDgwNjAxNTc5MCwtMTIxNz
-gxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2
-MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLDI5Mz
-c3MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQw
-NSw0NTE5ODc5MTIsLTU4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMT
-M3NTk4MjQxNCwtMTgwNDc3NzE2Myw2NTQ3NDYwODUsLTUxMDM0
-NDEzMF19
+eyJoaXN0b3J5IjpbMTU2MzA5NjI0NSw4MDYwMTU3OTAsLTEyMT
+c4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUz
+NjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOT
+M3NzEyOTUsNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0
+MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLT
+EzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAz
+NDQxMzBdfQ==
 -->
