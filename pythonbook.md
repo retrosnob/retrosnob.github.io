@@ -295,7 +295,8 @@ True or True|True|
 True or False|True|
 False or True|True|
 False or False|False|
- 
+
+## Example program using operators
 
 
 # Printing output to the screen
@@ -351,7 +352,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTk2MjExMTcsLTk1MDEwNjQyMCwtOD
+eyJoaXN0b3J5IjpbLTIxNDIyMDY3MzAsLTk1MDEwNjQyMCwtOD
 M2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAy
 Mzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNT
 I2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2
