@@ -165,8 +165,8 @@ In summary:
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 
 ** Exercises:**
-1. Write a program that asks the user to enter their age N and then writes "You are N years old".
-1. Write a program that asks the user to enter their age and then 
+1. Write a program that asks the user to enter their age and then prints "You are N years old", where N is the age they entered.
+1. Write a program that asks the user to enter their age and then prints "You are N+10 years old", where N+10 is their age plus 10 
 # More about strings
 ## String functions
 You have seen some functions that are built-in to Python, e.g. len, int, input, print. We refer to these as **built-in functions**. There are also functions just for strings. We refer to these as **string functions**. 
@@ -287,11 +287,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTM1MDk4MzEsODA2MDE1NzkwLC0xMj
-E3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1NjYwNSwxNTQ4MjQ1
-MzYyLDEzNDI4Njg5Myw1MjY4NDM0MjgsLTExNjI4NzY1MTEsMj
-kzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0MiwxNTM0MjMx
-NDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC
-0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEw
-MzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbMTU2MjQyMjQwOCw4MDYwMTU3OTAsLTEyMT
+c4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUz
+NjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOT
+M3NzEyOTUsNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0
+MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLT
+EzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAz
+NDQxMzBdfQ==
 -->
