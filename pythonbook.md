@@ -300,15 +300,12 @@ False or False|False|
 This program asks the user to enter a number between 1 and 10 (inclusive) and prints an appropriate message.
 ```Python
 number = input("Enter a valid number (1-10): "):
-print("It is " + str(number > 0 and number < 11) +  
+print("Number valid: " + str(number > 0 and number < 11))  
 ```
 This program does the same.
 ```Python
-number = input("Enter a number (1-10): "):
-if number >= 1 and number <= 10:
-	print("Thank you")
-else:
-	print("Number out of range")
+number = input("Enter a valid number (1-10): "):
+print("Number valid: " + str(number >= 1 and number <= 0))  
 ```
 
 ## Exercises
@@ -367,11 +364,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3MTEwOTgwLDI4ODg3NjQ3NCwtMTEzND
-UxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYx
-NzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMT
-gwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0
-MjgsLTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMT
-U0MDYwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNTg5NDE5
-NzU0XX0=
+eyJoaXN0b3J5IjpbLTE1MTA3NDk5MDcsMjg4ODc2NDc0LC0xMT
+M0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3
+NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NC
+wxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0
+MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkwNjg1LC
+0xNTQwNjAyOTQyLDE1MzQyMzE0MDUsNDUxOTg3OTEyLC01ODk0
+MTk3NTRdfQ==
 -->
