@@ -309,7 +309,7 @@ print("Number valid: " + str(number >= 1 and number <= 0))
 ```
 ## Notes
 1. A statement that evaluates to True or False is known as a *condition*.
-2. Note that when using comparison operators 
+2. Note that when using logical operators, each side o
 ## Exercises
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. 
@@ -366,11 +366,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMz
-Q1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2
-MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LD
-E4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQz
-NDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2ODUsLT
-E1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLTU4OTQx
-OTc1NF19
+eyJoaXN0b3J5IjpbMTQwMzc0MTU2MCwxNjE0NDc5ODE5LDI4OD
+g3NjQ3NCwtMTEzNDUxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2
+NDIwLC04MzY2NzYxNzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC
+02ODgxMDIzOTQsMTgwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4
+Njg5Myw1MjY4NDM0MjgsLTExNjI4NzY1MTEsMjkzNzcxMjk1LD
+Q2MDQ5MDY4NSwtMTU0MDYwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4
+NzkxMl19
 -->
