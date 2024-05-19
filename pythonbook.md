@@ -247,7 +247,7 @@ The GCSE requires you to know the following arithmetic operators:
 |**|To the power|19**5|2476099|
 
 ## Comparison operators
-The GCSE also requires you to know the following comparison operators.
+The GCSE requires you to know the following comparison operators.
 |Operator|Description|Example|Result|
 |---|---|---|---|
 |==|is equal to|5 == 5|True|
@@ -297,7 +297,7 @@ False or True|True|
 False or False|False|
 
 ## Example program using operators
-
+This program 
 
 # Printing output to the screen
 
@@ -352,7 +352,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDIyMDY3MzAsLTk1MDEwNjQyMCwtOD
+eyJoaXN0b3J5IjpbLTE4MjkxMTI3NjksLTk1MDEwNjQyMCwtOD
 M2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAy
 Mzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNT
 I2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2
