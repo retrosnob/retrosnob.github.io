@@ -234,7 +234,10 @@ else:
 	print("There is no z in what you typed")
 ```
 # Operators and expressions
-
+The GCSE requires you to know the following operators:
+| Operator | Operations | Example | Result
+|---|---|---|---|
+|+|Add|24+8|
 
 # Printing output to the screen
 
@@ -289,11 +292,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDMxMTY3NzMsODA2MDE1NzkwLC0xMj
-E3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1NjYwNSwxNTQ4MjQ1
-MzYyLDEzNDI4Njg5Myw1MjY4NDM0MjgsLTExNjI4NzY1MTEsMj
-kzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MDYwMjk0MiwxNTM0MjMx
-NDA1LDQ1MTk4NzkxMiwtNTg5NDE5NzU0LC0yMTM5MDA1OTM1LC
-0xMzc1OTgyNDE0LC0xODA0Nzc3MTYzLDY1NDc0NjA4NSwtNTEw
-MzQ0MTMwXX0=
+eyJoaXN0b3J5IjpbLTQzMzYzMTQwMiw4MDYwMTU3OTAsLTEyMT
+c4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUz
+NjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOT
+M3NzEyOTUsNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0
+MDUsNDUxOTg3OTEyLC01ODk0MTk3NTQsLTIxMzkwMDU5MzUsLT
+EzNzU5ODI0MTQsLTE4MDQ3NzcxNjMsNjU0NzQ2MDg1LC01MTAz
+NDQxMzBdfQ==
 -->
