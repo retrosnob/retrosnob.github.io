@@ -250,12 +250,12 @@ The GCSE requires you to know the following arithmetic operators:
 The GCSE also requires you to know the following comparison operators.
 |Operator|Description|Example|Result|
 |---|---|---|---|
-|==|is equal to|5 == 6|False|
-|!=|is not equal to|5 != 6|True|
-|>||||
-|>=||||
-|>||||
-|>||||
+|==|is equal to|5 == 5|False|
+|!=|is not equal to|5 != 5|True|
+|>|is greater than|5 > 6|||
+|>=|is  greater than or equal to|5 >= 5|||
+|<|5 < 5|is less than|||
+|<=|is less then or equal to5 <= 5|||
 
 ## Logical operators
 Consider the following two statements:
@@ -351,11 +351,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzY5MDY4ODQsLTk1MDEwNjQyMCwtOD
-M2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAy
-Mzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNT
-I2ODQzNDI4LC0xMTYyODc2NTExLDI5Mzc3MTI5NSw0NjA0OTA2
-ODUsLTE1NDA2MDI5NDIsMTUzNDIzMTQwNSw0NTE5ODc5MTIsLT
-U4OTQxOTc1NCwtMjEzOTAwNTkzNSwtMTM3NTk4MjQxNCwtMTgw
-NDc3NzE2M119
+eyJoaXN0b3J5IjpbLTMxODQ4MTU2NiwtOTUwMTA2NDIwLC04Mz
+Y2NzYxNzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIz
+OTQsMTgwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1Mj
+Y4NDM0MjgsLTExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4
+NSwtMTU0MDYwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4NzkxMiwtNT
+g5NDE5NzU0LC0yMTM5MDA1OTM1LC0xMzc1OTgyNDE0LC0xODA0
+Nzc3MTYzXX0=
 -->
