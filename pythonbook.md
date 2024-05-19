@@ -243,7 +243,7 @@ The GCSE requires you to know the following arithmetic operators:
 |/|Divide|19/5|3.8|
 |//|Integer division|19//5|3|
 |%|Modulo (remainder after division)|19%5|4|
-|**|To the power|19**5||
+|**|To the power|19**5|2476099|
 |||||
 
 # Printing output to the screen
@@ -299,7 +299,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMTUwMTYzOCw4MDYwMTU3OTAsLTEyMT
+eyJoaXN0b3J5IjpbLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMT
 c4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUz
 NjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOT
 M3NzEyOTUsNDYwNDkwNjg1LC0xNTQwNjAyOTQyLDE1MzQyMzE0
