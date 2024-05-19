@@ -9,7 +9,18 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__html"><h1 id="getting-started-with-python">Getting started with Python</h1>
+  <div class="stackedit__html"><h1 id="about-this-book">About this book</h1>
+<p>I often get students asking me if there is a book or a course they can do to learn more about Python and I often say no, because:</p>
+<ul>
+<li>Most books will cover lots of stuff you don’t need to know for the GCSE</li>
+<li>The GCSE exam board (Edexcel) has weird ways of doing things that you won’t find in books</li>
+</ul>
+<p>So I have decided to write my own book that</p>
+<ul>
+<li>covers only what is covered by the GCSE</li>
+<li>tells you all the weird things that the exam board want you to do</li>
+</ul>
+<h1 id="getting-started-with-python">Getting started with Python</h1>
 <h2 id="downloading-thonny">Downloading Thonny</h2>
 <p>I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from <a href="https://thonny.org">https://thonny.org</a> and it perfectly good for GCSE and A-Level.</p>
 <h2 id="the-thonny-interface">The Thonny interface</h2>
@@ -156,6 +167,12 @@ The sum is 9</p>
 <li>The <code>int</code> function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. &lt;, &gt;, etc) with the thing the user entered.</li>
 <li>The <code>str</code> function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.</li>
 </ul>
+<p>** Exercises:**</p>
+<ol>
+<li>Write a program that asks the user to enter their age and then prints “You are N years old”, where N is the age they entered.</li>
+<li>Write a program that asks the user to enter their age and then prints “You are N+10 years old”, where N+10 is their age plus 10 years.</li>
+<li>Explain why you need to use the <code>int</code> function in task 2 but not in task 1.</li>
+</ol>
 <h1 id="more-about-strings">More about strings</h1>
 <h2 id="string-functions">String functions</h2>
 <p>You have seen some functions that are built-in to Python, e.g. len, int, input, print. We refer to these as <strong>built-in functions</strong>. There are also functions just for strings. We refer to these as <strong>string functions</strong>.</p>
@@ -234,6 +251,203 @@ s <span class="token operator">=</span> <span class="token string">"Aardvark"</s
 	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"There is no z in what you typed"</span><span class="token punctuation">)</span>
 </code></pre>
 <h1 id="operators-and-expressions">Operators and expressions</h1>
+<h2 id="arithmetic-operators">Arithmetic operators</h2>
+<p>The GCSE requires you to know the following arithmetic operators:</p>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Operation</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Add</td>
+<td>19+5</td>
+<td>24</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtract</td>
+<td>19-5</td>
+<td>14</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiply</td>
+<td>19*5</td>
+<td>95</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Divide</td>
+<td>19/5</td>
+<td>3.8</td>
+</tr>
+<tr>
+<td>//</td>
+<td>Integer division</td>
+<td>19//5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulo (remainder after division)</td>
+<td>19%5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>**</td>
+<td>To the power</td>
+<td>19**5</td>
+<td>2476099</td>
+</tr>
+</tbody>
+</table><h2 id="comparison-operators">Comparison operators</h2>
+<p>The GCSE requires you to know the following comparison operators.</p>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>is equal to</td>
+<td>5 == 5</td>
+<td>True</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>is not equal to</td>
+<td>5 != 5</td>
+<td>False</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>is greater than</td>
+<td>5 &gt; 5</td>
+<td>False</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>is  greater than or equal to</td>
+<td>5 &gt;= 5</td>
+<td>True</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>5 &lt; 5</td>
+<td>is less than</td>
+<td>False</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>is less then or equal to</td>
+<td>5 &lt;= 5</td>
+<td>True</td>
+</tr>
+</tbody>
+</table><h2 id="logical-operators">Logical operators</h2>
+<p>Consider the following two statements:</p>
+<ol>
+<li>Paris is the capital of France</li>
+<li>Beijing is the capital of Germany</li>
+</ol>
+<p>It is clear that <strong>statement 1 is True</strong> and <strong>statement 2 is False</strong>.</p>
+<p>Now consider the statements:</p>
+<ol>
+<li>Paris is the capital of France <strong>and</strong> Beijing is the capital of Germany</li>
+<li>Paris is the capital of France <strong>or</strong> Beijing is the capital of Germany</li>
+</ol>
+<p><strong>Statement 1 is False</strong>, because both statements either side of AND need to be True for the whole statement to be True.<br>
+<strong>Statement 2 is True</strong>, because only one of the statements either side of OR need to be True for the whole statement to be True.</p>
+<p>In general then:</p>
+<p>something True <strong>and</strong> something False is <strong>False</strong><br>
+something True <strong>or</strong> something False is <strong>True</strong></p>
+<p>We can summarise how the logical operators work using <strong>truth tables</strong>.</p>
+<p>This is the <strong>truth table for AND</strong>:</p>
+
+<table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True and True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True and False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False and True</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False and False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table><p>This is the <strong>truth table for OR</strong>:</p>
+
+<table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True or True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True or False</td>
+<td>True</td>
+</tr>
+<tr>
+<td>False or True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>False or False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table><h2 id="example-program-using-operators">Example program using operators</h2>
+<p>This program asks the user to enter a number between 1 and 10 (inclusive) and prints an appropriate message.</p>
+<pre class=" language-python"><code class="prism  language-python">number <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter a valid number (1-10): "</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Number valid: "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>number <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">and</span> number <span class="token operator">&lt;</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  
+</code></pre>
+<p>This program does the same.</p>
+<pre class=" language-python"><code class="prism  language-python">number <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter a valid number (1-10): "</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Number valid: "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>number <span class="token operator">&gt;=</span> <span class="token number">1</span> <span class="token operator">and</span> number <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  
+</code></pre>
+<h2 id="notes">Notes</h2>
+<ol>
+<li>A statement that evaluates to True or False is known as a <em>condition</em>.</li>
+<li>Note that when using comparison operators</li>
+</ol>
+<h2 id="exercises-1">Exercises</h2>
+<ol>
+<li>Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.</li>
+<li></li>
+</ol>
 <h1 id="printing-output-to-the-screen">Printing output to the screen</h1>
 <h1 id="grouping-lots-a-variables-together-with-lists">Grouping lots a variables together with lists</h1>
 <h1 id="selecting-which-lines-of-code-to-execute-with-if-statements">Selecting which lines of code to execute with If statements</h1>
