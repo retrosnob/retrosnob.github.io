@@ -197,10 +197,10 @@ print(nums)
 ```
 
 ### Program 3
-This program defines a function to to find whether all numbers in a list are divisible by a certain number n. It tests the function on the list [12, 45, 23, 85, 31, 77] with n = 3.
+This program defines a function to to find whether two occurences of a value appear consecutively (one after the other) in a list. It tests the function on the list [12, 45, 45, 74, 83] with n = 3.
 
 ```Python
-def isAdjacent(lst, n):
+def containsConsecutive(lst, n):
 	for num in lst:
 		if num % n != 0:
 			return False
@@ -215,7 +215,7 @@ def isAdjacent(lst, n):
     - [1, 4, 4, 8]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTg3NzM4NDEsLTE3MjExMzMxMzUsLT
+eyJoaXN0b3J5IjpbLTE2OTg2OTE1ODksLTE3MjExMzMxMzUsLT
 YwNDg3ODg4OSwtMTg2MTAxMTc1OSwtMTkyMDAxMTYwMiwtNDE5
 ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2OD
 QsNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLTE0
