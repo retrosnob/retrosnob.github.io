@@ -197,7 +197,7 @@ print(nums)
 ```
 
 ### Program 3
-This program defines a function to to find whether two occurences of a value appear consecutively (one after the other) in a list. It tests the function on the list [12, 45, 45, 74, 83] with n = 3.
+This program defines a function to to find whether two occurrences of a value appear consecutively (one after the other) in a list. It tests the function on the list [12, 93, 45, 45, 74, 28] with n = 45 and n = 32.
 
 ```Python
 def containsConsecutive(lst, n):
@@ -205,6 +205,9 @@ def containsConsecutive(lst, n):
 		if num % n != 0:
 			return False
 	return True
+nums = [12, 93, 45, 45, 74, 28] 
+print(containsAdjacent(nums, 45)
+print(containsAdjacent(nums, 32)
 ```
 
 **Task:**
@@ -215,10 +218,10 @@ def containsConsecutive(lst, n):
     - [1, 4, 4, 8]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTg2OTE1ODksLTE3MjExMzMxMzUsLT
-YwNDg3ODg4OSwtMTg2MTAxMTc1OSwtMTkyMDAxMTYwMiwtNDE5
-ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2OD
-QsNzA3NzI2NTMyLC05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLTE0
-NTIzNzE1ODksLTIwOTczNDE2MTksMTQxODcxMTUzNSwxNDE4Nz
-ExNTM1XX0=
+eyJoaXN0b3J5IjpbLTI3NTQ0NDgzMSwtMTcyMTEzMzEzNSwtNj
+A0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4
+NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NC
+w3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1
+MjM3MTU4OSwtMjA5NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MT
+E1MzVdfQ==
 -->
