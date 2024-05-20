@@ -213,7 +213,7 @@ print(containsAdjacent(nums, 32)
 
 **Tasks:**
 
-1. Explain why you need to subtract 1 from `len(lst)`.
+1. Explain why you need to subtract 1 from `len(lst)`. What error do you get if you don't?
 2. Explain why this doesn't work:
 	```Python
 	def containsConsecutive(lst, value):
@@ -229,7 +229,7 @@ print(containsAdjacent(nums, 32)
     - [1, 4, 4, 8]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3Mzc5ODczMSwtMTcyMTEzMzEzNSwtNj
+eyJoaXN0b3J5IjpbLTkzOTE5MjQ2NiwtMTcyMTEzMzEzNSwtNj
 A0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4
 NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NC
 w3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1
