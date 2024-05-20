@@ -197,13 +197,13 @@ print(nums)
 ```
 
 ### Program 3
-This program defines a function to swap the two items of a list that are at indexes m and n. It tests the function on the list [12, 45, 23, 85, 31, 77] using m = 1 and n = 4.
+This program defines a function to to find whether all numbers in a list are even. It tests the function on the list [12, 45, 23, 85, 31, 77] using m = 1 and n = 4.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjEwMTIzOSwtMTcyMTEzMzEzNSwtNj
-A0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4
-NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NC
-w3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1
-MjM3MTU4OSwtMjA5NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MT
-E1MzVdfQ==
+eyJoaXN0b3J5IjpbNzk0NjI0MDI1LC0xNzIxMTMzMTM1LC02MD
+Q4Nzg4ODksLTE4NjEwMTE3NTksLTE5MjAwMTE2MDIsLTQxOTg0
+NDM2Miw2OTAxNDMyMDksNjE0Mjg5MzIzLC0xNTE3NTY5Njg0LD
+cwNzcyNjUzMiwtOTY1OTYyNzU4LC0xNzUwNTQzOTcyLC0xNDUy
+MzcxNTg5LC0yMDk3MzQxNjE5LDE0MTg3MTE1MzUsMTQxODcxMT
+UzNV19
 -->
