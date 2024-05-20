@@ -187,7 +187,7 @@ print(nums)
 This program does the same as Program 1.
 ```Python
 def swap(lst, m, n):
-	tmp = lst[n]
+	lst[m], lst[n] = lst[n], lst[m]
 	lst[n] = lst[m]
 	lst[m] = tmp
 
@@ -196,10 +196,14 @@ swap(nums, 1, 4)
 print(nums)
 ```
 
+### Program 3
+This program defines a function to swap the two items of a list that are at indexes m and n. It tests the function on the list [12, 45, 23, 85, 31, 77] using m = 1 and n = 4.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjExMzMxMzUsLTYwNDg3ODg4OSwtMT
-g2MTAxMTc1OSwtMTkyMDAxMTYwMiwtNDE5ODQ0MzYyLDY5MDE0
-MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2ODQsNzA3NzI2NTMyLC
-05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLTE0NTIzNzE1ODksLTIw
-OTczNDE2MTksMTQxODcxMTUzNSwxNDE4NzExNTM1XX0=
+eyJoaXN0b3J5IjpbLTMxNjEwMTIzOSwtMTcyMTEzMzEzNSwtNj
+A0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4
+NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NC
+w3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1
+MjM3MTU4OSwtMjA5NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MT
+E1MzVdfQ==
 -->
