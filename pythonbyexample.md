@@ -173,7 +173,7 @@ This program defines a function to swap the two items of a list that are at inde
 
 ```Python
 def swap(lst, m, n):
-	temp = lst[n]
+	tmp = lst[n]
 	lst[n] = lst[m]
 	lst[m] = tmp
 
@@ -182,9 +182,9 @@ swap(nums, 1, 4)
 print(nums)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjg5OTU3MSwtNjA0ODc4ODg5LC0xOD
-YxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4NDQzNjIsNjkwMTQz
-MjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NCw3MDc3MjY1MzIsLT
-k2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1MjM3MTU4OSwtMjA5
-NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MTE1MzVdfQ==
+eyJoaXN0b3J5IjpbLTE2ODg5NDE3ODIsLTYwNDg3ODg4OSwtMT
+g2MTAxMTc1OSwtMTkyMDAxMTYwMiwtNDE5ODQ0MzYyLDY5MDE0
+MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2ODQsNzA3NzI2NTMyLC
+05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLTE0NTIzNzE1ODksLTIw
+OTczNDE2MTksMTQxODcxMTUzNSwxNDE4NzExNTM1XX0=
 -->
