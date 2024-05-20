@@ -166,10 +166,14 @@ else:
 ```
 **Task:**
 Write a program that asks the user for a new password and then tells them if the password is valid. In order to be valid, a password have at least 6 characters and must contain at least one upper case letter, at least one lower case, at least one digit and at least one non-alphanumeric character. The program should define a function passwordValid that takes the password as a parameter and returns True if the password is valid and False if it is not valid.
+
+### Program 1
+
+This program swaps the second and third items of an array
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDg3ODg4OSwtMTg2MTAxMTc1OSwtMT
-kyMDAxMTYwMiwtNDE5ODQ0MzYyLDY5MDE0MzIwOSw2MTQyODkz
-MjMsLTE1MTc1Njk2ODQsNzA3NzI2NTMyLC05NjU5NjI3NTgsLT
-E3NTA1NDM5NzIsLTE0NTIzNzE1ODksLTIwOTczNDE2MTksMTQx
-ODcxMTUzNSwxNDE4NzExNTM1XX0=
+eyJoaXN0b3J5IjpbLTE0ODAxMjU1NjcsLTYwNDg3ODg4OSwtMT
+g2MTAxMTc1OSwtMTkyMDAxMTYwMiwtNDE5ODQ0MzYyLDY5MDE0
+MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2ODQsNzA3NzI2NTMyLC
+05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLTE0NTIzNzE1ODksLTIw
+OTczNDE2MTksMTQxODcxMTUzNSwxNDE4NzExNTM1XX0=
 -->
