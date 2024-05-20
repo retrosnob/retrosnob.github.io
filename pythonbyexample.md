@@ -213,13 +213,16 @@ print(containsAdjacent(nums, 32)
 
 **Task:**
 
-1. Write a program that defines a function to see if a list is in ascending order. Test it with these different lists:
+1. Explain why you need to subtract 1 from len(lst).
+2. Explain why this doesn't work:
+3. 
+4. Write a program that defines a function to see if a list is in ascending order. Test it with these different lists:
     - [1, 3, 6, 9]
     - [4, 7, 2, 5]
     - [1, 4, 4, 8]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MzM1MzU2NSwtMTcyMTEzMzEzNSwtNj
+eyJoaXN0b3J5IjpbLTQ2NzkwNzg3OSwtMTcyMTEzMzEzNSwtNj
 A0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4
 NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NC
 w3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1
