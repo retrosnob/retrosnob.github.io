@@ -204,11 +204,15 @@ def allDivisibleBy(lst, n):
 	for num in lst:
 		if num % n != 0:
 			return False
-	els
+	return True
 ```
 
+**Task:**
+
+1. Write a program that defines a function to see if a list is in ascending order. Test it with different lists
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NjUwODExMiwtMTcyMTEzMzEzNSwtNj
+eyJoaXN0b3J5IjpbMTAyMDc3NzM2NCwtMTcyMTEzMzEzNSwtNj
 A0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4
 NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NC
 w3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1
