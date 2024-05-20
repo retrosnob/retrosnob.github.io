@@ -181,8 +181,23 @@ nums = [12, 45, 23, 85, 31, 77]
 swap(nums, 1, 4)
 print(nums)
 ```
+
+### Program 2
+
+This program does the same as Program 1.
+```Python
+def swap(lst, m, n):
+	tmp = lst[n]
+	lst[n] = lst[m]
+	lst[m] = tmp
+
+nums = [12, 45, 23, 85, 31, 77]
+swap(nums, 1, 4)
+print(nums)
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODg5NDE3ODIsLTYwNDg3ODg4OSwtMT
+eyJoaXN0b3J5IjpbLTE3MjExMzMxMzUsLTYwNDg3ODg4OSwtMT
 g2MTAxMTc1OSwtMTkyMDAxMTYwMiwtNDE5ODQ0MzYyLDY5MDE0
 MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2ODQsNzA3NzI2NTMyLC
 05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLTE0NTIzNzE1ODksLTIw
