@@ -169,11 +169,11 @@ Write a program that asks the user for a new password and then tells them if the
 
 ### Program 1
 
-This program swaps the second and third items of an array
+This program defines a function to swap the two items of a list that are at indexes m and n. It tests the function in th
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODAxMjU1NjcsLTYwNDg3ODg4OSwtMT
-g2MTAxMTc1OSwtMTkyMDAxMTYwMiwtNDE5ODQ0MzYyLDY5MDE0
-MzIwOSw2MTQyODkzMjMsLTE1MTc1Njk2ODQsNzA3NzI2NTMyLC
-05NjU5NjI3NTgsLTE3NTA1NDM5NzIsLTE0NTIzNzE1ODksLTIw
-OTczNDE2MTksMTQxODcxMTUzNSwxNDE4NzExNTM1XX0=
+eyJoaXN0b3J5IjpbLTg2ODgxMTQ0MSwtNjA0ODc4ODg5LC0xOD
+YxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4NDQzNjIsNjkwMTQz
+MjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NCw3MDc3MjY1MzIsLT
+k2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1MjM3MTU4OSwtMjA5
+NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MTE1MzVdfQ==
 -->
