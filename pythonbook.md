@@ -415,10 +415,14 @@ Output:
 **Notes:**
 1. The order of the parts of the format specifier is
 {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
-3. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
-4. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
-5. You have to put the f at the end of the float field (third field in the `layout` variable) if you want it to treat the precision as decimal places. If you leave out the f then it will be significan figures instead.
-6. 
+2. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
+3. There are three possible alignment symbols:
+   - \< means left align, but it's the default so I've left it out 
+   - \^ means centre align 
+   - \> means left align, but it's the default so I've left it out. 
+5. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
+6. You have to put the f at the end of the float field (third field in the `layout` variable) if you want it to treat the precision as decimal places. If you leave out the f then it will be significan figures instead.
+7. 
 
 # Grouping lots a variables together with lists
 
@@ -471,11 +475,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ2NjA1ODQxLC0xMjg1NzY0NjM2LDIwOD
-A3ODI1MDYsLTE1MzUyOTAyMzYsMTcwODAxMDQsLTE4MDU3ODg2
-NjAsNDIzNTAwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsOD
-gyNjM4OTEyLDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5
-NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLD
-E2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC0xODI5
-MTEyNzY5XX0=
+eyJoaXN0b3J5IjpbLTE1OTk1MTA1OTYsLTEyODU3NjQ2MzYsMj
+A4MDc4MjUwNiwtMTUzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4
+ODY2MCw0MjM1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNC
+w4ODI2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3
+NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMz
+AsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4
+MjkxMTI3NjldfQ==
 -->
