@@ -196,43 +196,18 @@ print(containsAdjacent(nums, 32)
 		       	return False
     ```
 1. Write a program that defines a function to see if a list is in ascending order. Test it with these different lists:
-    - [1, 3, 6, 9]
-    - [4, 7, 2, 5]
-    - [1, 4, 4, 8]
+    - [1, 3, 6, 9] should return True
+    - [4, 7, 2, 5] should return False
+    - [1, 4, 4, 8] should return
 
 ### Program 1
 
-This program defines a function to swap the two items of a list that are at indexes m and n. It tests the function on the list [12, 45, 23, 85, 31, 77] using m = 1 and n = 4.
-
-```Python
-def swap(lst, m, n):
-	tmp = lst[n]
-	lst[n] = lst[m]
-	lst[m] = tmp
-
-nums = [12, 45, 23, 85, 31, 77]
-swap(nums, 1, 4)
-print(nums)
-```
-
-### Program 2
-
-This program does the same as Program 1.
-```Python
-def swap(lst, m, n):
-	lst[m], lst[n] = lst[n], lst[m]
-	lst[n] = lst[m]
-	lst[m] = tmp
-
-nums = [12, 45, 23, 85, 31, 77]
-swap(nums, 1, 4)
-print(nums)
-```
+This program defines a function to swap the two items of a list that are at 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwOTE3MjQxMCwtOTM5MTkyNDY2LC0xNz
-IxMTMzMTM1LC02MDQ4Nzg4ODksLTE4NjEwMTE3NTksLTE5MjAw
-MTE2MDIsLTQxOTg0NDM2Miw2OTAxNDMyMDksNjE0Mjg5MzIzLC
-0xNTE3NTY5Njg0LDcwNzcyNjUzMiwtOTY1OTYyNzU4LC0xNzUw
-NTQzOTcyLC0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LDE0MTg3MT
-E1MzUsMTQxODcxMTUzNV19
+eyJoaXN0b3J5IjpbNjY2NTk4OTYsLTkzOTE5MjQ2NiwtMTcyMT
+EzMzEzNSwtNjA0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDEx
+NjAyLC00MTk4NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMT
+UxNzU2OTY4NCw3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0
+Mzk3MiwtMTQ1MjM3MTU4OSwtMjA5NzM0MTYxOSwxNDE4NzExNT
+M1LDE0MTg3MTE1MzVdfQ==
 -->
