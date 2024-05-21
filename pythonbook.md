@@ -444,6 +444,7 @@ But, like strings, **lists are sequences** so you also need to know that
 * You can **slice** lists
 
 Here are some basic programs to introduce you to how lists work in Python.
+## Two ways to create a new list
 
 ##  Adding things using append
 ```Python
@@ -466,11 +467,11 @@ Output:
 ## Inserting things using insert
 ```Python
 mylist = ["apple", "banana", "lemon", "pear"]
-mylist.insert("fig", 6) # index = 3, value = 6
+mylist.insert(2, "fig")
 print(mylist)
 ```
 Output:
-> [1, 3, 5, 6, 7, 11]
+> ["apple", "banana", "fig", "lemon", "pear"]
 
 # Selecting which lines of code to execute with If statements
 
@@ -523,11 +524,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNTMyNTgyNywtMjA4NTQ4MDM3MSwtMT
-IzMDY2NjQ2LDYxMDQzMjUyLC0xMjg1NzY0NjM2LDIwODA3ODI1
-MDYsLTE1MzUyOTAyMzYsMTcwODAxMDQsLTE4MDU3ODg2NjAsND
-IzNTAwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4
-OTEyLDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNC
-wtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0
-Nzk4MTldfQ==
+eyJoaXN0b3J5IjpbNDk1NTM2ODE2LC0yMDg1NDgwMzcxLC0xMj
+MwNjY2NDYsNjEwNDMyNTIsLTEyODU3NjQ2MzYsMjA4MDc4MjUw
+NiwtMTUzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4ODY2MCw0Mj
+M1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5
+MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC
+01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3
+OTgxOV19
 -->
