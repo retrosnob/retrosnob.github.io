@@ -412,7 +412,7 @@ Output:
 |Penelope    | 16  |        1.66|
 |Kim         | 14  |        1.67|
 ```
-
+*
 
 # Grouping lots a variables together with lists
 
@@ -465,11 +465,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwODAxMDQsLTE4MDU3ODg2NjAsNDIzNT
-AwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4OTEy
-LDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNT
-UwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4
-MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC
-05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4
-MTE0NTNdfQ==
+eyJoaXN0b3J5IjpbMjI2MTI5MTkwLDE3MDgwMTA0LC0xODA1Nz
+g4NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0
+LDg4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mz
+c0OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAz
+MCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMT
+gyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsODA2MDE1
+NzkwXX0=
 -->
