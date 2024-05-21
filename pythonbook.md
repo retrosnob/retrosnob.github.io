@@ -396,21 +396,21 @@ I warn you it is complicated!
  Here is an example.
 
 ```Python
-titlelayout =  "|{:^12}|{:^5}|{:^10}{:^10}|"
-layout = "|{:12}|{:^5}|{:>12.2f}{:^+10}|"
+titlelayout =  "|{:^12}|{:^5}|{:^10}|{:^10}|"
+layout = "|{:12}|{:^5}|{:>10.2f}|{:^+10}|"
 print(titlelayout.format("Name", "Age", "Score", "Modifier"))
-print("-" * 33)
+print("-" * 42)
 print(layout.format("Fred", 15, 45.7, -2))
 print(layout.format("Penelope", 16, 38.658, 3))
 print(layout.format("Kim", 14, 41.67, 1))
 ```
 Output:
 ```
-|    Name    | Age | Height (m) |
----------------------------------
-|Fred        | 15  |        1.70|
-|Penelope    | 16  |        1.66|
-|Kim         | 14  |        1.67|
+|    Name    | Age |  Score   | Modifier |
+------------------------------------------
+|Fred        | 15  |     45.70|    -2    |
+|Penelope    | 16  |     38.66|    +3    |
+|Kim         | 14  |     41.67|    +1    |
 ```
 **Notes:**
 1. {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
@@ -468,11 +468,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODU3NjQ2MzYsMjA4MDc4MjUwNiwtMT
-UzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4ODY2MCw0MjM1MDA4
-NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5MTIsMT
-kxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0
-MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOS
-wyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1
-MDEwNjQyMF19
+eyJoaXN0b3J5IjpbMTgzMTUyOTg3NCwtMTI4NTc2NDYzNiwyMD
+gwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4
+NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LD
+g4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0
+OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMC
+wxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMTgy
+OTExMjc2OV19
 -->
