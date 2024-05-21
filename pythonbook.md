@@ -307,6 +307,12 @@ This program does the same.
 number = int(input("Enter a valid number (1-10): ")):
 print("Number valid: " + str(number >= 1 and number <= 0))  
 ```
+Output:
+> Enter a valid number (1-10): 6
+> Number valid: True
+> Enter a valid number (1-10): 14
+> Number valid: False
+
 ## Notes
 1. A statement that evaluates to True or False is known as a *condition*.
 2. Note that when using logical operators, each side of the operator has to be an expression which **on its own** evaluates to True or False. So if you want to check that a and b are both greater than 10, for instance, you have to write `a > 10 and b > 10`. You **cannot** write `a and b > 10`; in fact this will lead to a nasty bug.
@@ -366,11 +372,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDY2NTAzMCwxNjE0NDc5ODE5LDI4OD
-g3NjQ3NCwtMTEzNDUxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2
-NDIwLC04MzY2NzYxNzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC
-02ODgxMDIzOTQsMTgwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4
-Njg5Myw1MjY4NDM0MjgsLTExNjI4NzY1MTEsMjkzNzcxMjk1LD
-Q2MDQ5MDY4NSwtMTU0MDYwMjk0MiwxNTM0MjMxNDA1LDQ1MTk4
-NzkxMl19
+eyJoaXN0b3J5IjpbNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxND
+Q3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3
+NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAxNTc5MCwtMT
+IxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0
+NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMTYyODc2NTExLD
+I5Mzc3MTI5NSw0NjA0OTA2ODUsLTE1NDA2MDI5NDIsMTUzNDIz
+MTQwNV19
 -->
