@@ -327,16 +327,15 @@ Output:
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. Write a condition that evaluates to True if `n` is positive and even, and False otherwise. Hint: What is the remainder on division by 2 for numbers that are even?
 # Printing output to the screen
-Here is a summary of the main ways of printing strings (and variable values) to the console (screen). For each, `n` is an integer variable with value 15.
+Here is a summary of the main ways of printing strings (and variable values) to the console (screen). For each, `age` is an integer variable with value 15.
 | Statement | Explanation |
 | --- | --- |
-| print(n) |  |
-| print("Fred is", n, "years old.") |  |
-| print("Fred is " + n + " years old.") |  |
-| print("Fred is" + str(n) + "years old.") |  |
-| print("Fred is {} years old.".format(n) |  |
-| print(n) |  |
-| print(n) |  |
+| `print(age)` | Works. No type c |
+| `print("Fred is", age, "years old.")` |  |
+| `print("Fred is " + age + " years old.")` |  |
+| `print("Fred is" + str(age) + "years old.")` |  |
+| `print("Fred is {} years old.".format(age)` |  |
+| `print(f"Fred is {age} years old.")` |  |
 
 # Grouping lots a variables together with lists
 
@@ -389,11 +388,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzAxNTYxMTIsLTE3MDQzOTMzMDksMT
-kzNzQ5NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1
-MDMwLDE2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC
-0xODI5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYw
-MTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2Nj
-A1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2
-Mjg3NjUxMV19
+eyJoaXN0b3J5IjpbMTYzMTQ3NTk3OSwtMTcwNDM5MzMwOSwxOT
+M3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUw
+MzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLT
+E4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAx
+NTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MD
+UsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMTYy
+ODc2NTExXX0=
 -->
