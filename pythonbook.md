@@ -342,10 +342,10 @@ This works ok. The print function can print types other than strings.
 This works ok. If you separate string literals and variables with commas, Python automatically puts a space between them (but sometimes you won't want it to).
 
 ---
-`print("Fred is " + age + " years old.")`
-> **TypeError!** You cannot concatenate strings and integers.
+`print("Fred is" + age + "years old.")`
+> **TypeError!**
 
-This works ok. The print function can print types other than strings. 
+This doesn't work because you can't concatenate strings and integers. You have to use the `str` function to convert the integer to a string.
 
 ---
 `print("Fred is" + str(age) + "years old.")`
@@ -480,7 +480,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjg1MjE3OSw2MTA0MzI1MiwtMTI4NT
+eyJoaXN0b3J5IjpbLTEyMzA2NjY0Niw2MTA0MzI1MiwtMTI4NT
 c2NDYzNiwyMDgwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0
 LC0xODA1Nzg4NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMj
 c2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0Mzkz
