@@ -419,7 +419,8 @@ Output:
 3. There are three possible alignment symbols:
    - \< means left align, but it's the default so I've left it out 
    - \^ means centre align 
-   - \> means left align, but it's the default so I've left it out. 
+   - \> means right align 
+1. The + fourth field of the `layout` variable means that both positive and negative numbers get a sign symbol (+ or -)
 5. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
 6. You have to put the f at the end of the float field (third field in the `layout` variable) if you want it to treat the precision as decimal places. If you leave out the f then it will be significan figures instead.
 7. 
@@ -475,11 +476,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTk1MTA1OTYsLTEyODU3NjQ2MzYsMj
-A4MDc4MjUwNiwtMTUzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4
-ODY2MCw0MjM1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNC
-w4ODI2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3
-NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMz
-AsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4
-MjkxMTI3NjldfQ==
+eyJoaXN0b3J5IjpbLTU2NzEyMzAwNiwtMTI4NTc2NDYzNiwyMD
+gwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4
+NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LD
+g4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0
+OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMC
+wxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMTgy
+OTExMjc2OV19
 -->
