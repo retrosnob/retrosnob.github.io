@@ -162,6 +162,37 @@ text <span class="token operator">=</span> <span class="token builtin">input</sp
 </code></pre>
 <p><strong>Task:</strong><br>
 Write a program that asks the user for a new password and then tells them if the password is valid. In order to be valid, a password have at least 6 characters and must contain at least one upper case letter, at least one lower case, at least one digit and at least one non-alphanumeric character. The program should define a function passwordValid that takes the password as a parameter and returns True if the password is valid and False if it is not valid.</p>
+<h3 id="program-1-5">Program 1</h3>
+<p>This program defines a function to to find whether two occurrences of a value appear consecutively (one after the other) in a list. It tests the function on the list [12, 93, 45, 45, 74, 28] with n = 32 and n = 45.</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">containsConsecutive</span><span class="token punctuation">(</span>lst<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		<span class="token keyword">if</span> lst<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> value <span class="token operator">and</span> lst<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> value<span class="token punctuation">:</span>
+			<span class="token keyword">return</span> <span class="token boolean">True</span>
+	<span class="token keyword">return</span> <span class="token boolean">False</span>
+	
+nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">93</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">74</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">]</span> 
+<span class="token keyword">print</span><span class="token punctuation">(</span>containsAdjacent<span class="token punctuation">(</span>nums<span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>containsAdjacent<span class="token punctuation">(</span>nums<span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Tasks:</strong></p>
+<ol>
+<li>Explain why you need to subtract 1 from <code>len(lst)</code>. What error do you get if you don’t?</li>
+<li>Explain why this doesn’t work:<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">containsConsecutive</span><span class="token punctuation">(</span>lst<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+	    <span class="token keyword">if</span> lst<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> value <span class="token operator">and</span> lst<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> value<span class="token punctuation">:</span>
+		    <span class="token keyword">return</span> <span class="token boolean">True</span>
+		<span class="token keyword">else</span><span class="token punctuation">:</span>
+	       	<span class="token keyword">return</span> <span class="token boolean">False</span>
+</code></pre>
+</li>
+<li>Write a program that defines a function to see if a list is in ascending order. Test it with these different lists:
+<ul>
+<li>[1, 3, 6, 9] should return True</li>
+<li>[4, 7, 2, 5] should return False</li>
+<li>[1, 4, 4, 8] should return True</li>
+</ul>
+</li>
+</ol>
 </div>
 </body>
 
