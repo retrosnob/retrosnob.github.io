@@ -383,7 +383,14 @@ print(layout.format(name, age, height))
 **Notes:**
 1. Type conversion is not required before printing, even though `name` is a string, `age` is an integer and `height` is a float.
 2. `layout` is just a variable name; it has no other significance. The GCSE tends to use this variable name and that's the only reason I've used it.
+### Format specification mini-language
 
+
+For full details go here.
+https://docs.python.org/3/library/string.html#formatstrings
+I warn you it is complicated!
+
+ 
 
 
 # Grouping lots a variables together with lists
@@ -437,11 +444,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4OD
-I2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1
-NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMT
-YxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4Mjkx
-MTI3NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAxNTc5MC
-wtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0
-ODI0NTM2Ml19
+eyJoaXN0b3J5IjpbMjA3ODE2NTA5OSwtMjg3Nzg3MDkwLC0xMj
+c2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0Mzkz
+MzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLT
+gxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUx
+OTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNz
+MsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgw
+NTk1NjYwNV19
 -->
