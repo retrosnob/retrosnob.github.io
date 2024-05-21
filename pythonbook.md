@@ -327,7 +327,7 @@ Output:
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. Write a condition that evaluates to True if `n` is positive and even, and False otherwise. Hint: What is the remainder on division by 2 for numbers that are even?
 # Printing output to the screen
-
+When we print to the screen
 # Grouping lots a variables together with lists
 
 # Selecting which lines of code to execute with If statements
@@ -379,11 +379,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNT
-UwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4
-MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC
-05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4
-MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUzNj
-IsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3
-NzEyOTVdfQ==
+eyJoaXN0b3J5IjpbLTE0MzU4ODUzODQsLTE3MDQzOTMzMDksMT
+kzNzQ5NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1
+MDMwLDE2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC
+0xODI5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYw
+MTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2Nj
+A1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2
+Mjg3NjUxMV19
 -->
