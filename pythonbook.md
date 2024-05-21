@@ -434,8 +434,13 @@ Here is a basic program to introduce you to how lists work in Python.
 
 ```Python
 mylist = []
-mylist.append
+mylist.append(5)
+mylist.append("Hello")
+mylist.append(3.14)
+print(mylist)
 ```
+Output:
+> [5, "Hello", 3.14]
 # Selecting which lines of code to execute with If statements
 
 # Looping: repeating a block of code once for every item in a sequence (for loops)
@@ -487,11 +492,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2ODkwMjkwNiwtMTIzMDY2NjQ2LDYxMD
-QzMjUyLC0xMjg1NzY0NjM2LDIwODA3ODI1MDYsLTE1MzUyOTAy
-MzYsMTcwODAxMDQsLTE4MDU3ODg2NjAsNDIzNTAwODUzLC0yOD
-c3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4OTEyLDE5MTkyMjYz
-MTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LD
-UxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2
-NDc0XX0=
+eyJoaXN0b3J5IjpbLTExNjY5MDM2NjIsLTEyMzA2NjY0Niw2MT
+A0MzI1MiwtMTI4NTc2NDYzNiwyMDgwNzgyNTA2LC0xNTM1Mjkw
+MjM2LDE3MDgwMTA0LC0xODA1Nzg4NjYwLDQyMzUwMDg1MywtMj
+g3Nzg3MDkwLC0xMjc2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2
+MzExLC0xNzA0MzkzMzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Ni
+w1MTM1MDcwNTEsLTgxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3
+NjQ3NF19
 -->
