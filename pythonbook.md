@@ -385,7 +385,9 @@ print(layout.format(name, age, height))
 2. `layout` is just a variable name; it has no other significance. The GCSE tends to use this variable name and that's the only reason I've used it.
 ### Format specification mini-language
 You can put things in the curly braces to change the way that variables are presented. The most common uses for this are:
-* Left, centre or right alignm
+* Centre or right alignment (left is the default)
+* Setting the field width (the width in characters of the space into which the variable is printed; used for writing out information in tables)
+* 
 
 For full details go here.
 https://docs.python.org/3/library/string.html#formatstrings
@@ -445,7 +447,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTgyMzQ4Nyw0MjM1MDA4NTMsLTI4Nz
+eyJoaXN0b3J5IjpbMTE3NDEwNTkyOCw0MjM1MDA4NTMsLTI4Nz
 c4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5MTIsMTkxOTIyNjMx
 MSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1NzYsNT
 EzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyODg4NzY0
