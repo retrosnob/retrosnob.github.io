@@ -381,7 +381,7 @@ layout = "Hello {}. You are {} years old and {} metres tall."
 print(layout.format(name, age, height))
 ```
 **Notes:**
-1. Type conversion is not required before printing.
+1. Type conversion is not required before printing, even though `name` is a string, `age` is an integer and `height` is a float.
 2. `layout` is just a variable name; it has no other significance. The GCSE tends to use this variable name and that's the only reason I've used it.
 
 
@@ -437,11 +437,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNzM4NDUxLC0xMjc2NTE5ODA0LDg4Mj
-YzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0OTU1
-MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMCwxNj
-E0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMTgyOTEx
-Mjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsODA2MDE1NzkwLC
-0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1NjYwNSwxNTQ4
-MjQ1MzYyXX0=
+eyJoaXN0b3J5IjpbLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4OD
+I2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1
+NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMT
+YxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4Mjkx
+MTI3NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAxNTc5MC
+wtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0
+ODI0NTM2Ml19
 -->
