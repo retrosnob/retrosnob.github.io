@@ -371,6 +371,9 @@ This works ok. More information about this is given later in the chapter. **This
 
 This works ok. This is the modern way to print variables and string literals, but it is not used in the GCSE. 
 
+### Using the format function
+
+
 # Grouping lots a variables together with lists
 
 # Selecting which lines of code to execute with If statements
@@ -422,11 +425,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTczNTc4OSw4ODI2Mzg5MTIsMTkxOT
-IyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1
-NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyOD
-g4NzY0NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEw
-NjQyMCwtODM2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1My
-wtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQy
-ODY4OTNdfQ==
+eyJoaXN0b3J5IjpbLTEyNzY1MTk4MDQsODgyNjM4OTEyLDE5MT
+kyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMw
+NTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMj
+g4ODc2NDc0LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAx
+MDY0MjAsLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NT
+MsLTY4ODEwMjM5NCwxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0
+Mjg2ODkzXX0=
 -->
