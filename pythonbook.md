@@ -327,8 +327,17 @@ Output:
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 2. Write a condition that evaluates to True if `n` is positive and even, and False otherwise. Hint: What is the remainder on division by 2 for numbers that are even?
 # Printing output to the screen
-Here is a summary of the main ways of printing strings (and variable values) to the console (screen):
-| Statement | 
+Here is a summary of the main ways of printing strings (and variable values) to the console (screen). For each, `n` is an integer variable.
+| Statement | Explanation |
+| --- | --- |
+| print(n) |  |
+| print("The value of n is", n) |  |
+| print(n) |  |
+| print(n) |  |
+| print(n) |  |
+| print(n) |  |
+| print(n) |  |
+
 # Grouping lots a variables together with lists
 
 # Selecting which lines of code to execute with If statements
@@ -380,7 +389,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTM3OTkyNCwtMTcwNDM5MzMwOSwxOT
+eyJoaXN0b3J5IjpbLTE2NTA0Mzk2NywtMTcwNDM5MzMwOSwxOT
 M3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUw
 MzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLT
 E4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAx
