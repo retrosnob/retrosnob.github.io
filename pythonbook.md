@@ -458,12 +458,19 @@ Output:
 ## Removing things using del
 ```Python
 mylist = [1, 3, 5, 7, 11]
-del my
+del mylist[2]
 print(mylist)
 ```
 Output:
-> [5, "Hello", 3.14]
-
+> [1, 3, 7, 11]
+## Inserting things using insert
+```Python
+mylist = [1, 3, 5, 7, 11]
+mylist.insert(3, 6) # index 
+print(mylist)
+```
+Output:
+> [1, 3, 5, 6, 7, 11]
 
 # Selecting which lines of code to execute with If statements
 
@@ -516,11 +523,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTI5ODg5MTEsLTIwODU0ODAzNzEsLT
-EyMzA2NjY0Niw2MTA0MzI1MiwtMTI4NTc2NDYzNiwyMDgwNzgy
-NTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4NjYwLD
-QyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LDg4MjYz
-ODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0OTU1Mz
-QsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMCwxNjE0
-NDc5ODE5XX0=
+eyJoaXN0b3J5IjpbLTcyNjg2ODA0MiwtMjA4NTQ4MDM3MSwtMT
+IzMDY2NjQ2LDYxMDQzMjUyLC0xMjg1NzY0NjM2LDIwODA3ODI1
+MDYsLTE1MzUyOTAyMzYsMTcwODAxMDQsLTE4MDU3ODg2NjAsND
+IzNTAwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4
+OTEyLDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNC
+wtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0
+Nzk4MTldfQ==
 -->
