@@ -443,13 +443,22 @@ But, like strings, **lists are sequences** so you also need to know that
 * You can test for membership of a list using **in**
 * You can **slice** lists
 
-Here is a basic program to introduce you to how lists work in Python.
+Here are some basic programs to introduce you to how lists work in Python.
 
+##  Adding things using append
 ```Python
 mylist = [] # Create a new empty list
 mylist.append(5)
 mylist.append("Hello")
 mylist.append(3.14)
+print(mylist)
+```
+Output:
+> [5, "Hello", 3.14]
+## Removing things using del
+```Python
+mylist = [1, 3, 5, 7, 11]
+del my
 print(mylist)
 ```
 Output:
@@ -507,11 +516,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUyMzUwMDQ2LC0yMDg1NDgwMzcxLC0xMj
-MwNjY2NDYsNjEwNDMyNTIsLTEyODU3NjQ2MzYsMjA4MDc4MjUw
-NiwtMTUzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4ODY2MCw0Mj
-M1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5
-MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC
-01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3
-OTgxOV19
+eyJoaXN0b3J5IjpbLTEzMTI5ODg5MTEsLTIwODU0ODAzNzEsLT
+EyMzA2NjY0Niw2MTA0MzI1MiwtMTI4NTc2NDYzNiwyMDgwNzgy
+NTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4NjYwLD
+QyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LDg4MjYz
+ODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0OTU1Mz
+QsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMCwxNjE0
+NDc5ODE5XX0=
 -->
