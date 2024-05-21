@@ -394,7 +394,11 @@ For full details go here.
 https://docs.python.org/3/library/string.html#formatstrings
 I warn you it is complicated!
 
- 
+ Here are some examples.
+
+```Python
+
+`
 
 
 # Grouping lots a variables together with lists
@@ -448,11 +452,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDcxNjAxNTMsNDIzNTAwODUzLC0yOD
-c3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4OTEyLDE5MTkyMjYz
-MTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LD
-UxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2
-NDc0LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0Mj
-AsLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLTY4
-ODEwMjM5NF19
+eyJoaXN0b3J5IjpbLTEyMTAyNzk4MCw0MjM1MDA4NTMsLTI4Nz
+c4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5MTIsMTkxOTIyNjMx
+MSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1NzYsNT
+EzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyODg4NzY0
+NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEwNjQyMC
+wtODM2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4
+MTAyMzk0XX0=
 -->
