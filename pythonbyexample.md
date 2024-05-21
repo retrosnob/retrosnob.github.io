@@ -198,13 +198,11 @@ print(containsAdjacent(nums, 32)
 1. Write a program that defines a function to see if a list is in ascending order. Test it with these different lists:
     - [1, 3, 6, 9] should return True
     - [4, 7, 2, 5] should return False
-    - [1, 4, 4, 8] should return
+    - [1, 4, 4, 8] should return True
 
-### Program 1
 
-This program defines a function to swap the two items of a list that are at 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY2NTk4OTYsLTkzOTE5MjQ2NiwtMTcyMT
+eyJoaXN0b3J5IjpbMjY2MTg1NDIsLTkzOTE5MjQ2NiwtMTcyMT
 EzMzEzNSwtNjA0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDEx
 NjAyLC00MTk4NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMT
 UxNzU2OTY4NCw3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0
