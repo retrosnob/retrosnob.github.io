@@ -465,8 +465,8 @@ Output:
 > [1, 3, 7, 11]
 ## Inserting things using insert
 ```Python
-mylist = [1, 3, 5, 7, 11]
-mylist.insert(3, 6) # index 
+mylist = ["apple", "banana", "lemon", "pear"]
+mylist.insert("fig", 6) # index = 3, value = 6
 print(mylist)
 ```
 Output:
@@ -523,7 +523,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNjg2ODA0MiwtMjA4NTQ4MDM3MSwtMT
+eyJoaXN0b3J5IjpbMTMyNTMyNTgyNywtMjA4NTQ4MDM3MSwtMT
 IzMDY2NjQ2LDYxMDQzMjUyLC0xMjg1NzY0NjM2LDIwODA3ODI1
 MDYsLTE1MzUyOTAyMzYsMTcwODAxMDQsLTE4MDU3ODg2NjAsND
 IzNTAwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4
