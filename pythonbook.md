@@ -396,8 +396,8 @@ I warn you it is complicated!
  Here is an example.
 
 ```Python
-titlelayout =  "|{:^12}|{:^5}|{:^10}{^10}|"
-layout = "|{:12}|{:^5}|{:>12.2f}{^+10}|"
+titlelayout =  "|{:^12}|{:^5}|{:^10}{:^10}|"
+layout = "|{:12}|{:^5}|{:>12.2f}{:^+10}|"
 print(titlelayout.format("Name", "Age", "Score", "Modifier"))
 print("-" * 33)
 print(layout.format("Fred", 15, 1.7, -2))
@@ -414,7 +414,7 @@ Output:
 ```
 **Notes:**
 1. {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
-2. You HAVE to put the colon (:) in first.
+2. You HAVE to put the colon (:) in first. If you don't you will get a KeyError, so if you see a KeyError, you know what the problem is.
 3. 
 
 # Grouping lots a variables together with lists
@@ -468,7 +468,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjcyODQ1MiwtMTUzNTI5MDIzNiwxNz
+eyJoaXN0b3J5IjpbMjA4MDc4MjUwNiwtMTUzNTI5MDIzNiwxNz
 A4MDEwNCwtMTgwNTc4ODY2MCw0MjM1MDA4NTMsLTI4Nzc4NzA5
 MCwtMTI3NjUxOTgwNCw4ODI2Mzg5MTIsMTkxOTIyNjMxMSwtMT
 cwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3
