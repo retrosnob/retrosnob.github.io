@@ -384,7 +384,8 @@ print(layout.format(name, age, height))
 1. Type conversion is not required before printing, even though `name` is a string, `age` is an integer and `height` is a float.
 2. `layout` is just a variable name; it has no other significance. The GCSE tends to use this variable name and that's the only reason I've used it.
 ### Format specification mini-language
-You can put things in the curly braces 
+You can put things in the curly braces to change the way that variables are presented. The most common uses for this are:
+* Left, centre or right alignm
 
 For full details go here.
 https://docs.python.org/3/library/string.html#formatstrings
@@ -444,11 +445,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIzNTAwODUzLC0yODc3ODcwOTAsLTEyNz
-Y1MTk4MDQsODgyNjM4OTEyLDE5MTkyMjYzMTEsLTE3MDQzOTMz
-MDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtOD
-E0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5
-MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3NjE3My
-w4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxODA1
-OTU2NjA1XX0=
+eyJoaXN0b3J5IjpbLTg1MTgyMzQ4Nyw0MjM1MDA4NTMsLTI4Nz
+c4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5MTIsMTkxOTIyNjMx
+MSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1NzYsNT
+EzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyODg4NzY0
+NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEwNjQyMC
+wtODM2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4
+MTAyMzk0XX0=
 -->
