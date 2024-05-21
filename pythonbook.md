@@ -428,7 +428,7 @@ Output:
 7. You have to put the f at the end of the float field (third field in the `layout` variable) if you want it to treat the precision as *decimal places*. If you leave out the f then it will be *significant figures* instead.
 
 # Grouping lots a variables together with lists
-
+Every programming language has ways to represent lists of things. 
 # Selecting which lines of code to execute with If statements
 
 # Looping: repeating a block of code once for every item in a sequence (for loops)
@@ -480,11 +480,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzA2NjY0Niw2MTA0MzI1MiwtMTI4NT
-c2NDYzNiwyMDgwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0
-LC0xODA1Nzg4NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMj
-c2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0Mzkz
-MzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLT
-gxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUx
-OTEyOF19
+eyJoaXN0b3J5IjpbMjA4MzQ3NjIyMCwtMTIzMDY2NjQ2LDYxMD
+QzMjUyLC0xMjg1NzY0NjM2LDIwODA3ODI1MDYsLTE1MzUyOTAy
+MzYsMTcwODAxMDQsLTE4MDU3ODg2NjAsNDIzNTAwODUzLC0yOD
+c3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4OTEyLDE5MTkyMjYz
+MTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LD
+UxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2
+NDc0XX0=
 -->
