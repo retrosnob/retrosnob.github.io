@@ -357,7 +357,7 @@ This works ok because we have converted the integer to a string using the `str` 
 `print("Fred is {} years old.".format(age)`
 > Fred is 15 years old.
 
-This works ok. More information about this is given later in the chapter. **This is heavily used in the GCSE**. 
+This works ok. More information about this is given later in the chapter. **This is heavily used in the GCSE and must be used when the question tells you to use the format function.** 
 
 ---
 `print(f"Fred is {age} years old.")`
@@ -416,11 +416,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI2MzgxODgsMTkxOTIyNjMxMSwtMTcwND
-M5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUx
-LC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMz
-Q1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2
-MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LD
-E4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQz
-NDI4XX0=
+eyJoaXN0b3J5IjpbODgyNjM4OTEyLDE5MTkyMjYzMTEsLTE3MD
+QzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1
+MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMT
+M0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3
+NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NC
+wxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0
+MzQyOF19
 -->
