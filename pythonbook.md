@@ -398,7 +398,7 @@ I warn you it is complicated!
 ```Python
 titlelayout =  "|{:^12}|{:^5}|{:^12}|"
 layout = "|{:12}|{:^5}|{:>12.2f}|"
-print(titlelayout.format("Name", "Age", "Height (m)"))
+print(titlelayout.format("Name", "Age", "Score", "Modifier"))
 print("-" * 33)
 print(layout.format("Fred", 15, 1.7))
 print(layout.format("Penelope", 16, 1.658))
@@ -468,11 +468,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMDk5NTc0MiwxNzA4MDEwNCwtMTgwNT
-c4ODY2MCw0MjM1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgw
-NCw4ODI2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOT
-M3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUw
-MzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLT
-E4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAx
-NTc5MF19
+eyJoaXN0b3J5IjpbLTE1MzUyOTAyMzYsMTcwODAxMDQsLTE4MD
+U3ODg2NjAsNDIzNTAwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4
+MDQsODgyNjM4OTEyLDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMT
+kzNzQ5NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1
+MDMwLDE2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC
+0xODI5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYw
+MTU3OTBdfQ==
 -->
