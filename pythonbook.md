@@ -423,10 +423,9 @@ Output:
 4. The + in the fourth field of the `layout` variable means that both positive and negative numbers get a sign symbol (+ or -). There are three options you can put here:
    - \+ mean both positive and negative numbers get a sign
    - \- means only negative numbers get a sign; positive numbers get nothing (this is the default if you leave it out entirely)
-   - a space 
+   - a space means that negative numbers get a sign and positive numbers get a space (this could be useful for making sure that mixed positive and negative numbers line up nicely)
 6. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
 7. You have to put the f at the end of the float field (third field in the `layout` variable) if you want it to treat the precision as decimal places. If you leave out the f then it will be significan figures instead.
-8. 
 
 # Grouping lots a variables together with lists
 
@@ -479,11 +478,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDgyOTcwMywtMTI4NTc2NDYzNiwyMD
-gwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4
-NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LD
-g4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0
-OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMC
-wxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMTgy
-OTExMjc2OV19
+eyJoaXN0b3J5IjpbNzQ5MDU5OTI4LC0xMjg1NzY0NjM2LDIwOD
+A3ODI1MDYsLTE1MzUyOTAyMzYsMTcwODAxMDQsLTE4MDU3ODg2
+NjAsNDIzNTAwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsOD
+gyNjM4OTEyLDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5
+NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLD
+E2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC0xODI5
+MTEyNzY5XX0=
 -->
