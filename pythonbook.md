@@ -329,6 +329,7 @@ Output:
 # Printing output to the screen
 Here is a summary of the main ways of printing strings (and variable values) to the console (screen). For each, `age` is an integer variable with value 15.
 
+---
 `print(age)`
 > 15
 
@@ -346,16 +347,19 @@ This works ok. If you separate string literals and variables with commas, Python
 
 This works ok. The print function can print types other than strings. 
 
+---
 `print("Fred is" + str(age) + "years old.")`
 > Fred is 15 years old.
 
-This works ok because we have converted the integer to a string using the `str` function before we concatenated it. 
+This works ok because we have converted the integer to a string using the `str` function before we concatenated it. **This is used in the GCSE and *must* be used when the question tells you to use concatenation.**
 
+---
 `print("Fred is {} years old.".format(age)`
 > Fred is 15 years old.
 
 This works ok. More information about this is given later in the chapter. **This is heavily used in the GCSE**. 
 
+---
 `print(f"Fred is {age} years old.")`
 > Fred is 15 years old.
 
@@ -412,11 +416,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDEwMDQwNSwxOTE5MjI2MzExLC0xNz
-A0MzkzMzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcw
-NTEsLTgxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMT
-EzNDUxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2
-NzYxNzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOT
-QsMTgwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4
-NDM0MjhdfQ==
+eyJoaXN0b3J5IjpbNDI2MzgxODgsMTkxOTIyNjMxMSwtMTcwND
+M5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUx
+LC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMz
+Q1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2
+MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LD
+E4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQz
+NDI4XX0=
 -->
