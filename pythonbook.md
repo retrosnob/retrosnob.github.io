@@ -297,9 +297,7 @@ False or True|True|
 False or False|False|
 
 ### Logical operator precedence and the use of brackets
-You are familiar with the idea of operator precedence from mathematics. For instance:
-* 5 - 3 x 2 = -1
-* (5 - 3) x 2 = 4
+You are familiar with the idea of operator precedence from mathematics. For instance `5 - 3 x 2 = -1`, whereas `(5 - 3) x 2 = 4`.
 
 In Python, `and` takes precedence over `or`. For example, `True or False and False` evaluates to `True`, whereas `(True or False) and False` evaluates to `False`.
 
@@ -379,7 +377,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjAwNTM5MSw1MTM1MDcwNTEsLTgxND
+eyJoaXN0b3J5IjpbMTM1MTUyMzk5MCw1MTM1MDcwNTEsLTgxND
 Y2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEy
 OCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsOD
 A2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1
