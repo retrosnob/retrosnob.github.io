@@ -399,6 +399,7 @@ I warn you it is complicated!
 ```Python
 layout = "|{}|{}|{}|"
 print(layout.format()
+print("-" * 
 ```
 
 
@@ -453,11 +454,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYyNzc4NDAwLDQyMzUwMDg1MywtMjg3Nz
-g3MDkwLC0xMjc2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2MzEx
-LC0xNzA0MzkzMzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Niw1MT
-M1MDcwNTEsLTgxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3
-NCwtMTEzNDUxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC
-04MzY2NzYxNzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgx
-MDIzOTRdfQ==
+eyJoaXN0b3J5IjpbLTE2NDE0NDUwMzQsNDIzNTAwODUzLC0yOD
+c3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4OTEyLDE5MTkyMjYz
+MTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LD
+UxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2
+NDc0LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0Mj
+AsLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLTY4
+ODEwMjM5NF19
 -->
