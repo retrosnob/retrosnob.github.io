@@ -397,8 +397,9 @@ I warn you it is complicated!
  Here are some examples.
 
 ```Python
-
-`
+layout = "|{}|{}|{}|"
+print(layout.format()
+```
 
 
 # Grouping lots a variables together with lists
@@ -452,11 +453,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTAyNzk4MCw0MjM1MDA4NTMsLTI4Nz
-c4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5MTIsMTkxOTIyNjMx
-MSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1NzYsNT
-EzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyODg4NzY0
-NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEwNjQyMC
-wtODM2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1MywtNjg4
-MTAyMzk0XX0=
+eyJoaXN0b3J5IjpbNjYyNzc4NDAwLDQyMzUwMDg1MywtMjg3Nz
+g3MDkwLC0xMjc2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2MzEx
+LC0xNzA0MzkzMzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Niw1MT
+M1MDcwNTEsLTgxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3
+NCwtMTEzNDUxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC
+04MzY2NzYxNzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgx
+MDIzOTRdfQ==
 -->
