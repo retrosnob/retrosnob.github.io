@@ -301,8 +301,7 @@ You are familiar with the idea of operator precedence from mathematics. For inst
 * 5 - 3 x 2 = -1
 * (5 - 3) x 2 = 4
 
-In Python, `and` takes precedence over `or`. For example:
-* True or False and False
+In Python, `and` takes precedence over `or`. For example, `True or False and False` evaluates to `True`, whereas `(True or False) and False` evaluates to `False`.
 
 ## Example program using operators
 This program asks the user to enter a number between 1 and 10 (inclusive) and prints an appropriate message.
@@ -380,7 +379,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTAzODU3MCw1MTM1MDcwNTEsLTgxND
+eyJoaXN0b3J5IjpbMTUxMjAwNTM5MSw1MTM1MDcwNTEsLTgxND
 Y2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEy
 OCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsOD
 A2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1
