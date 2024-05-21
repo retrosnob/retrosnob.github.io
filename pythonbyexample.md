@@ -167,36 +167,8 @@ else:
 **Task:**
 Write a program that asks the user for a new password and then tells them if the password is valid. In order to be valid, a password have at least 6 characters and must contain at least one upper case letter, at least one lower case, at least one digit and at least one non-alphanumeric character. The program should define a function passwordValid that takes the password as a parameter and returns True if the password is valid and False if it is not valid.
 
+
 ### Program 1
-
-This program defines a function to swap the two items of a list that are at indexes m and n. It tests the function on the list [12, 45, 23, 85, 31, 77] using m = 1 and n = 4.
-
-```Python
-def swap(lst, m, n):
-	tmp = lst[n]
-	lst[n] = lst[m]
-	lst[m] = tmp
-
-nums = [12, 45, 23, 85, 31, 77]
-swap(nums, 1, 4)
-print(nums)
-```
-
-### Program 2
-
-This program does the same as Program 1.
-```Python
-def swap(lst, m, n):
-	lst[m], lst[n] = lst[n], lst[m]
-	lst[n] = lst[m]
-	lst[m] = tmp
-
-nums = [12, 45, 23, 85, 31, 77]
-swap(nums, 1, 4)
-print(nums)
-```
-
-### Program 3
 This program defines a function to to find whether two occurrences of a value appear consecutively (one after the other) in a list. It tests the function on the list [12, 93, 45, 45, 74, 28] with n = 32 and n = 45.
 
 ```Python
@@ -228,11 +200,39 @@ print(containsAdjacent(nums, 32)
     - [4, 7, 2, 5]
     - [1, 4, 4, 8]
 
+### Program 1
+
+This program defines a function to swap the two items of a list that are at indexes m and n. It tests the function on the list [12, 45, 23, 85, 31, 77] using m = 1 and n = 4.
+
+```Python
+def swap(lst, m, n):
+	tmp = lst[n]
+	lst[n] = lst[m]
+	lst[m] = tmp
+
+nums = [12, 45, 23, 85, 31, 77]
+swap(nums, 1, 4)
+print(nums)
+```
+
+### Program 2
+
+This program does the same as Program 1.
+```Python
+def swap(lst, m, n):
+	lst[m], lst[n] = lst[n], lst[m]
+	lst[n] = lst[m]
+	lst[m] = tmp
+
+nums = [12, 45, 23, 85, 31, 77]
+swap(nums, 1, 4)
+print(nums)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTE5MjQ2NiwtMTcyMTEzMzEzNSwtNj
-A0ODc4ODg5LC0xODYxMDExNzU5LC0xOTIwMDExNjAyLC00MTk4
-NDQzNjIsNjkwMTQzMjA5LDYxNDI4OTMyMywtMTUxNzU2OTY4NC
-w3MDc3MjY1MzIsLTk2NTk2Mjc1OCwtMTc1MDU0Mzk3MiwtMTQ1
-MjM3MTU4OSwtMjA5NzM0MTYxOSwxNDE4NzExNTM1LDE0MTg3MT
-E1MzVdfQ==
+eyJoaXN0b3J5IjpbMTgwOTE3MjQxMCwtOTM5MTkyNDY2LC0xNz
+IxMTMzMTM1LC02MDQ4Nzg4ODksLTE4NjEwMTE3NTksLTE5MjAw
+MTE2MDIsLTQxOTg0NDM2Miw2OTAxNDMyMDksNjE0Mjg5MzIzLC
+0xNTE3NTY5Njg0LDcwNzcyNjUzMiwtOTY1OTYyNzU4LC0xNzUw
+NTQzOTcyLC0xNDUyMzcxNTg5LC0yMDk3MzQxNjE5LDE0MTg3MT
+E1MzUsMTQxODcxMTUzNV19
 -->
