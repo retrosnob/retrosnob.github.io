@@ -332,12 +332,25 @@ Here is a summary of the main ways of printing strings (and variable values) to 
 `print(age)`
 > 15
 
-This works ok. The print  
+This works ok. The print function can print types other than strings. 
 
 `print("Fred is", age, "years old.")`
+> Fred is 15 years old.
+
+This works ok. If you separate string literals and variables with 
+
 `print("Fred is " + age + " years old.")`
+> 15
+
+This works ok. The print function can print types other than strings. 
 `print("Fred is" + str(age) + "years old.")`
+> 15
+
+This works ok. The print function can print types other than strings. 
 `print("Fred is {} years old.".format(age)`
+> 15
+
+This works ok. The print function can print types other than strings. 
 `print(f"Fred is {age} years old.")`
 
 # Grouping lots a variables together with lists
@@ -391,11 +404,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTIyMjA2MTcsLTE3MDQzOTMzMDksMT
-kzNzQ5NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1
-MDMwLDE2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC
-0xODI5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYw
-MTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NCwxODA1OTU2Nj
-A1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0MzQyOCwtMTE2
-Mjg3NjUxMV19
+eyJoaXN0b3J5IjpbMTI2MjE5NjA1MywtMTcwNDM5MzMwOSwxOT
+M3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUw
+MzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLT
+E4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAx
+NTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MD
+UsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMTYy
+ODc2NTExXX0=
 -->
