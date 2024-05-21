@@ -343,13 +343,13 @@ This works ok. If you separate string literals and variables with commas, Python
 
 ---
 `print("Fred is " + age + " years old.")`
-> TypeError! You cannot concatenate strings and integers.
+> **TypeError!** You cannot concatenate strings and integers.
 
 This works ok. The print function can print types other than strings. 
 
 ---
 `print("Fred is" + str(age) + "years old.")`
-> Fred is 15 years old.
+> Fred is15years old.
 
 This works ok because we have converted the integer to a string using the `str` function before we concatenated it. **This is used in the GCSE and *must* be used when the question tells you to use concatenation.**
 
@@ -416,11 +416,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgyNjM4OTEyLDE5MTkyMjYzMTEsLTE3MD
-QzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1
-MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMT
-M0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0MjAsLTgzNjY3
-NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEwMjM5NC
-wxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLDUyNjg0
-MzQyOF19
+eyJoaXN0b3J5IjpbMjAyMjY1OTU3Niw4ODI2Mzg5MTIsMTkxOT
+IyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1
+NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyOD
+g4NzY0NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEw
+NjQyMCwtODM2Njc2MTczLDgwNjAxNTc5MCwtMTIxNzgxMTQ1My
+wtNjg4MTAyMzk0LDE4MDU5NTY2MDUsMTU0ODI0NTM2MiwxMzQy
+ODY4OTNdfQ==
 -->
