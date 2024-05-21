@@ -414,10 +414,11 @@ Output:
 ```
 **Notes:**
 1. The order of the parts of the format specifier is
-   - {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
-2. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
-3. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
-4. See the 
+{:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
+3. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
+4. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
+5. You have to put the f at the end of the float field (third field in the `layout` variable) if you want it to treat the precision as decimal places. If you leave out the f then it will be significan figures instead.
+6. 
 
 # Grouping lots a variables together with lists
 
@@ -470,11 +471,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MzEwNTkzNSwtMTI4NTc2NDYzNiwyMD
-gwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4
-NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LD
-g4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0
-OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMC
-wxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMTgy
-OTExMjc2OV19
+eyJoaXN0b3J5IjpbNzQ2NjA1ODQxLC0xMjg1NzY0NjM2LDIwOD
+A3ODI1MDYsLTE1MzUyOTAyMzYsMTcwODAxMDQsLTE4MDU3ODg2
+NjAsNDIzNTAwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsOD
+gyNjM4OTEyLDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5
+NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLD
+E2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC0xODI5
+MTEyNzY5XX0=
 -->
