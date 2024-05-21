@@ -400,9 +400,9 @@ titlelayout =  "|{:^12}|{:^5}|{:^10}{:^10}|"
 layout = "|{:12}|{:^5}|{:>12.2f}{:^+10}|"
 print(titlelayout.format("Name", "Age", "Score", "Modifier"))
 print("-" * 33)
-print(layout.format("Fred", 15, 1.7, -2))
-print(layout.format("Penelope", 16, 1.658, 3))
-print(layout.format("Kim", 14, 1.67, 1))
+print(layout.format("Fred", 15, 45.7, -2))
+print(layout.format("Penelope", 16, 38.658, 3))
+print(layout.format("Kim", 14, 41.67, 1))
 ```
 Output:
 ```
@@ -468,11 +468,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDc4MjUwNiwtMTUzNTI5MDIzNiwxNz
-A4MDEwNCwtMTgwNTc4ODY2MCw0MjM1MDA4NTMsLTI4Nzc4NzA5
-MCwtMTI3NjUxOTgwNCw4ODI2Mzg5MTIsMTkxOTIyNjMxMSwtMT
-cwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3
-MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLT
-ExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2
-Njc2MTczXX0=
+eyJoaXN0b3J5IjpbLTEyODU3NjQ2MzYsMjA4MDc4MjUwNiwtMT
+UzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4ODY2MCw0MjM1MDA4
+NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5MTIsMT
+kxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0
+MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOS
+wyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1
+MDEwNjQyMF19
 -->
