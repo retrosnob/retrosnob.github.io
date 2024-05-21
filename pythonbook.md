@@ -414,9 +414,9 @@ Output:
 ```
 **Notes:**
 1. The order of the parts of the format specifier is
-2. {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
-3. You HAVE to put the colon (:) in first. If you don't you will get a KeyError, so if you see a KeyError, you know what the problem is.
-4. 
+   - {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
+3. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
+4. I have created a string of 50 da
 
 # Grouping lots a variables together with lists
 
@@ -469,11 +469,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzOTQwMTYxNywtMTI4NTc2NDYzNiwyMD
-gwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4
-NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LD
-g4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0
-OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMC
-wxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMTgy
-OTExMjc2OV19
+eyJoaXN0b3J5IjpbMzE2MzMzNTUwLC0xMjg1NzY0NjM2LDIwOD
+A3ODI1MDYsLTE1MzUyOTAyMzYsMTcwODAxMDQsLTE4MDU3ODg2
+NjAsNDIzNTAwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsOD
+gyNjM4OTEyLDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5
+NTUzNCwtNTUwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLD
+E2MTQ0Nzk4MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC0xODI5
+MTEyNzY5XX0=
 -->
