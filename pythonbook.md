@@ -396,26 +396,27 @@ I warn you it is complicated!
  Here is an example.
 
 ```Python
-titlelayout =  "|{:^12}|{:^5}|{:^10}|{:^10}|"
-layout = "|{:12}|{:^5}|{:>10.2f}|{:^+10}|"
+titlelayout =  "| {:^12} | {:^5} | {:^10} | {:^10} |"
+layout = "| {:12} | {:^5} | {:>10.2f} | {:^+10} |"
 print(titlelayout.format("Name", "Age", "Score", "Modifier"))
-print("-" * 42)
+print("-" * 50)
 print(layout.format("Fred", 15, 45.7, -2))
 print(layout.format("Penelope", 16, 38.658, 3))
 print(layout.format("Kim", 14, 41.67, 1))
 ```
 Output:
 ```
-|    Name    | Age |  Score   | Modifier |
-------------------------------------------
-|Fred        | 15  |     45.70|    -2    |
-|Penelope    | 16  |     38.66|    +3    |
-|Kim         | 14  |     41.67|    +1    |
+|     Name     |  Age  |   Score    |  Modifier  |
+--------------------------------------------------
+| Fred         |  15   |      45.70 |     -2     |
+| Penelope     |  16   |      38.66 |     +3     |
+| Kim          |  14   |      41.67 |     +1     |
 ```
 **Notes:**
-1. {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
-2. You HAVE to put the colon (:) in first. If you don't you will get a KeyError, so if you see a KeyError, you know what the problem is.
-3. 
+1. The order of the parts of the format specifier is
+2. {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
+3. You HAVE to put the colon (:) in first. If you don't you will get a KeyError, so if you see a KeyError, you know what the problem is.
+4. 
 
 # Grouping lots a variables together with lists
 
@@ -468,7 +469,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTUyOTg3NCwtMTI4NTc2NDYzNiwyMD
+eyJoaXN0b3J5IjpbMTgzOTQwMTYxNywtMTI4NTc2NDYzNiwyMD
 gwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4
 NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LD
 g4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0
