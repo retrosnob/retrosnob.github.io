@@ -435,6 +435,8 @@ Output:
 
 # Looping: repeating a block of code as long as a condition is true (while loops)
 
+# Slicing: getting parts of a sequence
+
 # Functions: named blocks of code that do a job and return a result
 
 # Working with files
@@ -478,11 +480,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEwNDMyNTIsLTEyODU3NjQ2MzYsMjA4MD
-c4MjUwNiwtMTUzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4ODY2
-MCw0MjM1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4OD
-I2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1
-NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMT
-YxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4Mjkx
-MTI3NjldfQ==
+eyJoaXN0b3J5IjpbLTYxMjg1MjE3OSw2MTA0MzI1MiwtMTI4NT
+c2NDYzNiwyMDgwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0
+LC0xODA1Nzg4NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMj
+c2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0Mzkz
+MzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLT
+gxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUx
+OTEyOF19
 -->
