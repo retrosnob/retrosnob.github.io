@@ -433,7 +433,7 @@ Every programming language has ways to represent lists of things. Without lists 
 Here is a basic program to introduce you to how lists work in Python.
 
 ```Python
-mylist = []
+mylist = [] # Create a new empty list
 mylist.append(5)
 mylist.append("Hello")
 mylist.append(3.14)
@@ -441,6 +441,8 @@ print(mylist)
 ```
 Output:
 > [5, "Hello", 3.14]
+
+
 # Selecting which lines of code to execute with If statements
 
 # Looping: repeating a block of code once for every item in a sequence (for loops)
@@ -492,7 +494,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjY5MDM2NjIsLTEyMzA2NjY0Niw2MT
+eyJoaXN0b3J5IjpbLTIwODU0ODAzNzEsLTEyMzA2NjY0Niw2MT
 A0MzI1MiwtMTI4NTc2NDYzNiwyMDgwNzgyNTA2LC0xNTM1Mjkw
 MjM2LDE3MDgwMTA0LC0xODA1Nzg4NjYwLDQyMzUwMDg1MywtMj
 g3Nzg3MDkwLC0xMjc2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2
