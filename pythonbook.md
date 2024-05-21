@@ -325,7 +325,7 @@ Output:
 2. Note that when using logical operators, each side of the operator has to be an expression which **on its own** evaluates to True or False. So if you want to check that a and b are both greater than 10, for instance, you have to write `a > 10 and b > 10`. You **cannot** write `a and b > 10`; in fact this will lead to a nasty bug.
 ## Exercises
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
-2. 
+2. Evaluate the expression. 
 # Printing output to the screen
 
 # Grouping lots a variables together with lists
@@ -379,11 +379,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxND
-Y2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEy
-OCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsOD
-A2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1
-NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4NDM0MjgsLT
-ExNjI4NzY1MTEsMjkzNzcxMjk1LDQ2MDQ5MDY4NSwtMTU0MDYw
-Mjk0Ml19
+eyJoaXN0b3J5IjpbMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LDUxMz
+UwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2NDc0
+LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0MjAsLT
+gzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLTY4ODEw
+MjM5NCwxODA1OTU2NjA1LDE1NDgyNDUzNjIsMTM0Mjg2ODkzLD
+UyNjg0MzQyOCwtMTE2Mjg3NjUxMSwyOTM3NzEyOTUsNDYwNDkw
+Njg1XX0=
 -->
