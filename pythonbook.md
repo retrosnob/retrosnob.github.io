@@ -301,6 +301,8 @@ You are familiar with the idea of operator precedence from mathematics. For inst
 
 In Python, `and` takes precedence over `or`. For example, `True or False and False` evaluates to `True`, whereas `(True or False) and False` evaluates to `False`.
 
+I think it's unlikely that the GCSE would require you to know this, but it's handy to know when you write your own programs.
+
 ## Example program using operators
 This program asks the user to enter a number between 1 and 10 (inclusive) and prints an appropriate message.
 ```Python
@@ -377,7 +379,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MTUyMzk5MCw1MTM1MDcwNTEsLTgxND
+eyJoaXN0b3J5IjpbLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxND
 Y2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEy
 OCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsOD
 A2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOTQsMTgwNTk1
