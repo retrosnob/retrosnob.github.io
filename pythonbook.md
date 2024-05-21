@@ -351,7 +351,13 @@ This works ok. The print function can print types other than strings.
 `print("Fred is" + str(age) + "years old.")`
 > Fred is15years old.
 
-This works ok because we have converted the integer to a string using the `str` function before we concatenated it. **This is used in the GCSE and *must* be used when the question tells you to use concatenation.**
+This works ok but we forgot to add spaces where we needed them.
+
+---
+`print("Fred is " + str(age) + " years old.")`
+> Fred is 15 years old.
+
+This works ok (same as above but with spaces) because we have converted the integer to a string using the `str` function before we concatenated it. **This is used in the GCSE and *must* be used when the question tells you to use concatenation.**
 
 ---
 `print("Fred is {} years old.".format(age)`
@@ -416,7 +422,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjY1OTU3Niw4ODI2Mzg5MTIsMTkxOT
+eyJoaXN0b3J5IjpbMTUzOTczNTc4OSw4ODI2Mzg5MTIsMTkxOT
 IyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC01NTA0MzA1
 NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3OTgxOSwyOD
 g4NzY0NzQsLTExMzQ1MTkxMjgsLTE4MjkxMTI3NjksLTk1MDEw
