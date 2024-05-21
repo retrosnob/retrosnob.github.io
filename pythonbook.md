@@ -415,8 +415,9 @@ Output:
 **Notes:**
 1. The order of the parts of the format specifier is
    - {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
-3. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
-4. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 
+2. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
+3. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
+4. See the 
 
 # Grouping lots a variables together with lists
 
@@ -469,11 +470,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU2MDMyMDQsLTEyODU3NjQ2MzYsMj
-A4MDc4MjUwNiwtMTUzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4
-ODY2MCw0MjM1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNC
-w4ODI2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3
-NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMz
-AsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLTE4
-MjkxMTI3NjldfQ==
+eyJoaXN0b3J5IjpbMTc1MzEwNTkzNSwtMTI4NTc2NDYzNiwyMD
+gwNzgyNTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4
+NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LD
+g4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0
+OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMC
+wxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMTgy
+OTExMjc2OV19
 -->
