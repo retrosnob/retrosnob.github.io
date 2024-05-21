@@ -389,21 +389,28 @@ You can put things in the curly braces to change the way that variables are pres
 * Setting the **field width** (the width in characters of the space into which the variable is printed; used for writing out information in tables)
 * Setting the number of **decimal places** a float value should have
 
-
 For full details go here.
 https://docs.python.org/3/library/string.html#formatstrings
 I warn you it is complicated!
 
- Here are some examples.
+ Here is an example.
 
 ```Python
-titlelayout =  "|{:^}|{:^}|{:^}|"
-layout = "|{}|{}|{}|"
-print(layout.format("Name", "Age", "Height (m)")
-print("-" * 27)
-print(layout.format("Fred", 15, 1.7)
-print(layout.format("Penelope", 16, 1.658)
-print(layout.format("Kim", 14, 2))
+titlelayout =  "|{:^12}|{:^5}|{:^12}|"
+layout = "|{:12}|{:^5}|{:>12.2f}|"
+print(titlelayout.format("Name", "Age", "Height (m)"))
+print("-" * 33)
+print(layout.format("Fred", 15, 1.7))
+print(layout.format("Penelope", 16, 1.658))
+print(layout.format("Kim", 14, 1.67))
+```
+Output:
+```
+|    Name    | Age | Height (m) |
+---------------------------------
+|Fred        | 15  |        1.70|
+|Penelope    | 16  |        1.66|
+|Kim         | 14  |        1.67|
 ```
 
 
@@ -458,11 +465,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDU3ODg2NjAsNDIzNTAwODUzLC0yOD
-c3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4OTEyLDE5MTkyMjYz
-MTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LD
-UxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2
-NDc0LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC05NTAxMDY0Mj
-AsLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4MTE0NTMsLTY4
-ODEwMjM5NF19
+eyJoaXN0b3J5IjpbMTcwODAxMDQsLTE4MDU3ODg2NjAsNDIzNT
+AwODUzLC0yODc3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4OTEy
+LDE5MTkyMjYzMTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNT
+UwNDMwNTc2LDUxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4
+MTksMjg4ODc2NDc0LC0xMTM0NTE5MTI4LC0xODI5MTEyNzY5LC
+05NTAxMDY0MjAsLTgzNjY3NjE3Myw4MDYwMTU3OTAsLTEyMTc4
+MTE0NTNdfQ==
 -->
