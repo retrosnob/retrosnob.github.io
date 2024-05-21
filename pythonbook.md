@@ -412,7 +412,9 @@ Output:
 |Penelope    | 16  |        1.66|
 |Kim         | 14  |        1.67|
 ```
-*
+**Notes:**
+1. You HAVE to put the colon (:) in first.
+2. 
 
 # Grouping lots a variables together with lists
 
@@ -465,11 +467,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI2MTI5MTkwLDE3MDgwMTA0LC0xODA1Nz
-g4NjYwLDQyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0
-LDg4MjYzODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mz
-c0OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAz
-MCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMTEzNDUxOTEyOCwtMT
-gyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2NzYxNzMsODA2MDE1
-NzkwXX0=
+eyJoaXN0b3J5IjpbLTI3NDU4NTIwOSwxNzA4MDEwNCwtMTgwNT
+c4ODY2MCw0MjM1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgw
+NCw4ODI2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOT
+M3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUw
+MzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLT
+E4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAx
+NTc5MF19
 -->
