@@ -435,7 +435,11 @@ There are only four basic things that the GCSE requires you to know about lists:
 * **Creating** a new empty list
 * **Appending** things to a list (adding them to the end of the list)
 * **Removing** items using the index (position) of the item in the list
-* Inserting something into a list at a particular index (position)
+* **Inserting** something into a list at a particular index (position)
+
+But, like strings, **lists are sequences** so you also need to know that
+* You can get a single item of a list by its index (position)
+* You can iterate through a list using 
 
 Here is a basic program to introduce you to how lists work in Python.
 
@@ -501,7 +505,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQwMTc3MDQwLC0yMDg1NDgwMzcxLC0xMj
+eyJoaXN0b3J5IjpbODgxODM4NTgzLC0yMDg1NDgwMzcxLC0xMj
 MwNjY2NDYsNjEwNDMyNTIsLTEyODU3NjQ2MzYsMjA4MDc4MjUw
 NiwtMTUzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4ODY2MCw0Mj
 M1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5
