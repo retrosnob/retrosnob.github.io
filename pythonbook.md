@@ -432,9 +432,10 @@ Every programming language has ways to represent lists of things. Without lists 
 
 There are only four basic things that the GCSE requires you to know about lists:
 
-* Creating a new empty list
-* Appending things to a list (adding them to the end of the list)
-* 
+* **Creating** a new empty list
+* **Appending** things to a list (adding them to the end of the list)
+* **Removing** items using the index (position) of the item in the list
+* Inserting something into a list at a particular index (position)
 
 Here is a basic program to introduce you to how lists work in Python.
 
@@ -500,11 +501,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzUxODg0OTYsLTIwODU0ODAzNzEsLT
-EyMzA2NjY0Niw2MTA0MzI1MiwtMTI4NTc2NDYzNiwyMDgwNzgy
-NTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4NjYwLD
-QyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LDg4MjYz
-ODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0OTU1Mz
-QsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMCwxNjE0
-NDc5ODE5XX0=
+eyJoaXN0b3J5IjpbNjQwMTc3MDQwLC0yMDg1NDgwMzcxLC0xMj
+MwNjY2NDYsNjEwNDMyNTIsLTEyODU3NjQ2MzYsMjA4MDc4MjUw
+NiwtMTUzNTI5MDIzNiwxNzA4MDEwNCwtMTgwNTc4ODY2MCw0Mj
+M1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgwNCw4ODI2Mzg5
+MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOTM3NDk1NTM0LC
+01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUwMzAsMTYxNDQ3
+OTgxOV19
 -->
