@@ -413,8 +413,9 @@ Output:
 |Kim         | 14  |        1.67|
 ```
 **Notes:**
-1. You HAVE to put the colon (:) in first.
-2. 
+1. {:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
+2. You HAVE to put the colon (:) in first.
+3. 
 
 # Grouping lots a variables together with lists
 
@@ -467,7 +468,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDU4NTIwOSwxNzA4MDEwNCwtMTgwNT
+eyJoaXN0b3J5IjpbMTMxMDk5NTc0MiwxNzA4MDEwNCwtMTgwNT
 c4ODY2MCw0MjM1MDA4NTMsLTI4Nzc4NzA5MCwtMTI3NjUxOTgw
 NCw4ODI2Mzg5MTIsMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOT
 M3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUw
