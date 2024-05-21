@@ -334,11 +334,13 @@ Here is a summary of the main ways of printing strings (and variable values) to 
 
 This works ok. The print function can print types other than strings. 
 
+---
 `print("Fred is", age, "years old.")`
 > Fred is 15 years old.
 
 This works ok. If you separate string literals and variables with commas, Python automatically puts a space between them (but sometimes you won't want it to).
 
+---
 `print("Fred is " + age + " years old.")`
 > TypeError! You cannot concatenate strings and integers.
 
@@ -410,11 +412,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTIyNjMxMSwtMTcwNDM5MzMwOSwxOT
-M3NDk1NTM0LC01NTA0MzA1NzYsNTEzNTA3MDUxLC04MTQ2NjUw
-MzAsMTYxNDQ3OTgxOSwyODg4NzY0NzQsLTExMzQ1MTkxMjgsLT
-E4MjkxMTI3NjksLTk1MDEwNjQyMCwtODM2Njc2MTczLDgwNjAx
-NTc5MCwtMTIxNzgxMTQ1MywtNjg4MTAyMzk0LDE4MDU5NTY2MD
-UsMTU0ODI0NTM2MiwxMzQyODY4OTMsNTI2ODQzNDI4LC0xMTYy
-ODc2NTExXX0=
+eyJoaXN0b3J5IjpbMTc5NDEwMDQwNSwxOTE5MjI2MzExLC0xNz
+A0MzkzMzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Niw1MTM1MDcw
+NTEsLTgxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3NjQ3NCwtMT
+EzNDUxOTEyOCwtMTgyOTExMjc2OSwtOTUwMTA2NDIwLC04MzY2
+NzYxNzMsODA2MDE1NzkwLC0xMjE3ODExNDUzLC02ODgxMDIzOT
+QsMTgwNTk1NjYwNSwxNTQ4MjQ1MzYyLDEzNDI4Njg5Myw1MjY4
+NDM0MjhdfQ==
 -->
