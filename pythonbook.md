@@ -430,6 +430,12 @@ Output:
 # Grouping lots a variables together with lists
 Every programming language has ways to represent lists of things. Without lists you would need to create separate variables to store lots of different values, which would become impossible if, at the time of writing your code, you didn't know exactly how many values the user might want to store. 
 
+There are only four basic things that the GCSE requires you to know about lists:
+
+* Creating a new empty list
+* Appending things to a list (adding them to the end of the list)
+* 
+
 Here is a basic program to introduce you to how lists work in Python.
 
 ```Python
@@ -494,11 +500,11 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODU0ODAzNzEsLTEyMzA2NjY0Niw2MT
-A0MzI1MiwtMTI4NTc2NDYzNiwyMDgwNzgyNTA2LC0xNTM1Mjkw
-MjM2LDE3MDgwMTA0LC0xODA1Nzg4NjYwLDQyMzUwMDg1MywtMj
-g3Nzg3MDkwLC0xMjc2NTE5ODA0LDg4MjYzODkxMiwxOTE5MjI2
-MzExLC0xNzA0MzkzMzA5LDE5Mzc0OTU1MzQsLTU1MDQzMDU3Ni
-w1MTM1MDcwNTEsLTgxNDY2NTAzMCwxNjE0NDc5ODE5LDI4ODg3
-NjQ3NF19
+eyJoaXN0b3J5IjpbLTEyMzUxODg0OTYsLTIwODU0ODAzNzEsLT
+EyMzA2NjY0Niw2MTA0MzI1MiwtMTI4NTc2NDYzNiwyMDgwNzgy
+NTA2LC0xNTM1MjkwMjM2LDE3MDgwMTA0LC0xODA1Nzg4NjYwLD
+QyMzUwMDg1MywtMjg3Nzg3MDkwLC0xMjc2NTE5ODA0LDg4MjYz
+ODkxMiwxOTE5MjI2MzExLC0xNzA0MzkzMzA5LDE5Mzc0OTU1Mz
+QsLTU1MDQzMDU3Niw1MTM1MDcwNTEsLTgxNDY2NTAzMCwxNjE0
+NDc5ODE5XX0=
 -->
