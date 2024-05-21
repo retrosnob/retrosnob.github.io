@@ -401,9 +401,9 @@ titlelayout =  "|{:^}|{:^}|{:^}|"
 layout = "|{}|{}|{}|"
 print(layout.format("Name", "Age", "Height (m)")
 print("-" * 27)
-print(layout.format()
-print(layout.format()
-print(layout.format()
+print(layout.format("Fred", 15, 1.7)
+print(layout.format("Penelope", 16, 1.658)
+print(layout.format("Kim", 14, 2))
 ```
 
 
@@ -458,7 +458,7 @@ Common things like counting and keeping a running total
 Where to get more practice: e.g. project Euler, adventofcode
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTkwMzc2OTksNDIzNTAwODUzLC0yOD
+eyJoaXN0b3J5IjpbLTE4MDU3ODg2NjAsNDIzNTAwODUzLC0yOD
 c3ODcwOTAsLTEyNzY1MTk4MDQsODgyNjM4OTEyLDE5MTkyMjYz
 MTEsLTE3MDQzOTMzMDksMTkzNzQ5NTUzNCwtNTUwNDMwNTc2LD
 UxMzUwNzA1MSwtODE0NjY1MDMwLDE2MTQ0Nzk4MTksMjg4ODc2
