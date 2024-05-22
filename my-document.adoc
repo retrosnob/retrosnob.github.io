@@ -4,7 +4,7 @@
 :source-highlighter: highlight.js
 
 Don't worry about gumberoos or splintercats.
-Something far more fearsome plagues the days, nights, and inbetweens.
+Something far more fearsome [red]#plagues# the days, nights, and inbetweens.
 Wolpertingers.
 
 IMPORTANT: Hello
