@@ -3,7 +3,7 @@
 :source-language: Python
 :source-highlighter: highlight.js
 
-Don't worry about gumberoos or splintercats.
+Don't worry about [blue]#gumberoos# or splintercats.
 Something far more fearsome [red]#plagues# the days, nights, and inbetweens.
 Wolpertingers.
 
