@@ -1,5 +1,7 @@
 = The Dangers of Wolpertingers
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
+:source-language: Python
+:source-highlighter: highlight.js
 
 Don't worry about gumberoos or splintercats.
 Something far more fearsome plagues the days, nights, and inbetweens.
@@ -9,13 +11,14 @@ IMPORTANT: Hello
 
 WARNING: This is a warning
 
-[source,Python]
+[source]
 ----
-for thing in things:
-    if thing:
-        pass
-    else:
-        pass
+def test():
+    for thing in things:
+        if thing:
+            x = 234
+        else:
+            y = "hello"
 ----
 
 == Origins
