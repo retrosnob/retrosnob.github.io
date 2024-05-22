@@ -5,6 +5,19 @@ Don't worry about gumberoos or splintercats.
 Something far more fearsome plagues the days, nights, and inbetweens.
 Wolpertingers.
 
+IMPORTANT: Hello
+
+WARNING: This is a warning
+
+[source,Python]
+----
+for thing in things:
+    if thing:
+        pass
+    else:
+        pass
+----
+
 == Origins
 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
