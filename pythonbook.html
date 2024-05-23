@@ -495,7 +495,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_if_with_elif_and_else">If with elif and else</a></li>
 </ul>
 </li>
-<li><a href="#_looping_repeating_a_block_of_code_once_for_every_item_in_a_sequence_for_loops">Looping: repeating a block of code once for every item in a sequence (for loops)</a></li>
+<li><a href="#_looping_repeating_a_block_of_code_once_for_every_item_in_a_sequence_for_loops">Looping: repeating a block of code once for every item in a sequence (for loops)</a>
+<ul class="sectlevel2">
+<li><a href="#_looping_through_a_sequence_by_item">Looping through a sequence by item</a></li>
+</ul>
+</li>
 <li><a href="#_looping_repeating_a_block_of_code_as_long_as_a_condition_is_true_while_loops">Looping: repeating a block of code as long as a condition is true (while loops)</a></li>
 <li><a href="#_slicing_getting_parts_of_a_sequence">Slicing: getting parts of a sequence</a></li>
 <li><a href="#_functions_named_blocks_of_code_that_do_a_job_and_return_a_result">Functions: named blocks of code that do a job and return a result</a></li>
@@ -1400,6 +1404,21 @@ Number valid: False</pre>
 <h2 id="_printing_output_to_the_screen">Printing output to the screen</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p>The print function outputs its argument to the console, followed by a newline.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print("Hello")
+print(4)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Hello
+4</pre>
+</div>
+</div>
+<div class="paragraph">
 <p>Here is a summary of the main ways of printing strings (and variable values) to the console (screen). For each, <code>age</code> is an integer variable with value 15.</p>
 </div>
 <hr>
@@ -1889,7 +1908,287 @@ Thank you</pre>
 <h2 id="_looping_repeating_a_block_of_code_once_for_every_item_in_a_sequence_for_loops">Looping: repeating a block of code once for every item in a sequence (for loops)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hello</p>
+<p>Remember that the sequence types that we encounter in the GCSE are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Strings</p>
+</li>
+<li>
+<p>Lists</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Very often in programs, we need to do something for every item of a sequence, such as counting, totalling or selecting particular items.</p>
+</div>
+<div class="sect2">
+<h3 id="_looping_through_a_sequence_by_item">Looping through a sequence by item</h3>
+<div class="paragraph">
+<p>Here is a program that uses a for loop to iterate through every letter of a string, printing a message each time it finds a capital letter and finally printing the total number of capital letters found.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">word = input("Enter a string: ")
+count = 0
+for letter in word:
+   if letter.isupper():
+      print("Capital letter found! " + letter)
+      count = count + 1
+print(str(count) + " capital letters found in total.")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Enter a string: Jeff works for the BBC
+Capital letter found! J
+Capital letter found! B
+Capital letter found! B
+Capital letter found! C
+4 capital letters found in total.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>There is nothing special about <code>letter</code> here; it is just a variable name. I could have used <code>x</code> but <code>letter</code> is a much better choice of name since anyone reading the code will know what the variable is being used for.</p>
+</li>
+<li>
+<p>Any lines of code indented after the beginning of the for loop are in the loop and will be repeated once for every item of the sequence (word).</p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="_making_a_sequence_of_integers_with_the_range_function">Making a sequence of integers with the range function</h4>
+<div class="paragraph">
+<p>The range function can be used to get a sequence of integers, which can then be iterated through with a for loop. The general syntax for a call to the range function is as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>range(N)</code>: A sequence from 0 to N-1</p>
+</li>
+<li>
+<p><code>range(M, N)</code>: A sequence from M to N-1</p>
+</li>
+<li>
+<p><code>range(M, N, step)</code>: The sequence from M to N-1 increasing in increments of <code>step</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Some examples are included in the following table:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Function call</th>
+<th class="tableblock halign-left valign-top">Sequence</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>range(10)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0, 1, 2, 3, 4, 5, 6, 7, 8, 9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you just use an integer N, you get a sequence from 0 up to N-1.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>range(0, 10)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0, 1, 2, 3, 4, 5, 6, 7, 8, 9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the same as the first example, but we&#8217;ve explicitly specified the sequence start number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>range(3, 10)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3, 4, 5, 6, 7, 8, 9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The sequence start doesn&#8217;t need to be 0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>range(3, 10, 2)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3, 5, 7, 9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you include a third argument it is the amount by which the sequence increases each time(often known as the <em>step</em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>range(10, 0, -1)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10, 9, 8, 7, 6, 5, 4, 3, 2, 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">You can use a negative step, but then the first argument has to be larger than the second.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following program uses the range function to generate a list of square numbers.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">for i in range(1, 11):
+   print(str(i) + " squared = " + str(i**2))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>1 squared = 1
+2 squared = 4
+3 squared = 9
+4 squared = 16
+5 squared = 25
+6 squared = 36
+7 squared = 49
+8 squared = 64
+9 squared = 81
+10 squared = 100</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_repeating_a_block_of_code_an_exact_number_of_times">Repeating a block of code an exact number of times</h4>
+<div class="paragraph">
+<p>The range function can be used to repeat a block of code an exact number of times. To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer. We don&#8217;t necessarily need to use the integer counter.</p>
+</div>
+<div class="paragraph">
+<p>The following program ask the user for exactly three words, entered  one after the other, and then tells the user the words they entered.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">words = []
+word = input("Enter a word: ")
+for i in range(3):
+   words.append(word)
+   word = input("Enter a word: ")
+
+print("The words you entered were: ")
+for word in words:
+   print(word)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Enter a word: lemon
+Enter a word: apple
+Enter a word: orange
+The words you entered were:
+lemon
+apple
+orange</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_iterating_through_a_sequence_using_an_index">Iterating through a sequence using an index</h4>
+<div class="paragraph">
+<p>We have already seen that with sequences (strings and lists), it is possible to use an index to access a particular item, for example, if <code>numbers</code> is a list, then <code>numbers[3]</code> gives us the 4th item in that list.</p>
+</div>
+<div class="paragraph">
+<p>To iterate through every item of the list using an index we need to</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start at 0, because that is the index of the first item</p>
+</li>
+<li>
+<p>End at the N - 1, where N is the length of the list (e.g. a list of 8 items will have indexes going from 0 up to 7)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There is a function that will give us the length of a sequence: the <code>len</code> function. We can use this function to give us the upper bound of the range of numbers that we need to use as the indexes for accessing the members of our sequence. This gives us exactly the indexes we want; no more and no less.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">range(len("computer")) # Gives the range 0,1,2,3,4,5,6,7</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>So now we can iterate through our sequence in two different ways:</p>
+</div>
+<div class="paragraph">
+<p><strong>Iterating by item:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">word = "computer"
+for letter in word:
+   print(letter)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Iterating by index:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">word = "computer"
+for i in range(len(word)):
+   print(word[i])</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>I have used <code>letter</code> as the loop variable in the first example, because each item of the list that I&#8217;m iterating through (the word) is a letter. But in the second example each item is not a letter, it&#8217;s an integer in the range 0 to 7. It is conventional to name an integer index <code>i</code> in this case (although in the GCSE they often use the name <code>index</code>).</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The GCSE tends to favour iterating through sequences using indexes rather than by item.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Iterating through a sequence using an index is generally considered to be less clear than iterating using an index but <strong>sometimes you have to use an index</strong> to iterate through a sequence. Consider this program that prints the indexes of any double letters in word.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">word = input("Enter a word: ")
+for i in range(len(word) - 1):
+   if word[i] == word[i+1]:
+      print("Double letter found at index: " + str(i))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Enter a word: Mississippi
+Double letter found at index: 2
+Double letter found at index: 5
+Double letter found at index: 8</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>We have to use an index here because we don&#8217;t just want to access the current item, we want to access the next item too.</p>
+</li>
+<li>
+<p>Note how we have to make the range of indexes one shorter than it was before, otherwise we will get to the last letter and try to check the "next" one. This will mean we&#8217;re trying to access a letter beyond the end of the word and we will get an <code>IndexError</code>.</p>
+</li>
+</ol>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1961,7 +2260,7 @@ Thank you</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-05-23 11:30:17 +0100
+Last updated 2024-05-23 17:57:29 +0100
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
