@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content=":stem">
 <title>Book Title</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -434,28 +433,81 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
 </head>
 <body class="book">
 <div id="header">
 <h1>Book Title</h1>
-<div class="details">
-<span id="author" class="author">:stem</span><br>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_about_this_book">About this book</a></li>
+<li><a href="#_getting_started_with_python">Getting started with Python</a>
+<ul class="sectlevel2">
+<li><a href="#_downloading_thonny">Downloading Thonny</a></li>
+<li><a href="#_the_thonny_interface">The Thonny interface</a></li>
+</ul>
+</li>
+<li><a href="#_variables_and_data_types">Variables and data types</a>
+<ul class="sectlevel2">
+<li><a href="#_variables">Variables</a></li>
+<li><a href="#_data_types">Data types</a></li>
+<li><a href="#_vocabulary">Vocabulary</a></li>
+<li><a href="#_exercises">Exercises</a></li>
+</ul>
+</li>
+<li><a href="#_getting_input_from_the_user">Getting input from the user</a></li>
+<li><a href="#_more_about_strings">More about strings</a>
+<ul class="sectlevel2">
+<li><a href="#_string_functions">String functions</a></li>
+<li><a href="#_string_functions_in_the_gcse">String functions in the GCSE</a></li>
+<li><a href="#_strings_as_sequences">Strings as sequences</a></li>
+</ul>
+</li>
+<li><a href="#_operators_and_expressions">Operators and expressions</a>
+<ul class="sectlevel2">
+<li><a href="#_arithmetic_operators">Arithmetic operators</a></li>
+<li><a href="#_comparison_operators">Comparison operators</a></li>
+<li><a href="#_logical_operators">Logical operators</a></li>
+<li><a href="#_example_program_using_operators">Example program using operators</a></li>
+<li><a href="#_notes">Notes</a></li>
+<li><a href="#_exercises_2">Exercises</a></li>
+</ul>
+</li>
+<li><a href="#_printing_output_to_the_screen">Printing output to the screen</a></li>
+<li><a href="#_using_the_format_function">Using the format function</a>
+<ul class="sectlevel2">
+<li><a href="#_format_specification_mini_language">Format specification mini-language</a></li>
+</ul>
+</li>
+<li><a href="#_grouping_lots_a_variables_together_with_lists">Grouping lots a variables together with lists</a>
+<ul class="sectlevel2">
+<li><a href="#_two_ways_to_create_a_new_list">Two ways to create a new list</a></li>
+<li><a href="#_removing_things_using_del">Removing things using del</a></li>
+<li><a href="#_inserting_things_using_insert">Inserting things using insert</a></li>
+</ul>
+</li>
+<li><a href="#_selecting_which_lines_of_code_to_execute_with_if_statements">Selecting which lines of code to execute with If statements</a>
+<ul class="sectlevel2">
+<li><a href="#_if_with_no_else">If with no else</a></li>
+<li><a href="#_if_with_else">If with else</a></li>
+<li><a href="#_if_with_elif_and_else">If with elif and else</a></li>
+</ul>
+</li>
+<li><a href="#_looping_repeating_a_block_of_code_once_for_every_item_in_a_sequence_for_loops">Looping: repeating a block of code once for every item in a sequence (for loops)</a></li>
+<li><a href="#_looping_repeating_a_block_of_code_as_long_as_a_condition_is_true_while_loops">Looping: repeating a block of code as long as a condition is true (while loops)</a></li>
+<li><a href="#_slicing_getting_parts_of_a_sequence">Slicing: getting parts of a sequence</a></li>
+<li><a href="#_functions_named_blocks_of_code_that_do_a_job_and_return_a_result">Functions: named blocks of code that do a job and return a result</a></li>
+<li><a href="#_working_with_files">Working with files</a></li>
+<li><a href="#_ideas">Ideas</a></li>
+</ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
 <h2 id="_about_this_book">About this book</h2>
 <div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python"># Store the value 5 in a variable called x
-x = 5
-
-# Store the value "Fred" in a variable called name
-name = "Fred"</code></pre>
-</div>
-</div>
 <div class="paragraph">
 <p>I often get students asking me if there is a book or a course they can do to learn more about Python and I often say no, because:</p>
 </div>
@@ -567,18 +619,6 @@ name = "Fred"</code></pre>
 <div class="paragraph">
 <p>You should try to choose variable names that make it easy to tell meaning of the data held in the variable.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-This is a note. I wonder how long it can be and specifically whether it looks good if there are multiple lines.
-</td>
-</tr>
-</table>
-</div>
 <div class="sect4">
 <h5 id="_capitalization_in_variable_names">Capitalization in variable names</h5>
 <div class="paragraph">
@@ -666,16 +706,10 @@ This is a note. I wonder how long it can be and specifically whether it looks go
 <div class="sect2">
 <h3 id="_vocabulary">Vocabulary</h3>
 <div class="paragraph">
-<p><strong>Assignment</strong></p>
+<p><strong>Assignment:</strong> Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the <strong>first</strong> assignment.</p>
 </div>
 <div class="paragraph">
-<p>Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the <strong>first</strong> assignment.</p>
-</div>
-<div class="paragraph">
-<p><strong>Intialisation</strong></p>
-</div>
-<div class="paragraph">
-<p>Creating and giving a variable it&#8217;s first value, e.g. <code>x = 5</code></p>
+<p><strong>Intialisation:</strong> Creating and giving a variable it&#8217;s first value, e.g. <code>x = 5</code></p>
 </div>
 </div>
 <div class="sect2">
@@ -843,13 +877,13 @@ The sum is 9</pre>
 <p>Add the values of the two integer variables n1 and n2.</p>
 </li>
 <li>
-<p>The str function then turns the result from an integer to a string.</p>
+<p>The <code>str</code> function then turns the result from an integer to a string.</p>
 </li>
 <li>
 <p>The string is then concatenated on the end of the string literal "The sum is " to form a longer string.</p>
 </li>
 <li>
-<p>That longer string is then passed to the print function, which prints it out on the screen.</p>
+<p>That longer string is then passed to the <code>print</code> function, which prints it out on the screen.</p>
 </li>
 </ol>
 </div>
@@ -859,7 +893,7 @@ The sum is 9</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>The <code>int</code> function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. &lt;, &gt;, etc) with the thing the user entered.</p>
+<p>The <code>int</code> function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. &lt;, &gt;, etc) with the value the user entered.</p>
 </li>
 <li>
 <p>The <code>str</code> function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.</p>
@@ -904,17 +938,16 @@ print(name.upper())</code></pre>
 <div class="paragraph">
 <p>You can call (execute, run) string functions by using dot notation: adding a dot after the string, followed by the name of the function, followed by ().</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-With any function, you must put () after its name if you want to <strong>call</strong> it. Try just printing name.upper and you will get an odd result because Python will try to print the function itself and not the result of calling it.
-</td>
-</tr>
-</table>
+<div class="title">Use brackets when you want to call functions</div>
+<div class="paragraph">
+<p>With any function, you must put () after its name if you want to <strong>call</strong> it. Try just printing <code>name.upper</code> and you will get an odd result because Python will try to print the function itself and not the result of calling it.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -927,6 +960,10 @@ print(name.upper) # left out the brackets!</code></pre>
 <div class="content">
 <pre>&lt;built-in method upper of str object at 0x000002B1FE6E5E30&gt;</pre>
 </div>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -1293,7 +1330,7 @@ else:
 <div class="sect3">
 <h4 id="_logical_operator_precedence_and_the_use_of_brackets">Logical operator precedence and the use of brackets</h4>
 <div class="paragraph">
-<p>You are familiar with the idea of operator precedence from mathematics. For instance \$5 - 3 x 2 = -1\$, whereas <code>(5 - 3) x 2 = 4</code>.</p>
+<p>You are familiar with the idea of operator precedence from mathematics. For instance <code>5 - 3 x 2 = -1</code>, whereas <code>(5 - 3) x 2 = 4</code>.</p>
 </div>
 <div class="paragraph">
 <p>In Python, <code>and</code> takes precedence over <code>or</code>. For example, <code>True or False and False</code> evaluates to <code>True</code>, whereas <code>(True or False) and False</code> evaluates to <code>False</code>.</p>
@@ -1375,7 +1412,7 @@ Number valid: False</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>Output: 15</pre>
+<pre>15</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1387,8 +1424,10 @@ Number valid: False</pre>
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print("Fred is", age, "years old.")</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>Fred is 15 years old.</p>
+<div class="listingblock">
+<div class="content">
+<pre>Fred is 15 years old.</pre>
+</div>
 </div>
 <div class="paragraph">
 <p>This works ok. If you separate string literals and variables with commas, Python automatically puts a space between them (but sometimes you won&#8217;t want it to).</p>
@@ -1429,7 +1468,19 @@ TypeError!</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This works ok (same as above but with spaces) because we have converted the integer to a string using the <code>str</code> function before we concatenated it. <strong>This is used in the GCSE and <strong>must</strong> be used when the question tells you to use concatenation.</strong></p>
+<p>This works ok (same as above but with spaces) because we have converted the integer to a string using the <code>str</code> function before we concatenated it.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+This is used in the GCSE and <strong>must</strong> be used when the question tells you to use <strong>concatenation</strong>.
+</td>
+</tr>
+</table>
 </div>
 <hr>
 <div class="listingblock">
@@ -1443,7 +1494,19 @@ TypeError!</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This works ok. More information about this is given later in the chapter. <strong>This is heavily used in the GCSE and must be used when the question tells you to use the format function.</strong></p>
+<p>This works ok. More information about the format function is given later in the chapter.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+This is heavily used in the GCSE and <strong>must</strong> be used when the question tells you to use the <strong>format function</strong>.
+</td>
+</tr>
+</table>
 </div>
 <hr>
 <div class="listingblock">
@@ -1541,8 +1604,8 @@ print(layout.format("Kim", 14, 41.67, 1))</code></pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The order of the parts of the format specifier is
-{:&lt;align&gt;&lt;sign&gt;&lt;width&gt;&lt;.precision&gt;&lt;type&gt;}</p>
+<p>The order of the parts of the format specifier is<br>
+<code>{:&lt;align&gt;&lt;sign&gt;&lt;width&gt;&lt;.precision&gt;&lt;type&gt;}</code></p>
 </li>
 <li>
 <p>You HAVE to put the colon (:) in first. If you don&#8217;t you will get a strange KeyError, so if you see a KeyError, you know what the problem is.</p>
@@ -1580,10 +1643,10 @@ print(layout.format("Kim", 14, 41.67, 1))</code></pre>
 </div>
 </li>
 <li>
-<p>I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it&#8217;s easier to do it by trial and error.</p>
+<p>I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of <code>"| "</code> plus three times the length of <code>" | "</code> plus the length of <code>" |"</code> plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it&#8217;s easier to do it by trial and error.</p>
 </li>
 <li>
-<p>You have to put the f at the end of the float field (third field in the <code>layout</code> variable) if you want it to treat the precision as <strong>decimal places</strong>. If you leave out the f then it will be <strong>significant figures</strong> instead.</p>
+<p>You have to put the <code>f</code> at the end of the float field (e.g. <code>10.2f</code>, the third field in the <code>layout</code> variable) if you want it to treat the precision as <strong>decimal places</strong>. If you leave out the f then it will be <strong>significant figures</strong> instead. The GCSE always seems to ask for decimal places, so always put it in for float values.</p>
 </li>
 </ol>
 </div>
@@ -1647,9 +1710,6 @@ listB = list()</code></pre>
 </div>
 <div class="sect3">
 <h4 id="_adding_things_using_append">Adding things using append</h4>
-<div class="paragraph">
-<p>asdf</p>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">mylist = [] # Create a new empty list
@@ -1705,8 +1765,125 @@ print(mylist)</code></pre>
 <div class="sect1">
 <h2 id="_selecting_which_lines_of_code_to_execute_with_if_statements">Selecting which lines of code to execute with If statements</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_if_with_no_else">If with no else</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">age = int(input("Enter your age: ")):
+if age &gt; 40:
+   print("You're old!")
+print("Thank you")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 1</div>
+<div class="content">
+<pre>Enter your age: 23
+Thank you</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 2</div>
+<div class="content">
+<pre>Enter your age: 45
+You're old!
+Thank you</pre>
+</div>
+</div>
 <div class="paragraph">
-<p>Hello hhello</p>
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Pay attention to the indentation in this example. The "Thank you" message is not indented and so is not part of the if statement. Hence it gets printed whether or not the "You&#8217;re old!" message gets printed.</p>
+</li>
+<li>
+<p>You don&#8217;t have to have an else! Students often put an else in even when nothing is to be done.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_if_with_else">If with else</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">age = int(input("Enter your age: ")):
+if age &gt; 40:
+   print("You're old!")
+else:
+   print("You're young!")
+print("Thank you")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 1</div>
+<div class="content">
+<pre>Enter your age: 23
+You're young!
+Thank you</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 2</div>
+<div class="content">
+<pre>Enter your age: 45
+You're old!
+Thank you</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_if_with_elif_and_else">If with elif and else</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">age = int(input("Enter your age: ")):
+if age &gt; 60:
+   print("You're very old!")
+elif age &gt; 40:
+   print("You're old!")
+else:
+   print("You're young!")
+print("Thank you")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 1</div>
+<div class="content">
+<pre>Enter your age: 74
+You're very old!
+Thank you</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 2</div>
+<div class="content">
+<pre>Enter your age: 45
+You're old!
+Thank you</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 2</div>
+<div class="content">
+<pre>Enter your age: 23
+You're young!
+Thank you</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You can have as many elifs as you want.</p>
+</li>
+<li>
+<p>Notice that in an if&#8230;&#8203; elif&#8230;&#8203; else block, <strong>only one option can be executed</strong>. Even though 74 is greater than 60 and greater than 40, only the first condition is matched. This is great because you can avoid complicated conditions like <code>age &gt; 40 and age &lt;= 60</code>.</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
@@ -1786,7 +1963,7 @@ print(mylist)</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-05-23 09:54:17 +0100
+Last updated 2024-05-23 11:14:43 +0100
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
