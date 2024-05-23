@@ -540,6 +540,20 @@ Number valid: False
 
 == Printing output to the screen
 
+The print function outputs its argument to the console, followed by a newline.
+
+[source,Python]
+----
+print("Hello")
+print(4)
+----
+
+----
+Hello
+4
+----
+
+
 Here is a summary of the main ways of printing strings (and variable values) to the console (screen). For each, `age` is an integer variable with value 15.
 
 ---
@@ -878,7 +892,195 @@ Thank you
 
 == Looping: repeating a block of code once for every item in a sequence (for loops)
 
-Hello
+Remember that the sequence types that we encounter in the GCSE are:
+
+* Strings
+* Lists
+
+Very often in programs, we need to do something for every item of a sequence, such as counting, totalling or selecting particular items. 
+
+=== Looping through a sequence by item
+
+Here is a program that uses a for loop to iterate through every letter of a string, printing a message each time it finds a capital letter and finally printing the total number of capital letters found.
+
+[source,Python]
+----
+word = input("Enter a string: ")
+count = 0
+for letter in word:
+   if letter.isupper():
+      print("Capital letter found! " + letter)
+      count = count + 1
+print(str(count) + " capital letters found in total.")
+----
+
+.Output
+----
+Enter a string: Jeff works for the BBC
+Capital letter found! J
+Capital letter found! B
+Capital letter found! B
+Capital letter found! C
+4 capital letters found in total.
+----
+
+**Notes:**
+
+1. There is nothing special about `letter` here; it is just a variable name. I could have used `x` but `letter` is a much better choice of name since anyone reading the code will know what the variable is being used for. 
+2. Any lines of code indented after the beginning of the for loop are in the loop and will be repeated once for every item of the sequence (word).
+
+==== Making a sequence of integers with the range function
+
+The range function can be used to get a sequence of integers, which can then be iterated through with a for loop. The general syntax for a call to the range function is as follows:
+
+* `range(N)`: A sequence from 0 to N-1
+* `range(M, N)`: A sequence from M to N-1
+* `range(M, N, step)`: The sequence from M to N-1 increasing in increments of `step`
+
+Some examples are included in the following table:
+
+[cols="1,1,1"]
+|====
+|Function call|Sequence|Explanation
+
+| `range(10)`
+| 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+| If you just use an integer N, you get a sequence from 0 up to N-1.
+
+| `range(0, 10)`
+| 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+| This is the same as the first example, but we've explicitly specified the sequence start number.
+
+| `range(3, 10)`
+| 3, 4, 5, 6, 7, 8, 9
+| The sequence start doesn't need to be 0.
+
+| `range(3, 10, 2)`
+| 3, 5, 7, 9
+| If you include a third argument it is the amount by which the sequence increases each time(often known as the _step_. 
+
+| `range(10, 0, -1)`
+| 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+| You can use a negative step, but then the first argument has to be larger than the second.
+|====
+
+The following program uses the range function to generate a list of square numbers.
+
+[source,Python]
+----
+for i in range(1, 11):
+   print(str(i) + " squared = " + str(i**2))
+----
+
+.Output
+----
+1 squared = 1
+2 squared = 4
+3 squared = 9
+4 squared = 16
+5 squared = 25
+6 squared = 36
+7 squared = 49
+8 squared = 64
+9 squared = 81
+10 squared = 100
+----
+
+==== Repeating a block of code an exact number of times
+
+The range function can be used to repeat a block of code an exact number of times. To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer. We don't necessarily need to use the integer counter.
+
+The following program ask the user for exactly three words, entered  one after the other, and then tells the user the words they entered.
+
+[source,Python]
+----
+words = []
+word = input("Enter a word: ")
+for i in range(3):
+   words.append(word)
+   word = input("Enter a word: ")
+
+print("The words you entered were: ")
+for word in words:
+   print(word)
+----
+
+.Output
+----
+Enter a word: lemon
+Enter a word: apple
+Enter a word: orange
+The words you entered were:
+lemon
+apple
+orange
+----
+
+==== Iterating through a sequence using an index
+
+We have already seen that with sequences (strings and lists), it is possible to use an index to access a particular item, for example, if `numbers` is a list, then `numbers[3]` gives us the 4th item in that list.
+
+To iterate through every item of the list using an index we need to
+
+* Start at 0, because that is the index of the first item
+* End at the N - 1, where N is the length of the list (e.g. a list of 8 items will have indexes going from 0 up to 7)
+
+There is a function that will give us the length of a sequence: the `len` function. We can use this function to give us the upper bound of the range of numbers that we need to use as the indexes for accessing the members of our sequence. This gives us exactly the indexes we want; no more and no less.
+
+
+[source,Python]
+----
+range(len("computer")) # Gives the range 0,1,2,3,4,5,6,7
+----
+
+So now we can iterate through our sequence in two different ways:
+
+**Iterating by item:**
+
+[source,Python]
+----
+word = "computer"
+for letter in word:
+   print(letter)
+----
+
+**Iterating by index:**
+
+[source,Python]
+----
+word = "computer"
+for i in range(len(word)):
+   print(word[i])
+----
+
+**Notes:**
+
+1. I have used `letter` as the loop variable in the first example, because each item of the list that I'm iterating through (the word) is a letter. But in the second example each item is not a letter, it's an integer in the range 0 to 7. It is conventional to name an integer index `i` in this case (although in the GCSE they often use the name `index`).
+
+NOTE: The GCSE tends to favour iterating through sequences using indexes rather than by item.
+
+Iterating through a sequence using an index is generally considered to be less clear than iterating using an index but **sometimes you have to use an index** to iterate through a sequence. Consider this program that prints the indexes of any double letters in word.
+
+[source,Python]
+----
+word = input("Enter a word: ")
+for i in range(len(word) - 1):
+   if word[i] == word[i+1]:
+      print("Double letter found at index: " + str(i))
+----
+
+.Output
+----
+Enter a word: Mississippi
+Double letter found at index: 2
+Double letter found at index: 5
+Double letter found at index: 8
+----
+
+**Notes:**
+
+1. We have to use an index here because we don't just want to access the current item, we want to access the next item too.
+2. Note how we have to make the range of indexes one shorter than it was before, otherwise we will get to the last letter and try to check the "next" one. This will mean we're trying to access a letter beyond the end of the word and we will get an `IndexError`.
 
 == Looping: repeating a block of code as long as a condition is true (while loops)
 
