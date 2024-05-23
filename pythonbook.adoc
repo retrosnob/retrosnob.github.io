@@ -696,7 +696,7 @@ Output:
 
 == Selecting which lines of code to execute with If statements
 
-Hello
+Hello hhello
 
 == Looping: repeating a block of code once for every item in a sequence (for loops)
 
