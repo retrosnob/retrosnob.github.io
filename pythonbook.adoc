@@ -3,18 +3,10 @@
 // :source-language: Python
 :doctype: book
 :source-highlighter: highlight.js
-:stem
+:icons: font
+:toc: auto
 
 == About this book
-
-[source,Python]
-----
-# Store the value 5 in a variable called x
-x = 5
-
-# Store the value "Fred" in a variable called name
-name = "Fred"
-----
 
 I often get students asking me if there is a book or a course they can do to learn more about Python and I often say no, because:
 
@@ -84,9 +76,6 @@ Variable names can include letters, numbers and the underscore (_) character, bu
 
 You should try to choose variable names that make it easy to tell meaning of the data held in the variable. 
 
-[NOTE]
-This is a note. I wonder how long it can be and specifically whether it looks good if there are multiple lines.
-
 ===== Capitalization in variable names
 
 There are different conventions about whether to include capital letters in variable names or not. Edexcel likes to use **camel case**, in which:
@@ -127,13 +116,9 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 
 === Vocabulary
 
-**Assignment**
+**Assignment:** Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the *first* assignment.
 
-Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the *first* assignment.
-
-**Intialisation**
-
-Creating and giving a variable it's first value, e.g. `x = 5`
+**Intialisation:** Creating and giving a variable it's first value, e.g. `x = 5`
 
 === Exercises
 
@@ -232,15 +217,15 @@ This is the order of events:
 
 1. Add the values of the two integer variables n1 and n2.
 
-2. The str function then turns the result from an integer to a string.
+2. The `str` function then turns the result from an integer to a string.
 
 3. The string is then concatenated on the end of the string literal "The sum is " to form a longer string.
 
-4. That longer string is then passed to the print function, which prints it out on the screen.
+4. That longer string is then passed to the `print` function, which prints it out on the screen.
 
 In summary:
 
-* The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, etc) with the thing the user entered.
+* The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, etc) with the value the user entered.
 
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 
@@ -268,8 +253,10 @@ print(name.upper())
 
 You can call (execute, run) string functions by using dot notation: adding a dot after the string, followed by the name of the function, followed by ().
 
-[NOTE]
-With any function, you must put () after its name if you want to **call** it. Try just printing name.upper and you will get an odd result because Python will try to print the function itself and not the result of calling it. 
+[IMPORTANT]
+.Use brackets when you want to call functions
+====
+With any function, you must put () after its name if you want to **call** it. Try just printing `name.upper` and you will get an odd result because Python will try to print the function itself and not the result of calling it. 
 
 [source,Python]
 ----
@@ -281,6 +268,7 @@ print(name.upper) # left out the brackets!
 ----
 <built-in method upper of str object at 0x000002B1FE6E5E30>
 ----
+====
 
 === String functions in the GCSE
 
@@ -508,7 +496,7 @@ This is the **truth table for OR**:
 
 ==== Logical operator precedence and the use of brackets
 
-You are familiar with the idea of operator precedence from mathematics. For instance stem:[5 - 3 x 2 = -1], whereas `(5 - 3) x 2 = 4`.
+You are familiar with the idea of operator precedence from mathematics. For instance `5 - 3 x 2 = -1`, whereas `(5 - 3) x 2 = 4`.
 
 In Python, `and` takes precedence over `or`. For example, `True or False and False` evaluates to `True`, whereas `(True or False) and False` evaluates to `False`.
 
@@ -564,7 +552,7 @@ print(age)
 ----
 
 ----
-Output: 15
+15
 ----
 
 This works ok. The print function can print types other than strings. 
@@ -575,7 +563,9 @@ This works ok. The print function can print types other than strings.
 print("Fred is", age, "years old.")
 ----
 
+----
 Fred is 15 years old.
+----
 
 This works ok. If you separate string literals and variables with commas, Python automatically puts a space between them (but sometimes you won't want it to).
 
@@ -610,7 +600,9 @@ print("Fred is " + str(age) + " years old.")
 Fred is 15 years old.
 ----
 
-This works ok (same as above but with spaces) because we have converted the integer to a string using the `str` function before we concatenated it. **This is used in the GCSE and *must* be used when the question tells you to use concatenation.**
+This works ok (same as above but with spaces) because we have converted the integer to a string using the `str` function before we concatenated it. 
+
+WARNING: This is used in the GCSE and **must** be used when the question tells you to use **concatenation**.
 
 ---
 [source,Python]
@@ -622,7 +614,9 @@ print("Fred is {} years old.".format(age))
 Fred is 15 years old.
 ----
 
-This works ok. More information about this is given later in the chapter. **This is heavily used in the GCSE and must be used when the question tells you to use the format function.** 
+This works ok. More information about the format function is given later in the chapter. 
+
+WARNING: This is heavily used in the GCSE and **must** be used when the question tells you to use the **format function**.
 
 ---
 
@@ -692,8 +686,8 @@ print(layout.format("Kim", 14, 41.67, 1))
 
 **Notes:**
 
-1. The order of the parts of the format specifier is
-{:<align><sign><width><.precision><type>}
+1. The order of the parts of the format specifier is +
+`{:<align><sign><width><.precision><type>}`
 
 2. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
 
@@ -707,9 +701,9 @@ print(layout.format("Kim", 14, 41.67, 1))
    - - means only negative numbers get a sign; positive numbers get nothing (this is the default if you leave it out entirely)
    - a space means that negative numbers get a sign and positive numbers get a space (this could be useful for making sure that mixed positive and negative numbers line up nicely)
 
-5. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
+5. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of `"| "` plus three times the length of `" | "` plus the length of `" |"` plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
 
-6. You have to put the f at the end of the float field (third field in the `layout` variable) if you want it to treat the precision as *decimal places*. If you leave out the f then it will be *significant figures* instead.
+6. You have to put the `f` at the end of the float field (e.g. `10.2f`, the third field in the `layout` variable) if you want it to treat the precision as *decimal places*. If you leave out the f then it will be *significant figures* instead. The GCSE always seems to ask for decimal places, so always put it in for float values.
 
 == Grouping lots a variables together with lists
 
@@ -745,8 +739,6 @@ listB = list()
 ----
 
 ====  Adding things using append
-
-asdf
 
 [source,Python]
 ----
@@ -792,7 +784,99 @@ Output:
 
 == Selecting which lines of code to execute with If statements
 
-Hello hhello
+=== If with no else
+
+[source,Python]
+----
+age = int(input("Enter your age: ")):
+if age > 40:
+   print("You're old!")
+print("Thank you")
+----
+
+.Output 1
+----
+Enter your age: 23
+Thank you
+----
+
+.Output 2
+----
+Enter your age: 45
+You're old!
+Thank you
+----
+
+**Notes:**
+
+1. Pay attention to the indentation in this example. The "Thank you" message is not indented and so is not part of the if statement. Hence it gets printed whether or not the "You're old!" message gets printed.
+2. You don't have to have an else! Students often put an else in even when nothing is to be done. 
+
+=== If with else
+
+[source,Python]
+----
+age = int(input("Enter your age: ")):
+if age > 40:
+   print("You're old!")
+else:
+   print("You're young!")
+print("Thank you")
+----
+
+.Output 1
+----
+Enter your age: 23
+You're young!
+Thank you
+----
+
+.Output 2
+----
+Enter your age: 45
+You're old!
+Thank you
+----
+
+=== If with elif and else
+
+[source,Python]
+----
+age = int(input("Enter your age: ")):
+if age > 60:
+   print("You're very old!")
+elif age > 40:
+   print("You're old!")
+else:
+   print("You're young!")
+print("Thank you")
+----
+
+.Output 1
+----
+Enter your age: 74
+You're very old!
+Thank you
+----
+
+.Output 2
+----
+Enter your age: 45
+You're old!
+Thank you
+----
+
+.Output 2
+----
+Enter your age: 23
+You're young!
+Thank you
+----
+
+**Notes:**
+
+1. You can have as many elifs as you want.
+2. Notice that in an if... elif... else block, **only one option can be executed**. Even though 74 is greater than 60 and greater than 40, only the first condition is matched. This is great because you can avoid complicated conditions like `age > 40 and age \<= 60`.
 
 == Looping: repeating a block of code once for every item in a sequence (for loops)
 
