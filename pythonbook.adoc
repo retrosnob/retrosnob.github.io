@@ -1084,7 +1084,36 @@ Double letter found at index: 8
 
 == Looping: repeating a block of code as long as a condition is true (while loops)
 
-Hello
+We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false. There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true.
+
+This program asks the user to enter a password. It keeps asking until the user enters the correct password "sesame".
+
+[source,Python]
+----
+password = input("Enter password: ")
+
+while password != "sesame":
+   print("Incorrect password")
+   password = input("Enter password: ")
+
+print("Access granted")
+----
+
+.Output
+----
+Enter password: password
+Incorrect password
+Enter password: letmein
+Incorrect password
+Enter password: 123456
+Incorrect password
+Enter password: sesame
+Access granted
+----
+
+**Notes:**
+
+1. It is important to ask for another password in the loop. If this is not done, then the loop will go on forever (because it will keep testing "password") and your computer will become unresponsive. This is known as an **infinite loop**.
 
 == Slicing: getting parts of a sequence
 

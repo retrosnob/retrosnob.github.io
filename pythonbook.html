@@ -2196,7 +2196,44 @@ Double letter found at index: 8</pre>
 <h2 id="_looping_repeating_a_block_of_code_as_long_as_a_condition_is_true_while_loops">Looping: repeating a block of code as long as a condition is true (while loops)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hello</p>
+<p>We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false. There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true.</p>
+</div>
+<div class="paragraph">
+<p>This program asks the user to enter a password. It keeps asking until the user enters the correct password "sesame".</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">password = input("Enter password: ")
+
+while password != "sesame":
+   print("Incorrect password")
+   password = input("Enter password: ")
+
+print("Access granted")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Enter password: password
+Incorrect password
+Enter password: letmein
+Incorrect password
+Enter password: 123456
+Incorrect password
+Enter password: sesame
+Access granted</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>It is important to ask for another password in the loop. If this is not done, then the loop will go on forever (because it will keep testing "password") and your computer will become unresponsive. This is known as an <strong>infinite loop</strong>.</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -2260,7 +2297,7 @@ Double letter found at index: 8</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-05-23 17:57:29 +0100
+Last updated 2024-05-23 22:25:37 +0100
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
