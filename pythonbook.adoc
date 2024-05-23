@@ -508,7 +508,7 @@ This is the **truth table for OR**:
 
 ==== Logical operator precedence and the use of brackets
 
-You are familiar with the idea of operator precedence from mathematics. For instance stem:[5 - 3 :times 2 = -1], whereas `(5 - 3) x 2 = 4`.
+You are familiar with the idea of operator precedence from mathematics. For instance stem:[5 - 3 x 2 = -1], whereas `(5 - 3) x 2 = 4`.
 
 In Python, `and` takes precedence over `or`. For example, `True or False and False` evaluates to `True`, whereas `(True or False) and False` evaluates to `False`.
 
