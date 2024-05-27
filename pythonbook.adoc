@@ -6,6 +6,8 @@
 :icons: font
 :toc: auto
 
+link:downloads/report.pdf[Get Report]
+
 == About this book
 
 I often get students asking me if there is a book or a course they can do to learn more about Python and I often say no, because:
@@ -1314,7 +1316,7 @@ There are 16 letters in the text you entered.
    .. It is **concatenated** with "There are " and " letter in the text you entered."
    .. The whole string is passed to the `print` function for printing to the screen
 
-More details, including the advantage of using functions, is covered in the GCSE course notes. 
+More details, including the advantage of using functions, is covered in the GCSE course notes.
 
 == Working with files
 
@@ -1386,3 +1388,8 @@ file.close()
 * Common things like counting and keeping a running total
 * Where to get more practice: e.g. project Euler, adventofcode
 * Creating a list out of a string with list()
+
+<<_working_with_files>>
+
+<<_working_with_files,Click here>>
+
