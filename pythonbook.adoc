@@ -1303,22 +1303,77 @@ There are 16 letters in the text you entered.
 
 **Notes:**
 
-. The function definition begins with the line `def countAlpha...`.
+. The function definition begins with the line `def countAlpha(pString):`.
 . The function call is `countAlpha(text)`.
 . The function has to be defined before it is called, hence I have put it at the beginning of the program. 
 . The code in the function isn't actually executed until the function is called. The order of events is:
    .. Ask the user for input and assign the result to text.
-   .. Copy the value of text into pString and run the code in the countAlpha function.
-   .. Return the result of the countAlpha function (an integer) the main part of the code.
-   .. The str function converts it to a string.
-   .. It is concatenated with "There are " and " letter in the text you entered."
-   .. The whole string is passed to the print function for printing to the screen
+   .. Copy the value of `text` into `pString` and run the code in the `countAlpha` function.
+   .. Return the result of the `countAlpha` function (an integer) the main part of the code.
+   .. The `str` function converts it to a string.
+   .. It is **concatenated** with "There are " and " letter in the text you entered."
+   .. The whole string is passed to the `print` function for printing to the screen
 
 More details, including the advantage of using functions, is covered in the GCSE course notes. 
 
 == Working with files
 
-Hello
+=== Writing to new files
+
+This program creates a new file in the same directory as the Python (.py) file that contains the code. Run the code locally (on your machine) to test it out.
+
+[source,Python]
+----
+FILENAME = "outputData.txt"
+file = open(FILENAME, "w")
+file.write("Hello\n")
+file.write("world")
+file.close()
+----
+
+=== Reading data from files that already exist
+
+The next program reads from an existing file in the same directory as the Python (.py) file that contains the code. Before you run the code you will need to create the file by copying the following text and pasting it into a new file. You can do this in Thonny by following these instructions:
+
+.Copy this text to the clipboard
+----
+booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+johnson81;4081;Craig;Johnson
+jenkins46;9346;Mary;Jenkins
+smith79;5079;Jamie;Smith
+----
+
+_Then in Thonny_
+
+. Choose File, New
+. Paste the text into the top window
+. Choose File, Save As
+. Enter inputData.txt as the file name
+. Click Save
+
+Run the code locally (on your machine) to test it out.
+
+[source,Python]
+----
+FILENAME = "inputData.txt"
+file = open(FILENAME, "r")
+
+for line in file:
+   fields = line.split(";")
+   print(fields[2] + " " fields[3])
+
+file.close()
+----
+
+
+**Notes:**
+
+. In the GCSE, the file name will usually be given as a **constant**, signified by a variable name in all capitals. If you are given a file name as a constant and asked to open the file, you must **use the constant**. You would lose a mark for writing `open("data.txt", "w").`
+. The "w" argument to the open function stands for "writing" and means that we are opening a new file to put text into. 
+. If you open an existing file for writing, it will erase all data in that file.
+. The "\n" means a **newline** character. 
+
 
 == Ideas
 
