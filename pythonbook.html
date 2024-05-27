@@ -460,6 +460,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_getting_input_from_the_user">Getting input from the user</a></li>
 <li><a href="#_more_about_strings">More about strings</a>
 <ul class="sectlevel2">
+<li><a href="#_lexicographical_comparison_of_strings_alphabetical_order">Lexicographical comparison of strings (alphabetical order)</a></li>
 <li><a href="#_string_functions">String functions</a></li>
 <li><a href="#_string_functions_in_the_gcse">String functions in the GCSE</a></li>
 <li><a href="#_strings_as_sequences">Strings as sequences</a></li>
@@ -500,7 +501,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_looping_through_a_sequence_by_item">Looping through a sequence by item</a></li>
 </ul>
 </li>
-<li><a href="#_looping_repeating_a_block_of_code_as_long_as_a_condition_is_true_while_loops">Looping: repeating a block of code as long as a condition is true (while loops)</a></li>
+<li><a href="#_looping_repeating_a_block_of_code_as_long_as_a_condition_is_true_while_loops">Looping: repeating a block of code as long as a condition is true (while loops)</a>
+<ul class="sectlevel2">
+<li><a href="#_breaking_out_of_a_while_loop_using_a_flag_variable">Breaking out of a while loop using a flag variable</a></li>
+</ul>
+</li>
 <li><a href="#_slicing_getting_parts_of_a_sequence">Slicing: getting parts of a sequence</a></li>
 <li><a href="#_functions_named_blocks_of_code_that_do_a_job_and_return_a_result">Functions: named blocks of code that do a job and return a result</a></li>
 <li><a href="#_working_with_files">Working with files</a></li>
@@ -923,6 +928,63 @@ The sum is 9</pre>
 <div class="sect1">
 <h2 id="_more_about_strings">More about strings</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_lexicographical_comparison_of_strings_alphabetical_order">Lexicographical comparison of strings (alphabetical order)</h3>
+<div class="paragraph">
+<p>You can compare strings using the <code>&gt;</code> and <code>&lt;</code> operators. This will compare them lexicographically, which means that if stringA would come before stringB in a dictionary, then stringA is considered to be "less than" stringB.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+When comparing strings lexicographically, bear in mind that all upper case letters are considered "less than" all lower case letters. This is because upper case letters appear before lower case letters in the ASCII table.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Look at this example program, which asks the user to enter two words and tells them which is "less than" which.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">word1 = input("Enter first word: ")
+word2 = input("Enter second word: ")
+if word1 == word2:
+    print("Words are the same!")
+elif word1 &lt; word2:
+    print(word1 + " is less than " + word2)
+else:
+    print(word2 + " is less than " + word1)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Enter first word: wombat
+Enter second word: newt
+newt is less than wombat
+
+Enter first word: Zebra
+Enter second word: aardvark
+Zebra is less than aardvark</pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+You need to know that you can compare strings with <code>&gt;</code> and <code>&lt;</code> for the GCSE. Remember it, because programming this behaviour yourself will take many lines of complicated code.
+</td>
+</tr>
+</table>
+</div>
+</div>
 <div class="sect2">
 <h3 id="_string_functions">String functions</h3>
 <div class="paragraph">
@@ -1413,6 +1475,7 @@ print(4)</code></pre>
 </div>
 </div>
 <div class="listingblock">
+<div class="title">Output</div>
 <div class="content">
 <pre>Hello
 4</pre>
@@ -1428,6 +1491,7 @@ print(4)</code></pre>
 </div>
 </div>
 <div class="listingblock">
+<div class="title">Output</div>
 <div class="content">
 <pre>15</pre>
 </div>
@@ -1442,6 +1506,7 @@ print(4)</code></pre>
 </div>
 </div>
 <div class="listingblock">
+<div class="title">Output</div>
 <div class="content">
 <pre>Fred is 15 years old.</pre>
 </div>
@@ -1466,6 +1531,7 @@ TypeError!</code></pre>
 </div>
 </div>
 <div class="listingblock">
+<div class="title">Output</div>
 <div class="content">
 <pre>Fred is15years old.</pre>
 </div>
@@ -1480,6 +1546,7 @@ TypeError!</code></pre>
 </div>
 </div>
 <div class="listingblock">
+<div class="title">Output</div>
 <div class="content">
 <pre>Fred is 15 years old.</pre>
 </div>
@@ -1506,6 +1573,7 @@ This is used in the GCSE and <strong>must</strong> be used when the question tel
 </div>
 </div>
 <div class="listingblock">
+<div class="title">Output</div>
 <div class="content">
 <pre>Fred is 15 years old.</pre>
 </div>
@@ -1532,6 +1600,7 @@ This is heavily used in the GCSE and <strong>must</strong> be used when the ques
 </div>
 </div>
 <div class="listingblock">
+<div class="title">Output</div>
 <div class="content">
 <pre>Fred is 15 years old.</pre>
 </div>
@@ -2053,7 +2122,7 @@ Capital letter found! C
 <div class="sect3">
 <h4 id="_repeating_a_block_of_code_an_exact_number_of_times">Repeating a block of code an exact number of times</h4>
 <div class="paragraph">
-<p>The range function can be used to repeat a block of code an exact number of times. To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer. We don&#8217;t necessarily need to use the integer counter.</p>
+<p>A for loop together with the range function can be used to repeat a block of code an exact number of times. This type of loop is sometimes known as a <strong>count-controlled loop</strong> (as opposed to a condition-controlled loop, seen in the while loop section). To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer. We don&#8217;t necessarily need to use the integer counter.</p>
 </div>
 <div class="paragraph">
 <p>The following program ask the user for exactly three words, entered  one after the other, and then tells the user the words they entered.</p>
@@ -2196,7 +2265,7 @@ Double letter found at index: 8</pre>
 <h2 id="_looping_repeating_a_block_of_code_as_long_as_a_condition_is_true_while_loops">Looping: repeating a block of code as long as a condition is true (while loops)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false. There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true.</p>
+<p>We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false. There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true. While loops are sometimes known as <strong>condition-controlled loops</strong>.</p>
 </div>
 <div class="paragraph">
 <p>This program asks the user to enter a password. It keeps asking until the user enters the correct password "sesame".</p>
@@ -2233,7 +2302,113 @@ Access granted</pre>
 <li>
 <p>It is important to ask for another password in the loop. If this is not done, then the loop will go on forever (because it will keep testing "password") and your computer will become unresponsive. This is known as an <strong>infinite loop</strong>.</p>
 </li>
+<li>
+<p>Note that since the line that prints "Access granted" is <em>after</em> the loop, the only way the program will execute this line is if we&#8217;ve ended the loop, and the only way we can end the loop is if it&#8217;s not true that the password is not "sesame".</p>
+</li>
 </ol>
+</div>
+<div class="sect2">
+<h3 id="_breaking_out_of_a_while_loop_using_a_flag_variable">Breaking out of a while loop using a flag variable</h3>
+<div class="paragraph">
+<p>You can immediately break out of a for loop or a while loop using the statement <code>break</code>, but the GCSE exam board seem to prefer you not to use it (they consider it bad programming practice). You can avoid using a break statement by using a boolean "flag" variable, on which the loop condition depends.</p>
+</div>
+<div class="paragraph">
+<p>The following program finds the position of the first integer in a list of integers that is exactly divisible by 7. If no numbers are exactly divisible by 7 it prints a suitable message.</p>
+</div>
+<div class="paragraph">
+<p>This is an <strong>important example</strong>, so read the notes carefully.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">numbers = [34, 23, 68, 45, 81, 56, 27, 16]
+found = False # Flag variable
+index = 0
+
+# Note flag variable in loop condition
+while index &lt; len(numbers) and not found:
+   if numbers[index] % 7 == 0:
+      found = True # Change flag variable so loop ends
+   else:
+      index = index + 1
+
+# Check flag variable to see if number was found
+if found:
+   print("Number found at index " + str(index))
+else:
+   print("No numbers divisible by 7 found")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Number found at index 5</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>There are <strong>two reasons</strong> to continue the loop and both must be true, so we use <code>and</code>: the index must be less than the length of the list (otherwise we run off the end and get an <code>IndexError</code>) AND we must not have found the target number yet.</p>
+</li>
+<li>
+<p>We use the flag variable in three places:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Setting its initial value (to False)</p>
+</li>
+<li>
+<p>Putting it in the while condition (while it is False)</p>
+</li>
+<li>
+<p>Changing its value when the target is found (change it to True)</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>In this example we set the flag to False, loop while it is False, then change it to True to stop the loop, but we could just as well set the flag to True, loop while it is True, then change it to False to stop the loop. If we did that then the name <code>found</code> would not make sense; we would have to use a name like <code>searching</code> or <code>stillLooking</code>.</p>
+</li>
+<li>
+<p>It is important not to increment the index when the target number is found or we&#8217;ll report the wrong position.</p>
+</li>
+<li>
+<p>We must test the value of <code>found</code> after the loop because there are two reasons the loop could have ended and we don&#8217;t know which happened without checking.</p>
+</li>
+<li>
+<p>We don&#8217;t have to explicitly use <code>found == False</code> or <code>found == True</code> in the conditions. Saying <code>if found</code> is the same as saying <code>if found == True</code> (but it wouldn&#8217;t matter if you preferred to write <code>if found == True</code>).</p>
+</li>
+<li>
+<p>Note that this program processes no more value of the list than it has to. As soon as it has found the value it is looking for, it stops the loop. This is important because you will lose a mark in the GCSE if you process more values than you need to.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The GCSE prefers you not to use <code>break</code> statements. Remember this:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you are definitely going to process <strong>all items of a list</strong>, use a <strong>for loop</strong>.</p>
+</li>
+<li>
+<p>If you might only need to process <strong>some of the items of a list</strong>, use a <strong>while loop with a flag variable</strong> to break out of the loop as early as necessary.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -2241,15 +2416,183 @@ Access granted</pre>
 <h2 id="_slicing_getting_parts_of_a_sequence">Slicing: getting parts of a sequence</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hello</p>
+<p>We know that we can use indexed to get individual items from strings or lists, e.g. "computer"[2] gives us "m". Python also allows you to get several items by using what&#8217;s called a slice. The syntax of a slice is as follows:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&lt;sequence&gt;[start:end]</code></p>
+</li>
+<li>
+<p><code>&lt;sequence&gt;[start:end:step]</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you slice a string, the result is a string. If you slice a list, the result is a list.</p>
+</div>
+<div class="paragraph">
+<p>For the example below, assume that we have defined:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>word = "computer"</code></p>
+</li>
+<li>
+<p><code>numbers = [1, 2, 3, 4, 5, 6, 7, 8]</code></p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Example</th>
+<th class="tableblock halign-left valign-top">Result</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>word[2:7]</code><br>
+<code>numbers[2:7]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"mput"</code><br>
+<code>[3, 4, 5, 6]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The slice starts at index 2 and goes up to <strong>but not including</strong> 7 (similar to the range function arguments).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>word[:7]</code><br>
+<code>numbers[:7]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"comput"</code><br>
+<code>[1, 2, 3, 4, 5, 6]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you leave out the first argument, then it defaults to 0 (zero).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>word[2:]</code><br>
+<code>numbers[2:]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"mputer"</code><br>
+<code>[3, 4, 5, 6, 7, 8]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you leave out the second argument, then it defaults to the length of the sequence (i.e. it goes right up to the end).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>word[2:7:2]</code><br>
+<code>numbers[2:6:2]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"pt"</code><br>
+<code>[4, 6]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A step argument of n selects every nth item of the slice.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_functions_named_blocks_of_code_that_do_a_job_and_return_a_result">Functions: named blocks of code that do a job and return a result</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hello</p>
+<p>So far you have used some built-in functions that are part of Python.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">word = "computer"
+length = len(word) # Built-in len function called with argument word returns 8</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can define your own functions in Python. To show you how to do this, I will write a short program that doesn&#8217;t define a function, and then I will write the same program, which does.</p>
+</div>
+<div class="paragraph">
+<p>This program asks the user for some text and tells them how many of the characters they entered are letters of the alphabet.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">text = input("Enter some text: ")
+count = 0
+
+for character in text:
+   if character.isalpha():
+      count += 1
+
+print("There are " + str(count) + " letters in the text you entered.")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Enter some text: You scored 18/24, which is 75%.
+There are 16 letters in the text you entered.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This program does exactly the same, but it defines a function that takes a string paramenter and returns an integer. The parameter is the string that the user entered; the return value is the number of alphebetical characters in that text.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">def countAlpha(pString):
+   count = 0
+   for character in pString:
+      if character.isalpha():
+         count += 1
+   return count
+
+text = input("Enter some text: ")
+print("There are " + str(countAlpha(text)) + " letters in the text you entered.")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Enter some text: You scored 18/24, which is 75%.
+There are 16 letters in the text you entered.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The function definition begins with the line <code>def countAlpha&#8230;&#8203;</code>.</p>
+</li>
+<li>
+<p>The function call is <code>countAlpha(text)</code>.</p>
+</li>
+<li>
+<p>The function has to be defined before it is called, hence I have put it at the beginning of the program.</p>
+</li>
+<li>
+<p>The code in the function isn&#8217;t actually executed until the function is called. The order of events is:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Ask the user for input and assign the result to text.</p>
+</li>
+<li>
+<p>Copy the value of text into pString and run the code in the countAlpha function.</p>
+</li>
+<li>
+<p>Return the result of the countAlpha function (an integer) the main part of the code.</p>
+</li>
+<li>
+<p>The str function converts it to a string.</p>
+</li>
+<li>
+<p>It is concatenated with "There are " and " letter in the text you entered."</p>
+</li>
+<li>
+<p>The whole string is passed to the print function for printing to the screen</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>More details, including the advantage of using functions, is covered in the GCSE course notes.</p>
 </div>
 </div>
 </div>
@@ -2266,6 +2609,9 @@ Access granted</pre>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
+<li>
+<p>Conventions in this book</p>
+</li>
 <li>
 <p>A selection of Youtube videos to accompany the text.</p>
 </li>
@@ -2297,7 +2643,7 @@ Access granted</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-05-23 22:25:37 +0100
+Last updated 2024-05-27 11:16:21 +0100
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>

@@ -237,6 +237,39 @@ In summary:
 
 == More about strings
 
+=== Lexicographical comparison of strings (alphabetical order)
+
+You can compare strings using the `>` and `<` operators. This will compare them lexicographically, which means that if stringA would come before stringB in a dictionary, then stringA is considered to be "less than" stringB.
+
+WARNING: When comparing strings lexicographically, bear in mind that all upper case letters are considered "less than" all lower case letters. This is because upper case letters appear before lower case letters in the ASCII table.
+
+Look at this example program, which asks the user to enter two words and tells them which is "less than" which.
+
+[source,Python]
+----
+word1 = input("Enter first word: ")
+word2 = input("Enter second word: ")
+if word1 == word2:
+    print("Words are the same!")
+elif word1 < word2:
+    print(word1 + " is less than " + word2)
+else:
+    print(word2 + " is less than " + word1)
+----
+
+.Output
+----
+Enter first word: wombat
+Enter second word: newt
+newt is less than wombat
+
+Enter first word: Zebra
+Enter second word: aardvark
+Zebra is less than aardvark
+----
+
+IMPORTANT: You need to know that you can compare strings with `>` and `<` for the GCSE. Remember it, because programming this behaviour yourself will take many lines of complicated code.
+
 === String functions
 
 You have seen some functions that are built-in to Python, e.g. len, int, input, print. We refer to these as **built-in functions**. There are also functions just for strings. We refer to these as **string functions**. 
@@ -547,7 +580,7 @@ The print function outputs its argument to the console, followed by a newline.
 print("Hello")
 print(4)
 ----
-
+.Output
 ----
 Hello
 4
@@ -562,7 +595,7 @@ Here is a summary of the main ways of printing strings (and variable values) to 
 ----
 print(age)
 ----
-
+.Output
 ----
 15
 ----
@@ -574,7 +607,7 @@ This works ok. The print function can print types other than strings.
 ----
 print("Fred is", age, "years old.")
 ----
-
+.Output
 ----
 Fred is 15 years old.
 ----
@@ -595,7 +628,7 @@ This doesn't work because you can't concatenate strings and integers. You have t
 ----
 print("Fred is" + str(age) + "years old.")
 ----
-
+.Output
 ----
 Fred is15years old.
 ----
@@ -607,7 +640,7 @@ This works ok but we forgot to add spaces where we needed them.
 ----
 print("Fred is " + str(age) + " years old.")
 ----
-
+.Output
 ----
 Fred is 15 years old.
 ----
@@ -621,7 +654,7 @@ WARNING: This is used in the GCSE and **must** be used when the question tells y
 ----
 print("Fred is {} years old.".format(age))
 ----
-
+.Output
 ----
 Fred is 15 years old.
 ----
@@ -636,7 +669,7 @@ WARNING: This is heavily used in the GCSE and **must** be used when the question
 ----
 print(f"Fred is {age} years old.")
 ----
-
+.Output
 ----
 Fred is 15 years old.
 ----
@@ -1151,15 +1184,137 @@ Number found at index 5
 
 **Notes:**
 
-1. 
+. There are **two reasons** to continue the loop and both must be true, so we use `and`: the index must be less than the length of the list (otherwise we run off the end and get an `IndexError`) AND we must not have found the target number yet.  
+. We use the flag variable in three places:
+   .. Setting its initial value (to False)
+   .. Putting it in the while condition (while it is False)
+   .. Changing its value when the target is found (change it to True)
+. In this example we set the flag to False, loop while it is False, then change it to True to stop the loop, but we could just as well set the flag to True, loop while it is True, then change it to False to stop the loop. If we did that then the name `found` would not make sense; we would have to use a name like `searching` or `stillLooking`.
+. It is important not to increment the index when the target number is found or we'll report the wrong position.
+. We must test the value of `found` after the loop because there are two reasons the loop could have ended and we don't know which happened without checking.
+. We don't have to explicitly use `found == False` or `found == True` in the conditions. Saying `if found` is the same as saying `if found == True` (but it wouldn't matter if you preferred to write `if found == True`).
+. Note that this program processes no more value of the list than it has to. As soon as it has found the value it is looking for, it stops the loop. This is important because you will lose a mark in the GCSE if you process more values than you need to. 
+
+[IMPORTANT]
+====
+The GCSE prefers you not to use `break` statements. Remember this:
+
+* If you are definitely going to process **all items of a list**, use a **for loop**.
+
+* If you might only need to process **some of the items of a list**, use a **while loop with a flag variable** to break out of the loop as early as necessary.
+====
 
 == Slicing: getting parts of a sequence
 
-Hello
+We know that we can use indexed to get individual items from strings or lists, e.g. "computer"[2] gives us "m". Python also allows you to get several items by using what's called a slice. The syntax of a slice is as follows:
+
+* `<sequence>[start:end]`
+
+* `<sequence>[start:end:step]`
+
+If you slice a string, the result is a string. If you slice a list, the result is a list.
+
+For the example below, assume that we have defined:
+
+* `word = "computer"`
+* `numbers = [1, 2, 3, 4, 5, 6, 7, 8]`
+
+
+[cols="1,1,1"]
+|===
+| Example | Result | Explanation
+
+|`word[2:7]` + 
+`numbers[2:7]`
+| `"mput"` + 
+`[3, 4, 5, 6]`
+| The slice starts at index 2 and goes up to **but not including** 7 (similar to the range function arguments).
+
+| `word[:7]` + 
+`numbers[:7]`
+| `"comput"` + 
+`[1, 2, 3, 4, 5, 6]`
+| If you leave out the first argument, then it defaults to 0 (zero).
+
+| `word[2:]` + 
+`numbers[2:]`
+| `"mputer"` + 
+`[3, 4, 5, 6, 7, 8]`
+| If you leave out the second argument, then it defaults to the length of the sequence (i.e. it goes right up to the end).
+
+| `word[2:7:2]` + 
+`numbers[2:6:2]`
+| `"pt"` + 
+`[4, 6]`
+| A step argument of n selects every nth item of the slice. 
+
+|===
 
 == Functions: named blocks of code that do a job and return a result
 
-Hello
+So far you have used some built-in functions that are part of Python. 
+
+[source,Python]
+----
+word = "computer"
+length = len(word) # Built-in len function called with argument word returns 8
+----
+
+You can define your own functions in Python. To show you how to do this, I will write a short program that doesn't define a function, and then I will write the same program, which does.
+
+This program asks the user for some text and tells them how many of the characters they entered are letters of the alphabet.
+
+[source,Python]
+----
+text = input("Enter some text: ")
+count = 0
+
+for character in text:
+   if character.isalpha():
+      count += 1
+
+print("There are " + str(count) + " letters in the text you entered.")
+----
+.Output
+----
+Enter some text: You scored 18/24, which is 75%.
+There are 16 letters in the text you entered.
+----
+
+This program does exactly the same, but it defines a function that takes a string paramenter and returns an integer. The parameter is the string that the user entered; the return value is the number of alphebetical characters in that text.
+
+[source,Python]
+----
+def countAlpha(pString):
+   count = 0
+   for character in pString:
+      if character.isalpha():
+         count += 1
+   return count
+
+text = input("Enter some text: ")
+print("There are " + str(countAlpha(text)) + " letters in the text you entered.")
+----
+.Output
+----
+Enter some text: You scored 18/24, which is 75%.
+There are 16 letters in the text you entered.
+----
+
+**Notes:**
+
+. The function definition begins with the line `def countAlpha...`.
+. The function call is `countAlpha(text)`.
+. The function has to be defined before it is called, hence I have put it at the beginning of the program. 
+. The code in the function isn't actually executed until the function is called. The order of events is:
+   .. Ask the user for input and assign the result to text.
+   .. Copy the value of text into pString and run the code in the countAlpha function.
+   .. Return the result of the countAlpha function (an integer) the main part of the code.
+   .. The str function converts it to a string.
+   .. It is concatenated with "There are " and " letter in the text you entered."
+   .. The whole string is passed to the print function for printing to the screen
+
+More details, including the advantage of using functions, is covered in the GCSE course notes. 
 
 == Working with files
 
@@ -1167,6 +1322,7 @@ Hello
 
 == Ideas
 
+* Conventions in this book
 * A selection of Youtube videos to accompany the text.
 * Downloadable Python source files and data files. 
 * Error types and what they mean. 
