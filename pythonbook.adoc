@@ -988,7 +988,7 @@ for i in range(1, 11):
 
 ==== Repeating a block of code an exact number of times
 
-The range function can be used to repeat a block of code an exact number of times. To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer. We don't necessarily need to use the integer counter.
+A for loop together with the range function can be used to repeat a block of code an exact number of times. This type of loop is sometimes known as a **count-controlled loop** (as opposed to a condition-controlled loop, seen in the while loop section). To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer. We don't necessarily need to use the integer counter.
 
 The following program ask the user for exactly three words, entered  one after the other, and then tells the user the words they entered.
 
@@ -1084,7 +1084,7 @@ Double letter found at index: 8
 
 == Looping: repeating a block of code as long as a condition is true (while loops)
 
-We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false. There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true.
+We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false. There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true. While loops are sometimes known as **condition-controlled loops**.
 
 This program asks the user to enter a password. It keeps asking until the user enters the correct password "sesame".
 
@@ -1114,6 +1114,44 @@ Access granted
 **Notes:**
 
 1. It is important to ask for another password in the loop. If this is not done, then the loop will go on forever (because it will keep testing "password") and your computer will become unresponsive. This is known as an **infinite loop**.
+2. Note that since the line that prints "Access granted" is _after_ the loop, the only way the program will execute this line is if we've ended the loop, and the only way we can end the loop is if it's not true that the password is not "sesame".
+
+=== Breaking out of a while loop using a flag variable
+
+You can immediately break out of a for loop or a while loop using the statement `break`, but the GCSE exam board seem to prefer you not to use it (they consider it bad programming practice). You can avoid using a break statement by using a boolean "flag" variable, on which the loop condition depends. 
+
+The following program finds the position of the first integer in a list of integers that is exactly divisible by 7. If no numbers are exactly divisible by 7 it prints a suitable message. 
+
+This is an **important example**, so read the notes carefully. 
+
+[source,Python]
+----
+numbers = [34, 23, 68, 45, 81, 56, 27, 16]
+found = False # Flag variable
+index = 0
+
+# Note flag variable in loop condition
+while index < len(numbers) and not found:
+   if numbers[index] % 7 == 0:
+      found = True # Change flag variable so loop ends
+   else:
+      index = index + 1
+
+# Check flag variable to see if number was found
+if found:
+   print("Number found at index " + str(index))
+else:
+   print("No numbers divisible by 7 found")
+----
+
+.Output
+----
+Number found at index 5
+----
+
+**Notes:**
+
+1. 
 
 == Slicing: getting parts of a sequence
 
