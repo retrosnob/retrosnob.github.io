@@ -443,6 +443,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_about_this_book">About this book</a></li>
+<li><a href="#_conventions_used_in_this_book">Conventions used in this book</a></li>
 <li><a href="#_getting_started_with_python">Getting started with Python</a>
 <ul class="sectlevel2">
 <li><a href="#_downloading_thonny">Downloading Thonny</a></li>
@@ -508,12 +509,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_slicing_getting_parts_of_a_sequence">Slicing: getting parts of a sequence</a></li>
 <li><a href="#_functions_named_blocks_of_code_that_do_a_job_and_return_a_result">Functions: named blocks of code that do a job and return a result</a></li>
-<li><a href="#_working_with_files">Working with files</a></li>
+<li><a href="#_working_with_files">Working with files</a>
+<ul class="sectlevel2">
+<li><a href="#_writing_to_new_files">Writing to new files</a></li>
+<li><a href="#_reading_data_from_files_that_already_exist">Reading data from files that already exist</a></li>
+</ul>
+</li>
 <li><a href="#_ideas">Ideas</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="downloads/report.pdf">Get Report</a></p>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_about_this_book">About this book</h2>
 <div class="sectionbody">
@@ -540,6 +553,40 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p>tells you all the weird things that the exam board want you to do</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conventions_used_in_this_book">Conventions used in this book</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are lots of different ways of writing code, so I&#8217;ve had to make some decisions about how I will do things in this book. In general, I have tried to follow what the GCSE does, even when it is unusual. This section explains my decisions.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Variable and function names follow the GCSE&#8217;s practice of using what is known as <strong>camel case</strong>. This means a variable name for an email address will be <code>emailAddress</code>, rather than the more usual <code>emailaddress</code> or <code>email_address</code>, as would normally by used in Python. The disadvantage of the GCSE&#8217;s choice of camel case is that built-in functions do not follow this convention, so there is an inconsistency. For instance, the built-in function to determine if a string is all upper case is <code>isalpha</code> rather than <code>isAlpha</code>, as the GCSE would have it.</p>
+</li>
+<li>
+<p>Constants, although not directly supported by Python, are written in all capitals, optionally delimited by underscores, e.g. FILENAME or FILE_NAME. This is the convention used by the GCSE and by Python programmers in general.</p>
+</li>
+<li>
+<p>I have avoided the use of the <code>break</code> statement, since the GCSE exam board has indicated that they consider its use to be bad programming practice, even though it most certainly isn&#8217;t (indeed there are language features in Python that depend on its use). The GCSE exam board have decided that a for loop should be used when every item of a sequence is to be processed, but a while loop (with a flag variable) should be used in order to break out of a loop and so process only some of the items of a sequence. Since marks are available for what they consider "good programming practice", I have tried to ensure that the techniques in this book are most likely to attract full marks.</p>
+</li>
+<li>
+<p>Even though the exam board explicitly state that students will not be penalised for using more advanced techniques, I have avoided them in this book. This is for two reasons:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Firstly, GCSE mark schemes often award marks for techniques that can be avoided by using more advanced techniques; but if you use those advanced techniques, it is not clear to me how an examiner, especially a lazy one, can award those marks. For example, Python allows you to iterate over a sequence without using an integer index, and yet I have seen mark schemes that award a mark for using one. Similarly, I have seen mark schemes that award marks for explicitly iterating over a list of integers in order to find the maximum; how can these marks be awarded for use of the built-in <code>max</code> function?</p>
+</li>
+<li>
+<p>Secondly, I am not convinced that the average GCSE examiner is sufficiently <em>au fait</em> with advanced techniques to be able to understand them. Examiners will be less likely to award marks for code they don&#8217;t understand.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -2556,7 +2603,7 @@ There are 16 letters in the text you entered.</pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The function definition begins with the line <code>def countAlpha&#8230;&#8203;</code>.</p>
+<p>The function definition begins with the line <code>def countAlpha(pString):</code>.</p>
 </li>
 <li>
 <p>The function call is <code>countAlpha(text)</code>.</p>
@@ -2572,19 +2619,19 @@ There are 16 letters in the text you entered.</pre>
 <p>Ask the user for input and assign the result to text.</p>
 </li>
 <li>
-<p>Copy the value of text into pString and run the code in the countAlpha function.</p>
+<p>Copy the value of <code>text</code> into <code>pString</code> and run the code in the <code>countAlpha</code> function.</p>
 </li>
 <li>
-<p>Return the result of the countAlpha function (an integer) the main part of the code.</p>
+<p>Return the result of the <code>countAlpha</code> function (an integer) the main part of the code.</p>
 </li>
 <li>
-<p>The str function converts it to a string.</p>
+<p>The <code>str</code> function converts it to a string.</p>
 </li>
 <li>
-<p>It is concatenated with "There are " and " letter in the text you entered."</p>
+<p>It is <strong>concatenated</strong> with "There are " and " letter in the text you entered."</p>
 </li>
 <li>
-<p>The whole string is passed to the print function for printing to the screen</p>
+<p>The whole string is passed to the <code>print</code> function for printing to the screen</p>
 </li>
 </ol>
 </div>
@@ -2599,8 +2646,92 @@ There are 16 letters in the text you entered.</pre>
 <div class="sect1">
 <h2 id="_working_with_files">Working with files</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_writing_to_new_files">Writing to new files</h3>
 <div class="paragraph">
-<p>Hello</p>
+<p>This program creates a new file in the same directory as the Python (.py) file that contains the code. Run the code locally (on your machine) to test it out.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">FILENAME = "outputData.txt"
+file = open(FILENAME, "w")
+file.write("Hello\n")
+file.write("world")
+file.close()</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reading_data_from_files_that_already_exist">Reading data from files that already exist</h3>
+<div class="paragraph">
+<p>The next program reads from an existing file in the same directory as the Python (.py) file that contains the code. Before you run the code you will need to create the file by copying the following text and pasting it into a new file. You can do this in Thonny by following these instructions:</p>
+</div>
+<div class="listingblock">
+<div class="title">Copy this text to the clipboard</div>
+<div class="content">
+<pre>booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+johnson81;4081;Craig;Johnson
+jenkins46;9346;Mary;Jenkins
+smith79;5079;Jamie;Smith</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>Then in Thonny</em></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Choose File, New</p>
+</li>
+<li>
+<p>Paste the text into the top window</p>
+</li>
+<li>
+<p>Choose File, Save As</p>
+</li>
+<li>
+<p>Enter inputData.txt as the file name</p>
+</li>
+<li>
+<p>Click Save</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Run the code locally (on your machine) to test it out.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">FILENAME = "inputData.txt"
+file = open(FILENAME, "r")
+
+for line in file:
+   fields = line.split(";")
+   print(fields[2] + " " fields[3])
+
+file.close()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the GCSE, the file name will usually be given as a <strong>constant</strong>, signified by a variable name in all capitals. If you are given a file name as a constant and asked to open the file, you must <strong>use the constant</strong>. You would lose a mark for writing <code>open("data.txt", "w").</code></p>
+</li>
+<li>
+<p>The "w" argument to the open function stands for "writing" and means that we are opening a new file to put text into.</p>
+</li>
+<li>
+<p>If you open an existing file for writing, it will erase all data in that file.</p>
+</li>
+<li>
+<p>The "\n" means a <strong>newline</strong> character.</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
@@ -2638,12 +2769,18 @@ There are 16 letters in the text you entered.</pre>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><a href="#_working_with_files">Working with files</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#_working_with_files">Click here</a></p>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-05-27 11:16:21 +0100
+Last updated 2024-05-28 16:29:17 +0100
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
