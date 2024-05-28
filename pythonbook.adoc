@@ -22,6 +22,17 @@ So I have decided to write my own book that
 
 * tells you all the weird things that the exam board want you to do
 
+== Conventions used in this book
+
+There are lots of different ways of writing code, so I've had to make some decisions about how I will do things in this book. In general, I have tried to follow what the GCSE does, even when it is unusual. This section explains my decisions.
+
+* Variable and function names follow the GCSE's practice of using what is known as **camel case**. This means a variable name for an email address will be `emailAddress`, rather than the more usual `emailaddress` or `email_address`, as would normally by used in Python. The disadvantage of the GCSE's choice of camel case is that built-in functions do not follow this convention, so there is an inconsistency. For instance, the built-in function to determine if a string is all upper case is `isalpha` rather than `isAlpha`, as the GCSE would have it.
+* Constants, although not directly supported by Python, are written in all capitals, optionally delimited by underscores, e.g. FILENAME or FILE_NAME. This is the convention used by the GCSE and by Python programmers in general.
+* I have avoided the use of the `break` statement, since the GCSE exam board has indicated that they consider its use to be bad programming practice, even though it most certainly isn't (indeed there are language features in Python that depend on its use). The GCSE exam board have decided that a for loop should be used when every item of a sequence is to be processed, but a while loop (with a flag variable) should be used in order to break out of a loop and so process only some of the items of a sequence. Since marks are available for what they consider "good programming practice", I have tried to ensure that the techniques in this book are most likely to attract full marks. 
+* Even though the exam board explicitly state that students will not be penalised for using more advanced techniques, I have avoided them in this book. This is for two reasons:
+   - Firstly, GCSE mark schemes often award marks for techniques that can be avoided by using more advanced techniques; but if you use those advanced techniques, it is not clear to me how an examiner, especially a lazy one, can award those marks. For example, Python allows you to iterate over a sequence without using an integer index, and yet I have seen mark schemes that award a mark for using one. Similarly, I have seen mark schemes that award marks for explicitly iterating over a list of integers in order to find the maximum; how can these marks be awarded for use of the built-in `max` function?
+   - Secondly, I am not convinced that the average GCSE examiner is sufficiently _au fait_ with advanced techniques to be able to understand them. Examiners will be less likely to award marks for code they don't understand. 
+
 == Getting started with Python
 
 === Downloading Thonny
