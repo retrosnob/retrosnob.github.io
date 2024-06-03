@@ -1324,7 +1324,7 @@ There are 16 letters in the text you entered.
    .. Copy the value of `text` into `pString` and run the code in the `countAlpha` function.
    .. Return the result of the `countAlpha` function (an integer) the main part of the code.
    .. The `str` function converts it to a string.
-   .. It is **concatenated** with "There are " and " letter in the text you entered."
+   .. It is **concatenated** with "There are " and " letters in the text you entered."
    .. The whole string is passed to the `print` function for printing to the screen
 
 More details, including the advantage of using functions, is covered in the GCSE course notes.
@@ -1386,6 +1386,145 @@ file.close()
 . The "w" argument to the open function stands for "writing" and means that we are opening a new file to put text into. 
 . If you open an existing file for writing, it will erase all data in that file.
 . The "\n" means a **newline** character. 
+
+== Errors and what they mean
+
+When a piece of code generates an error, it is common for students just to raise their hands and declare "It doesn't work." However, the error message that Python gives you often tells you exactly what the problem is, so it's important to understand what these errors mean. 
+
+When you write a large chunk of code, it is likely that you will accidentally introduce a number of errors. When you run your code, Python will stop at the first error. You will need to fix that error and then run the code again. Now Python will stop at the next error. Fixing errors one-by-one in this way is known as debugging. Since fixing lots of errors is generally more difficult than fixing one error, you should aim to try out parts of your code as soon as possible, rather than writing the entire program before you start debugging.
+
+NOTE: Test early; test often.
+
+=== SyntaxError
+
+Possibly the most common error for beginner programmers, a syntax error is caused by breaking the basic rules of how the language should be written. 
+
+A good example is missing out something like a colon, bracket, quotation mark, etc.
+
+[source,Python]
+.Example of SyntaxError
+----
+name = "Fred
+----
+.Error message
+----
+>>> %Run blah.py
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 1
+    name = "Fred
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
+----
+**Notes:**
+. Look at the language used in the error message. It tells you exactly what's wrong.
+. The string literal beginning `"Fred` has an opening quotation mark but no closing quotation mark. Hence `unterminated string literal`.
+
+=== IndexError
+
+An index error occurs when we have referred to an element of a sequence that doesn't exist. It often happens when you run off the end of a string or list when iterating through it with a counter.
+
+[source,Python]
+.Example of IndexError
+----
+word = "computer"
+index = 0
+while True:
+    print(word[index])
+    index += 1
+----
+.Error message
+----
+>>> %Run blah.py
+c
+o
+m
+p
+u
+t
+e
+r
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 4, in <module>
+    print(word[index])
+IndexError: string index out of range
+----
+**Notes:**
+. The code executed without error while the index was less then the length of the string.
+. When index reached a value of 8, we tried to print `word[8]`. This generated the error because the last item of `word` is at index 7.
+
+=== TypeError
+
+A type error occurs when you have tried to do something with a variable or literal that you cannot do because of its type (e.g. integer, float, string, boolean). A very common example is trying to concatenate strings with integers, using the concatenation operator (+).
+
+[source,Python]
+.Example of TypeError
+----
+name = "Fred"
+age = 15
+print(name + " is " + age + " years old.")
+----
+.Error message
+----
+>>> %Run blah.py
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 3, in <module>
+    print(name + " is " + age + " years old.")
+TypeError: can only concatenate str (not "int") to str
+----
+**Notes:**
+. Look at how descriptive the error message is. Always look at the error message carefully.
+
+=== NameError
+
+A name error occurs when we have referred to a variable that has not been defined. Students often get these errors when they don't pay adequate attention to the capitalisation of variable names. 
+
+[source,Python]
+.Example of NameError
+----
+name = "Fred"
+print("Hello " + Name)
+----
+.Error message
+----
+>>> %Run blah.py
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 2, in <module>
+    print("Hello " + Name)
+NameError: name 'Name' is not defined
+----
+**Notes:**
+
+. Python is case-sensitive. That means that `name` is an entirely different variable name from `Name`.
+
+. Since `Name` has not been defined, Python generates a NameError when we try to print its value.
+
+=== AttributeError
+
+An attribute error is closely related to a name error. It occurs when we have tried to access a property or run a function on an object that doesn't have that property or function. As with name errors, attribute errors are often caused by capitalisation problems.
+
+[source,Python]
+.Example of AttributeError
+----
+name = "Fred"
+print(name.isUpper())
+----
+.Error message
+----
+>>> %Run blah.py
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 2, in <module>
+    print(name.isUpper())
+AttributeError: 'str' object has no attribute 'isUpper'
+----
+**Notes:**
+
+. We have tried to see whether all the letters in `name` are upper case.
+
+. But we have used `isUpper` as the string function, instead of `isupper`.
+
+. The error message is saying "You've tried to use a string's `isUpper` function but strings don't have functions called isUpper".
+
+. The exam board uses camel case for variable and function names, but Python doesn't, so watch out for this.
 
 
 == Ideas
