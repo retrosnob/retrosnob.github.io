@@ -1,12 +1,10 @@
-= Book Title
+= Tonbridge School Python Guide for GCSE Students
 // Must have this immediately below Level 0
 // :source-language: Python
 :doctype: book
 :source-highlighter: highlight.js
 :icons: font
 :toc: auto
-
-link:downloads/report.pdf[Get Report]
 
 == About this book
 
@@ -1539,7 +1537,4 @@ AttributeError: 'str' object has no attribute 'isUpper'
 * Where to get more practice: e.g. project Euler, adventofcode
 * Creating a list out of a string with list()
 
-<<_working_with_files>>
-
-<<_working_with_files,Click here>>
 
