@@ -4,6 +4,7 @@
 :doctype: book
 :source-highlighter: highlight.js
 :icons: font
+:authorinitials: JER
 :toc: auto
 
 == About this book
@@ -22,31 +23,47 @@ So I have decided to write my own book that
 
 == Conventions used in this book
 
-There are lots of different ways of writing code, so I've had to make some decisions about how I will do things in this book. In general, I have tried to follow what the GCSE does, even when it is unusual. This section explains my decisions.
+There are lots of different ways of writing code, so I've had to make some decisions about how I will do things in this book.
+In general, I have tried to follow what the GCSE does, even when it is unusual. This section explains my decisions.
 
-* Variable and function names follow the GCSE's practice of using what is known as **camel case**. This means a variable name for an email address will be `emailAddress`, rather than the more usual `emailaddress` or `email_address`, as would normally by used in Python. The disadvantage of the GCSE's choice of camel case is that built-in functions do not follow this convention, so there is an inconsistency. For instance, the built-in function to determine if a string is all upper case is `isalpha` rather than `isAlpha`, as the GCSE would have it.
-* Constants, although not directly supported by Python, are written in all capitals, optionally delimited by underscores, e.g. FILENAME or FILE_NAME. This is the convention used by the GCSE and by Python programmers in general.
-* I have avoided the use of the `break` statement, since the GCSE exam board has indicated that they consider its use to be bad programming practice, even though it most certainly isn't (indeed there are language features in Python that depend on its use). The GCSE exam board have decided that a for loop should be used when every item of a sequence is to be processed, but a while loop (with a flag variable) should be used in order to break out of a loop and so process only some of the items of a sequence. Since marks are available for what they consider "good programming practice", I have tried to ensure that the techniques in this book are most likely to attract full marks. 
-* Even though the exam board explicitly state that students will not be penalised for using more advanced techniques, I have avoided them in this book. This is for two reasons:
-   - Firstly, GCSE mark schemes often award marks for techniques that can be avoided by using more advanced techniques; but if you use those advanced techniques, it is not clear to me how an examiner, especially a lazy one, can award those marks. For example, Python allows you to iterate over a sequence without using an integer index, and yet I have seen mark schemes that award a mark for using one. Similarly, I have seen mark schemes that award marks for explicitly iterating over a list of integers in order to find the maximum; how can these marks be awarded for use of the built-in `max` function?
-   - Secondly, I am not convinced that the average GCSE examiner is sufficiently _au fait_ with advanced techniques to be able to understand them. Examiners will be less likely to award marks for code they don't understand. 
+* Variable and function names follow the GCSE's practice of using what is known as **camel case**.
+This means a variable name for an email address will be `emailAddress`, rather than the more usual `emailaddress` or `email_address`, as would normally by used in Python.
+The disadvantage of the GCSE's choice of camel case is that built-in functions do not follow this convention, so there is an inconsistency. 
+For instance, the built-in function to determine if a string is all upper case is `isalpha` rather than `isAlpha`, as the GCSE would have it.
+* Constants, although not directly supported by Python, are written in all capitals, optionally delimited by underscores, e.g. FILENAME or FILE_NAME. 
+This is the convention used by the GCSE and by Python programmers in general.
+* I have avoided the use of the `break` statement, since the GCSE exam board has indicated that they consider its use to be bad programming practice, even though it most certainly isn't (indeed there are language features in Python that depend on its use). 
+The GCSE exam board have decided that a for loop should be used when every item of a sequence is to be processed, but a while loop (with a flag variable) should be used in order to break out of a loop and so process only some of the items of a sequence. 
+Since marks are available for what they consider "good programming practice", I have tried to ensure that the techniques in this book are most likely to attract full marks. 
+* Even though the exam board explicitly state that students will not be penalised for using more advanced techniques, I have avoided them in this book.
+This is for two reasons:
+   - Firstly, GCSE mark schemes often award marks for techniques that can be avoided by using more advanced techniques; but if you use those advanced techniques, it is not clear to me how an examiner, especially a lazy one, can award those marks. 
+   For example, Python allows you to iterate over a sequence without using an integer index, and yet I have seen mark schemes that award a mark for using one. 
+   Similarly, I have seen mark schemes that award marks for explicitly iterating over a list of integers in order to find the maximum; how can these marks be awarded for use of the built-in `max` function?
+   - Secondly, I am not convinced that the average GCSE examiner is sufficiently _au fait_ with advanced techniques to be able to understand them. 
+   Examiners will be less likely to award marks for code they don't understand. 
 
 == Getting started with Python
 
 === Downloading Thonny
 
-I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from https://thonny.org and it is perfectly good for GCSE and A-Level. 
+I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. 
+It can be downloaded from https://thonny.org and it is perfectly good for GCSE and A-Level. 
 
 === The Thonny interface
 
 When you open Thonny you will see two panes. 
 
-The upper pane is a text editor that allows you to edit Python files. Write whole programs in here and press the green play button to execute. (You will need to have saved the file somewhere first.)
+The upper pane is a text editor that allows you to edit Python files. 
+Write whole programs in here and press the green play button to execute. (You will need to have saved the file somewhere first.)
 
 .The Thonny interface
 image::PythonBook_ThonnyUI.png[Thonny interface, 600]
 
-The bottom pane is the shell. Here you can execute single lines of Python in an interactive REPL mode. When you write a line of code and execute it, Python will evaluate it and print the result. If the line of code doesn't evaluate to anything, nothing will be printed.
+The bottom pane is the shell. 
+Here you can execute single lines of Python in an interactive REPL mode. 
+When you write a line of code and execute it, Python will evaluate it and print the result. 
+If the line of code doesn't evaluate to anything, nothing will be printed.
 
 .Using the Thonny shell
 image:Thonny_shell.png[Thonny interactive shell, 200]
@@ -58,13 +75,17 @@ image:Thonny_shell.png[Thonny interactive shell, 200]
 
 * Thonny has an "assistant" that warns you of various things. I find it annoying. You can disable it in Tools, Options, Assistant....
 
-* Python has a debugger built in. In my opinion, the default setting of *Nicer* is too verbose. You can change it to *Faster* in Tools, Options, Run & Debug....
+* Python has a debugger built in. 
+In my opinion, the default setting of *Nicer* is too verbose. 
+You can change it to *Faster* in Tools, Options, Run & Debug....
 
 == Variables and data types
 
 === Variables
 
-We can store items of data for use in computer programs. These stored items are called variables. We refer to variables using names.
+We can store items of data for use in computer programs. 
+These stored items are called variables. 
+We refer to variables using names.
 
 [source,Python]
 ----
@@ -75,7 +96,9 @@ x = 5
 name = "Fred"
 ----
 
-You give a variable a value by using the `=`, which is known as the *assignment operator*. So when we assign the value 5 to the variable x like this `x = 5`, we are really saying *let x take the value of 5*. Some languages actually use the word `let` when they do assignment, e.g. `let x = 5`, but Python doesn't.
+You give a variable a value by using the `=`, which is known as the *assignment operator*. 
+So when we assign the value 5 to the variable x like this `x = 5`, we are really saying *let x take the value of 5*.
+ Some languages actually use the word `let` when they do assignment, e.g. `let x = 5`, but Python doesn't.
 
 In the statement `x = 5`, the x is an *integer variable* and the 5 is an *integer literal*. Assignment always happens right to left. You cannot write 5 = x.  
 
@@ -170,7 +193,7 @@ It makes sense in the example above that `name` is a string, since it is a word,
 ----
 n1 = input("Enter the first number: ")
 n2 = input("Enter the second number: ")
-print("The sum is " + str(n1 + n2))
+print("The sum is " + n1 + n2)
 ----
 
 .Output:
