@@ -339,15 +339,196 @@ print(name.upper) # left out the brackets!
 
 The GCSE expects you to be familiar with the following string functions  (<str> just means any string variable or literal):
 
-[cols="1,1"]
+[cols="1,3"]
 |===
 | Function | Description
 
-| <str>.lower
-| Returns <str> as all lower case
+| <string>.lower()
+a| Returns <str> as all lower case
 
-| <str>.upper
-| Returns <str> as all upper case
+[source,Python]
+.Example
+----
+s = "Fred"
+print(s.upper())
+----
+
+.Output
+----
+fred
+----
+
+| <string>.upper()
+a| Returns <str> as all upper case
+
+[source,Python]
+.Example
+----
+s = "Fred"
+print(s.upper())
+----
+
+.Output
+----
+FRED
+----
+
+
+| <string>.islower()
+a| Returns True if **all** characters of <string> are lower case.
+
+[source,Python]
+.Example
+----
+s = "hello"
+if s.islower():
+   print("All lower case")
+else:
+   print("Not all lower case")
+----
+
+.Output
+----
+All lower case
+----
+
+
+| <string>.isupper()
+a| Returns True if **all** characters of <string> are lower case.
+
+[source,Python]
+.Example
+----
+s = "Hello"
+if s.isupper():
+   print("All upper case")
+else:
+   print("Not all upper case")
+----
+
+.Output
+----
+Not all upper case
+----
+
+| <string>.isalpha()
+a| Returns True if **all** characters of <string> are letters.
+
+[source,Python]
+.Example
+----
+s = "Hello Fred!"
+if s.isalpha():
+   print("All letters")
+else:
+   print("Not all letters")
+----
+
+.Output
+----
+Not all letters
+----
+
+| <string>.isdigit()
+a| Returns True if **all** characters of <string> are numbers.
+
+[source,Python]
+.Example
+----
+s = "07519 433 786"
+if s.isdigit():
+   print("All numbers")
+else:
+   print("Not all numbers")
+----
+
+.Output
+----
+Not all numbers
+----
+
+| <string>.isalnum()
+a| Returns True if **all** characters of <string> are letters/numbers.
+
+[source,Python]
+.Example
+----
+s = "Block123"
+if s.isalnum():
+   print("All letters or numbers")
+else:
+   print("Not all letters or numbers")
+----
+
+.Output
+----
+All letters or numbers
+----
+
+| <string>.replace(s1, s2)
+a| Returns <string> with **all** occurrences of substring s1 replaced by s2.
+
+[source,Python]
+.Example
+----
+s = "computer"
+print(s.replace("mpu", "un"))
+----
+
+.Output
+----
+counter
+----
+
+| <string>.find(s, start, end)
+a| Returns the **first** index at which substring s was found in <string>, starting at index `start` and ending at index `end`, or -1 if  s is not found. 
+(If you leave out `end` it defaults to the length of the string.
+If you leave out `start` it defaults to the start of the string.)
+
+[source,Python]
+.Example 1
+----
+s = "apothecary"
+print(s.find("a"))
+----
+
+.Output 1
+----
+0
+----
+
+[source,Python]
+.Example 2
+----
+s = "apothecary"
+print(s.find("a", 1))
+----
+
+.Output 2
+----
+7
+----
+
+[source,Python]
+.Example 3
+----
+s = "apothecary"
+print(s.find("a", 1, 5))
+----
+
+.Output 3
+----
+-1
+----
+
+| <string>.replace(s1, s2)
+| Returns <string> with **all** occurrences of substring s1 replaced by s2.
+
+| <string>.replace(s1, s2)
+| Returns <string> with **all** occurrences of substring s1 replaced by s2.
+
+
+
 |===
 
 === Strings as sequences
@@ -499,8 +680,10 @@ The GCSE requires you to know the following comparison operators.
 === Logical operators
 
 Consider the following two statements:
-1. Paris is the capital of France
-2. Beijing is the capital of Germany
+
+. Paris is the capital of France
+
+. Beijing is the capital of Germany
 
 It is clear that **statement 1 is True** and **statement 2 is False**.
 
