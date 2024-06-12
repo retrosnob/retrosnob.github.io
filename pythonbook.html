@@ -564,28 +564,39 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_conventions_used_in_this_book">Conventions used in this book</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>There are lots of different ways of writing code, so I&#8217;ve had to make some decisions about how I will do things in this book. In general, I have tried to follow what the GCSE does, even when it is unusual. This section explains my decisions.</p>
+<p>There are lots of different ways of writing code, so I&#8217;ve had to make some decisions about how I will do things in this book.
+In general, I have tried to follow what the GCSE does, even when it is unusual. This section explains my decisions.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Variable and function names follow the GCSE&#8217;s practice of using what is known as <strong>camel case</strong>. This means a variable name for an email address will be <code>emailAddress</code>, rather than the more usual <code>emailaddress</code> or <code>email_address</code>, as would normally by used in Python. The disadvantage of the GCSE&#8217;s choice of camel case is that built-in functions do not follow this convention, so there is an inconsistency. For instance, the built-in function to determine if a string is all upper case is <code>isalpha</code> rather than <code>isAlpha</code>, as the GCSE would have it.</p>
+<p>Variable and function names follow the GCSE&#8217;s practice of using what is known as <strong>camel case</strong>.
+This means a variable name for an email address will be <code>emailAddress</code>, rather than the more usual <code>emailaddress</code> or <code>email_address</code>, as would normally by used in Python.
+The disadvantage of the GCSE&#8217;s choice of camel case is that built-in functions do not follow this convention, so there is an inconsistency.
+For instance, the built-in function to determine if a string is all upper case is <code>isalpha</code> rather than <code>isAlpha</code>, as the GCSE would have it.</p>
 </li>
 <li>
-<p>Constants, although not directly supported by Python, are written in all capitals, optionally delimited by underscores, e.g. FILENAME or FILE_NAME. This is the convention used by the GCSE and by Python programmers in general.</p>
+<p>Constants, although not directly supported by Python, are written in all capitals, optionally delimited by underscores, e.g. FILENAME or FILE_NAME.
+This is the convention used by the GCSE and by Python programmers in general.</p>
 </li>
 <li>
-<p>I have avoided the use of the <code>break</code> statement, since the GCSE exam board has indicated that they consider its use to be bad programming practice, even though it most certainly isn&#8217;t (indeed there are language features in Python that depend on its use). The GCSE exam board have decided that a for loop should be used when every item of a sequence is to be processed, but a while loop (with a flag variable) should be used in order to break out of a loop and so process only some of the items of a sequence. Since marks are available for what they consider "good programming practice", I have tried to ensure that the techniques in this book are most likely to attract full marks.</p>
+<p>I have avoided the use of the <code>break</code> statement, since the GCSE exam board has indicated that they consider its use to be bad programming practice, even though it most certainly isn&#8217;t (indeed there are language features in Python that depend on its use).
+The GCSE exam board have decided that a for loop should be used when every item of a sequence is to be processed, but a while loop (with a flag variable) should be used in order to break out of a loop and so process only some of the items of a sequence.
+Since marks are available for what they consider "good programming practice", I have tried to ensure that the techniques in this book are most likely to attract full marks.</p>
 </li>
 <li>
-<p>Even though the exam board explicitly state that students will not be penalised for using more advanced techniques, I have avoided them in this book. This is for two reasons:</p>
+<p>Even though the exam board explicitly state that students will not be penalised for using more advanced techniques, I have avoided them in this book.
+This is for two reasons:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Firstly, GCSE mark schemes often award marks for techniques that can be avoided by using more advanced techniques; but if you use those advanced techniques, it is not clear to me how an examiner, especially a lazy one, can award those marks. For example, Python allows you to iterate over a sequence without using an integer index, and yet I have seen mark schemes that award a mark for using one. Similarly, I have seen mark schemes that award marks for explicitly iterating over a list of integers in order to find the maximum; how can these marks be awarded for use of the built-in <code>max</code> function?</p>
+<p>Firstly, GCSE mark schemes often award marks for techniques that can be avoided by using more advanced techniques; but if you use those advanced techniques, it is not clear to me how an examiner, especially a lazy one, can award those marks.
+For example, Python allows you to iterate over a sequence without using an integer index, and yet I have seen mark schemes that award a mark for using one.
+Similarly, I have seen mark schemes that award marks for explicitly iterating over a list of integers in order to find the maximum; how can these marks be awarded for use of the built-in <code>max</code> function?</p>
 </li>
 <li>
-<p>Secondly, I am not convinced that the average GCSE examiner is sufficiently <em>au fait</em> with advanced techniques to be able to understand them. Examiners will be less likely to award marks for code they don&#8217;t understand.</p>
+<p>Secondly, I am not convinced that the average GCSE examiner is sufficiently <em>au fait</em> with advanced techniques to be able to understand them.
+Examiners will be less likely to award marks for code they don&#8217;t understand.</p>
 </li>
 </ul>
 </div>
@@ -600,7 +611,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_downloading_thonny">Downloading Thonny</h3>
 <div class="paragraph">
-<p>I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from <a href="https://thonny.org" class="bare">https://thonny.org</a> and it is perfectly good for GCSE and A-Level.</p>
+<p>I recommend that you use Thonny as your Python editor because it has the Python interpreter built in.
+It can be downloaded from <a href="https://thonny.org" class="bare">https://thonny.org</a> and it is perfectly good for GCSE and A-Level.</p>
 </div>
 </div>
 <div class="sect2">
@@ -609,7 +621,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>When you open Thonny you will see two panes.</p>
 </div>
 <div class="paragraph">
-<p>The upper pane is a text editor that allows you to edit Python files. Write whole programs in here and press the green play button to execute. (You will need to have saved the file somewhere first.)</p>
+<p>The upper pane is a text editor that allows you to edit Python files.
+Write whole programs in here and press the green play button to execute. (You will need to have saved the file somewhere first.)</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -618,7 +631,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="title">Figure 1. The Thonny interface</div>
 </div>
 <div class="paragraph">
-<p>The bottom pane is the shell. Here you can execute single lines of Python in an interactive REPL mode. When you write a line of code and execute it, Python will evaluate it and print the result. If the line of code doesn&#8217;t evaluate to anything, nothing will be printed.</p>
+<p>The bottom pane is the shell.
+Here you can execute single lines of Python in an interactive REPL mode.
+When you write a line of code and execute it, Python will evaluate it and print the result.
+If the line of code doesn&#8217;t evaluate to anything, nothing will be printed.</p>
 </div>
 <div class="paragraph">
 <div class="title">Using the Thonny shell</div>
@@ -637,7 +653,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Thonny has an "assistant" that warns you of various things. I find it annoying. You can disable it in Tools, Options, Assistant&#8230;&#8203;.</p>
 </li>
 <li>
-<p>Python has a debugger built in. In my opinion, the default setting of <strong>Nicer</strong> is too verbose. You can change it to <strong>Faster</strong> in Tools, Options, Run &amp; Debug&#8230;&#8203;.</p>
+<p>Python has a debugger built in.
+In my opinion, the default setting of <strong>Nicer</strong> is too verbose.
+You can change it to <strong>Faster</strong> in Tools, Options, Run &amp; Debug&#8230;&#8203;.</p>
 </li>
 </ul>
 </div>
@@ -650,7 +668,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_variables">Variables</h3>
 <div class="paragraph">
-<p>We can store items of data for use in computer programs. These stored items are called variables. We refer to variables using names.</p>
+<p>We can store items of data for use in computer programs.
+These stored items are called variables.
+We refer to variables using names.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -662,7 +682,9 @@ name = "Fred"</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>You give a variable a value by using the <code>=</code>, which is known as the <strong>assignment operator</strong>. So when we assign the value 5 to the variable x like this <code>x = 5</code>, we are really saying <strong>let x take the value of 5</strong>. Some languages actually use the word <code>let</code> when they do assignment, e.g. <code>let x = 5</code>, but Python doesn&#8217;t.</p>
+<p>You give a variable a value by using the <code>=</code>, which is known as the <strong>assignment operator</strong>.
+So when we assign the value 5 to the variable x like this <code>x = 5</code>, we are really saying <strong>let x take the value of 5</strong>.
+ Some languages actually use the word <code>let</code> when they do assignment, e.g. <code>let x = 5</code>, but Python doesn&#8217;t.</p>
 </div>
 <div class="paragraph">
 <p>In the statement <code>x = 5</code>, the x is an <strong>integer variable</strong> and the 5 is an <strong>integer literal</strong>. Assignment always happens right to left. You cannot write 5 = x.</p>
@@ -855,7 +877,7 @@ print("Hello " + name)</code></pre>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">n1 = input("Enter the first number: ")
 n2 = input("Enter the second number: ")
-print("The sum is " + str(n1 + n2))</code></pre>
+print("The sum is " + n1 + n2)</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -1086,8 +1108,8 @@ print(name.upper) # left out the brackets!</code></pre>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 25%;">
+<col style="width: 75%;">
 </colgroup>
 <thead>
 <tr>
@@ -1097,12 +1119,295 @@ print(name.upper) # left out the brackets!</code></pre>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;str&gt;.lower</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Returns &lt;str&gt; as all lower case</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.lower()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns &lt;str&gt; as all lower case</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "Fred"
+print(s.upper())</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>fred</pre>
+</div>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;str&gt;.upper</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Returns &lt;str&gt; as all upper case</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.upper()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns &lt;str&gt; as all upper case</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "Fred"
+print(s.upper())</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>FRED</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.islower()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns True if <strong>all</strong> characters of &lt;string&gt; are lower case.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "hello"
+if s.islower():
+   print("All lower case")
+else:
+   print("Not all lower case")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>All lower case</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.isupper()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns True if <strong>all</strong> characters of &lt;string&gt; are lower case.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "Hello"
+if s.isupper():
+   print("All upper case")
+else:
+   print("Not all upper case")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Not all upper case</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.isalpha()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns True if <strong>all</strong> characters of &lt;string&gt; are letters.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "Hello Fred!"
+if s.isalpha():
+   print("All letters")
+else:
+   print("Not all letters")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Not all letters</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.isdigit()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns True if <strong>all</strong> characters of &lt;string&gt; are numbers.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "07519 433 786"
+if s.isdigit():
+   print("All numbers")
+else:
+   print("Not all numbers")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Not all numbers</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.isalnum()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns True if <strong>all</strong> characters of &lt;string&gt; are letters/numbers.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "Block123"
+if s.isalnum():
+   print("All letters or numbers")
+else:
+   print("Not all letters or numbers")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>All letters or numbers</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.replace(s1, s2)</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns &lt;string&gt; with <strong>all</strong> occurrences of substring s1 replaced by s2.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "computer"
+print(s.replace("mpu", "un"))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>counter</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.find(s)</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;string&gt;.find(s, start)</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;string&gt;.find(s, start, end)</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns the <strong>first</strong> index at which substring s was found in &lt;string&gt;, starting at index <code>start</code> and ending at index <code>end</code>, or -1 if  s is not found.
+(If you leave out <code>end</code> it defaults to the length of the string.
+If you leave out <code>start</code> it defaults to the start of the string.)</p>
+</div>
+<div class="listingblock">
+<div class="title">Example 1</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "apothecary"
+print(s.find("a"))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 1</div>
+<div class="content">
+<pre>0</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example 2</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "apothecary"
+print(s.find("a", 1))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 2</div>
+<div class="content">
+<pre>7</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example 3</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "apothecary"
+print(s.find("a", 1, 5))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output 3</div>
+<div class="content">
+<pre>-1</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.strip()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns &lt;string&gt; with all leading and trailing whitespace characters removed.
+Whitespace includes spaces, tabs, newlines.
+You commonly use this when reading lines in from a file, because each line will have a "\n" (newline) character at the end.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "   \n\n   computer    \n"
+print(s.strip())</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>computer</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;string&gt;.split(delimiter)</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Returns &lt;string&gt; broken into a list of strings every time <code>delimiter</code> is found.
+This is commonly used after reading delimited lines of text from a file.
+Note that <code>delimiter</code> can be more than one character.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">s = "Bloggs,Fred,15,MH3"
+lst = s.split(",")
+print(lst[0])
+print(lst[1])
+print(lst[2])
+print(lst[3])</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Output</div>
+<div class="content">
+<pre>Bloggs
+Fred
+15
+MH3</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -1332,9 +1637,17 @@ else:
 <div class="sect2">
 <h3 id="_logical_operators">Logical operators</h3>
 <div class="paragraph">
-<p>Consider the following two statements:
-1. Paris is the capital of France
-2. Beijing is the capital of Germany</p>
+<p>Consider the following two statements:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Paris is the capital of France</p>
+</li>
+<li>
+<p>Beijing is the capital of Germany</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>It is clear that <strong>statement 1 is True</strong> and <strong>statement 2 is False</strong>.</p>
@@ -2975,7 +3288,7 @@ AttributeError: 'str' object has no attribute 'isUpper'</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-06-10 11:31:24 +0100
+Last updated 2024-06-12 15:56:02 +0100
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
