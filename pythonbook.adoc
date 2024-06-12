@@ -343,7 +343,7 @@ The GCSE expects you to be familiar with the following string functions  (<str> 
 |===
 | Function | Description
 
-| <string>.lower()
+a| `<string>.lower()`
 a| Returns <str> as all lower case
 
 [source,Python]
@@ -358,7 +358,7 @@ print(s.upper())
 fred
 ----
 
-| <string>.upper()
+a| `<string>.upper()`
 a| Returns <str> as all upper case
 
 [source,Python]
@@ -374,7 +374,7 @@ FRED
 ----
 
 
-| <string>.islower()
+a| `<string>.islower()`
 a| Returns True if **all** characters of <string> are lower case.
 
 [source,Python]
@@ -393,7 +393,7 @@ All lower case
 ----
 
 
-| <string>.isupper()
+a| `<string>.isupper()`
 a| Returns True if **all** characters of <string> are lower case.
 
 [source,Python]
@@ -411,7 +411,7 @@ else:
 Not all upper case
 ----
 
-| <string>.isalpha()
+a| `<string>.isalpha()`
 a| Returns True if **all** characters of <string> are letters.
 
 [source,Python]
@@ -429,7 +429,7 @@ else:
 Not all letters
 ----
 
-| <string>.isdigit()
+a| `<string>.isdigit()`
 a| Returns True if **all** characters of <string> are numbers.
 
 [source,Python]
@@ -447,7 +447,7 @@ else:
 Not all numbers
 ----
 
-| <string>.isalnum()
+a| `<string>.isalnum()`
 a| Returns True if **all** characters of <string> are letters/numbers.
 
 [source,Python]
@@ -465,7 +465,7 @@ else:
 All letters or numbers
 ----
 
-| <string>.replace(s1, s2)
+a| `<string>.replace(s1, s2)`
 a| Returns <string> with **all** occurrences of substring s1 replaced by s2.
 
 [source,Python]
@@ -480,7 +480,11 @@ print(s.replace("mpu", "un"))
 counter
 ----
 
-| <string>.find(s, start, end)
+a| `<string>.find(s)`
+
+`<string>.find(s, start)`
+
+`<string>.find(s, start, end)`
 a| Returns the **first** index at which substring s was found in <string>, starting at index `start` and ending at index `end`, or -1 if  s is not found. 
 (If you leave out `end` it defaults to the length of the string.
 If you leave out `start` it defaults to the start of the string.)
@@ -521,13 +525,46 @@ print(s.find("a", 1, 5))
 -1
 ----
 
-| <string>.replace(s1, s2)
-| Returns <string> with **all** occurrences of substring s1 replaced by s2.
+a| `<string>.strip()`
+a| Returns <string> with all leading and trailing whitespace characters removed.
+Whitespace includes spaces, tabs, newlines.
+You commonly use this when reading lines in from a file, because each line will have a "\n" (newline) character at the end.
 
-| <string>.replace(s1, s2)
-| Returns <string> with **all** occurrences of substring s1 replaced by s2.
+[source,Python]
+.Example
+----
+s = "   \n\n   computer    \n"
+print(s.strip())
+----
 
+.Output
+----
+computer
+----
 
+a| `<string>.split(delimiter)`
+a| Returns <string> broken into a list of strings every time `delimiter` is found.
+This is commonly used after reading delimited lines of text from a file.
+Note that `delimiter` can be more than one character.
+
+[source,Python]
+.Example
+----
+s = "Bloggs,Fred,15,MH3"
+lst = s.split(",")
+print(lst[0])
+print(lst[1])
+print(lst[2])
+print(lst[3])
+----
+
+.Output
+----
+Bloggs
+Fred
+15
+MH3
+----
 
 |===
 
