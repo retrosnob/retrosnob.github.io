@@ -1,14 +1,11 @@
 = Python by Example
-
 :doctype: book
 :source-highlighter: highlight.js
 :icons: font
 :authorinitials: JER
 :toc: auto
 
-= Section
-
-aaa
+== Data types, str function, concatenation
 
 === Program 1
 
@@ -46,6 +43,8 @@ Your paragraph should use the terms *int, float, function, truncate, decimal poi
 Fix Program 2 using the ```float``` function and the ```str``` function. 
 Write a short paragraph explaining why the program didn't work. 
 Your paragraph should use the terms *float, str, string, function, plus operator, add, concatenate*.
+
+== Data types, printing
 
 === Program 1
 
@@ -91,6 +90,8 @@ If they enter C it should convert the number from Fahrenheit to Celsius and prin
 If they enter an F it should convert the number from Celsius to Fahrenheit and print the result. 
 It should be case insensitive and if they enter neither C nor F it should print an appropriate message.
 
+== Printing, len function, comparison operators
+
 === Program 1
 This program asks the user for their name and then says hello to them and tells them how many letters are in their name.
 
@@ -101,7 +102,7 @@ print("Hello " + name + ". Your name has " + str(len(name)) + " letters in it.")
 ----
 
 === Program 2
-This program ees the same as Program 1.
+This program does the same as Program 1.
 [source,Python]
 ----
 name = input("Enter your name: ")
@@ -127,6 +128,8 @@ else:
 **Task:**
 . Write a program that asks the user to enter two words and then prints the longer of the two words. 
 If the words are of the same length it should display an appropriate message along with both words.
+
+== Appending to and iterating through lists
 
 === Program 1
 
@@ -180,6 +183,8 @@ print("Access granted")
 It should keep asking the user to enter a word until the user enters an empty string. 
 (An empty string is written in Python as "" and is entered by the user by just pressing Enter in response to an input prompt.) 
 After the user has finished entering words, the program should print all the words that the user entered, one per line.
+
+== If statement, string functions, defining functions
 
 === Program 1
 
@@ -252,6 +257,8 @@ Write a program that asks the user for a new password and then tells them if the
 In order to be valid, a password have at least 6 characters and must contain at least one upper case letter, at least one lower case, at least one digit and at least one non-alphanumeric character. 
 The program should define a function passwordValid that takes the password as a parameter and returns True if the password is valid and False if it is not valid.
 
+== Defining functions, iterating by index
+
 === Program 1
 
 This program defines a function to to find whether two occurrences of a value appear consecutively (one after the other) in a list. 
@@ -266,8 +273,8 @@ def containsConsecutive(lst, value):
 	return False
 	
 nums = [12, 93, 45, 45, 74, 28] 
-print(containsAdjacent(nums, 45)
-print(containsAdjacent(nums, 32)
+print(containsAdjacent(nums, 45))
+print(containsAdjacent(nums, 32))
 ----
 
 **Tasks:**
@@ -289,3 +296,54 @@ print(containsAdjacent(nums, 32)
     - [1, 3, 6, 9] should return True
     - [4, 7, 2, 5] should return False
     - [1, 4, 4, 8] should return True
+
+== Sections
+
+* Type conversions
+* Operators
+** Arithmetic
+** Relational
+** Logical
+* Syntax errors
+* Runtime errors
+* Logical errors
+* Range function?
+* If statements
+* While loops
+* For loops
+* Built-in functions
+** len
+** bool, int, float, str
+** ord, chr
+** print, input
+** range
+** round
+* List functions
+** create new empty list, append, del, insert
+* String functions
+** len, find, index
+** isalpha, isdigit, isalnum
+** replace
+**  strip, split
+** upper, lower, isupper, islower
+** format
+* Format function
+* Math functions
+** ceil, floor, sqrt, pi
+* Others
+** time.sleep
+** random.randint, random.random
+* Files
+** Reading
+*** Iterating through
+*** Strip and split
+** Writing
+*** New lines
+* Turtle
+* Code from flowchart
+* Lists of lists
+
+Common tasks
+
+Rounding numbers
+
