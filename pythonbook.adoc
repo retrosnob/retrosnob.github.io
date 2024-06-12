@@ -830,6 +830,7 @@ Number valid: False
 The print function outputs its argument to the console, followed by a newline.
 
 [source,Python]
+.Example: Printing a single value
 ----
 print("Hello")
 print(4)
@@ -846,6 +847,7 @@ Here is a summary of the main ways of printing strings (and variable values) to 
 ---
 
 [source,Python]
+.Example: Printing non-string types
 ----
 print(age)
 ----
@@ -858,6 +860,7 @@ This works ok. The print function can print types other than strings.
 
 ---
 [source,Python]
+.Example: Using a comma-separated argument list
 ----
 print("Fred is", age, "years old.")
 ----
@@ -870,6 +873,7 @@ This works ok. If you separate string literals and variables with commas, Python
 
 ---
 [source,Python]
+.Example: Error when printing using string concatenation
 ----
 print("Fred is" + age + "years old.")
 TypeError!
@@ -879,6 +883,7 @@ This doesn't work because you can't concatenate strings and integers. You have t
 
 ---
 [source,Python]
+.Example: Fixing the TypeError
 ----
 print("Fred is" + str(age) + "years old.")
 ----
@@ -891,6 +896,7 @@ This works ok but we forgot to add spaces where we needed them.
 
 ---
 [source,Python]
+.Example: Fixing the spacing
 ----
 print("Fred is " + str(age) + " years old.")
 ----
@@ -905,6 +911,7 @@ WARNING: This is used in the GCSE and **must** be used when the question tells y
 
 ---
 [source,Python]
+.Example: Simple use of the string.format function
 ----
 print("Fred is {} years old.".format(age))
 ----
@@ -920,6 +927,7 @@ WARNING: This is heavily used in the GCSE and **must** be used when the question
 ---
 
 [source,Python]
+.Example: Printing using f strings
 ----
 print(f"Fred is {age} years old.")
 ----
