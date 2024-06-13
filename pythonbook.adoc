@@ -1076,9 +1076,9 @@ print(mylist)
 Output:
 > [5, "Hello", 3.14]
 
-=== Removing things using del
+=== Removing things by index using del
 
-asdf
+You can remove the ith value of a list by using the del statement as below.
 
 [source,Python]
 ----
@@ -1092,7 +1092,7 @@ Output:
 
 === Inserting things using insert
 
-Hello
+You can insert an item at a particular position in a list by using the insert function as below.
 
 [source,Python]
 ----
@@ -1105,6 +1105,70 @@ print(mylist)
 Output:
 ["apple", "banana", "fig", "lemon", "pear"]
 ----
+
+=== Removing things from a list by value (rather than index)
+
+There is a list function to remove the first element of a list that has a particular value, but the GCSE does not expect you to know it.
+However, they have given you enough information to work out how to do it, so we cover it here.
+
+==== Removing something using a loop and the del operator
+
+First we find the position of the item using a loop. 
+Next we use the position along with the del statement to remove it.
+
+[source,Python]
+----
+mylist = ["apple", "banana", "lemon", "pear"]
+print(mylist)
+
+# We will choose to remove "banana".
+itemToRemove = "banana"
+
+index = 0
+found = False
+
+while index < len(mylist) and not found:
+   if mylist[index] == itemToRemove:
+      found = True
+   else:
+      index = index + 1
+
+del mylist[index]
+print(mylist)
+----
+
+----
+Output:
+["apple", "banana", "lemon", "pear"]
+["apple", "lemon", "pear"]
+----
+
+==== Removing something using the list.remove function
+
+A much easier way of doing this is to use the list function remove.
+
+[source,Python]
+----
+mylist = ["apple", "banana", "lemon", "pear"]
+print(mylist)
+
+# We will choose to remove "banana".
+itemToRemove = "banana"
+
+mylist.remove(itemToRemove) # Not covered by the GCSE!
+print(mylist)
+----
+
+----
+Output:
+["apple", "banana", "lemon", "pear"]
+["apple", "lemon", "pear"]
+----
+
+NOTE: The list.remove function by default only removes the first item it finds.
+
+WARNING: The list.remove function raises an error if the item is not found in the list.
+
 
 == Selecting which lines of code to execute with If statements
 
