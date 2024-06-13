@@ -1317,10 +1317,9 @@ The following program ask the user for exactly three words, entered  one after t
 [source,Python]
 ----
 words = []
-word = input("Enter a word: ")
 for i in range(3):
-   words.append(word)
    word = input("Enter a word: ")
+   words.append(word)
 
 print("The words you entered were: ")
 for word in words:
