@@ -16,8 +16,8 @@ To add to document, type &#<code>;
 | 8592-5
 | &#8592;&#8593;&#8594;&#8595;
 
-| 8592
-| &#8593;
+| 0163
+| &#0163;
 
 |====
 
@@ -36,10 +36,10 @@ kbd:[ctrl+x]
 | kbd:[Ctrl+Shift+k]
 | Delete line
 
-| kbd:[Alt+up]
-| Move line up
+| kbd:[Alt+&#8593;/&#8595;]
+| Move line up/down
 
-| kbd:[Alt+shift+up/down]
+| kbd:[Alt+shift+&#8593;/&#8595;]
 | Copy line above/below
 
 | kbd:[Ctrl+Enter]
@@ -48,9 +48,4 @@ kbd:[ctrl+x]
 | kbd:[Ctrl+Shift+Enter]
 | New line above
 
-| `range(3, 10, 2)`
-| 3, 5, 7, 9
-
-| `range(10, 0, -1)`
-| 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 |====

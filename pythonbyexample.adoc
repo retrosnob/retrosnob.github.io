@@ -347,3 +347,33 @@ Common tasks
 
 Rounding numbers
 
+Easy (no loops)
+
+Medium (loops over 1d lists)
+
+Hard (loops of 2d lists)
+
+== Topyc
+
+Input: A space-separated string list of words.
+
+Output: Words with every one that contains an 'e' removed.
+
+Input: Text T and number N
+
+Output: T enciphered using rotation cipher with key N
+
+Input: A space-separated string list of words.
+
+Output: The words that contain both letters and numbers.
+
+Input: A sequence of characters.
+
+Output: A list of the indexes in the input of all the 'e' characters.
+
+Input: A space-separated string list of words.
+
+Output: The same words with a string of asterisks of the same length as the longest word(s) after each occurrence of the longest word(s).
+
+
+
