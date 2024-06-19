@@ -1,4 +1,4 @@
-### Program 1
+=== Program 1
 
 This program asks the user for a distance in miles and converts it to kilometres.
 
@@ -7,7 +7,7 @@ miles = float(input("Enter distance in miles: "))
 print("That's " + str(miles * 1.60934) + " kilometres.")
 ```
 
-### Program 2
+=== Program 2
 
 This program does the same as Program 1.
 
@@ -16,7 +16,7 @@ miles = float(input("Enter distance in miles: "))
 print("That's {} kilometres.".format(miles * 1.60934))
 ```
 
-### Program 3
+=== Program 3
 
 This program asks the user to enter a character and tells them if it was a vowel or not. Note that it is case insensitive and it prints an appropriate message if the user didn't enter a letter or entered more than a single character.
 
@@ -36,7 +36,7 @@ else:
 
 1. Write a program that asks the user to enter a number and then asks them to enter C or F. If they enter C it should convert the number from Fahrenheit to Celsius and print the result. If they enter an F it should convert the number from Celsius to Fahrenheit and print the result. It should be case insensitive and if they enter neither C nor F it should print an appropriate message.
 
-### Program 1
+=== Program 1
 
 This program asks the user for their name and then says hello to them and tells them how many letters are in their name.
 
@@ -45,7 +45,7 @@ name = input("Enter your name: ")
 print("Hello " + name + ". Your name has " + str(len(name)) + " letters in it.")
 ```
 
-### Program 2
+=== Program 2
 
 This program does the same as Program 1.
 
@@ -54,7 +54,7 @@ name = input("Enter your name: ")
 print("Hello {}. Your name has {} letters in it.".format(name, len(name)))
 ```
 
-### Program 3
+=== Program 3
 
 This program asks the user for two numbers and then tells the user which of the numbers was the larger.
 

@@ -1,10 +1,13 @@
-= Book Title
-
-== About this book
+= Tonbridge School Python Guide for GCSE Students
+// Must have this immediately below Level 0
 // :source-language: Python
 :doctype: book
 :source-highlighter: highlight.js
+:icons: font
+:authorinitials: JER
+:toc: auto
 
+== About this book
 
 I often get students asking me if there is a book or a course they can do to learn more about Python and I often say no, because:
 
@@ -18,26 +21,52 @@ So I have decided to write my own book that
 
 * tells you all the weird things that the exam board want you to do
 
+== Conventions used in this book
+
+There are lots of different ways of writing code, so I've had to make some decisions about how I will do things in this book.
+In general, I have tried to follow what the GCSE does, even when it is unusual. This section explains my decisions.
+
+* Variable and function names follow the GCSE's practice of using what is known as **camel case**.
+This means a variable name for an email address will be `emailAddress`, rather than the more usual `emailaddress` or `email_address`, as would normally by used in Python.
+The disadvantage of the GCSE's choice of camel case is that built-in functions do not follow this convention, so there is an inconsistency. 
+For instance, the built-in function to determine if a string is all upper case is `isalpha` rather than `isAlpha`, as the GCSE would have it.
+* Constants, although not directly supported by Python, are written in all capitals, optionally delimited by underscores, e.g. FILENAME or FILE_NAME. 
+This is the convention used by the GCSE and by Python programmers in general.
+* I have avoided the use of the `break` statement, since the GCSE exam board has indicated that they consider its use to be bad programming practice, even though it most certainly isn't (indeed there are language features in Python that depend on its use). 
+The GCSE exam board have decided that a for loop should be used when every item of a sequence is to be processed, but a while loop (with a flag variable) should be used in order to break out of a loop and so process only some of the items of a sequence. 
+Since marks are available for what they consider "good programming practice", I have tried to ensure that the techniques in this book are most likely to attract full marks. 
+* Even though the exam board explicitly state that students will not be penalised for using more advanced techniques, I have avoided them in this book.
+This is for two reasons:
+   - Firstly, GCSE mark schemes often award marks for techniques that can be avoided by using more advanced techniques; but if you use those advanced techniques, it is not clear to me how an examiner, especially a lazy one, can award those marks. 
+   For example, Python allows you to iterate over a sequence without using an integer index, and yet I have seen mark schemes that award a mark for using one. 
+   Similarly, I have seen mark schemes that award marks for explicitly iterating over a list of integers in order to find the maximum; how can these marks be awarded for use of the built-in `max` function?
+   - Secondly, I am not convinced that the average GCSE examiner is sufficiently _au fait_ with advanced techniques to be able to understand them. 
+   Examiners will be less likely to award marks for code they don't understand. 
+
 == Getting started with Python
 
 === Downloading Thonny
 
-I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. It can be downloaded from https://thonny.org and it perfectly good for GCSE and A-Level. 
+I recommend that you use Thonny as your Python editor because it has the Python interpreter built in. 
+It can be downloaded from https://thonny.org and it is perfectly good for GCSE and A-Level. 
 
 === The Thonny interface
 
 When you open Thonny you will see two panes. 
 
-The upper pane is a text editor that allows you to edit Python files. Write whole programs in here and press the green play button to execute. (You will need to have saved the file somewhere first.)
+The upper pane is a text editor that allows you to edit Python files. 
+Write whole programs in here and press the green play button to execute. (You will need to have saved the file somewhere first.)
 
-The bottom pane is the shell. Here you can execute single lines of Python in an interactive REPL mode. When you write a line of code and execute it, Python will evaluate it and print the result. If the line of code doesn't evaluate to anything, nothing will be printed.
+.The Thonny interface
+image::PythonBook_ThonnyUI.png[Thonny interface, 600]
 
-**The Thonny interface**
+The bottom pane is the shell. 
+Here you can execute single lines of Python in an interactive REPL mode. 
+When you write a line of code and execute it, Python will evaluate it and print the result. 
+If the line of code doesn't evaluate to anything, nothing will be printed.
 
-image:PythonBook_ThonnyUI.png[Thonny interface]
-
-_Examples of using the interactive shell. _
-image:Thonny_shell.png[Thonny interactive shell]
+.Using the Thonny shell
+image:Thonny_shell.png[Thonny interactive shell, 200]
 
 **Thonny tips:**
 * If your program hangs, use the red Stop button to halt it.
@@ -46,13 +75,17 @@ image:Thonny_shell.png[Thonny interactive shell]
 
 * Thonny has an "assistant" that warns you of various things. I find it annoying. You can disable it in Tools, Options, Assistant....
 
-* Python has a debugger built in. In my opinion, the default setting of *Nicer* is too verbose. You can change it to *Faster* in Tools, Options, Run & Debug....
+* Python has a debugger built in. 
+In my opinion, the default setting of *Nicer* is too verbose. 
+You can change it to *Faster* in Tools, Options, Run & Debug....
 
 == Variables and data types
 
 === Variables
 
-We can store items of data for use in computer programs. These stored items are called variables. We refer to variables using names.
+We can store items of data for use in computer programs. 
+These stored items are called variables. 
+We refer to variables using names.
 
 [source,Python]
 ----
@@ -63,7 +96,9 @@ x = 5
 name = "Fred"
 ----
 
-You give a variable a value by using the `=`, which is known as the *assignment operator*. So when we assign the value 5 to the variable x like this `x = 5`, we are really saying *let x take the value of 5*. Some languages actually use the word `let` when they do assignment, e.g. `let x = 5`, but Python doesn't.
+You give a variable a value by using the `=`, which is known as the *assignment operator*. 
+So when we assign the value 5 to the variable x like this `x = 5`, we are really saying *let x take the value of 5*.
+ Some languages actually use the word `let` when they do assignment, e.g. `let x = 5`, but Python doesn't.
 
 In the statement `x = 5`, the x is an *integer variable* and the 5 is an *integer literal*. Assignment always happens right to left. You cannot write 5 = x.  
 
@@ -72,9 +107,6 @@ In the statement `x = 5`, the x is an *integer variable* and the 5 is an *intege
 Variable names can include letters, numbers and the underscore (_) character, but they cannot *begin* with numbers.
 
 You should try to choose variable names that make it easy to tell meaning of the data held in the variable. 
-
-[NOTE]
-This is a note. I wonder how long it can be and specifically whether it looks good if there are multiple lines.
 
 ===== Capitalization in variable names
 
@@ -116,13 +148,9 @@ Variables stored data and data can be of different types. The GCSE focuses on th
 
 === Vocabulary
 
-**Assignment**
+**Assignment:** Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the *first* assignment.
 
-Giving a variable its first or a new value. In Python, initialisation and assignment are the same except the initialisation is a special term used for the *first* assignment.
-
-**Intialisation**
-
-Creating and giving a variable it's first value, e.g. `x = 5`
+**Intialisation:** Creating and giving a variable it's first value, e.g. `x = 5`
 
 === Exercises
 
@@ -165,7 +193,7 @@ It makes sense in the example above that `name` is a string, since it is a word,
 ----
 n1 = input("Enter the first number: ")
 n2 = input("Enter the second number: ")
-print("The sum is " + str(n1 + n2))
+print("The sum is " + n1 + n2)
 ----
 
 .Output:
@@ -221,19 +249,19 @@ This is the order of events:
 
 1. Add the values of the two integer variables n1 and n2.
 
-2. The str function then turns the result from an integer to a string.
+2. The `str` function then turns the result from an integer to a string.
 
 3. The string is then concatenated on the end of the string literal "The sum is " to form a longer string.
 
-4. That longer string is then passed to the print function, which prints it out on the screen.
+4. That longer string is then passed to the `print` function, which prints it out on the screen.
 
 In summary:
 
-* The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, etc) with the thing the user entered.
+* The `int` function is used to turn strings into integers. You will need to use it when you want to do arithmetic or comparison (e.g. <, >, etc) with the value the user entered.
 
 * The `str` function is used to turn integers into strings. You will need to use it if you want to concatenate an integer value to a string value before printing.
 
-** Exercises:**
+**Exercises:**
 
 1. Write a program that asks the user to enter their age and then prints "You are N years old", where N is the age they entered.
 
@@ -242,6 +270,39 @@ In summary:
 3. Explain why you need to use the `int` function in task 2 but not in task 1. 
 
 == More about strings
+
+=== Lexicographical comparison of strings (alphabetical order)
+
+You can compare strings using the `>` and `<` operators. This will compare them lexicographically, which means that if stringA would come before stringB in a dictionary, then stringA is considered to be "less than" stringB.
+
+WARNING: When comparing strings lexicographically, bear in mind that all upper case letters are considered "less than" all lower case letters. This is because upper case letters appear before lower case letters in the ASCII table.
+
+Look at this example program, which asks the user to enter two words and tells them which is "less than" which.
+
+[source,Python]
+----
+word1 = input("Enter first word: ")
+word2 = input("Enter second word: ")
+if word1 == word2:
+    print("Words are the same!")
+elif word1 < word2:
+    print(word1 + " is less than " + word2)
+else:
+    print(word2 + " is less than " + word1)
+----
+
+.Output
+----
+Enter first word: wombat
+Enter second word: newt
+newt is less than wombat
+
+Enter first word: Zebra
+Enter second word: aardvark
+Zebra is less than aardvark
+----
+
+IMPORTANT: You need to know that you can compare strings with `>` and `<` for the GCSE. Remember it, because programming this behaviour yourself will take many lines of complicated code.
 
 === String functions
 
@@ -257,8 +318,10 @@ print(name.upper())
 
 You can call (execute, run) string functions by using dot notation: adding a dot after the string, followed by the name of the function, followed by ().
 
-[NOTE]
-With any function, you must put () after its name if you want to **call** it. Try just printing name.upper and you will get an odd result because Python will try to print the function itself and not the result of calling it. 
+[IMPORTANT]
+.Use brackets when you want to call functions
+====
+With any function, you must put () after its name if you want to **call** it. Try just printing `name.upper` and you will get an odd result because Python will try to print the function itself and not the result of calling it. 
 
 [source,Python]
 ----
@@ -270,15 +333,240 @@ print(name.upper) # left out the brackets!
 ----
 <built-in method upper of str object at 0x000002B1FE6E5E30>
 ----
+====
 
 === String functions in the GCSE
 
-The GCSE expects you to be familiar with the following string functions  (\<str\> just means any string variable):
+The GCSE expects you to be familiar with the following string functions  (<str> just means any string variable or literal):
 
-| Function | Description |
-| --- | --- |
-| \<str\>.lower | Returns \<str\> as all lower case |
-| \<str\>.upper | Returns \<str\> as all upper case |
+[cols="1,3"]
+|===
+| Function | Description
+
+a| `<string>.lower()`
+a| Returns <str> as all lower case
+
+[source,Python]
+.Example
+----
+s = "Fred"
+print(s.upper())
+----
+
+.Output
+----
+fred
+----
+
+a| `<string>.upper()`
+a| Returns <str> as all upper case
+
+[source,Python]
+.Example
+----
+s = "Fred"
+print(s.upper())
+----
+
+.Output
+----
+FRED
+----
+
+
+a| `<string>.islower()`
+a| Returns True if **all** characters of <string> are lower case.
+
+[source,Python]
+.Example
+----
+s = "hello"
+if s.islower():
+   print("All lower case")
+else:
+   print("Not all lower case")
+----
+
+.Output
+----
+All lower case
+----
+
+
+a| `<string>.isupper()`
+a| Returns True if **all** characters of <string> are lower case.
+
+[source,Python]
+.Example
+----
+s = "Hello"
+if s.isupper():
+   print("All upper case")
+else:
+   print("Not all upper case")
+----
+
+.Output
+----
+Not all upper case
+----
+
+a| `<string>.isalpha()`
+a| Returns True if **all** characters of <string> are letters.
+
+[source,Python]
+.Example
+----
+s = "Hello Fred!"
+if s.isalpha():
+   print("All letters")
+else:
+   print("Not all letters")
+----
+
+.Output
+----
+Not all letters
+----
+
+a| `<string>.isdigit()`
+a| Returns True if **all** characters of <string> are numbers.
+
+[source,Python]
+.Example
+----
+s = "07519 433 786"
+if s.isdigit():
+   print("All numbers")
+else:
+   print("Not all numbers")
+----
+
+.Output
+----
+Not all numbers
+----
+
+a| `<string>.isalnum()`
+a| Returns True if **all** characters of <string> are letters/numbers.
+
+[source,Python]
+.Example
+----
+s = "Block123"
+if s.isalnum():
+   print("All letters or numbers")
+else:
+   print("Not all letters or numbers")
+----
+
+.Output
+----
+All letters or numbers
+----
+
+a| `<string>.replace(s1, s2)`
+a| Returns <string> with **all** occurrences of substring s1 replaced by s2.
+
+[source,Python]
+.Example
+----
+s = "computer"
+print(s.replace("mpu", "un"))
+----
+
+.Output
+----
+counter
+----
+
+a| `<string>.find(s)`
+
+`<string>.find(s, start)`
+
+`<string>.find(s, start, end)`
+a| Returns the **first** index at which substring s was found in <string>, starting at index `start` and ending at index `end`, or -1 if  s is not found. 
+(If you leave out `end` it defaults to the length of the string.
+If you leave out `start` it defaults to the start of the string.)
+
+[source,Python]
+.Example 1
+----
+s = "apothecary"
+print(s.find("a"))
+----
+
+.Output 1
+----
+0
+----
+
+[source,Python]
+.Example 2
+----
+s = "apothecary"
+print(s.find("a", 1))
+----
+
+.Output 2
+----
+7
+----
+
+[source,Python]
+.Example 3
+----
+s = "apothecary"
+print(s.find("a", 1, 5))
+----
+
+.Output 3
+----
+-1
+----
+
+a| `<string>.strip()`
+a| Returns <string> with all leading and trailing whitespace characters removed.
+Whitespace includes spaces, tabs, newlines.
+You commonly use this when reading lines in from a file, because each line will have a "\n" (newline) character at the end.
+
+[source,Python]
+.Example
+----
+s = "   \n\n   computer    \n"
+print(s.strip())
+----
+
+.Output
+----
+computer
+----
+
+a| `<string>.split(delimiter)`
+a| Returns <string> broken into a list of strings every time `delimiter` is found.
+This is commonly used after reading delimited lines of text from a file.
+Note that `delimiter` can be more than one character.
+
+[source,Python]
+.Example
+----
+s = "Bloggs,Fred,15,MH3"
+lst = s.split(",")
+print(lst[0])
+print(lst[1])
+print(lst[2])
+print(lst[3])
+----
+
+.Output
+----
+Bloggs
+Fred
+15
+MH3
+----
+
+|===
 
 === Strings as sequences
 
@@ -300,7 +588,7 @@ print("The 4th character of your name is " + name[3])
 
 **Notes:**
 
-* We put `name[3]` because counting starts at zero.
+* We put `name[3]` for the 4th character because counting starts at zero.
 
 * If the name is less then 4 characters we will get an `IndexError`, meaning we've tried to access an item of a sequence that isn't there.
 
@@ -344,34 +632,95 @@ else:
 === Arithmetic operators
 
 The GCSE requires you to know the following arithmetic operators:
-| Operator | Operation | Example | Result
-|---|---|---|---|
-|+|Add|19+5|24|
-|-|Subtract|19-5|14|
-|*|Multiply|19*5|95|
-|/|Divide|19/5|3.8|
-|//|Integer division|19//5|3|
-|%|Modulo (remainder after division)|19%5|4|
-|**|To the power|19**5|2476099|
+
+[cols="1, 3, 1, 1"]
+|===
+|Operator|Operation|Example|Result
+
+|+ 
+|add 
+|19 + 5 
+|24 
+
+|-
+|subtract 
+|19 - 5 
+|14 
+
+|* 
+|multiply 
+|19 * 5 
+|95 
+
+|/
+|divide 
+|19 / 5 
+|3.4
+
+|//
+|integer division 
+|19 // 5 
+|3
+
+|% 
+|modulo (remainder after division)
+|19 % 5 
+|4 
+
+|** 
+|to the power 
+|19 ** 5 
+|2476099 
+
+|===
+
 
 === Comparison operators
 
 The GCSE requires you to know the following comparison operators.
 
-|Operator|Description|Example|Result|
-|---|---|---|---|
-|==|is equal to|5 == 5|True|
-|!=|is not equal to|5 != 5|False|
-|>|is greater than|5 > 5|False|
-|>=|is  greater than or equal to|5 >= 5|True|
-|<|5 < 5|is less than|False|
-|<=|is less then or equal to|5 <= 5|True|
+[cols="1, 2, 1, 1"]
+|===
+|Operator|Description|Example|Result
+
+|==
+|is equal to
+|5 == 5
+|True
+
+|!=
+|is not equal to
+|5 != 5
+|False
+
+|>
+|is greater than
+|5 > 5
+|False
+
+|>=
+|is  greater than or equal to
+|5 >= 5
+|True
+
+|<
+|is less than
+|5 < 5
+|False
+
+|\<=
+|is less then or equal to
+|5 \<= 5
+|True
+|===
 
 === Logical operators
 
 Consider the following two statements:
-1. Paris is the capital of France
-2. Beijing is the capital of Germany
+
+. Paris is the capital of France
+
+. Beijing is the capital of Germany
 
 It is clear that **statement 1 is True** and **statement 2 is False**.
 
@@ -389,33 +738,53 @@ In general then:
 
 * something True **and** something False is **False**
 
-something True **or** something False is **True**
+* something True **or** something False is **True**
 
 We can summarise how the logical operators work using **truth tables**.
 
 This is the **truth table for AND**:
 
+[cols="1,1"]
+|===
 | Statement | Result
-|---|---|
-True and True|True|
-True and False|False|
-False and True|False|
-False and False|False|
+
+|True and True
+|True
+
+|True and False
+|False
+
+|False and True
+|False
+
+|False and False
+|False
+|===
 
 This is the **truth table for OR**:
 
+|===
 | Statement | Result
-|---|---|
-True or True|True|
-True or False|True|
-False or True|True|
-False or False|False|
+
+|True or True
+|True
+
+|True or False
+|True
+
+|False or True
+|True
+
+|False or False
+|False
+|===
 
 ==== Logical operator precedence and the use of brackets
 
 You are familiar with the idea of operator precedence from mathematics. For instance `5 - 3 x 2 = -1`, whereas `(5 - 3) x 2 = 4`.
 
-In Python, `and` takes precedence over `or`. For example, `True or False and False` evaluates to `True`, whereas `(True or False) and False` evaluates to `False`.
+In Python, `and` takes precedence over `or`. 
+For example, `True or False and False` evaluates to `True`, whereas `(True or False) and False` evaluates to `False`.
 
 I think it's unlikely that the GCSE would require you to know this, but it's handy to know when you write your own programs.
 
@@ -449,56 +818,84 @@ Number valid: False
 
 1. A statement that evaluates to True or False is known as a *condition*.
 
-2. Note that when using logical operators, each side of the operator has to be an expression which **on its own** evaluates to True or False. So if you want to check that a and b are both greater than 10, for instance, you have to write `a > 10 and b > 10`. You **cannot** write `a and b > 10`; in fact this will lead to a nasty bug.
+2. Note that when using logical operators, each side of the operator has to be an expression which **on its own** evaluates to True or False. 
+So if you want to check that a and b are both greater than 10, for instance, you have to write `a > 10 and b > 10`. 
+You **cannot** write `a and b > 10`; in fact this will lead to a nasty bug.
 
 === Exercises
 
 1. Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.
 
-2. Write a condition that evaluates to True if `n` is positive and even, and False otherwise. Hint: What is the remainder on division by 2 for numbers that are even?
+2. Write a condition that evaluates to True if `n` is positive and even, and False otherwise. 
+Hint: What is the remainder on division by 2 for numbers that are even?
 
 == Printing output to the screen
 
-Here is a summary of the main ways of printing strings (and variable values) to the console (screen). For each, `age` is an integer variable with value 15.
+The print function outputs its argument to the console, followed by a newline.
+
+[source,Python]
+.Example: Printing a single value
+----
+print("Hello")
+print(4)
+----
+.Output
+----
+Hello
+4
+----
+
+
+Here is a summary of the main ways of printing strings (and variable values) to the console (screen). 
+For each, `age` is an integer variable with value 15.
 
 ---
 
 [source,Python]
+.Example: Printing non-string types
 ----
 print(age)
 ----
-
+.Output
 ----
-Output: 15
+15
 ----
 
-This works ok. The print function can print types other than strings. 
+This works ok. 
+The print function can print types other than strings. 
 
 ---
 [source,Python]
+.Example: Using a comma-separated argument list
 ----
 print("Fred is", age, "years old.")
 ----
-
+.Output
+----
 Fred is 15 years old.
+----
 
-This works ok. If you separate string literals and variables with commas, Python automatically puts a space between them (but sometimes you won't want it to).
+This works ok. 
+If you separate string literals and variables with commas, Python automatically puts a space between them (but sometimes you won't want it to).
 
 ---
 [source,Python]
+.Example: Error when printing using string concatenation
 ----
 print("Fred is" + age + "years old.")
 TypeError!
 ----
 
-This doesn't work because you can't concatenate strings and integers. You have to use the `str` function to convert the integer to a string.
+This doesn't work because you can't concatenate strings and integers. 
+You have to use the `str` function to convert the integer to a string.
 
 ---
 [source,Python]
+.Example: Fixing the TypeError
 ----
 print("Fred is" + str(age) + "years old.")
 ----
-
+.Output
 ----
 Fred is15years old.
 ----
@@ -507,39 +904,49 @@ This works ok but we forgot to add spaces where we needed them.
 
 ---
 [source,Python]
+.Example: Fixing the spacing
 ----
 print("Fred is " + str(age) + " years old.")
 ----
-
+.Output
 ----
 Fred is 15 years old.
 ----
 
-This works ok (same as above but with spaces) because we have converted the integer to a string using the `str` function before we concatenated it. **This is used in the GCSE and *must* be used when the question tells you to use concatenation.**
+This works ok (same as above but with spaces) because we have converted the integer to a string using the `str` function before we concatenated it. 
+
+WARNING: This is used in the GCSE and **must** be used when the question tells you to use **concatenation**.
 
 ---
 [source,Python]
+.Example: Simple use of the string.format function
 ----
-print("Fred is {} years old.".format(age)
+print("Fred is {} years old.".format(age))
 ----
-
+.Output
 ----
 Fred is 15 years old.
 ----
 
-This works ok. More information about this is given later in the chapter. **This is heavily used in the GCSE and must be used when the question tells you to use the format function.** 
+This works ok. 
+More information about the format function is given later in the chapter. 
+
+WARNING: This is heavily used in the GCSE and **must** be used when the question tells you to use the **format function**.
 
 ---
+
 [source,Python]
+.Example: Printing using f-strings
 ----
 print(f"Fred is {age} years old.")
 ----
-
+.Output
 ----
 Fred is 15 years old.
 ----
 
-This works ok. This is the modern way to print variables and string literals, but it is not used in the GCSE. 
+This works ok. 
+This is the modern way to print variables and string literals, but it is not used in the GCSE. 
 
 ## Using the format function
 The basic use of the format function can be seen in the program below.
@@ -573,7 +980,7 @@ For full details go here.
 https://docs.python.org/3/library/string.html#formatstrings
 I warn you it is complicated!
 
- Here is an example that covers everything you need to know for the GCSE.
+Here is an example that covers everything you need to know for the GCSE.
 
 [source,Python]
 ----
@@ -596,28 +1003,35 @@ print(layout.format("Kim", 14, 41.67, 1))
 
 **Notes:**
 
-1. The order of the parts of the format specifier is
-{:\<align\>\<sign\>\<width\>\<.precision\>\<type\>}
+1. The order of the parts of the format specifier is +
+`{:<align><sign><width><.precision><type>}`
 
-2. You HAVE to put the colon (:) in first. If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
+2. You HAVE to put the colon (:) in first. 
+If you don't you will get a strange KeyError, so if you see a KeyError, you know what the problem is.
 
 3. There are three possible alignment symbols:
-   - \< means left align, but it's the default so I've left it out 
-   - \^ means centre align 
-   - \> means right align 
+   - < means left align, but it's the default so I've left it out 
+   - ^ means centre align 
+   - > means right align 
 
-4. The + in the fourth field of the `layout` variable means that both positive and negative numbers get a sign symbol (+ or -). There are three options you can put here:
-   - \+ mean both positive and negative numbers get a sign
-   - \- means only negative numbers get a sign; positive numbers get nothing (this is the default if you leave it out entirely)
+4. The + in the fourth field of the `layout` variable means that both positive and negative numbers get a sign symbol (+ or -). 
+There are three options you can put here:
+   - + mean both positive and negative numbers get a sign
+   - - means only negative numbers get a sign; positive numbers get nothing (this is the default if you leave it out entirely)
    - a space means that negative numbers get a sign and positive numbers get a space (this could be useful for making sure that mixed positive and negative numbers line up nicely)
 
-5. I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of "| " plus three times the length of " | " plus the length of " |" plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it's easier to do it by trial and error.
+5. I have created a string of 50 dashes to print the horizontal line.
+I had to calculate this number by adding the length of `"| "` plus three times the length of `" | "` plus the length of `" |"` plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. 
+Maybe it's easier to do it by trial and error.
 
-6. You have to put the f at the end of the float field (third field in the `layout` variable) if you want it to treat the precision as *decimal places*. If you leave out the f then it will be *significant figures* instead.
+6. You have to put the `f` at the end of the float field (e.g. `10.2f`, the third field in the `layout` variable) if you want it to treat the precision as *decimal places*. 
+If you leave out the f then it will be *significant figures* instead. 
+The GCSE always seems to ask for decimal places, so always put it in for float values.
 
 == Grouping lots a variables together with lists
 
-Every programming language has ways to represent lists of things. Without lists you would need to create separate variables to store lots of different values, which would become impossible if, at the time of writing your code, you didn't know exactly how many values the user might want to store. 
+Every programming language has ways to represent lists of things. 
+Without lists you would need to create separate variables to store lots of different values, which would become impossible if, at the time of writing your code, you didn't know exactly how many values the user might want to store. 
 
 There are only four basic things that the GCSE requires you to know about lists:
 
@@ -650,8 +1064,6 @@ listB = list()
 
 ====  Adding things using append
 
-asdf
-
 [source,Python]
 ----
 mylist = [] # Create a new empty list
@@ -664,9 +1076,9 @@ print(mylist)
 Output:
 > [5, "Hello", 3.14]
 
-=== Removing things using del
+=== Removing things by index using del
 
-asdf
+You can remove the ith value of a list by using the del statement as below.
 
 [source,Python]
 ----
@@ -676,11 +1088,11 @@ print(mylist)
 ----
 
 Output:
-> [1, 3, 7, 11]
+[1, 3, 7, 11]
 
 === Inserting things using insert
 
-Hello
+You can insert an item at a particular position in a list by using the insert function as below.
 
 [source,Python]
 ----
@@ -694,32 +1106,810 @@ Output:
 ["apple", "banana", "fig", "lemon", "pear"]
 ----
 
+=== Removing things from a list by value (rather than index)
+
+There is a list function to remove the first element of a list that has a particular value, but the GCSE does not expect you to know it.
+However, they have given you enough information to work out how to do it, so we cover it here.
+
+==== Removing something using a loop and the del operator
+
+First we find the position of the item using a loop. 
+Next we use the position along with the del statement to remove it.
+
+[source,Python]
+----
+mylist = ["apple", "banana", "lemon", "pear"]
+print(mylist)
+
+# We will choose to remove "banana".
+itemToRemove = "banana"
+
+index = 0
+found = False
+
+while index < len(mylist) and not found:
+   if mylist[index] == itemToRemove:
+      found = True
+   else:
+      index = index + 1
+
+del mylist[index]
+print(mylist)
+----
+
+----
+Output:
+["apple", "banana", "lemon", "pear"]
+["apple", "lemon", "pear"]
+----
+
+==== Removing something using the list.remove function
+
+A much easier way of doing this is to use the list function remove.
+
+[source,Python]
+----
+mylist = ["apple", "banana", "lemon", "pear"]
+print(mylist)
+
+# We will choose to remove "banana".
+itemToRemove = "banana"
+
+mylist.remove(itemToRemove) # Not covered by the GCSE!
+print(mylist)
+----
+
+----
+Output:
+["apple", "banana", "lemon", "pear"]
+["apple", "lemon", "pear"]
+----
+
+NOTE: The list.remove function by default only removes the first item it finds.
+
+WARNING: The list.remove function raises an error if the item is not found in the list.
+
+
 == Selecting which lines of code to execute with If statements
 
-Hello hhello
+=== If with no else
+
+[source,Python]
+----
+age = int(input("Enter your age: ")):
+if age > 40:
+   print("You're old!")
+print("Thank you")
+----
+
+.Output 1
+----
+Enter your age: 23
+Thank you
+----
+
+.Output 2
+----
+Enter your age: 45
+You're old!
+Thank you
+----
+
+**Notes:**
+
+1. Pay attention to the indentation in this example. 
+The "Thank you" message is not indented and so is not part of the if statement. 
+Hence it gets printed whether or not the "You're old!" message gets printed.
+2. You don't have to have an else! 
+Students often put an else in even when nothing is to be done. 
+
+=== If with else
+
+[source,Python]
+----
+age = int(input("Enter your age: ")):
+if age > 40:
+   print("You're old!")
+else:
+   print("You're young!")
+print("Thank you")
+----
+
+.Output 1
+----
+Enter your age: 23
+You're young!
+Thank you
+----
+
+.Output 2
+----
+Enter your age: 45
+You're old!
+Thank you
+----
+
+=== If with elif and else
+
+[source,Python]
+----
+age = int(input("Enter your age: ")):
+if age > 60:
+   print("You're very old!")
+elif age > 40:
+   print("You're old!")
+else:
+   print("You're young!")
+print("Thank you")
+----
+
+.Output 1
+----
+Enter your age: 74
+You're very old!
+Thank you
+----
+
+.Output 2
+----
+Enter your age: 45
+You're old!
+Thank you
+----
+
+.Output 2
+----
+Enter your age: 23
+You're young!
+Thank you
+----
+
+**Notes:**
+
+1. You can have as many elifs as you want.
+2. Notice that in an if... elif... else block, **only one option can be executed**. 
+Even though 74 is greater than 60 and greater than 40, only the first condition is matched. 
+This is great because you can avoid complicated conditions like `age > 40 and age \<= 60`.
 
 == Looping: repeating a block of code once for every item in a sequence (for loops)
 
-Hello
+Remember that the sequence types that we encounter in the GCSE are:
+
+* Strings
+* Lists
+
+Very often in programs, we need to do something for every item of a sequence, such as counting, totalling or selecting particular items. 
+
+=== Looping through a sequence by item
+
+Here is a program that uses a for loop to iterate through every letter of a string, printing a message each time it finds a capital letter and finally printing the total number of capital letters found.
+
+[source,Python]
+----
+word = input("Enter a string: ")
+count = 0
+for letter in word:
+   if letter.isupper():
+      print("Capital letter found! " + letter)
+      count = count + 1
+print(str(count) + " capital letters found in total.")
+----
+
+.Output
+----
+Enter a string: Jeff works for the BBC
+Capital letter found! J
+Capital letter found! B
+Capital letter found! B
+Capital letter found! C
+4 capital letters found in total.
+----
+
+**Notes:**
+
+1. There is nothing special about `letter` here; it is just a variable name. 
+I could have used `x` but `letter` is a much better choice of name since anyone reading the code will know what the variable is being used for. 
+2. Any lines of code indented after the beginning of the for loop are in the loop and will be repeated once for every item of the sequence (word).
+
+==== Making a sequence of integers with the range function
+
+The range function can be used to get a sequence of integers, which can then be iterated through with a for loop. 
+The general syntax for a call to the range function is as follows:
+
+* `range(N)`: A sequence from 0 to N-1
+* `range(M, N)`: A sequence from M to N-1
+* `range(M, N, step)`: The sequence from M to N-1 increasing in increments of `step`
+
+Some examples are included in the following table:
+
+[cols="1,1,1"]
+|====
+|Function call|Sequence|Explanation
+
+| `range(10)`
+| 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+| If you just use an integer N, you get a sequence from 0 up to N-1.
+
+| `range(0, 10)`
+| 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+| This is the same as the first example, but we've explicitly specified the sequence start number.
+
+| `range(3, 10)`
+| 3, 4, 5, 6, 7, 8, 9
+| The sequence start doesn't need to be 0.
+
+| `range(3, 10, 2)`
+| 3, 5, 7, 9
+| If you include a third argument it is the amount by which the sequence increases each time(often known as the _step_. 
+
+| `range(10, 0, -1)`
+| 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+| You can use a negative step, but then the first argument has to be larger than the second.
+|====
+
+The following program uses the range function to generate a list of square numbers.
+
+[source,Python]
+----
+for i in range(1, 11):
+   print(str(i) + " squared = " + str(i**2))
+----
+
+.Output
+----
+1 squared = 1
+2 squared = 4
+3 squared = 9
+4 squared = 16
+5 squared = 25
+6 squared = 36
+7 squared = 49
+8 squared = 64
+9 squared = 81
+10 squared = 100
+----
+
+==== Repeating a block of code an exact number of times
+
+A for loop together with the range function can be used to repeat a block of code an exact number of times. 
+This type of loop is sometimes known as a **count-controlled loop** (as opposed to a condition-controlled loop, seen in the while loop section). 
+To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer. 
+We don't necessarily need to use the integer counter.
+
+The following program ask the user for exactly three words, entered  one after the other, and then tells the user the words they entered.
+
+[source,Python]
+----
+words = []
+for i in range(3):
+   word = input("Enter a word: ")
+   words.append(word)
+
+print("The words you entered were: ")
+for word in words:
+   print(word)
+----
+
+.Output
+----
+Enter a word: lemon
+Enter a word: apple
+Enter a word: orange
+The words you entered were:
+lemon
+apple
+orange
+----
+
+==== Iterating through a sequence using an index
+
+We have already seen that with sequences (strings and lists), it is possible to use an index to access a particular item, for example, if `numbers` is a list, then `numbers[3]` gives us the 4th item in that list.
+
+To iterate through every item of the list using an index we need to
+
+* Start at 0, because that is the index of the first item
+* End at the N - 1, where N is the length of the list (e.g. a list of 8 items will have indexes going from 0 up to 7)
+
+There is a function that will give us the length of a sequence: the `len` function. 
+We can use this function to give us the upper bound of the range of numbers that we need to use as the indexes for accessing the members of our sequence. 
+This gives us exactly the indexes we want; no more and no less.
+
+
+[source,Python]
+----
+range(len("computer")) # Gives the range 0,1,2,3,4,5,6,7
+----
+
+So now we can iterate through our sequence in two different ways:
+
+**Iterating by item:**
+
+[source,Python]
+----
+word = "computer"
+for letter in word:
+   print(letter)
+----
+
+**Iterating by index:**
+
+[source,Python]
+----
+word = "computer"
+for i in range(len(word)):
+   print(word[i])
+----
+
+**Notes:**
+
+1. I have used `letter` as the loop variable in the first example, because each item of the list that I'm iterating through (the word) is a letter. 
+But in the second example each item is not a letter, it's an integer in the range 0 to 7. 
+It is conventional to name an integer index `i` in this case (although in the GCSE they often use the name `index`).
+
+NOTE: The GCSE tends to favour iterating through sequences using indexes rather than by item.
+
+Iterating through a sequence using an index is generally considered to be less clear than iterating using an index but **sometimes you have to use an index** to iterate through a sequence. 
+Consider this program that prints the indexes of any double letters in word.
+
+[source,Python]
+.Example: Iterating through a sequence using an index
+----
+word = input("Enter a word: ")
+for i in range(len(word) - 1):
+   if word[i] == word[i+1]:
+      print("Double letter found at index: " + str(i))
+----
+
+.Output
+----
+Enter a word: Mississippi
+Double letter found at index: 2
+Double letter found at index: 5
+Double letter found at index: 8
+----
+
+**Notes:**
+
+1. We have to use an index here because we don't just want to access the current item, we want to access the next item too.
+2. Note how we have to make the range of indexes one shorter than it was before, otherwise we will get to the last letter and try to check the "next" one. 
+This will mean we're trying to access a letter beyond the end of the word and we will get an `IndexError`.
 
 == Looping: repeating a block of code as long as a condition is true (while loops)
 
-Hello
+We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false. 
+There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true. 
+While loops are sometimes known as **condition-controlled loops**.
+
+This program asks the user to enter a password. 
+It keeps asking until the user enters the correct password "sesame".
+
+[source,Python]
+----
+password = input("Enter password: ")
+
+while password != "sesame":
+   print("Incorrect password")
+   password = input("Enter password: ")
+
+print("Access granted")
+----
+
+.Output
+----
+Enter password: password
+Incorrect password
+Enter password: letmein
+Incorrect password
+Enter password: 123456
+Incorrect password
+Enter password: sesame
+Access granted
+----
+
+**Notes:**
+
+1. It is important to ask for another password in the loop. 
+If this is not done, then the loop will go on forever (because it will keep testing "password") and your computer will become unresponsive. 
+This is known as an **infinite loop**.
+2. Note that since the line that prints "Access granted" is _after_ the loop, the only way the program will execute this line is if we've ended the loop, and the only way we can end the loop is if it's not true that the password is not "sesame".
+
+=== Breaking out of a while loop using a flag variable
+
+You can immediately break out of a for loop or a while loop using the statement `break`, but the GCSE exam board seem to prefer you not to use it (they consider it bad programming practice). 
+You can avoid using a break statement by using a boolean "flag" variable, on which the loop condition depends. 
+
+The following program finds the position of the first integer in a list of integers that is exactly divisible by 7. 
+If no numbers are exactly divisible by 7 it prints a suitable message. 
+
+This is an **important example**, so read the notes carefully. 
+
+[source,Python]
+----
+numbers = [34, 23, 68, 45, 81, 56, 27, 16]
+found = False # Flag variable
+index = 0
+
+# Note flag variable in loop condition
+while index < len(numbers) and not found:
+   if numbers[index] % 7 == 0:
+      found = True # Change flag variable so loop ends
+   else:
+      index = index + 1
+
+# Check flag variable to see if number was found
+if found:
+   print("Number found at index " + str(index))
+else:
+   print("No numbers divisible by 7 found")
+----
+
+.Output
+----
+Number found at index 5
+----
+
+**Notes:**
+
+. There are **two reasons** to continue the loop and both must be true, so we use `and`: the index must be less than the length of the list (otherwise we run off the end and get an `IndexError`) AND we must not have found the target number yet.  
+. We use the flag variable in three places:
+   .. Setting its initial value (to False)
+   .. Putting it in the while condition (while it is False)
+   .. Changing its value when the target is found (change it to True)
+. In this example we set the flag to False, loop while it is False, then change it to True to stop the loop, but we could just as well set the flag to True, loop while it is True, then change it to False to stop the loop. 
+If we did that then the name `found` would not make sense; we would have to use a name like `searching` or `stillLooking`.
+. It is important not to increment the index when the target number is found or we'll report the wrong position.
+. We must test the value of `found` after the loop because there are two reasons the loop could have ended and we don't know which happened without checking.
+. We don't have to explicitly use `found == False` or `found == True` in the conditions. Saying `if found` is the same as saying `if found == True` (but it wouldn't matter if you preferred to write `if found == True`).
+. Note that this program processes no more value of the list than it has to. 
+As soon as it has found the value it is looking for, it stops the loop. 
+This is important because you will lose a mark in the GCSE if you process more values than you need to. 
+
+[IMPORTANT]
+====
+The GCSE prefers you not to use `break` statements. Remember this:
+
+* If you are definitely going to process **all items of a list**, use a **for loop**.
+
+* If you might only need to process **some of the items of a list**, use a **while loop with a flag variable** to break out of the loop as early as necessary.
+====
 
 == Slicing: getting parts of a sequence
 
-Hello
+We know that we can use indexed to get individual items from strings or lists, e.g. "computer"[2] gives us "m". 
+Python also allows you to get several items by using what's called a slice. 
+The syntax of a slice is as follows:
+
+* `<sequence>[start:end]`
+
+* `<sequence>[start:end:step]`
+
+If you slice a string, the result is a string. 
+If you slice a list, the result is a list.
+
+For the example below, assume that we have defined:
+
+* `word = "computer"`
+* `numbers = [1, 2, 3, 4, 5, 6, 7, 8]`
+
+
+[cols="1,1,1"]
+|===
+| Example | Result | Explanation
+
+|`word[2:7]` + 
+`numbers[2:7]`
+| `"mput"` + 
+`[3, 4, 5, 6]`
+| The slice starts at index 2 and goes up to **but not including** 7 (similar to the range function arguments).
+
+| `word[:7]` + 
+`numbers[:7]`
+| `"comput"` + 
+`[1, 2, 3, 4, 5, 6]`
+| If you leave out the first argument, then it defaults to 0 (zero).
+
+| `word[2:]` + 
+`numbers[2:]`
+| `"mputer"` + 
+`[3, 4, 5, 6, 7, 8]`
+| If you leave out the second argument, then it defaults to the length of the sequence (i.e. it goes right up to the end).
+
+| `word[2:7:2]` + 
+`numbers[2:6:2]`
+| `"pt"` + 
+`[4, 6]`
+| A step argument of n selects every nth item of the slice. 
+
+|===
 
 == Functions: named blocks of code that do a job and return a result
 
-Hello
+So far you have used some built-in functions that are part of Python. 
+
+[source,Python]
+----
+word = "computer"
+length = len(word) # Built-in len function called with argument word returns 8
+----
+
+You can define your own functions in Python. 
+To show you how to do this, I will write a short program that doesn't define a function, and then I will write the same program, which does.
+
+This program asks the user for some text and tells them how many of the characters they entered are letters of the alphabet.
+
+[source,Python]
+----
+text = input("Enter some text: ")
+count = 0
+
+for character in text:
+   if character.isalpha():
+      count += 1
+
+print("There are " + str(count) + " letters in the text you entered.")
+----
+.Output
+----
+Enter some text: You scored 18/24, which is 75%.
+There are 16 letters in the text you entered.
+----
+
+This program does exactly the same, but it defines a function that takes a string paramenter and returns an integer. 
+The parameter is the string that the user entered; the return value is the number of alphebetical characters in that text.
+
+[source,Python]
+----
+def countAlpha(pString):
+   count = 0
+   for character in pString:
+      if character.isalpha():
+         count += 1
+   return count
+
+text = input("Enter some text: ")
+print("There are " + str(countAlpha(text)) + " letters in the text you entered.")
+----
+.Output
+----
+Enter some text: You scored 18/24, which is 75%.
+There are 16 letters in the text you entered.
+----
+
+**Notes:**
+
+. The function definition begins with the line `def countAlpha(pString):`.
+. The function call is `countAlpha(text)`.
+. The function has to be **defined before it is called**, hence I have put it at the beginning of the program. 
+. The code in the function isn't actually executed until the function is called. The order of events is:
+   .. Ask the user for input and assign the result to text.
+   .. Copy the value of `text` into `pString` and run the code in the `countAlpha` function.
+   .. Return the result of the `countAlpha` function (an integer) the main part of the code.
+   .. The `str` function converts it to a string.
+   .. It is **concatenated** with "There are " and " letters in the text you entered."
+   .. The whole string is passed to the `print` function for printing to the screen
+
+More details, including the advantage of using functions, is covered in the GCSE course notes.
 
 == Working with files
 
-Hello
+=== Writing to new files
+
+This program creates a new file in the same directory as the Python (.py) file that contains the code. 
+Run the code locally (on your machine) to test it out.
+
+[source,Python]
+----
+FILENAME = "outputData.txt"
+file = open(FILENAME, "w")
+file.write("Hello\n")
+file.write("world")
+file.close()
+----
+
+=== Reading data from files that already exist
+
+The next program reads from an existing file in the same directory as the Python (.py) file that contains the code. 
+Before you run the code you will need to create the file by copying the following text and pasting it into a new file. 
+You can do this in Thonny by following these instructions:
+
+.Copy this text to the clipboard
+----
+booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+johnson81;4081;Craig;Johnson
+jenkins46;9346;Mary;Jenkins
+smith79;5079;Jamie;Smith
+----
+
+_Then in Thonny_
+
+. Choose File, New
+. Paste the text into the top window
+. Choose File, Save As
+. Enter inputData.txt as the file name
+. Click Save
+
+Run the code locally (on your machine) to test it out.
+
+[source,Python]
+----
+FILENAME = "inputData.txt"
+file = open(FILENAME, "r")
+
+for line in file:
+   fields = line.split(";")
+   print(fields[2] + " " fields[3])
+
+file.close()
+----
+
+
+**Notes:**
+
+. In the GCSE, the file name will usually be given as a **constant**, signified by a variable name in all capitals. 
+If you are given a file name as a constant and asked to open the file, you must **use the constant**. 
+You would lose a mark for writing `open("data.txt", "w").`
+. The "w" argument to the open function stands for "writing" and means that we are opening a new file to put text into. 
+. If you open an existing file for writing, it will erase all data in that file.
+. The "\n" means a **newline** character. 
+
+== Errors and what they mean
+
+When a piece of code generates an error, it is common for students just to raise their hands and declare "It doesn't work." 
+However, the error message that Python gives you often tells you exactly what the problem is, so it's important to understand what these errors mean. 
+
+When you write a large chunk of code, it is likely that you will accidentally introduce a number of errors. 
+When you run your code, Python will stop at the first error. 
+You will need to fix that error and then run the code again. Now Python will stop at the next error. 
+Fixing errors one-by-one in this way is known as debugging. 
+Since fixing lots of errors is generally more difficult than fixing one error, you should aim to try out parts of your code as soon as possible, rather than writing the entire program before you start debugging.
+
+NOTE: Test early; test often.
+
+=== SyntaxError
+
+Possibly the most common error for beginner programmers, a syntax error is caused by breaking the basic rules of how the language should be written. 
+
+A good example is missing out something like a colon, bracket, quotation mark, etc.
+
+[source,Python]
+.Example of SyntaxError
+----
+name = "Fred
+----
+.Error message
+----
+>>> %Run blah.py
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 1
+    name = "Fred
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
+----
+**Notes:**
+. Look at the language used in the error message. It tells you exactly what's wrong.
+. The string literal beginning `"Fred` has an opening quotation mark but no closing quotation mark. 
+Hence `unterminated string literal`.
+
+=== IndexError
+
+An index error occurs when we have referred to an element of a sequence that doesn't exist. 
+It often happens when you run off the end of a string or list when iterating through it with a counter.
+
+[source,Python]
+.Example of IndexError
+----
+word = "computer"
+index = 0
+while True:
+    print(word[index])
+    index += 1
+----
+.Error message
+----
+>>> %Run blah.py
+c
+o
+m
+p
+u
+t
+e
+r
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 4, in <module>
+    print(word[index])
+IndexError: string index out of range
+----
+**Notes:**
+. The code executed without error while the index was less then the length of the string.
+. When index reached a value of 8, we tried to print `word[8]`. 
+This generated the error because the last item of `word` is at index 7.
+
+=== TypeError
+
+A type error occurs when you have tried to do something with a variable or literal that you cannot do because of its type (e.g. integer, float, string, boolean). 
+A very common example is trying to concatenate strings with integers, using the concatenation operator (+).
+
+[source,Python]
+.Example of TypeError
+----
+name = "Fred"
+age = 15
+print(name + " is " + age + " years old.")
+----
+.Error message
+----
+>>> %Run blah.py
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 3, in <module>
+    print(name + " is " + age + " years old.")
+TypeError: can only concatenate str (not "int") to str
+----
+**Notes:**
+. Look at how descriptive the error message is. 
+Always look at the error message carefully.
+
+=== NameError
+
+A name error occurs when we have referred to a variable that has not been defined. 
+Students often get these errors when they don't pay adequate attention to the capitalisation of variable names. 
+
+[source,Python]
+.Example of NameError
+----
+name = "Fred"
+print("Hello " + Name)
+----
+.Error message
+----
+>>> %Run blah.py
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 2, in <module>
+    print("Hello " + Name)
+NameError: name 'Name' is not defined
+----
+**Notes:**
+
+. Python is case-sensitive. 
+That means that `name` is an entirely different variable name from `Name`.
+
+. Since `Name` has not been defined, Python generates a NameError when we try to print its value.
+
+=== AttributeError
+
+An attribute error is closely related to a name error. 
+It occurs when we have tried to access a property or run a function on an object that doesn't have that property or function. 
+As with name errors, attribute errors are often caused by capitalisation problems.
+
+[source,Python]
+.Example of AttributeError
+----
+name = "Fred"
+print(name.isUpper())
+----
+.Error message
+----
+>>> %Run blah.py
+Traceback (most recent call last):
+  File "C:\Users\justin.robertson\Dropbox\code\private\pythonbook\blah.py", line 2, in <module>
+    print(name.isUpper())
+AttributeError: 'str' object has no attribute 'isUpper'
+----
+**Notes:**
+
+. We have tried to see whether all the letters in `name` are upper case.
+
+. But we have used the wrong name `isUpper` as the string function, instead of the correct name `isupper`.
+
+. The error message is saying "You've tried to use a string's `isUpper` function but strings don't have functions called isUpper".
+
+. The exam board uses camel case for variable and function names, but Python doesn't, so watch out for this.
+
 
 == Ideas
 
+* Conventions in this book
 * A selection of Youtube videos to accompany the text.
 * Downloadable Python source files and data files. 
 * Error types and what they mean. 
@@ -728,3 +1918,5 @@ Hello
 * Common things like counting and keeping a running total
 * Where to get more practice: e.g. project Euler, adventofcode
 * Creating a list out of a string with list()
+
+

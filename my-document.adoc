@@ -24,3 +24,9 @@ def test():
 == Origins
 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
+
+link:downloads/report.pdf[Get Report]
+
+<<_origins>>
+
+<<_origins,Click here>>

@@ -1,0 +1,51 @@
+= Useful Stuff
+:experimental: true / Needed for kbd macros
+
+== Asciidoc Tips
+
+Enclose in plusses for inline passthrough. E.g. +&#8592;+ versus &#8592;.
+
+== Unicode Characters
+
+To add to document, type &#<code>;
+
+[cols="1,1"]
+|====
+|Code|Result
+
+| 8592-5
+| &#8592;&#8593;&#8594;&#8595;
+
+| 0163
+| &#0163;
+
+|====
+
+
+kbd:[ctrl+x]
+
+== VS Code Shortcuts
+
+[cols="1,1"]
+|====
+|Keys|Explanation
+
+| kbd:[Ctrl+x]
+| Cut line
+
+| kbd:[Ctrl+Shift+k]
+| Delete line
+
+| kbd:[Alt+&#8593;/&#8595;]
+| Move line up/down
+
+| kbd:[Alt+shift+&#8593;/&#8595;]
+| Copy line above/below
+
+| kbd:[Ctrl+Enter]
+| New line below
+
+| kbd:[Ctrl+Shift+Enter]
+| New line above
+
+|====
