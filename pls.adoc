@@ -1,0 +1,57 @@
+* Type conversions
+* Operators
+** Arithmetic
+** Relational
+** Logical
+* Syntax errors
+* Runtime errors
+* Logical errors
+* Range function?
+* If statements
+* While loops
+* For loops
+* Built-in functions
+** len
+** bool, int, float, str
+** ord, chr
+** print, input
+** range
+** round
+* List functions
+** create new empty list, append, del, insert
+* String functions
+** len, find, index
+** isalpha, isdigit, isalnum
+** replace
+** strip, split
+** upper, lower, isupper, islower
+* Format function
+** alignment <>^
+** sign +-<space>
+** precision
+** sdf (s default for strings, d the default for integers)
+* Math functions
+** ceil, floor, sqrt, pi
+* Others
+** time.sleep
+** random.randint, random. andom
+* Files
+** open function
+** for line in file:
+** file.readline()
+** file.readlines()
+** file.writelines(strlist)
+** file.write(string) (plus use of \n)
+** Reading
+* Turtle
+** turtle.Turtle()
+** turtle.done, mode, Screen, screensize
+** turtle.Screen().setup(width, height)
+** back, forward, hideturtle, left, right, showturtle, speed
+** home, reset, setheading, setposition
+** begin_fill, end_fill, fillcolor
+** pencolor, pendown, pensize, penup
+** circle
+** line continuation with \
+* Code from flowchart
+* Lists of lists
