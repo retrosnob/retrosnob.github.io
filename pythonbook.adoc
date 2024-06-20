@@ -1906,6 +1906,139 @@ AttributeError: 'str' object has no attribute 'isUpper'
 
 . The exam board uses camel case for variable and function names, but Python doesn't, so watch out for this.
 
+== Turtle
+
+Python has a build-in module that you can import called `turtle`. It can be used to draw simple patterns and shapes on the screen. 
+
+Try running the following program on your computer.
+
+[source,Python]
+.Simple turtle program
+----
+# Import the turtle module
+import turtle
+
+# Create a turtle
+t = turtle.Turtle()
+
+# Move the turtle forward 100 pixels
+t.fd(100)
+
+# Keep the window open so we can see the result
+turtle.done()
+----
+
+NOTE: You must include `import turtle` at the top of your file if you want to use the turtle module.
+
+[IMPORTANT] 
+====
+* When programming with the turtle module, you **cannot name your file** `turtle.py`, because this will mask the name of the module. Perhaps call it  `myturtle.py`.
+* Similarly, you cannot use `turtle` as a variable name. I suggest you call your turtle objects something like `t` or, as the exam board does, `theTurtle`.
+
+====
+
+The following table outlines all of the turtle features that the exam board expects you to be familiar with. Some of the functions are called directly on the turtle module, and these are written `turtle.<function>`. Others are called on the turtle object, and these are written `t.<function>`.
+
+[cols="1,2"]
+|===
+| Function |  Explanation
+
+| `turtle.done()`
+| Leaves the window open once the turtle program has finished, so you can see the results. 
+Another way of doing this is to have a single call to `input()` right at the end of the program, so that it waits for Enter to be pressed before then ending.
+
+| `turtle.mode(mode)`
+| Sets one of two modes in which to run the program: "standard" or "logo".
+The default is standard mode. 
+Logo is the name of a programming language in which a popular version of turtle was implemented, so this option exists for backwards compatibility.
+A turtle in standard mode, initially points to east at the start and angles are anti-clockwise.
+A turtle in logo mode points up north at the start and and angles are clockwise.
+
+| `scrn = turtle.Screen()`
+| Get a screen object.
+
+| `scrn.setup(width, height)`
+| Set the width and height of the window.
+
+| `turtle.screensize(width, height)`
+| Set the dimensions of the screen.
+
+| `t = turtle.Turtle()`
+| Get a turtle object that you can then draw with.
+
+| `t.forward(n)`
+| Move the turtle object forward n pixels. Can be abbreviated to `t.fd(n)`.
+
+| `t.back(n)`
+| Move the turtle object backwards n pixels. Can be abbreviated to `t.bk(n)`.
+
+| `t.hideturtle()`
+| Hide the turtle from the screen.
+
+| `t.showturtle()`
+| Unhide the turtle.
+
+| `t.left(n)`
+| Turn the turtle n degrees anti-clockwise.
+
+| `t.right(n)`
+| Turn the turtle n degrees clockwise.
+
+| `t.speed(n)`
+| Set the speed at which the turtle moves. 
+The value of n can be set to “fastest”, “fast”, “normal”, “slow”, “slowest”.
+Alternatively, use the numbers 1 to 10
+to increase speed. The value of 0 is the fastest.
+
+| `t.home()`
+| Move the turtle to the origin (0, 0), which by default is the centre of the screen.
+
+| `t.reset()`
+| Clear the screen, returns the turtle to the origin, and resets default settings.
+
+| `t.setheading(degrees)`
+| Point the turtle in a particular direction.
+
+| `t.setposition(x, y)`
+| Move the turtle to a particular coordinate.
+
+| `t.begin_fill()`
+| Set the turtle to fill mode. 
+You need to call this just before drawing an enclosed shape that you want to be filled.
+
+| `t.end_fill()`
+| Take the turtle out of fill mode.
+Call this if you are in fill mode and you are about to draw an enclosed shape that you don't want to be filled.
+
+| `t.fillcolor(colour)`
+| Set the colour of the fill about to be performed.
+Call this just before drawing a shape that you want to be filled.
+The colour argument is a string, e.g. "blue".
+
+| `t.pencolor(colour)`
+| Set the colour of the pen.
+Call this just before you move with the pendown to draw a line with a particular colour. 
+The colour argument is a string, e.g. "blue".
+
+| `t.pendown()`
+| Put the turtle's pen down so that when it next moves, a line will be drawn.
+
+| `t.penup()`
+| Raise the turtle's pen so that when it moves it will not draw a line.
+
+| `t.pensize(width)`
+| Set the width of the line that the turtle will draw when it next moves.
+The width argument should be an integer.
+
+| `t.circle(radius[, extent])`
+| Draw a circle with a particular radius. 
+The extent argument is optional and can be a number of degrees to specify the arc size, e.g. 90 would draw quarter of a circle.
+
+|===
+
+=== Sample turtle programs
+
+
 
 == Ideas
 

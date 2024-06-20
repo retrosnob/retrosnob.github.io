@@ -486,8 +486,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_grouping_lots_a_variables_together_with_lists">Grouping lots a variables together with lists</a>
 <ul class="sectlevel2">
 <li><a href="#_two_ways_to_create_a_new_list">Two ways to create a new list</a></li>
-<li><a href="#_removing_things_using_del">Removing things using del</a></li>
+<li><a href="#_removing_things_by_index_using_del">Removing things by index using del</a></li>
 <li><a href="#_inserting_things_using_insert">Inserting things using insert</a></li>
+<li><a href="#_removing_things_from_a_list_by_value_rather_than_index">Removing things from a list by value (rather than index)</a></li>
 </ul>
 </li>
 <li><a href="#_selecting_which_lines_of_code_to_execute_with_if_statements">Selecting which lines of code to execute with If statements</a>
@@ -522,6 +523,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_typeerror">TypeError</a></li>
 <li><a href="#_nameerror">NameError</a></li>
 <li><a href="#_attributeerror">AttributeError</a></li>
+</ul>
+</li>
+<li><a href="#_turtle">Turtle</a>
+<ul class="sectlevel2">
+<li><a href="#_sample_turtle_programs">Sample turtle programs</a></li>
 </ul>
 </li>
 <li><a href="#_ideas">Ideas</a></li>
@@ -1515,10 +1521,10 @@ else:
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
+<col style="width: 16.6666%;">
+<col style="width: 50%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6668%;">
 </colgroup>
 <thead>
 <tr>
@@ -1581,10 +1587,10 @@ else:
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
 </colgroup>
 <thead>
 <tr>
@@ -1759,7 +1765,8 @@ else:
 <p>You are familiar with the idea of operator precedence from mathematics. For instance <code>5 - 3 x 2 = -1</code>, whereas <code>(5 - 3) x 2 = 4</code>.</p>
 </div>
 <div class="paragraph">
-<p>In Python, <code>and</code> takes precedence over <code>or</code>. For example, <code>True or False and False</code> evaluates to <code>True</code>, whereas <code>(True or False) and False</code> evaluates to <code>False</code>.</p>
+<p>In Python, <code>and</code> takes precedence over <code>or</code>.
+For example, <code>True or False and False</code> evaluates to <code>True</code>, whereas <code>(True or False) and False</code> evaluates to <code>False</code>.</p>
 </div>
 <div class="paragraph">
 <p>I think it&#8217;s unlikely that the GCSE would require you to know this, but it&#8217;s handy to know when you write your own programs.</p>
@@ -1804,7 +1811,9 @@ Number valid: False</pre>
 <p>A statement that evaluates to True or False is known as a <strong>condition</strong>.</p>
 </li>
 <li>
-<p>Note that when using logical operators, each side of the operator has to be an expression which <strong>on its own</strong> evaluates to True or False. So if you want to check that a and b are both greater than 10, for instance, you have to write <code>a &gt; 10 and b &gt; 10</code>. You <strong>cannot</strong> write <code>a and b &gt; 10</code>; in fact this will lead to a nasty bug.</p>
+<p>Note that when using logical operators, each side of the operator has to be an expression which <strong>on its own</strong> evaluates to True or False.
+So if you want to check that a and b are both greater than 10, for instance, you have to write <code>a &gt; 10 and b &gt; 10</code>.
+You <strong>cannot</strong> write <code>a and b &gt; 10</code>; in fact this will lead to a nasty bug.</p>
 </li>
 </ol>
 </div>
@@ -1817,7 +1826,8 @@ Number valid: False</pre>
 <p>Write two statements involving countries and capitals such that if you put an OR operator between them the whole statement is False.</p>
 </li>
 <li>
-<p>Write a condition that evaluates to True if <code>n</code> is positive and even, and False otherwise. Hint: What is the remainder on division by 2 for numbers that are even?</p>
+<p>Write a condition that evaluates to True if <code>n</code> is positive and even, and False otherwise.
+Hint: What is the remainder on division by 2 for numbers that are even?</p>
 </li>
 </ol>
 </div>
@@ -1831,6 +1841,7 @@ Number valid: False</pre>
 <p>The print function outputs its argument to the console, followed by a newline.</p>
 </div>
 <div class="listingblock">
+<div class="title">Example: Printing a single value</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print("Hello")
 print(4)</code></pre>
@@ -1844,10 +1855,12 @@ print(4)</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Here is a summary of the main ways of printing strings (and variable values) to the console (screen). For each, <code>age</code> is an integer variable with value 15.</p>
+<p>Here is a summary of the main ways of printing strings (and variable values) to the console (screen).
+For each, <code>age</code> is an integer variable with value 15.</p>
 </div>
 <hr>
 <div class="listingblock">
+<div class="title">Example: Printing non-string types</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print(age)</code></pre>
 </div>
@@ -1859,10 +1872,12 @@ print(4)</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This works ok. The print function can print types other than strings.</p>
+<p>This works ok.
+The print function can print types other than strings.</p>
 </div>
 <hr>
 <div class="listingblock">
+<div class="title">Example: Using a comma-separated argument list</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print("Fred is", age, "years old.")</code></pre>
 </div>
@@ -1874,20 +1889,24 @@ print(4)</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This works ok. If you separate string literals and variables with commas, Python automatically puts a space between them (but sometimes you won&#8217;t want it to).</p>
+<p>This works ok.
+If you separate string literals and variables with commas, Python automatically puts a space between them (but sometimes you won&#8217;t want it to).</p>
 </div>
 <hr>
 <div class="listingblock">
+<div class="title">Example: Error when printing using string concatenation</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print("Fred is" + age + "years old.")
 TypeError!</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This doesn&#8217;t work because you can&#8217;t concatenate strings and integers. You have to use the <code>str</code> function to convert the integer to a string.</p>
+<p>This doesn&#8217;t work because you can&#8217;t concatenate strings and integers.
+You have to use the <code>str</code> function to convert the integer to a string.</p>
 </div>
 <hr>
 <div class="listingblock">
+<div class="title">Example: Fixing the TypeError</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print("Fred is" + str(age) + "years old.")</code></pre>
 </div>
@@ -1903,6 +1922,7 @@ TypeError!</code></pre>
 </div>
 <hr>
 <div class="listingblock">
+<div class="title">Example: Fixing the spacing</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print("Fred is " + str(age) + " years old.")</code></pre>
 </div>
@@ -1930,6 +1950,7 @@ This is used in the GCSE and <strong>must</strong> be used when the question tel
 </div>
 <hr>
 <div class="listingblock">
+<div class="title">Example: Simple use of the string.format function</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print("Fred is {} years old.".format(age))</code></pre>
 </div>
@@ -1941,7 +1962,8 @@ This is used in the GCSE and <strong>must</strong> be used when the question tel
 </div>
 </div>
 <div class="paragraph">
-<p>This works ok. More information about the format function is given later in the chapter.</p>
+<p>This works ok.
+More information about the format function is given later in the chapter.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -1957,6 +1979,7 @@ This is heavily used in the GCSE and <strong>must</strong> be used when the ques
 </div>
 <hr>
 <div class="listingblock">
+<div class="title">Example: Printing using f-strings</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">print(f"Fred is {age} years old.")</code></pre>
 </div>
@@ -1968,7 +1991,8 @@ This is heavily used in the GCSE and <strong>must</strong> be used when the ques
 </div>
 </div>
 <div class="paragraph">
-<p>This works ok. This is the modern way to print variables and string literals, but it is not used in the GCSE.</p>
+<p>This works ok.
+This is the modern way to print variables and string literals, but it is not used in the GCSE.</p>
 </div>
 </div>
 </div>
@@ -2056,7 +2080,8 @@ print(layout.format("Kim", 14, 41.67, 1))</code></pre>
 <code>{:&lt;align&gt;&lt;sign&gt;&lt;width&gt;&lt;.precision&gt;&lt;type&gt;}</code></p>
 </li>
 <li>
-<p>You HAVE to put the colon (:) in first. If you don&#8217;t you will get a strange KeyError, so if you see a KeyError, you know what the problem is.</p>
+<p>You HAVE to put the colon (:) in first.
+If you don&#8217;t you will get a strange KeyError, so if you see a KeyError, you know what the problem is.</p>
 </li>
 <li>
 <p>There are three possible alignment symbols:</p>
@@ -2075,7 +2100,8 @@ print(layout.format("Kim", 14, 41.67, 1))</code></pre>
 </div>
 </li>
 <li>
-<p>The + in the fourth field of the <code>layout</code> variable means that both positive and negative numbers get a sign symbol (+ or -). There are three options you can put here:</p>
+<p>The + in the fourth field of the <code>layout</code> variable means that both positive and negative numbers get a sign symbol (+ or -).
+There are three options you can put here:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2091,10 +2117,14 @@ print(layout.format("Kim", 14, 41.67, 1))</code></pre>
 </div>
 </li>
 <li>
-<p>I have created a string of 50 dashes to print the horizontal line. I had to calculate this number by adding the length of <code>"| "</code> plus three times the length of <code>" | "</code> plus the length of <code>" |"</code> plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50. Maybe it&#8217;s easier to do it by trial and error.</p>
+<p>I have created a string of 50 dashes to print the horizontal line.
+I had to calculate this number by adding the length of <code>"| "</code> plus three times the length of <code>" | "</code> plus the length of <code>" |"</code> plus the field widths of 12 + 5 + 10 + 10, which gives 2 + 9 + 2 + 12 + 5 + 10 + 10 = 50.
+Maybe it&#8217;s easier to do it by trial and error.</p>
 </li>
 <li>
-<p>You have to put the <code>f</code> at the end of the float field (e.g. <code>10.2f</code>, the third field in the <code>layout</code> variable) if you want it to treat the precision as <strong>decimal places</strong>. If you leave out the f then it will be <strong>significant figures</strong> instead. The GCSE always seems to ask for decimal places, so always put it in for float values.</p>
+<p>You have to put the <code>f</code> at the end of the float field (e.g. <code>10.2f</code>, the third field in the <code>layout</code> variable) if you want it to treat the precision as <strong>decimal places</strong>.
+If you leave out the f then it will be <strong>significant figures</strong> instead.
+The GCSE always seems to ask for decimal places, so always put it in for float values.</p>
 </li>
 </ol>
 </div>
@@ -2105,7 +2135,8 @@ print(layout.format("Kim", 14, 41.67, 1))</code></pre>
 <h2 id="_grouping_lots_a_variables_together_with_lists">Grouping lots a variables together with lists</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Every programming language has ways to represent lists of things. Without lists you would need to create separate variables to store lots of different values, which would become impossible if, at the time of writing your code, you didn&#8217;t know exactly how many values the user might want to store.</p>
+<p>Every programming language has ways to represent lists of things.
+Without lists you would need to create separate variables to store lots of different values, which would become impossible if, at the time of writing your code, you didn&#8217;t know exactly how many values the user might want to store.</p>
 </div>
 <div class="paragraph">
 <p>There are only four basic things that the GCSE requires you to know about lists:</p>
@@ -2174,9 +2205,9 @@ print(mylist)</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_removing_things_using_del">Removing things using del</h3>
+<h3 id="_removing_things_by_index_using_del">Removing things by index using del</h3>
 <div class="paragraph">
-<p>asdf</p>
+<p>You can remove the ith value of a list by using the del statement as below.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2192,7 +2223,7 @@ print(mylist)</code></pre>
 <div class="sect2">
 <h3 id="_inserting_things_using_insert">Inserting things using insert</h3>
 <div class="paragraph">
-<p>Hello</p>
+<p>You can insert an item at a particular position in a list by using the insert function as below.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2205,6 +2236,97 @@ print(mylist)</code></pre>
 <div class="content">
 <pre>Output:
 ["apple", "banana", "fig", "lemon", "pear"]</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_removing_things_from_a_list_by_value_rather_than_index">Removing things from a list by value (rather than index)</h3>
+<div class="paragraph">
+<p>There is a list function to remove the first element of a list that has a particular value, but the GCSE does not expect you to know it.
+However, they have given you enough information to work out how to do it, so we cover it here.</p>
+</div>
+<div class="sect3">
+<h4 id="_removing_something_using_a_loop_and_the_del_operator">Removing something using a loop and the del operator</h4>
+<div class="paragraph">
+<p>First we find the position of the item using a loop.
+Next we use the position along with the del statement to remove it.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">mylist = ["apple", "banana", "lemon", "pear"]
+print(mylist)
+
+# We will choose to remove "banana".
+itemToRemove = "banana"
+
+index = 0
+found = False
+
+while index &lt; len(mylist) and not found:
+   if mylist[index] == itemToRemove:
+      found = True
+   else:
+      index = index + 1
+
+del mylist[index]
+print(mylist)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Output:
+["apple", "banana", "lemon", "pear"]
+["apple", "lemon", "pear"]</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_removing_something_using_the_list_remove_function">Removing something using the list.remove function</h4>
+<div class="paragraph">
+<p>A much easier way of doing this is to use the list function remove.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">mylist = ["apple", "banana", "lemon", "pear"]
+print(mylist)
+
+# We will choose to remove "banana".
+itemToRemove = "banana"
+
+mylist.remove(itemToRemove) # Not covered by the GCSE!
+print(mylist)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Output:
+["apple", "banana", "lemon", "pear"]
+["apple", "lemon", "pear"]</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The list.remove function by default only removes the first item it finds.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+The list.remove function raises an error if the item is not found in the list.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -2244,10 +2366,13 @@ Thank you</pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Pay attention to the indentation in this example. The "Thank you" message is not indented and so is not part of the if statement. Hence it gets printed whether or not the "You&#8217;re old!" message gets printed.</p>
+<p>Pay attention to the indentation in this example.
+The "Thank you" message is not indented and so is not part of the if statement.
+Hence it gets printed whether or not the "You&#8217;re old!" message gets printed.</p>
 </li>
 <li>
-<p>You don&#8217;t have to have an else! Students often put an else in even when nothing is to be done.</p>
+<p>You don&#8217;t have to have an else!
+Students often put an else in even when nothing is to be done.</p>
 </li>
 </ol>
 </div>
@@ -2328,7 +2453,9 @@ Thank you</pre>
 <p>You can have as many elifs as you want.</p>
 </li>
 <li>
-<p>Notice that in an if&#8230;&#8203; elif&#8230;&#8203; else block, <strong>only one option can be executed</strong>. Even though 74 is greater than 60 and greater than 40, only the first condition is matched. This is great because you can avoid complicated conditions like <code>age &gt; 40 and age &lt;= 60</code>.</p>
+<p>Notice that in an if&#8230;&#8203; elif&#8230;&#8203; else block, <strong>only one option can be executed</strong>.
+Even though 74 is greater than 60 and greater than 40, only the first condition is matched.
+This is great because you can avoid complicated conditions like <code>age &gt; 40 and age &lt;= 60</code>.</p>
 </li>
 </ol>
 </div>
@@ -2387,7 +2514,8 @@ Capital letter found! C
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>There is nothing special about <code>letter</code> here; it is just a variable name. I could have used <code>x</code> but <code>letter</code> is a much better choice of name since anyone reading the code will know what the variable is being used for.</p>
+<p>There is nothing special about <code>letter</code> here; it is just a variable name.
+I could have used <code>x</code> but <code>letter</code> is a much better choice of name since anyone reading the code will know what the variable is being used for.</p>
 </li>
 <li>
 <p>Any lines of code indented after the beginning of the for loop are in the loop and will be repeated once for every item of the sequence (word).</p>
@@ -2397,7 +2525,8 @@ Capital letter found! C
 <div class="sect3">
 <h4 id="_making_a_sequence_of_integers_with_the_range_function">Making a sequence of integers with the range function</h4>
 <div class="paragraph">
-<p>The range function can be used to get a sequence of integers, which can then be iterated through with a for loop. The general syntax for a call to the range function is as follows:</p>
+<p>The range function can be used to get a sequence of integers, which can then be iterated through with a for loop.
+The general syntax for a call to the range function is as follows:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2484,7 +2613,10 @@ Capital letter found! C
 <div class="sect3">
 <h4 id="_repeating_a_block_of_code_an_exact_number_of_times">Repeating a block of code an exact number of times</h4>
 <div class="paragraph">
-<p>A for loop together with the range function can be used to repeat a block of code an exact number of times. This type of loop is sometimes known as a <strong>count-controlled loop</strong> (as opposed to a condition-controlled loop, seen in the while loop section). To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer. We don&#8217;t necessarily need to use the integer counter.</p>
+<p>A for loop together with the range function can be used to repeat a block of code an exact number of times.
+This type of loop is sometimes known as a <strong>count-controlled loop</strong> (as opposed to a condition-controlled loop, seen in the while loop section).
+To run the block of code N times, we create a sequence of integers from 0 up to N-1 and run the block for each integer.
+We don&#8217;t necessarily need to use the integer counter.</p>
 </div>
 <div class="paragraph">
 <p>The following program ask the user for exactly three words, entered  one after the other, and then tells the user the words they entered.</p>
@@ -2492,10 +2624,9 @@ Capital letter found! C
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">words = []
-word = input("Enter a word: ")
 for i in range(3):
-   words.append(word)
    word = input("Enter a word: ")
+   words.append(word)
 
 print("The words you entered were: ")
 for word in words:
@@ -2534,7 +2665,9 @@ orange</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>There is a function that will give us the length of a sequence: the <code>len</code> function. We can use this function to give us the upper bound of the range of numbers that we need to use as the indexes for accessing the members of our sequence. This gives us exactly the indexes we want; no more and no less.</p>
+<p>There is a function that will give us the length of a sequence: the <code>len</code> function.
+We can use this function to give us the upper bound of the range of numbers that we need to use as the indexes for accessing the members of our sequence.
+This gives us exactly the indexes we want; no more and no less.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2570,7 +2703,9 @@ for i in range(len(word)):
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>I have used <code>letter</code> as the loop variable in the first example, because each item of the list that I&#8217;m iterating through (the word) is a letter. But in the second example each item is not a letter, it&#8217;s an integer in the range 0 to 7. It is conventional to name an integer index <code>i</code> in this case (although in the GCSE they often use the name <code>index</code>).</p>
+<p>I have used <code>letter</code> as the loop variable in the first example, because each item of the list that I&#8217;m iterating through (the word) is a letter.
+But in the second example each item is not a letter, it&#8217;s an integer in the range 0 to 7.
+It is conventional to name an integer index <code>i</code> in this case (although in the GCSE they often use the name <code>index</code>).</p>
 </li>
 </ol>
 </div>
@@ -2587,9 +2722,11 @@ The GCSE tends to favour iterating through sequences using indexes rather than b
 </table>
 </div>
 <div class="paragraph">
-<p>Iterating through a sequence using an index is generally considered to be less clear than iterating using an index but <strong>sometimes you have to use an index</strong> to iterate through a sequence. Consider this program that prints the indexes of any double letters in word.</p>
+<p>Iterating through a sequence using an index is generally considered to be less clear than iterating using an index but <strong>sometimes you have to use an index</strong> to iterate through a sequence.
+Consider this program that prints the indexes of any double letters in word.</p>
 </div>
 <div class="listingblock">
+<div class="title">Example: Iterating through a sequence using an index</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">word = input("Enter a word: ")
 for i in range(len(word) - 1):
@@ -2615,7 +2752,8 @@ Double letter found at index: 8</pre>
 <p>We have to use an index here because we don&#8217;t just want to access the current item, we want to access the next item too.</p>
 </li>
 <li>
-<p>Note how we have to make the range of indexes one shorter than it was before, otherwise we will get to the last letter and try to check the "next" one. This will mean we&#8217;re trying to access a letter beyond the end of the word and we will get an <code>IndexError</code>.</p>
+<p>Note how we have to make the range of indexes one shorter than it was before, otherwise we will get to the last letter and try to check the "next" one.
+This will mean we&#8217;re trying to access a letter beyond the end of the word and we will get an <code>IndexError</code>.</p>
 </li>
 </ol>
 </div>
@@ -2627,10 +2765,13 @@ Double letter found at index: 8</pre>
 <h2 id="_looping_repeating_a_block_of_code_as_long_as_a_condition_is_true_while_loops">Looping: repeating a block of code as long as a condition is true (while loops)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false. There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true. While loops are sometimes known as <strong>condition-controlled loops</strong>.</p>
+<p>We have encountered if statements, which test a condition and branch to a block of code depending on whether the condition is true or false.
+There is a similar control structure called a while loop, which runs a block of code over and over as long as (while) a condition is true.
+While loops are sometimes known as <strong>condition-controlled loops</strong>.</p>
 </div>
 <div class="paragraph">
-<p>This program asks the user to enter a password. It keeps asking until the user enters the correct password "sesame".</p>
+<p>This program asks the user to enter a password.
+It keeps asking until the user enters the correct password "sesame".</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2662,7 +2803,9 @@ Access granted</pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>It is important to ask for another password in the loop. If this is not done, then the loop will go on forever (because it will keep testing "password") and your computer will become unresponsive. This is known as an <strong>infinite loop</strong>.</p>
+<p>It is important to ask for another password in the loop.
+If this is not done, then the loop will go on forever (because it will keep testing "password") and your computer will become unresponsive.
+This is known as an <strong>infinite loop</strong>.</p>
 </li>
 <li>
 <p>Note that since the line that prints "Access granted" is <em>after</em> the loop, the only way the program will execute this line is if we&#8217;ve ended the loop, and the only way we can end the loop is if it&#8217;s not true that the password is not "sesame".</p>
@@ -2672,10 +2815,12 @@ Access granted</pre>
 <div class="sect2">
 <h3 id="_breaking_out_of_a_while_loop_using_a_flag_variable">Breaking out of a while loop using a flag variable</h3>
 <div class="paragraph">
-<p>You can immediately break out of a for loop or a while loop using the statement <code>break</code>, but the GCSE exam board seem to prefer you not to use it (they consider it bad programming practice). You can avoid using a break statement by using a boolean "flag" variable, on which the loop condition depends.</p>
+<p>You can immediately break out of a for loop or a while loop using the statement <code>break</code>, but the GCSE exam board seem to prefer you not to use it (they consider it bad programming practice).
+You can avoid using a break statement by using a boolean "flag" variable, on which the loop condition depends.</p>
 </div>
 <div class="paragraph">
-<p>The following program finds the position of the first integer in a list of integers that is exactly divisible by 7. If no numbers are exactly divisible by 7 it prints a suitable message.</p>
+<p>The following program finds the position of the first integer in a list of integers that is exactly divisible by 7.
+If no numbers are exactly divisible by 7 it prints a suitable message.</p>
 </div>
 <div class="paragraph">
 <p>This is an <strong>important example</strong>, so read the notes carefully.</p>
@@ -2731,7 +2876,8 @@ else:
 </div>
 </li>
 <li>
-<p>In this example we set the flag to False, loop while it is False, then change it to True to stop the loop, but we could just as well set the flag to True, loop while it is True, then change it to False to stop the loop. If we did that then the name <code>found</code> would not make sense; we would have to use a name like <code>searching</code> or <code>stillLooking</code>.</p>
+<p>In this example we set the flag to False, loop while it is False, then change it to True to stop the loop, but we could just as well set the flag to True, loop while it is True, then change it to False to stop the loop.
+If we did that then the name <code>found</code> would not make sense; we would have to use a name like <code>searching</code> or <code>stillLooking</code>.</p>
 </li>
 <li>
 <p>It is important not to increment the index when the target number is found or we&#8217;ll report the wrong position.</p>
@@ -2743,7 +2889,9 @@ else:
 <p>We don&#8217;t have to explicitly use <code>found == False</code> or <code>found == True</code> in the conditions. Saying <code>if found</code> is the same as saying <code>if found == True</code> (but it wouldn&#8217;t matter if you preferred to write <code>if found == True</code>).</p>
 </li>
 <li>
-<p>Note that this program processes no more value of the list than it has to. As soon as it has found the value it is looking for, it stops the loop. This is important because you will lose a mark in the GCSE if you process more values than you need to.</p>
+<p>Note that this program processes no more value of the list than it has to.
+As soon as it has found the value it is looking for, it stops the loop.
+This is important because you will lose a mark in the GCSE if you process more values than you need to.</p>
 </li>
 </ol>
 </div>
@@ -2778,7 +2926,9 @@ else:
 <h2 id="_slicing_getting_parts_of_a_sequence">Slicing: getting parts of a sequence</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We know that we can use indexed to get individual items from strings or lists, e.g. "computer"[2] gives us "m". Python also allows you to get several items by using what&#8217;s called a slice. The syntax of a slice is as follows:</p>
+<p>We know that we can use indexed to get individual items from strings or lists, e.g. "computer"[2] gives us "m".
+Python also allows you to get several items by using what&#8217;s called a slice.
+The syntax of a slice is as follows:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2791,7 +2941,8 @@ else:
 </ul>
 </div>
 <div class="paragraph">
-<p>If you slice a string, the result is a string. If you slice a list, the result is a list.</p>
+<p>If you slice a string, the result is a string.
+If you slice a list, the result is a list.</p>
 </div>
 <div class="paragraph">
 <p>For the example below, assume that we have defined:</p>
@@ -2865,7 +3016,8 @@ length = len(word) # Built-in len function called with argument word returns 8</
 </div>
 </div>
 <div class="paragraph">
-<p>You can define your own functions in Python. To show you how to do this, I will write a short program that doesn&#8217;t define a function, and then I will write the same program, which does.</p>
+<p>You can define your own functions in Python.
+To show you how to do this, I will write a short program that doesn&#8217;t define a function, and then I will write the same program, which does.</p>
 </div>
 <div class="paragraph">
 <p>This program asks the user for some text and tells them how many of the characters they entered are letters of the alphabet.</p>
@@ -2890,7 +3042,8 @@ There are 16 letters in the text you entered.</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This program does exactly the same, but it defines a function that takes a string paramenter and returns an integer. The parameter is the string that the user entered; the return value is the number of alphebetical characters in that text.</p>
+<p>This program does exactly the same, but it defines a function that takes a string paramenter and returns an integer.
+The parameter is the string that the user entered; the return value is the number of alphebetical characters in that text.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2924,7 +3077,7 @@ There are 16 letters in the text you entered.</pre>
 <p>The function call is <code>countAlpha(text)</code>.</p>
 </li>
 <li>
-<p>The function has to be defined before it is called, hence I have put it at the beginning of the program.</p>
+<p>The function has to be <strong>defined before it is called</strong>, hence I have put it at the beginning of the program.</p>
 </li>
 <li>
 <p>The code in the function isn&#8217;t actually executed until the function is called. The order of events is:</p>
@@ -2964,7 +3117,8 @@ There are 16 letters in the text you entered.</pre>
 <div class="sect2">
 <h3 id="_writing_to_new_files">Writing to new files</h3>
 <div class="paragraph">
-<p>This program creates a new file in the same directory as the Python (.py) file that contains the code. Run the code locally (on your machine) to test it out.</p>
+<p>This program creates a new file in the same directory as the Python (.py) file that contains the code.
+Run the code locally (on your machine) to test it out.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2979,7 +3133,9 @@ file.close()</code></pre>
 <div class="sect2">
 <h3 id="_reading_data_from_files_that_already_exist">Reading data from files that already exist</h3>
 <div class="paragraph">
-<p>The next program reads from an existing file in the same directory as the Python (.py) file that contains the code. Before you run the code you will need to create the file by copying the following text and pasting it into a new file. You can do this in Thonny by following these instructions:</p>
+<p>The next program reads from an existing file in the same directory as the Python (.py) file that contains the code.
+Before you run the code you will need to create the file by copying the following text and pasting it into a new file.
+You can do this in Thonny by following these instructions:</p>
 </div>
 <div class="listingblock">
 <div class="title">Copy this text to the clipboard</div>
@@ -3034,7 +3190,9 @@ file.close()</code></pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>In the GCSE, the file name will usually be given as a <strong>constant</strong>, signified by a variable name in all capitals. If you are given a file name as a constant and asked to open the file, you must <strong>use the constant</strong>. You would lose a mark for writing <code>open("data.txt", "w").</code></p>
+<p>In the GCSE, the file name will usually be given as a <strong>constant</strong>, signified by a variable name in all capitals.
+If you are given a file name as a constant and asked to open the file, you must <strong>use the constant</strong>.
+You would lose a mark for writing <code>open("data.txt", "w").</code></p>
 </li>
 <li>
 <p>The "w" argument to the open function stands for "writing" and means that we are opening a new file to put text into.</p>
@@ -3054,10 +3212,15 @@ file.close()</code></pre>
 <h2 id="_errors_and_what_they_mean">Errors and what they mean</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When a piece of code generates an error, it is common for students just to raise their hands and declare "It doesn&#8217;t work." However, the error message that Python gives you often tells you exactly what the problem is, so it&#8217;s important to understand what these errors mean.</p>
+<p>When a piece of code generates an error, it is common for students just to raise their hands and declare "It doesn&#8217;t work."
+However, the error message that Python gives you often tells you exactly what the problem is, so it&#8217;s important to understand what these errors mean.</p>
 </div>
 <div class="paragraph">
-<p>When you write a large chunk of code, it is likely that you will accidentally introduce a number of errors. When you run your code, Python will stop at the first error. You will need to fix that error and then run the code again. Now Python will stop at the next error. Fixing errors one-by-one in this way is known as debugging. Since fixing lots of errors is generally more difficult than fixing one error, you should aim to try out parts of your code as soon as possible, rather than writing the entire program before you start debugging.</p>
+<p>When you write a large chunk of code, it is likely that you will accidentally introduce a number of errors.
+When you run your code, Python will stop at the first error.
+You will need to fix that error and then run the code again. Now Python will stop at the next error.
+Fixing errors one-by-one in this way is known as debugging.
+Since fixing lots of errors is generally more difficult than fixing one error, you should aim to try out parts of your code as soon as possible, rather than writing the entire program before you start debugging.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3099,13 +3262,15 @@ SyntaxError: unterminated string literal (detected at line 1)</pre>
 <div class="paragraph">
 <p><strong>Notes:</strong>
 . Look at the language used in the error message. It tells you exactly what&#8217;s wrong.
-. The string literal beginning <code>"Fred</code> has an opening quotation mark but no closing quotation mark. Hence <code>unterminated string literal</code>.</p>
+. The string literal beginning <code>"Fred</code> has an opening quotation mark but no closing quotation mark.
+Hence <code>unterminated string literal</code>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_indexerror">IndexError</h3>
 <div class="paragraph">
-<p>An index error occurs when we have referred to an element of a sequence that doesn&#8217;t exist. It often happens when you run off the end of a string or list when iterating through it with a counter.</p>
+<p>An index error occurs when we have referred to an element of a sequence that doesn&#8217;t exist.
+It often happens when you run off the end of a string or list when iterating through it with a counter.</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of IndexError</div>
@@ -3138,13 +3303,15 @@ IndexError: string index out of range</pre>
 <div class="paragraph">
 <p><strong>Notes:</strong>
 . The code executed without error while the index was less then the length of the string.
-. When index reached a value of 8, we tried to print <code>word[8]</code>. This generated the error because the last item of <code>word</code> is at index 7.</p>
+. When index reached a value of 8, we tried to print <code>word[8]</code>.
+This generated the error because the last item of <code>word</code> is at index 7.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_typeerror">TypeError</h3>
 <div class="paragraph">
-<p>A type error occurs when you have tried to do something with a variable or literal that you cannot do because of its type (e.g. integer, float, string, boolean). A very common example is trying to concatenate strings with integers, using the concatenation operator (+).</p>
+<p>A type error occurs when you have tried to do something with a variable or literal that you cannot do because of its type (e.g. integer, float, string, boolean).
+A very common example is trying to concatenate strings with integers, using the concatenation operator (+).</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of TypeError</div>
@@ -3166,13 +3333,15 @@ TypeError: can only concatenate str (not "int") to str</pre>
 </div>
 <div class="paragraph">
 <p><strong>Notes:</strong>
-. Look at how descriptive the error message is. Always look at the error message carefully.</p>
+. Look at how descriptive the error message is.
+Always look at the error message carefully.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_nameerror">NameError</h3>
 <div class="paragraph">
-<p>A name error occurs when we have referred to a variable that has not been defined. Students often get these errors when they don&#8217;t pay adequate attention to the capitalisation of variable names.</p>
+<p>A name error occurs when we have referred to a variable that has not been defined.
+Students often get these errors when they don&#8217;t pay adequate attention to the capitalisation of variable names.</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of NameError</div>
@@ -3197,7 +3366,8 @@ NameError: name 'Name' is not defined</pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Python is case-sensitive. That means that <code>name</code> is an entirely different variable name from <code>Name</code>.</p>
+<p>Python is case-sensitive.
+That means that <code>name</code> is an entirely different variable name from <code>Name</code>.</p>
 </li>
 <li>
 <p>Since <code>Name</code> has not been defined, Python generates a NameError when we try to print its value.</p>
@@ -3208,7 +3378,9 @@ NameError: name 'Name' is not defined</pre>
 <div class="sect2">
 <h3 id="_attributeerror">AttributeError</h3>
 <div class="paragraph">
-<p>An attribute error is closely related to a name error. It occurs when we have tried to access a property or run a function on an object that doesn&#8217;t have that property or function. As with name errors, attribute errors are often caused by capitalisation problems.</p>
+<p>An attribute error is closely related to a name error.
+It occurs when we have tried to access a property or run a function on an object that doesn&#8217;t have that property or function.
+As with name errors, attribute errors are often caused by capitalisation problems.</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of AttributeError</div>
@@ -3236,7 +3408,7 @@ AttributeError: 'str' object has no attribute 'isUpper'</pre>
 <p>We have tried to see whether all the letters in <code>name</code> are upper case.</p>
 </li>
 <li>
-<p>But we have used <code>isUpper</code> as the string function, instead of <code>isupper</code>.</p>
+<p>But we have used the wrong name <code>isUpper</code> as the string function, instead of the correct name <code>isupper</code>.</p>
 </li>
 <li>
 <p>The error message is saying "You&#8217;ve tried to use a string&#8217;s <code>isUpper</code> function but strings don&#8217;t have functions called isUpper".</p>
@@ -3246,6 +3418,203 @@ AttributeError: 'str' object has no attribute 'isUpper'</pre>
 </li>
 </ol>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_turtle">Turtle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Python has a build-in module that you can import called <code>turtle</code>. It can be used to draw simple patterns and shapes on the screen.</p>
+</div>
+<div class="paragraph">
+<p>Try running the following program on your computer.</p>
+</div>
+<div class="listingblock">
+<div class="title">Simple turtle program</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python"># Import the turtle module
+import turtle
+
+# Create a turtle
+t = turtle.Turtle()
+
+# Move the turtle forward 100 pixels
+t.fd(100)
+
+# Keep the window open so we can see the result
+turtle.done()</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You must include <code>import turtle</code> at the top of your file if you want to use the turtle module.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>When programming with the turtle module, you <strong>cannot name your file</strong> <code>turtle.py</code>, because this will mask the name of the module. Perhaps call it  <code>myturtle.py</code>.</p>
+</li>
+<li>
+<p>Similarly, you cannot use <code>turtle</code> as a variable name. I suggest you call your turtle objects something like <code>t</code> or, as the exam board does, <code>theTurtle</code>.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The following table outlines all of the turtle features that the exam board expects you to be familiar with. Some of the functions are called directly on the turtle module, and these are written <code>turtle.&lt;function&gt;</code>. Others are called on the turtle object, and these are written <code>t.&lt;function&gt;</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Function</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>turtle.done()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Leaves the window open once the turtle program has finished, so you can see the results.
+Another way of doing this is to have a single call to <code>input()</code> right at the end of the program, so that it waits for Enter to be pressed before then ending.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>turtle.mode(mode)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets one of two modes in which to run the program: "standard" or "logo".
+The default is standard mode.
+Logo is the name of a programming language in which a popular version of turtle was implemented, so this option exists for backwards compatibility.
+A turtle in standard mode, initially points to east at the start and angles are anti-clockwise.
+A turtle in logo mode points up north at the start and and angles are clockwise.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>scrn = turtle.Screen()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get a screen object.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>scrn.setup(width, height)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the width and height of the window.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>turtle.screensize(width, height)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the dimensions of the screen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t = turtle.Turtle()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get a turtle object that you can then draw with.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.forward(n)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move the turtle object forward n pixels. Can be abbreviated to <code>t.fd(n)</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.back(n)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move the turtle object backwards n pixels. Can be abbreviated to <code>t.bk(n)</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.hideturtle()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hide the turtle from the screen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.showturtle()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unhide the turtle.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.left(n)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turn the turtle n degrees anti-clockwise.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.right(n)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turn the turtle n degrees clockwise.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.speed(n)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the speed at which the turtle moves.
+The value of n can be set to “fastest”, “fast”, “normal”, “slow”, “slowest”.
+Alternatively, use the numbers 1 to 10
+to increase speed. The value of 0 is the fastest.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.home()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move the turtle to the origin (0, 0), which by default is the centre of the screen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.reset()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clear the screen, returns the turtle to the origin, and resets default settings.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.setheading(degrees)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Point the turtle in a particular direction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.setposition(x, y)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move the turtle to a particular coordinate.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.begin_fill()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the turtle to fill mode.
+You need to call this just before drawing an enclosed shape that you want to be filled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.end_fill()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Take the turtle out of fill mode.
+Call this if you are in fill mode and you are about to draw an enclosed shape that you don&#8217;t want to be filled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.fillcolor(colour)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the colour of the fill about to be performed.
+Call this just before drawing a shape that you want to be filled.
+The colour argument is a string, e.g. "blue".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.pencolor(colour)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the colour of the pen.
+Call this just before you move with the pendown to draw a line with a particular colour.
+The colour argument is a string, e.g. "blue".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.pendown()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Put the turtle&#8217;s pen down so that when it next moves, a line will be drawn.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.penup()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Raise the turtle&#8217;s pen so that when it moves it will not draw a line.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.pensize(width)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the width of the line that the turtle will draw when it next moves.
+The width argument should be an integer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>t.circle(radius[, extent])</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Draw a circle with a particular radius.
+The extent argument is optional and can be a number of degrees to specify the arc size, e.g. 90 would draw quarter of a circle.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_sample_turtle_programs">Sample turtle programs</h3>
+
 </div>
 </div>
 </div>
@@ -3288,7 +3657,7 @@ AttributeError: 'str' object has no attribute 'isUpper'</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-06-12 15:56:02 +0100
+Last updated 2024-06-20 11:11:20 +0100
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
