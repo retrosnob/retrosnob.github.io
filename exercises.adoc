@@ -1,0 +1,26 @@
+List of built-in functions that you should know
+
+Tasks that don't involve loops
+    Easy if you know the built-in function
+        deduplication of lists using sets
+        conversion to binary/hex
+        conversion from base N to denary using int(numstring, base)
+
+    If statements
+Tasks that involve loops
+List comprehensions
+Tasks in which dictionaries are best
+    isomorphism
+    finding the one item that is not duplicated
+
+Game/useful program ideas
+    Pygame
+        Snake
+        Subhunt
+    Turtle
+        Horse racing
+    Console
+        Conversion of units
+        Encryption using caesar and viginere ciphers
+
+abs, all, any, bin, chr, hex, len, list, map, max, min, oct, ord, range, reversed, round, set, sorted, str, sum, tuple, zip
