@@ -16,6 +16,15 @@ strong strong{font-weight:400}
 code,kbd,pre{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-size:1em}
 code{font-weight:400;color:rgba(0,0,0,.9)}
 pre{color:rgba(0,0,0,.9);line-height:1.45;text-rendering:optimizeSpeed;white-space:pre-wrap}
+/* Edited */
+pre.source {
+    background-color: #f0f0f0; /* Slightly different background */
+    margin-top: 0.5em; /* Adjust space above */
+    margin-bottom: 0.5em; /* Adjust space below */
+    padding: 0.75em; /* Adjust internal spacing */
+    line-height: 1.2; /* Adjust line spacing */
+}
+/* --- */
 dfn{font-style:italic}
 em,i{font-style:italic;line-height:inherit}
 em em{font-style:normal}
