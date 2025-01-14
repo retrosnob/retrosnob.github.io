@@ -44,7 +44,7 @@
 ** file.write(string) (plus use of \n)
 ** Reading
 * Turtle
-** turtle.Turtle()
+** t = turtle.Turtle()
 ** turtle.done, mode, Screen, screensize
 ** turtle.Screen().setup(width, height)
 ** back, forward, hideturtle, left, right, showturtle, speed
