@@ -6,11 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
 <title>Tonbridge School Python Guide for GCSE Students</title>
-<style>
-pre.source {
-    line-height: 1; /* Adjust as needed */
-}
-</style>
+<link rel="stylesheet" href="./pythonpage.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
 </head>
@@ -44,24 +40,35 @@ pre.source {
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Assigning a variable</p>
-<p class="tableblock">[source,Python]
-----
-age = 15
-----</p>
-<p class="tableblock">name = "Fred"</p>
-<p class="tableblock">Incrementing an integer variable
-age = age + 1
-age += 1</p>
-<p class="tableblock">Functions</p>
-<p class="tableblock">len("A string or list") # 16 (includes spaces)
-int("5") # 5 as an integer
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Assigning a variable</strong><br>
+<code>age = 15</code><br>
+<code>name = "Fred"</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Incrementing an integer variable</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Python hljs" data-lang="Python">age = age + 1
+age += 1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Functions</p>
+</div>
+<div class="paragraph">
+<p>len("A string or list") # 16 (includes spaces)<br>
+int("5") # 5 as an integer<br>
 str(5) # "5" as a string</p>
-<p class="tableblock">print(name) # Prints Fred
-print(age) # Prints 15
-print(name, " is ", age) # Prints Fred is 15
-print(name + " is " str(age)) # Prints Fred is 15
-print("{} is {}".format(name, age)) # Prints Fred is 15</p></td>
+</div>
+<div class="paragraph">
+<p>print(name) # Prints Fred<br>
+print(age) # Prints 15<br>
+print(name, " is ", age) # Prints Fred is 15<br>
+print(name + " is " str(age)) # Prints Fred is 15<br>
+print("{} is {}".format(name, age)) # Prints Fred is 15</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Stuff in column 2</p></td>
 </tr>
 </tbody>
@@ -71,7 +78,7 @@ print("{} is {}".format(name, age)) # Prints Fred is 15</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-14 08:57:20 UTC
+Last updated 2025-01-14 13:58:38 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>

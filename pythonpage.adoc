@@ -2,6 +2,7 @@
 // Must have this immediately below Level 0
 // :source-language: Python
 :doctype: book
+:stylesheet: pythonpage.css
 :source-highlighter: highlight.js
 :icons: font
 :authorinitials: JER
@@ -23,8 +24,10 @@ a|
 
 *Incrementing an integer variable*
 [source, Python]
+----
 age = age + 1
 age += 1
+----
 
 Functions
 
