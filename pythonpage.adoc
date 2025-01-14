@@ -1,17 +1,10 @@
 = Tonbridge School Python Guide for GCSE Students
 // Must have this immediately below Level 0
-// :source-language: Python
 :doctype: book
 :stylesheet: pythonpage.css
 :source-highlighter: highlight.js
 :icons: font
 :authorinitials: JER
-:toc: auto
-:hardbreaks-option:
-
-== About this book
-
-I often get students 
 
 [cols="1, 1"]
 |===
