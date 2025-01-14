@@ -1,0 +1,12 @@
+Blue,screw,12.4,8
+Blue,flange,8.7,6
+Red,screw,11.2,12
+Yellow,screw,13.6,10
+Red,sleeve,7.4,13
+Blue,sleeve,11.5,7
+Yellow,flange,6.4,15
+Blue,grommet,15.3,7
+Red,grommet,10.0,13
+Yellow,grommet,7.8,4
+Red,flange,9.3,9
+Yellow,sleeve,11.4,5

@@ -2038,6 +2038,32 @@ The extent argument is optional and can be a number of degrees to specify the ar
 
 === Sample turtle programs
 
+TODO
+
+== Common programming tasks
+
+=== Counting all items in a sequence that meet a condition
+
+This code counts how many numbers in `nums` are greater than 50.
+Assume `num` is a predefined list of integers.
+
+[source,Python]
+.Version 1: Without using an index
+----
+count = 0
+for num in nums:
+   if num > 50:
+      count += 1
+----
+
+[source,Python]
+.Version 2: Using an index
+----
+count = 0
+for i in range(len(nums)):
+   if nums[i] > 50:
+      count += 1
+----
 
 
 == Ideas
@@ -2049,6 +2075,11 @@ The extent argument is optional and can be a number of degrees to specify the ar
 * Exercises that require students to correct errors, e.g. not using brackets after a function call, etc, etc, etc
 * Must provide answers to exercises
 * Common things like counting and keeping a running total
+** Searching for an item in a sequence that meets a condition.
+** Searching for all items in a sequence that meet a condition.
+** Searching for the position of an item in a sequence that meets a condition.
+** Counting and summing values.
+** Building a string using concatenation
 * Where to get more practice: e.g. project Euler, adventofcode
 * Creating a list out of a string with list()
 
