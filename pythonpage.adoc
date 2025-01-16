@@ -1,44 +1,53 @@
-= Tonbridge School Python Guide for GCSE Students
-// Must have this immediately below Level 0
+= Python Cheatsheet
+:pdf-page-size: A4
+:pdf-page-layout: portrait
+:pdf-page-margin: [10mm, 10mm, 10mm, 10mm]
+// :source-highlighter: rouge
 :doctype: book
-:stylesheet: pythonpage.css
-:source-highlighter: highlight.js
-:icons: font
-:authorinitials: JER
+:nofooter:
 
-[cols="1, 1"]
+[cols="1,1", frame="none", grid="none", options="noheader"]
 |===
-|Column 1 Title|Column 2 Title
+| **Basic Python** | **Quick Snippets**
 
-a|
-*Assigning a variable*
-`age = 15`
-`name = "Fred"`
+| // Left column
+== Print and Variables
 
-*Incrementing an integer variable*
-[source, Python]
+[source,python]
 ----
-age = age + 1
-age += 1
+print("Hello, World!")
+name = "Alice"
+print(name)
 ----
 
-Functions
+== Lists and Loops
 
-len("A string or list") # 16 (includes spaces)
-int("5") # 5 as an integer
-str(5) # "5" as a string
+[source,python]
+----
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+----
 
-print(name) # Prints Fred
-print(age) # Prints 15
-print(name, " is ", age) # Prints Fred is 15
-print(name + " is " str(age)) # Prints Fred is 15
-print("{} is {}".format(name, age)) # Prints Fred is 15
- 
+| // Right column
+== Functions
 
+[source,python]
+----
+def greet(name):
+    print(f"Hello, {name}!")    
 
-|
+greet("Bob")
+----
 
-Stuff in column 2
+== Conditionals
 
-
+[source,python]
+----
+number = 10
+if number > 5:
+    print("Greater than 5")
+else:
+    print("5 or less")
+----
 |===
